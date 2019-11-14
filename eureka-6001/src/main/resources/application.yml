@@ -1,0 +1,10 @@
+server:
+  port: 6001
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    register-with-eureka: false #不注冊進eureka裏
+    fetch-registry: false #不獲取服務
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka #单机版

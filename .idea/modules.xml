@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/api/api.iml" filepath="$PROJECT_DIR$/api/api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/authentication-9001/authentication-9001.iml" filepath="$PROJECT_DIR$/authentication-9001/authentication-9001.iml" />
+      <module fileurl="file://$PROJECT_DIR$/consumer-8001/consumer-8001.iml" filepath="$PROJECT_DIR$/consumer-8001/consumer-8001.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eureka-6001/eureka-6001.iml" filepath="$PROJECT_DIR$/eureka-6001/eureka-6001.iml" />
+      <module fileurl="file://$PROJECT_DIR$/match-tidc.iml" filepath="$PROJECT_DIR$/match-tidc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/messagemanager-8201/messagemanager-8201.iml" filepath="$PROJECT_DIR$/messagemanager-8201/messagemanager-8201.iml" />
+      <module fileurl="file://$PROJECT_DIR$/usermanager-8101/usermanager-8101.iml" filepath="$PROJECT_DIR$/usermanager-8101/usermanager-8101.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zuul-9537/zuul-9537.iml" filepath="$PROJECT_DIR$/zuul-9537/zuul-9537.iml" />
+    </modules>
+  </component>
+</project>

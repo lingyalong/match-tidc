@@ -1,0 +1,40 @@
+server:
+  port: 9537
+spring:
+  application:
+    name: zuul
+eureka:
+  instance:
+    prefer-ip-address: true #使用ip注册
+    instance-id: zuul-9537
+  client:
+    service-url:
+      defaultZone: http://localhost:6001/eureka/ #注册地址
+info:
+  app.name: match-tidc
+zuul:
+  max:
+    host:
+      connections: 500
+      socket-timeout-millis: 60000
+      connect-timeout-millis: 60000
+  routes:
+    foundProvider-7001: /found/**
+    authentication: /au/**
+  ignoredServices: "*"
+ribbon:
+  ReadTimeout: 10000
+  ConnectTimeout: 10000
+  MaxAutoRetries: 0
+  MaxAutoRetriesNextServer: 1
+  eureka:
+    enabled: true
+hystrix:
+  command:
+    default:
+      execution:
+        timeout:
+          enabled: true
+        isolation:
+          thread:
+            timeoutInMilliseconds: 60000

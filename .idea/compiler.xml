@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="api" />
+        <module name="authentication-9001" />
+        <module name="consumer-8001" />
+        <module name="eureka-6001" />
+        <module name="match-tidc" />
+        <module name="messagemanager-8201" />
+        <module name="usermanager-8101" />
+        <module name="zuul-9537" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="api" target="1.5" />
+      <module name="authentication-9001" target="1.8" />
+      <module name="consumer-8001" target="1.8" />
+      <module name="eureka-6001" target="1.8" />
+      <module name="match-tidc" target="1.5" />
+      <module name="messagemanager-8201" target="1.8" />
+      <module name="usermanager-8101" target="1.8" />
+      <module name="zuul-9537" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="api" options="" />
+      <module name="authentication-9001" options="-parameters" />
+      <module name="consumer-8001" options="-parameters" />
+      <module name="eureka-6001" options="-parameters" />
+      <module name="match-tidc" options="" />
+      <module name="messagemanager-8201" options="-parameters" />
+      <module name="usermanager-8101" options="-parameters" />
+      <module name="zuul-9537" options="-parameters" />
+    </option>
+  </component>
+</project>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" native2AsciiForPropertiesFiles="true" defaultCharsetForPropertiesFiles="UTF-8" addBOMForNewFiles="with NO BOM">
+    <file url="file://$PROJECT_DIR$/api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/authentication-9001" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/consumer-8001" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/eureka-6001" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/messagemanager-8201" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/messagemanager-8201" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/usermanager-8101" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zuul-9537" charset="UTF-8" />
+  </component>
+</project>

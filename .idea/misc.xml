@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/eureka-6001/pom.xml" />
+        <option value="$PROJECT_DIR$/zuul-9537/pom.xml" />
+        <option value="$PROJECT_DIR$/consumer-8001/pom.xml" />
+        <option value="$PROJECT_DIR$/authentication-9001/pom.xml" />
+        <option value="$PROJECT_DIR$/api/pom.xml" />
+        <option value="$PROJECT_DIR$/usermanager/pom.xml" />
+        <option value="$PROJECT_DIR$/messagemanager/pom.xml" />
+        <option value="$PROJECT_DIR$/messagemanager-8202/pom.xml" />
+        <option value="$PROJECT_DIR$/usermanager-8101/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>
