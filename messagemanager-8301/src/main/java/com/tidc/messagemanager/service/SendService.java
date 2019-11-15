@@ -1,6 +1,7 @@
 package com.tidc.messagemanager.service;
 
-import com.tidc.messagemanager.pojo.UserOV;
+
+import com.tidc.api.pojo.UserOV;
 
 /**
  * @ClassNmae SendService
@@ -8,5 +9,5 @@ import com.tidc.messagemanager.pojo.UserOV;
  * @Author 冯涛滔
  **/
 public interface SendService {
-	UserOV teacherApprove(String schoolEmail,String teacherEmail);
+	UserOV teacherApproveMessage(String schoolEmail, String teacherEmail);
 }

@@ -1,7 +1,7 @@
 package com.tidc.usermanager.service;
 
+import com.tidc.api.pojo.UserOV;
 import com.tidc.usermanager.pojo.Teacher;
-import com.tidc.usermanager.pojo.UserOV;
 
 /**
  * @ClassNmae RegisterService
@@ -12,7 +12,7 @@ public interface RegisterService {
 	/**
 	 * 注册老师账号
 	 * @param teacher
-	 * @return
+	 * @return Data.email
 	 */
-	public UserOV teacherRegister(Teacher teacher,String code);
+	UserOV teacherRegister(Teacher teacher, String code);
 }

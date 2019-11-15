@@ -1,8 +1,7 @@
 package com.tidc.usermanager.controller;
 
-import com.tidc.usermanager.pojo.UserOV;
+import com.tidc.api.pojo.UserOV;
 import com.tidc.usermanager.service.CheckUserService;
-import com.tidc.usermanager.service.RegisterService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;

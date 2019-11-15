@@ -12,9 +12,9 @@ import java.util.List;
  **/
 public interface StudentMapper {
 	@Select("select id,email,password from student where email=#{email}")
-	public Student chickEmail(String email);
+	Student chickEmail(String email);
 	@Select("select e.name from student_role r left outer join role e on r.student_role_id=e.id where r.student_id = #{id}")
-	public List<String> listPower(int id);
+	List<String> listPower(int id);
 	@Select("select name, email, age, idEntity, telephone, school, department, major, grade, studentNumber from student where email=#{email}")
-	public Student getStudent(String email);
+	Student getStudent(String email);
 }

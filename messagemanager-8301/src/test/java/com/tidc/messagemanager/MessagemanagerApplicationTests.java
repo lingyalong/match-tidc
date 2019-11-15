@@ -1,4 +1,4 @@
-package com.tidc.messagemanager8202;
+package com.tidc.messagemanager;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -7,7 +7,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class Messagemanager8202ApplicationTests {
+public class MessagemanagerApplicationTests {
 
 	@Test
 	public void contextLoads() {

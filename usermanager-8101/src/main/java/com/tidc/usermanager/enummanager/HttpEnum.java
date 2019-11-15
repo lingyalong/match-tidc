@@ -1,11 +1,13 @@
 package com.tidc.usermanager.enummanager;
 
+import java.io.Serializable;
+
 /**
  * @ClassNmae HttpEnum
  * @Description TODO
  * @Author 冯涛滔
  **/
-public enum HttpEnum {
+public enum HttpEnum implements Serializable {
 	/**
 	 * 失败
 	 */

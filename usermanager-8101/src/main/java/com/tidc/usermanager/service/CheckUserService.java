@@ -1,6 +1,7 @@
 package com.tidc.usermanager.service;
 
-import com.tidc.usermanager.pojo.UserOV;
+
+import com.tidc.api.pojo.UserOV;
 
 /**
  * @ClassNmae CheckUserService
@@ -13,5 +14,5 @@ public interface CheckUserService {
 	 * @param email
 	 * @return 根据邮箱号返回用户详细信息
 	 */
-	public UserOV userInfo(String email);
+	UserOV userInfo(String email);
 }

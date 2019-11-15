@@ -12,7 +12,7 @@ import java.util.List;
  * @Author 冯涛滔
  **/
 public interface SchoolMapper {
-	@Select("select id, name from school where code=#{cede}")
+	@Select("select id, name, email from school where code=#{cede}")
 	public School getSchoolCode(String code);
 	@Select("select email,password from school where email=#{email}")
 	public School chickEmail(String email);

@@ -11,7 +11,7 @@
         <module name="consumer-8001" />
         <module name="eureka-6001" />
         <module name="match-tidc" />
-        <module name="messagemanager-8201" />
+        <module name="messagemanager-8301" />
         <module name="usermanager-8101" />
         <module name="zuul-9537" />
       </profile>
@@ -22,7 +22,7 @@
       <module name="consumer-8001" target="1.8" />
       <module name="eureka-6001" target="1.8" />
       <module name="match-tidc" target="1.5" />
-      <module name="messagemanager-8201" target="1.8" />
+      <module name="messagemanager-8301" target="1.8" />
       <module name="usermanager-8101" target="1.8" />
       <module name="zuul-9537" target="1.8" />
     </bytecodeTargetLevel>
@@ -34,7 +34,7 @@
       <module name="consumer-8001" options="-parameters" />
       <module name="eureka-6001" options="-parameters" />
       <module name="match-tidc" options="" />
-      <module name="messagemanager-8201" options="-parameters" />
+      <module name="messagemanager-8301" options="-parameters" />
       <module name="usermanager-8101" options="-parameters" />
       <module name="zuul-9537" options="-parameters" />
     </option>

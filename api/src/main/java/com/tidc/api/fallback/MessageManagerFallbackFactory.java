@@ -12,7 +12,7 @@ import feign.hystrix.FallbackFactory;
 public class MessageManagerFallbackFactory implements FallbackFactory<MessageManagerApi> {
 	public MessageManagerApi create(Throwable throwable) {
 		return new MessageManagerApi() {
-			public UserOV teacherApprove(String schoolEmail, String teacherEmail) {
+			public UserOV teacherApproveMessage(String schoolEmail, String teacherEmail) {
 				return null;
 			}
 		};

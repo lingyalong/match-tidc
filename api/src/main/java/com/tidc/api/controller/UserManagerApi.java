@@ -1,6 +1,5 @@
 package com.tidc.api.controller;
 
-import com.tidc.api.fallback.AuthenticationFallbackFactory;
 import com.tidc.api.fallback.UserManagerFallbackFactory;
 import com.tidc.api.pojo.Teacher;
 import com.tidc.api.pojo.UserOV;
@@ -20,5 +19,5 @@ public interface UserManagerApi {
 	@RequestMapping(value = "/teacher/register",method = RequestMethod.POST)
 	UserOV teacherRegister(@RequestBody Teacher teacher, @RequestParam("code") String code);
 	@RequestMapping(value = "/user/info",method = RequestMethod.GET)
-	UserOV userInfo(String email);
+	UserOV userInfo(@RequestParam("email") String email);
 }

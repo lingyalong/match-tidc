@@ -1,5 +1,6 @@
 package com.tidc.usermanager.service.impl;
 
+import com.tidc.api.pojo.UserOV;
 import com.tidc.usermanager.enummanager.HttpEnum;
 import com.tidc.usermanager.mapper.SchoolMapper;
 import com.tidc.usermanager.mapper.StatusMapper;
@@ -8,7 +9,6 @@ import com.tidc.usermanager.mapper.TeacherMapper;
 import com.tidc.usermanager.pojo.School;
 import com.tidc.usermanager.pojo.Student;
 import com.tidc.usermanager.pojo.Teacher;
-import com.tidc.usermanager.pojo.UserOV;
 import com.tidc.usermanager.service.CheckUserService;
 import com.tidc.usermanager.utiles.ApplicationContextProvider;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -34,7 +34,7 @@ public class CheckUserServiceImpl implements CheckUserService {
 	@Override
 	public UserOV userInfo(String email) {
 		Integer status = statusMapper.getStatus(email);
-		UserOV userOV = ac.getBean(UserOV.class);
+		UserOV userOV = new UserOV();
 		switch (status){
 			case 1:
 				Student student = studentMapper.chickEmail(email);

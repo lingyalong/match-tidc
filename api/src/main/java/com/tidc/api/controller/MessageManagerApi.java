@@ -16,5 +16,5 @@ import org.springframework.web.bind.annotation.RequestParam;
 @FeignClient(value = "MESSAGEMANAGER",fallbackFactory = MessageManagerFallbackFactory.class)
 public interface MessageManagerApi {
 	@RequestMapping(value = "/teacher/approve",method = RequestMethod.GET)
-	UserOV teacherApprove(@RequestParam("schoolEmail") String schoolEmail, @RequestParam("teacherEmail") String teacherEmail);
+	UserOV teacherApproveMessage(@RequestParam("schoolEmail") String schoolEmail, @RequestParam("teacherEmail") String teacherEmail);
 }

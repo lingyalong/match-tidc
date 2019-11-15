@@ -14,8 +14,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 @FeignClient(name = "AUTHENTICATION",fallbackFactory = AuthenticationFallbackFactory.class)
 public interface AuthenticationApi {
 	@RequestMapping(value = "/oauth/token",method = RequestMethod.POST)
-	public Object login(@RequestParam("username") String username, @RequestParam("password") String password, @RequestParam("client_id") String client_id, @RequestParam("client_secret") String client_secret, @RequestParam("grant_type") String grant_type);
+	Object login(@RequestParam("username") String username, @RequestParam("password") String password, @RequestParam("client_id") String client_id, @RequestParam("client_secret") String client_secret, @RequestParam("grant_type") String grant_type);
 	@RequestMapping(value = "/user/info",method = RequestMethod.GET)
-	public Object getUserInfo(@RequestParam("email") String email);
+	Object getUserInfo(@RequestParam("email") String email);
 
 }

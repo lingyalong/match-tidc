@@ -41,11 +41,11 @@ spring:
     useGlobalDataSourceStat: true
     connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=500
 server:
-  port: 8201
+  port: 8301
 eureka:
   instance:
     prefer-ip-address: true #以ip来注册服务
-    instance-id: messageManager-8201
+    instance-id: messageManager-8301
   client:
     service-url:
       defaultZone: http://localhost:6001/eureka/
