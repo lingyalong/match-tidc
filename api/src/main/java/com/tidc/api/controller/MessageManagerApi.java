@@ -3,7 +3,6 @@ package com.tidc.api.controller;
 import com.tidc.api.fallback.MessageManagerFallbackFactory;
 import com.tidc.api.pojo.UserOV;
 import org.springframework.cloud.openfeign.FeignClient;
-import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;

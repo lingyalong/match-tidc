@@ -1,7 +1,7 @@
 package com.tidc.usermanager.controller;
 
+import com.tidc.api.pojo.Teacher;
 import com.tidc.api.pojo.UserOV;
-import com.tidc.usermanager.pojo.Teacher;
 import com.tidc.usermanager.service.RegisterService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;

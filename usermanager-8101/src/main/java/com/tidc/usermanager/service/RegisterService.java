@@ -1,7 +1,7 @@
 package com.tidc.usermanager.service;
 
+import com.tidc.api.pojo.Teacher;
 import com.tidc.api.pojo.UserOV;
-import com.tidc.usermanager.pojo.Teacher;
 
 /**
  * @ClassNmae RegisterService

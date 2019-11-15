@@ -13,7 +13,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 @SpringBootApplication
 @EnableFeignClients(basePackages = {"com.tidc"})//这是表示公共模块api
 @MapperScan("com.tidc.usermanager.mapper")
-@ComponentScan(basePackages = {"com.tidc.api"})
+@ComponentScan(basePackages = {"com.tidc.api","com.tidc.usermanager"})
 public class UsermanagerApplication {
 
 	public static void main(String[] args) {

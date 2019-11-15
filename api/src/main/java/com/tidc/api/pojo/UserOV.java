@@ -1,6 +1,7 @@
 package com.tidc.api.pojo;
 
 import lombok.Data;
+import lombok.NoArgsConstructor;
 import lombok.experimental.Accessors;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
@@ -20,7 +21,7 @@ public class UserOV<T> implements Serializable {
 	/**
 	 * 状态标识
 	 */
-	private Enum status;
+	private String status;
 	/**
 	 * 数据对象
 	 */

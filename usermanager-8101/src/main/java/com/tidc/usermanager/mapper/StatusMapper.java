@@ -1,6 +1,6 @@
 package com.tidc.usermanager.mapper;
 
-import com.tidc.usermanager.pojo.Status;
+import com.tidc.api.pojo.Status;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Select;
 
