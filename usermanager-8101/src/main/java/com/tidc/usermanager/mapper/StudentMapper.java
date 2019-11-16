@@ -15,6 +15,6 @@ public interface StudentMapper {
 	Student chickEmail(String email);
 	@Select("select e.name from student_role r left outer join role e on r.student_role_id=e.id where r.student_id = #{id}")
 	List<String> listPower(int id);
-	@Select("select name, email, age, idEntity, telephone, school, department, major, grade, studentNumber from student where email=#{email}")
+	@Select("select id,name, email, age, idEntity, telephone, school, department, major, grade, studentNumber from student where email=#{email}")
 	Student getStudent(String email);
 }

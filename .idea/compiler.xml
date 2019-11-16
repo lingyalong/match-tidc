@@ -9,6 +9,7 @@
         <module name="api" />
         <module name="authentication-9001" />
         <module name="consumer-8001" />
+        <module name="contestmanager-8401" />
         <module name="eureka-6001" />
         <module name="match-tidc" />
         <module name="messagemanager-8301" />
@@ -20,6 +21,7 @@
       <module name="api" target="1.5" />
       <module name="authentication-9001" target="1.8" />
       <module name="consumer-8001" target="1.8" />
+      <module name="contestmanager-8401" target="1.8" />
       <module name="eureka-6001" target="1.8" />
       <module name="match-tidc" target="1.5" />
       <module name="messagemanager-8301" target="1.8" />
@@ -32,6 +34,7 @@
       <module name="api" options="" />
       <module name="authentication-9001" options="-parameters" />
       <module name="consumer-8001" options="-parameters" />
+      <module name="contestmanager-8401" options="-parameters" />
       <module name="eureka-6001" options="-parameters" />
       <module name="match-tidc" options="" />
       <module name="messagemanager-8301" options="-parameters" />
