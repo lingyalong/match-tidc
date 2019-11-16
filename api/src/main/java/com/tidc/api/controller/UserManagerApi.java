@@ -4,10 +4,7 @@ import com.tidc.api.fallback.UserManagerFallbackFactory;
 import com.tidc.api.pojo.Teacher;
 import com.tidc.api.pojo.UserOV;
 import org.springframework.cloud.openfeign.FeignClient;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 
 /**
  * @ClassNmae UserManagerApi
@@ -20,4 +17,6 @@ public interface UserManagerApi {
 	UserOV teacherRegister(@RequestBody Teacher teacher, @RequestParam("code") String code);
 	@RequestMapping(value = "/user/info",method = RequestMethod.GET)
 	UserOV userInfo(@RequestParam("email") String email);
+	@RequestMapping(value = "/teacher/open",method = RequestMethod.PUT)
+	UserOV teacherOpen(@RequestBody  Teacher teacher);
 }

@@ -1,8 +1,6 @@
 package com.tidc.consumer8001.mapper;
 
-import com.tidc.consumer8001.pojo.Menu;
-import org.apache.ibatis.annotations.Select;
-import org.springframework.stereotype.Repository;
+import com.tidc.api.pojo.Menu;
 
 import java.util.List;
 

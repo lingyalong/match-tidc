@@ -1,6 +1,5 @@
 package com.tidc.authentication9001.mapper;
 
-import com.tidc.authentication9001.pojo.Status;
 import org.apache.ibatis.annotations.Select;
 
 /**

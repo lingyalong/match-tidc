@@ -12,7 +12,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 @SpringBootApplication
 @EnableFeignClients
 @MapperScan("com.tidc.authentication9001.mapper")
-@ComponentScan(basePackages = {"com.tidc.api"})
+@ComponentScan(basePackages = {"com.tidc.api","com.tidc.authentication9001"})
 public class Authentication9001Application {
 
 	public static void main(String[] args) {

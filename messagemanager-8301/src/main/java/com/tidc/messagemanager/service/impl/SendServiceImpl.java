@@ -4,9 +4,11 @@ import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.tidc.api.constant.CodeConstant;
 import com.tidc.api.controller.UserManagerApi;
+import com.tidc.api.pojo.Apply;
 import com.tidc.api.pojo.Message;
 import com.tidc.api.pojo.Teacher;
 import com.tidc.api.pojo.UserOV;
+import com.tidc.messagemanager.mapper.ApplyMapper;
 import com.tidc.messagemanager.mapper.MessageMapper;
 import com.tidc.messagemanager.service.SendService;
 import com.tidc.messagemanager.utiles.ApplicationContextProvider;
@@ -31,6 +33,8 @@ public class SendServiceImpl implements SendService {
 	private ObjectMapper objectMapper;
 	@Autowired
 	private ApplicationContextProvider ac;
+	@Autowired
+	private ApplyMapper applyMapper;
 	@Override
 	public UserOV teacherApproveMessage(String schoolEmail, String teacherEmail) {
 		UserOV userOV = new UserOV();
@@ -43,6 +47,17 @@ public class SendServiceImpl implements SendService {
 		message.setMessage("姓名:"+teacher.getName()+"身份证号:"+teacher.getIdEntity());
 		message.setReceiver_email(schoolEmail);
 		messageMapper.insertMessage(message);
+		//插入一条申请
+		Apply apply = ac.getBean(Apply.class);
+		//老师请求学校认证
+		apply.setApplication_type(1);
+		//受理学校
+		apply.setAcceptor_email(schoolEmail);
+		//申请人
+		apply.setProposer_email(teacherEmail);
+		apply.setIs_read(-1);
+		//插入一条请求
+		applyMapper.insertApply(apply);
 		return userOV.setStatus(CodeConstant.SUCCESS);
 	}
 }

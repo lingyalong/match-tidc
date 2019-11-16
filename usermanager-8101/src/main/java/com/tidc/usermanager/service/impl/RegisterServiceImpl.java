@@ -54,12 +54,11 @@ public class RegisterServiceImpl implements RegisterService {
 		teacher.setIs_open(0);
 		teacherMapper.teacherRegister(teacher);
 		//这里应该有一个权限添加的语句?还没有
-		//这里有个有个插入申请信息
 		Status status = ac.getBean(Status.class);
 		status.setEmail(teacher.getEmail()).setIs_status(2);
 		//插入身份信息
 		statusMapper.insertStatus(status);
-		//发送信息
+		//发送信息 和 申请
 		messageManagerApi.teacherApproveMessage(school.getEmail(),teacher.getEmail());
 		return userOV.setStatus(CodeConstant.SUCCESS).setData(teacher.getEmail());
 	}

@@ -1,12 +1,10 @@
 package com.tidc.authentication9001.config;
 
+import com.tidc.api.pojo.*;
 import com.tidc.authentication9001.mapper.SchoolMapper;
 import com.tidc.authentication9001.mapper.StatusMapper;
 import com.tidc.authentication9001.mapper.StudentMapper;
 import com.tidc.authentication9001.mapper.TeacherMapper;
-import com.tidc.authentication9001.pojo.School;
-import com.tidc.authentication9001.pojo.Student;
-import com.tidc.authentication9001.pojo.Teacher;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.authority.AuthorityUtils;

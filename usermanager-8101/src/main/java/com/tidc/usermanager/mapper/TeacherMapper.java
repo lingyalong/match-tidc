@@ -3,6 +3,7 @@ package com.tidc.usermanager.mapper;
 import com.tidc.api.pojo.Teacher;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Select;
+import org.apache.ibatis.annotations.Update;
 import sun.awt.SunHints;
 
 import java.util.List;
@@ -20,6 +21,8 @@ public interface TeacherMapper {
 	@Select("select e.name from teacher_role r left outer join role e on r.student_role_id=e.id where r.student_id = #{id}")
 	List<String> listPower(int id);
 	@Select("select name, age, email, telephone, department, idEntity, titles from teacher where email=#{email}")
-	public Teacher getTeacher(String email);
+	Teacher getTeacher(String email);
+	@Update("update teacher set is_open=#{is_open} where email=#{email}")
+	void updateTeacherOpen(Teacher teacher);
 
 }

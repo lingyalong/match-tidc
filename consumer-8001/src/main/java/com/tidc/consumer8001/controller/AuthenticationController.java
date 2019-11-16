@@ -12,15 +12,27 @@ import org.springframework.web.bind.annotation.*;
  **/
 @CrossOrigin
 @RestController
-@RequestMapping
 public class AuthenticationController {
 	@Autowired
 	private AuthenticationService authenticationService;
+
+	/**
+	 * 登录
+	 * @param username
+	 * @param password
+	 * @return
+	 */
 	@PostMapping("/login")
 	public Object login(@RequestParam("username") String username, @RequestParam("password") String password) {
 		System.out.println("stet");
 		return authenticationService.login(username,password);
 	}
+
+	/**
+	 * 使用token查看个人信息
+	 * @param access_token
+	 * @return
+	 */
 	@GetMapping("/user/info")
 	public Object getUserInfo(String access_token){
 		return authenticationService.getUserInfo(access_token);

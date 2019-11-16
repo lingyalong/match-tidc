@@ -2,38 +2,89 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="81d75dca-410b-4d6a-9666-8ef92a5d3f76" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/api/src/main/java/com/tidc/api/constant/CodeConstant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/messagemanager-8301/src/main/java/com/tidc/messagemanager/controller/CheckMessage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/messagemanager-8301/src/main/java/com/tidc/messagemanager/service/CheckService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/messagemanager-8301/src/main/java/com/tidc/messagemanager/service/impl/CheckMessageImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/main/java/com/tidc/api/pojo/Apply.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/controller/MessageManagerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/controller/UserManagerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/service/MessageManagerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/service/UserManagerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/service/impl/MessageManagerServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/service/impl/UserManagerServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/messagemanager-8301/src/main/java/com/tidc/messagemanager/controller/ApprovalController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/messagemanager-8301/src/main/java/com/tidc/messagemanager/mapper/ApplyMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/messagemanager-8301/src/main/java/com/tidc/messagemanager/service/ApprovalService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/messagemanager-8301/src/main/java/com/tidc/messagemanager/service/impl/ApprovalServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/messagemanager-8301/src/main/java/com/tidc/messagemanager/utiles/PowerUtiles.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/usermanager-8101/src/main/java/com/tidc/usermanager/controller/UpdateController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/usermanager-8101/src/main/java/com/tidc/usermanager/service/UpdateService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/usermanager-8101/src/main/java/com/tidc/usermanager/service/impl/UpdateServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_commons_2_1_4_BUILD_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_commons_2_1_4_BUILD_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_context_2_1_4_BUILD_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_context_2_1_4_BUILD_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_netflix_archaius_2_1_4_BUILD_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_netflix_archaius_2_1_4_BUILD_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_netflix_eureka_client_2_1_4_BUILD_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_netflix_eureka_client_2_1_4_BUILD_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_netflix_eureka_server_2_1_4_BUILD_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_netflix_eureka_server_2_1_4_BUILD_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_netflix_hystrix_2_1_4_BUILD_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_netflix_hystrix_2_1_4_BUILD_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_netflix_ribbon_2_1_4_BUILD_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_netflix_ribbon_2_1_4_BUILD_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_netflix_zuul_2_1_4_BUILD_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_netflix_zuul_2_1_4_BUILD_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_openfeign_core_2_1_4_BUILD_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_openfeign_core_2_1_4_BUILD_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_security_2_1_5_BUILD_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_security_2_1_5_BUILD_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_2_1_4_BUILD_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_2_1_4_BUILD_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_netflix_archaius_2_1_4_BUILD_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_netflix_archaius_2_1_4_BUILD_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_netflix_eureka_client_2_1_4_BUILD_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_netflix_eureka_client_2_1_4_BUILD_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_netflix_eureka_server_2_1_4_BUILD_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_netflix_eureka_server_2_1_4_BUILD_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_netflix_hystrix_2_1_4_BUILD_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_netflix_hystrix_2_1_4_BUILD_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_netflix_ribbon_2_1_4_BUILD_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_netflix_ribbon_2_1_4_BUILD_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_netflix_zuul_2_1_4_BUILD_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_netflix_zuul_2_1_4_BUILD_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_oauth2_2_1_5_BUILD_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_oauth2_2_1_5_BUILD_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_openfeign_2_1_4_BUILD_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_openfeign_2_1_4_BUILD_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_security_2_1_5_BUILD_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_security_2_1_5_BUILD_SNAPSHOT.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/src/main/java/com/tidc/api/controller/MessageManagerApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/tidc/api/controller/MessageManagerApi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/tidc/api/pojo/UserOV.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/tidc/api/pojo/UserOV.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/messagemanager-8301/src/main/java/com/tidc/messagemanager/MessagemanagerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/messagemanager-8301/src/main/java/com/tidc/messagemanager/MessagemanagerApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/messagemanager-8301/src/main/java/com/tidc/messagemanager/enummanager/HttpEnum.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/tidc/api/controller/UserManagerApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/tidc/api/controller/UserManagerApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/tidc/api/fallback/MessageManagerFallbackFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/tidc/api/fallback/MessageManagerFallbackFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/tidc/api/fallback/UserManagerFallbackFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/tidc/api/fallback/UserManagerFallbackFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authentication-9001/src/main/java/com/tidc/authentication9001/Authentication9001Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/authentication-9001/src/main/java/com/tidc/authentication9001/Authentication9001Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authentication-9001/src/main/java/com/tidc/authentication9001/config/AuthorizationConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/authentication-9001/src/main/java/com/tidc/authentication9001/config/AuthorizationConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authentication-9001/src/main/java/com/tidc/authentication9001/config/MyUserDetailsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/authentication-9001/src/main/java/com/tidc/authentication9001/config/MyUserDetailsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authentication-9001/src/main/java/com/tidc/authentication9001/config/SecuirtyConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/authentication-9001/src/main/java/com/tidc/authentication9001/config/SecuirtyConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authentication-9001/src/main/java/com/tidc/authentication9001/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/authentication-9001/src/main/java/com/tidc/authentication9001/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authentication-9001/src/main/java/com/tidc/authentication9001/mapper/RoleMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/authentication-9001/src/main/java/com/tidc/authentication9001/mapper/RoleMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authentication-9001/src/main/java/com/tidc/authentication9001/mapper/SchoolMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/authentication-9001/src/main/java/com/tidc/authentication9001/mapper/SchoolMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authentication-9001/src/main/java/com/tidc/authentication9001/mapper/StatusMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/authentication-9001/src/main/java/com/tidc/authentication9001/mapper/StatusMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authentication-9001/src/main/java/com/tidc/authentication9001/mapper/StudentMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/authentication-9001/src/main/java/com/tidc/authentication9001/mapper/StudentMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authentication-9001/src/main/java/com/tidc/authentication9001/mapper/TeacherMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/authentication-9001/src/main/java/com/tidc/authentication9001/mapper/TeacherMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authentication-9001/src/main/java/com/tidc/authentication9001/pojo/Menu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/authentication-9001/src/main/java/com/tidc/authentication9001/pojo/Role.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/authentication-9001/src/main/java/com/tidc/authentication9001/pojo/School.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/authentication-9001/src/main/java/com/tidc/authentication9001/pojo/Status.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/authentication-9001/src/main/java/com/tidc/authentication9001/pojo/Student.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/authentication-9001/src/main/java/com/tidc/authentication9001/pojo/Teacher.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/authentication-9001/src/main/java/com/tidc/authentication9001/pojo/UserOV.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/authentication-9001/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/authentication-9001/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/Consumer8001Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/Consumer8001Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/controller/AuthenticationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/controller/AuthenticationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/mapper/MenuMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/mapper/MenuMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/mapper/SchoolMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/mapper/SchoolMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/mapper/StudentMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/mapper/StudentMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/mapper/TeacherMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/mapper/TeacherMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/pojo/Menu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/pojo/Role.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/pojo/School.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/pojo/Status.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/pojo/Student.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/pojo/Teacher.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/service/impl/AuthenticationServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/service/impl/AuthenticationServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/utils/UserInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/utils/UserInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumer-8001/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/consumer-8001/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumer-8001/src/main/resources/mapper/MenuMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/consumer-8001/src/main/resources/mapper/MenuMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/messagemanager-8301/src/main/java/com/tidc/messagemanager/controller/CheckMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/messagemanager-8301/src/main/java/com/tidc/messagemanager/controller/CheckMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/messagemanager-8301/src/main/java/com/tidc/messagemanager/controller/SendController.java" beforeDir="false" afterPath="$PROJECT_DIR$/messagemanager-8301/src/main/java/com/tidc/messagemanager/controller/SendController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/messagemanager-8301/src/main/java/com/tidc/messagemanager/mapper/MessageMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/messagemanager-8301/src/main/java/com/tidc/messagemanager/mapper/MessageMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/messagemanager-8301/src/main/java/com/tidc/messagemanager/pojo/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/tidc/api/pojo/Message.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/messagemanager-8301/src/main/java/com/tidc/messagemanager/pojo/UserOV.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messagemanager-8301/src/main/java/com/tidc/messagemanager/service/CheckService.java" beforeDir="false" afterPath="$PROJECT_DIR$/messagemanager-8301/src/main/java/com/tidc/messagemanager/service/CheckService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/messagemanager-8301/src/main/java/com/tidc/messagemanager/service/impl/CheckMessageImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/messagemanager-8301/src/main/java/com/tidc/messagemanager/service/impl/CheckMessageImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/messagemanager-8301/src/main/java/com/tidc/messagemanager/service/impl/SendServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/messagemanager-8301/src/main/java/com/tidc/messagemanager/service/impl/SendServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/messagemanager-8301/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/messagemanager-8301/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/usermanager-8101/src/main/java/com/tidc/usermanager/UsermanagerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/usermanager-8101/src/main/java/com/tidc/usermanager/UsermanagerApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/usermanager-8101/src/main/java/com/tidc/usermanager/controller/RegisterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/usermanager-8101/src/main/java/com/tidc/usermanager/controller/RegisterController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/usermanager-8101/src/main/java/com/tidc/usermanager/enummanager/HttpEnum.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/usermanager-8101/src/main/java/com/tidc/usermanager/mapper/SchoolMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/usermanager-8101/src/main/java/com/tidc/usermanager/mapper/SchoolMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/usermanager-8101/src/main/java/com/tidc/usermanager/mapper/StatusMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/usermanager-8101/src/main/java/com/tidc/usermanager/mapper/StatusMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/usermanager-8101/src/main/java/com/tidc/usermanager/mapper/StudentMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/usermanager-8101/src/main/java/com/tidc/usermanager/mapper/StudentMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/messagemanager-8301/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/messagemanager-8301/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/usermanager-8101/src/main/java/com/tidc/usermanager/mapper/TeacherMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/usermanager-8101/src/main/java/com/tidc/usermanager/mapper/TeacherMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/usermanager-8101/src/main/java/com/tidc/usermanager/pojo/Menu.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/usermanager-8101/src/main/java/com/tidc/usermanager/pojo/Role.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/usermanager-8101/src/main/java/com/tidc/usermanager/pojo/School.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/usermanager-8101/src/main/java/com/tidc/usermanager/pojo/Status.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/usermanager-8101/src/main/java/com/tidc/usermanager/pojo/Student.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/usermanager-8101/src/main/java/com/tidc/usermanager/pojo/Teacher.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/usermanager-8101/src/main/java/com/tidc/usermanager/pojo/UserOV.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/usermanager-8101/src/main/java/com/tidc/usermanager/service/RegisterService.java" beforeDir="false" afterPath="$PROJECT_DIR$/usermanager-8101/src/main/java/com/tidc/usermanager/service/RegisterService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/usermanager-8101/src/main/java/com/tidc/usermanager/service/impl/CheckUserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/usermanager-8101/src/main/java/com/tidc/usermanager/service/impl/CheckUserServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/usermanager-8101/src/main/java/com/tidc/usermanager/service/impl/RegisterServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/usermanager-8101/src/main/java/com/tidc/usermanager/service/impl/RegisterServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/usermanager-8101/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/usermanager-8101/src/main/resources/application.yml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -56,10 +107,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/messagemanager-8301/src/main/java/com/tidc/messagemanager/mapper/MessageMapper.java">
+        <entry file="file://$PROJECT_DIR$/messagemanager-8301/src/main/java/com/tidc/messagemanager/service/impl/ApprovalServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="17" column="60" selection-start-line="17" selection-start-column="60" selection-end-line="17" selection-end-column="60" />
+            <state relative-caret-position="330">
+              <caret line="38" column="46" lean-forward="true" selection-start-line="38" selection-start-column="46" selection-end-line="38" selection-end-column="46" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -68,58 +119,81 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/usermanager-8101/src/main/java/com/tidc/usermanager/mapper/SchoolMapper.java">
+        <entry file="file://$PROJECT_DIR$/api/src/main/java/com/tidc/api/controller/UserManagerApi.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="14" column="38" selection-start-line="13" selection-start-column="4" selection-end-line="14" selection-end-column="38" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/usermanager-8101/src/main/java/com/tidc/usermanager/service/impl/CheckUserServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="467">
-              <caret line="42" column="55" selection-start-line="42" selection-start-column="55" selection-end-line="42" selection-end-column="55" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/usermanager-8101/src/main/java/com/tidc/usermanager/mapper/StudentMapper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="317">
-              <caret line="17" column="101" selection-start-line="17" selection-start-column="101" selection-end-line="17" selection-end-column="101" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/messagemanager-8301/src/main/java/com/tidc/messagemanager/controller/SendController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="530">
-              <caret line="20" column="14" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="312">
+              <caret line="20" column="35" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="35" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/messagemanager-8301/src/main/java/com/tidc/messagemanager/controller/CheckMessage.java">
+        <entry file="file://$PROJECT_DIR$/usermanager-8101/src/main/java/com/tidc/usermanager/controller/UpdateController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="506">
-              <caret line="26" column="12" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="12" />
+            <state relative-caret-position="344">
+              <caret line="22" column="43" selection-start-line="22" selection-start-column="43" selection-end-line="22" selection-end-column="43" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/messagemanager-8301/src/main/java/com/tidc/messagemanager/controller/ApprovalController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="312">
+              <caret line="29" selection-start-line="29" selection-end-line="29" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#778#779#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/../../javajdk/org/springframework/spring-web/5.1.11.RELEASE/spring-web-5.1.11.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="111" column="11" lean-forward="true" selection-start-line="111" selection-start-column="11" selection-end-line="111" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/controller/MessageManagerController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="317">
+              <caret line="68" selection-start-line="68" selection-end-line="68" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1450#1451#0" expanded="true" />
+                <element signature="e#1510#1511#0" expanded="true" />
+                <element signature="e#1758#1759#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/service/impl/MessageManagerServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="317">
+              <caret line="52" selection-start-line="52" selection-end-line="52" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1536#1537#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/usermanager-8101/src/main/java/com/tidc/usermanager/service/impl/UpdateServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="168">
+              <caret line="27" selection-start-line="27" selection-end-line="27" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -130,8 +204,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/messagemanager-8301/src/main/java/com/tidc/messagemanager/service/impl/CheckMessageImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="317">
-              <caret line="18" column="8" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
+            <state relative-caret-position="351">
+              <caret line="57" column="23" selection-start-line="57" selection-start-column="23" selection-end-line="57" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -140,36 +214,23 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/src/main/java/com/tidc/api/constant/CodeConstant.java">
+        <entry file="file://$PROJECT_DIR$/api/src/main/java/com/tidc/api/fallback/MessageManagerFallbackFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="19" column="49" selection-start-line="19" selection-start-column="49" selection-end-line="19" selection-end-column="49" />
+            <state relative-caret-position="-148">
+              <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
               <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/messagemanager-8301/src/main/java/com/tidc/messagemanager/service/CheckService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="344">
-              <caret line="13" column="69" selection-start-line="13" selection-start-column="69" selection-end-line="13" selection-end-column="69" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/usermanager-8101/src/main/java/com/tidc/usermanager/mapper/TeacherMapper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="290">
-              <caret line="21" column="76" selection-start-line="21" selection-start-column="76" selection-end-line="21" selection-end-column="76" />
-              <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#595#596#0" expanded="true" />
+                <element signature="e#617#618#0" expanded="true" />
+                <element signature="e#690#691#0" expanded="true" />
+                <element signature="e#712#713#0" expanded="true" />
+                <element signature="e#752#753#0" expanded="true" />
+                <element signature="e#774#775#0" expanded="true" />
+                <element signature="e#832#833#0" expanded="true" />
+                <element signature="e#854#855#0" expanded="true" />
+                <element signature="e#921#922#0" expanded="true" />
+                <element signature="e#943#944#0" expanded="true" />
+                <element signature="e#990#991#0" expanded="true" />
+                <element signature="e#1012#1013#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -181,6 +242,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
+        <option value="Kotlin Class" />
         <option value="Interface" />
         <option value="Class" />
       </list>
@@ -210,6 +272,12 @@
       <find>setApplicationContext</find>
       <find>api</find>
       <find>Enum</find>
+      <find>receiver_Messag</find>
+      <find>teacherApproveMessage</find>
+      <find>ClientCredentialsTokenEndpointFilter</find>
+      <find>allowFormAuthenticationForClients</find>
+      <find>/oauth/token/</find>
+      <find>receiver_email</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -218,57 +286,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/api/src/main/java/com/tidc/api/pojo/Menu.java" />
-        <option value="$PROJECT_DIR$/api/src/main/java/com/tidc/api/fallback/UserManagerApi.java" />
-        <option value="$PROJECT_DIR$/api/src/main/java/com/tidc/api/fallback/UserManagerFallbackFactory.java" />
-        <option value="$PROJECT_DIR$/messagemanager-8202/pom.xml" />
-        <option value="$PROJECT_DIR$/messagemanager-8202/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/messagemanager-8201/src/main/java/com/tidc/messagemanager/service/SendService.java" />
-        <option value="$PROJECT_DIR$/messagemanager-8201/src/main/java/com/tidc/messagemanager/enummanager/HttpEnum.java" />
-        <option value="$PROJECT_DIR$/messagemanager-8201/src/main/java/com/tidc/messagemanager/service/impl/SendServiceImpl.java" />
-        <option value="$PROJECT_DIR$/messagemanager-8201/src/main/java/com/tidc/messagemanager/controller/SendController.java" />
-        <option value="$PROJECT_DIR$/api/src/main/java/com/tidc/api/controller/SendManagerApi.java" />
-        <option value="$PROJECT_DIR$/usermanager-8101/pom.xml" />
-        <option value="$PROJECT_DIR$/authentication-9001/pom.xml" />
-        <option value="$PROJECT_DIR$/messagemanager-8201/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/messagemanager-8201/pom.xml" />
-        <option value="$PROJECT_DIR$/messagemanager/pom.xml" />
-        <option value="$PROJECT_DIR$/messagemanager-8301/pom.xml" />
-        <option value="$PROJECT_DIR$/api/src/main/java/com/tidc/api/fallback/MessageManagerFallbackFactory.java" />
-        <option value="$PROJECT_DIR$/api/src/main/java/com/tidc/api/controller/AuthenticationApi.java" />
-        <option value="$PROJECT_DIR$/api/src/main/java/com/tidc/api/pojo/IUserOV.java" />
-        <option value="$PROJECT_DIR$/messagemanager-8301/src/main/java/com/tidc/messagemanager/service/SendService.java" />
-        <option value="$PROJECT_DIR$/messagemanager-8301/src/main/java/com/tidc/messagemanager/controller/SendController.java" />
-        <option value="$PROJECT_DIR$/usermanager-8101/src/main/java/com/tidc/usermanager/service/CheckUserService.java" />
-        <option value="$PROJECT_DIR$/usermanager-8101/src/main/java/com/tidc/usermanager/controller/CheckUserController.java" />
-        <option value="$PROJECT_DIR$/api/src/main/java/com/tidc/api/controller/UserManagerApi.java" />
-        <option value="$PROJECT_DIR$/api/src/main/java/com/tidc/api/pojo/Status.java" />
-        <option value="$PROJECT_DIR$/usermanager-8101/src/main/java/com/tidc/usermanager/pojo/Status.java" />
-        <option value="$PROJECT_DIR$/messagemanager-8301/src/main/java/com/tidc/messagemanager/enummanager/HttpEnum.java" />
-        <option value="$PROJECT_DIR$/authentication-9001/src/main/java/com/tidc/authentication9001/Authentication9001Application.java" />
-        <option value="$PROJECT_DIR$/usermanager-8101/src/main/java/com/tidc/usermanager/enummanager/HttpEnum.java" />
-        <option value="$PROJECT_DIR$/api/src/main/java/com/tidc/api/pojo/Message.java" />
-        <option value="$PROJECT_DIR$/usermanager-8101/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/messagemanager-8301/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/usermanager-8101/src/main/java/com/tidc/usermanager/controller/RegisterController.java" />
-        <option value="$PROJECT_DIR$/usermanager-8101/src/main/java/com/tidc/usermanager/service/RegisterService.java" />
-        <option value="$PROJECT_DIR$/usermanager-8101/src/main/java/com/tidc/usermanager/mapper/StatusMapper.java" />
-        <option value="$PROJECT_DIR$/usermanager-8101/src/main/java/com/tidc/usermanager/mapper/StudentMapper.java" />
-        <option value="$PROJECT_DIR$/usermanager-8101/src/main/java/com/tidc/usermanager/mapper/SchoolMapper.java" />
-        <option value="$PROJECT_DIR$/usermanager-8101/src/main/java/com/tidc/usermanager/UsermanagerApplication.java" />
-        <option value="$PROJECT_DIR$/messagemanager-8301/src/main/java/com/tidc/messagemanager/MessagemanagerApplication.java" />
-        <option value="$PROJECT_DIR$/api/src/main/java/com/tidc/api/controller/MessageManagerApi.java" />
-        <option value="$PROJECT_DIR$/api/src/main/java/com/tidc/api/enummanager/HttpEnum.java" />
-        <option value="$PROJECT_DIR$/api/src/main/java/com/tidc/api/constant/CodeConstant.java" />
-        <option value="$PROJECT_DIR$/api/src/main/java/com/tidc/api/pojo/UserOV.java" />
-        <option value="$PROJECT_DIR$/usermanager-8101/src/main/java/com/tidc/usermanager/service/impl/RegisterServiceImpl.java" />
         <option value="$PROJECT_DIR$/messagemanager-8301/src/main/java/com/tidc/messagemanager/service/impl/SendServiceImpl.java" />
-        <option value="$PROJECT_DIR$/usermanager-8101/src/main/java/com/tidc/usermanager/service/impl/CheckUserServiceImpl.java" />
-        <option value="$PROJECT_DIR$/usermanager-8101/src/main/java/com/tidc/usermanager/mapper/TeacherMapper.java" />
-        <option value="$PROJECT_DIR$/messagemanager-8301/src/main/java/com/tidc/messagemanager/mapper/MessageMapper.java" />
+        <option value="$PROJECT_DIR$/api/src/main/java/com/tidc/api/utils/UserInfo.java" />
+        <option value="$PROJECT_DIR$/usermanager-8101/src/main/java/com/tidc/usermanager/controller/UptateController.java" />
+        <option value="$PROJECT_DIR$/usermanager-8101/src/main/java/com/tidc/usermanager/service/impl/UpdateServiceImpl.kt" />
         <option value="$PROJECT_DIR$/messagemanager-8301/src/main/java/com/tidc/messagemanager/service/CheckService.java" />
+        <option value="$PROJECT_DIR$/messagemanager-8301/src/main/java/com/tidc/messagemanager/service/ApprovalService.java" />
+        <option value="$PROJECT_DIR$/usermanager-8101/src/main/java/com/tidc/usermanager/service/UpdateService.java" />
+        <option value="$PROJECT_DIR$/usermanager-8101/src/main/java/com/tidc/usermanager/service/impl/UpdateServiceImpl.java" />
+        <option value="$PROJECT_DIR$/usermanager-8101/src/main/java/com/tidc/usermanager/mapper/TeacherMapper.java" />
+        <option value="$PROJECT_DIR$/api/src/main/java/com/tidc/api/fallback/UserManagerFallbackFactory.java" />
+        <option value="$PROJECT_DIR$/messagemanager-8301/src/main/java/com/tidc/messagemanager/controller/SendController.java" />
+        <option value="$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/mapper/TeacherMapper.java" />
+        <option value="$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/mapper/StudentMapper.java" />
+        <option value="$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/mapper/SchoolMapper.java" />
+        <option value="$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/service/UserManagerService.java" />
+        <option value="$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/Consumer8001Application.java" />
+        <option value="$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/controller/UserManagerController.java" />
+        <option value="$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/controller/MessageManager.java" />
         <option value="$PROJECT_DIR$/messagemanager-8301/src/main/java/com/tidc/messagemanager/service/impl/CheckMessageImpl.java" />
+        <option value="$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/controller/AuthenticationController.java" />
+        <option value="$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/service/MessageManagerService.java" />
+        <option value="$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/service/impl/MessageManagerServiceImpl.java" />
+        <option value="$PROJECT_DIR$/api/src/main/java/com/tidc/api/fallback/MessageManagerFallbackFactory.java" />
+        <option value="$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/service/impl/UserManagerServiceImpl.java" />
+        <option value="$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/mapper/MenuMapper.java" />
+        <option value="$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/service/impl/AuthenticationServiceImpl.java" />
+        <option value="$PROJECT_DIR$/consumer-8001/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/consumer-8001/src/main/resources/mapper/MenuMapper.xml" />
+        <option value="$PROJECT_DIR$/authentication-9001/src/main/java/com/tidc/authentication9001/mapper/RoleMapper.java" />
+        <option value="$PROJECT_DIR$/authentication-9001/src/main/java/com/tidc/authentication9001/mapper/StatusMapper.java" />
+        <option value="$PROJECT_DIR$/authentication-9001/src/main/java/com/tidc/authentication9001/mapper/StudentMapper.java" />
+        <option value="$PROJECT_DIR$/authentication-9001/src/main/java/com/tidc/authentication9001/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/authentication-9001/src/main/java/com/tidc/authentication9001/config/MyUserDetailsService.java" />
+        <option value="$PROJECT_DIR$/authentication-9001/src/main/java/com/tidc/authentication9001/config/SecuirtyConfig.java" />
+        <option value="$PROJECT_DIR$/authentication-9001/src/main/java/com/tidc/authentication9001/config/AuthorizationConfig.java" />
+        <option value="$PROJECT_DIR$/authentication-9001/src/main/java/com/tidc/authentication9001/Authentication9001Application.java" />
+        <option value="$PROJECT_DIR$/authentication-9001/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/authentication-9001/src/main/java/com/tidc/authentication9001/mapper/SchoolMapper.java" />
+        <option value="$PROJECT_DIR$/authentication-9001/src/main/java/com/tidc/authentication9001/mapper/TeacherMapper.java" />
+        <option value="$PROJECT_DIR$/messagemanager-8301/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/api/src/main/java/com/tidc/api/controller/MessageManagerApi.java" />
         <option value="$PROJECT_DIR$/messagemanager-8301/src/main/java/com/tidc/messagemanager/controller/CheckMessage.java" />
+        <option value="$PROJECT_DIR$/messagemanager-8301/src/main/java/com/tidc/messagemanager/mapper/ApplyMapper.java" />
+        <option value="$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/utils/UserInfo.java" />
+        <option value="$PROJECT_DIR$/messagemanager-8301/src/main/java/com/tidc/messagemanager/mapper/MessageMapper.java" />
+        <option value="$PROJECT_DIR$/messagemanager-8301/src/main/java/com/tidc/messagemanager/utiles/PowerUtiles.java" />
+        <option value="$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/controller/MessageManagerController.java" />
+        <option value="$PROJECT_DIR$/messagemanager-8301/src/main/java/com/tidc/messagemanager/controller/ApprovalController.java" />
+        <option value="$PROJECT_DIR$/messagemanager-8301/src/main/java/com/tidc/messagemanager/service/impl/ApprovalServiceImpl.java" />
+        <option value="$PROJECT_DIR$/api/src/main/java/com/tidc/api/controller/UserManagerApi.java" />
+        <option value="$PROJECT_DIR$/usermanager-8101/src/main/java/com/tidc/usermanager/controller/UpdateController.java" />
       </list>
     </option>
   </component>
@@ -321,6 +389,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -418,63 +488,153 @@
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="tidc" type="462c0819:PsiDirectoryNode" />
               <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="fallback" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="match-tidc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="match-tidc" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="tidc" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
               <item name="pojo" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="match-tidc" type="b2602c69:ProjectViewProjectNode" />
               <item name="match-tidc" type="462c0819:PsiDirectoryNode" />
-              <item name="authentication-9001" type="462c0819:PsiDirectoryNode" />
+              <item name="consumer-8001" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="match-tidc" type="b2602c69:ProjectViewProjectNode" />
               <item name="match-tidc" type="462c0819:PsiDirectoryNode" />
-              <item name="authentication-9001" type="462c0819:PsiDirectoryNode" />
+              <item name="consumer-8001" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="match-tidc" type="b2602c69:ProjectViewProjectNode" />
               <item name="match-tidc" type="462c0819:PsiDirectoryNode" />
-              <item name="authentication-9001" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="match-tidc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="match-tidc" type="462c0819:PsiDirectoryNode" />
-              <item name="authentication-9001" type="462c0819:PsiDirectoryNode" />
+              <item name="consumer-8001" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="match-tidc" type="b2602c69:ProjectViewProjectNode" />
               <item name="match-tidc" type="462c0819:PsiDirectoryNode" />
-              <item name="authentication-9001" type="462c0819:PsiDirectoryNode" />
+              <item name="consumer-8001" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="match-tidc" type="b2602c69:ProjectViewProjectNode" />
               <item name="match-tidc" type="462c0819:PsiDirectoryNode" />
-              <item name="authentication-9001" type="462c0819:PsiDirectoryNode" />
+              <item name="consumer-8001" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="tidc" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="match-tidc" type="b2602c69:ProjectViewProjectNode" />
               <item name="match-tidc" type="462c0819:PsiDirectoryNode" />
-              <item name="authentication-9001" type="462c0819:PsiDirectoryNode" />
+              <item name="consumer-8001" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="tidc" type="462c0819:PsiDirectoryNode" />
-              <item name="authentication9001" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="match-tidc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="match-tidc" type="462c0819:PsiDirectoryNode" />
+              <item name="consumer-8001" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="tidc" type="462c0819:PsiDirectoryNode" />
+              <item name="consumer8001" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="match-tidc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="match-tidc" type="462c0819:PsiDirectoryNode" />
+              <item name="consumer-8001" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="tidc" type="462c0819:PsiDirectoryNode" />
+              <item name="consumer8001" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="match-tidc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="match-tidc" type="462c0819:PsiDirectoryNode" />
+              <item name="consumer-8001" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="tidc" type="462c0819:PsiDirectoryNode" />
+              <item name="consumer8001" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="match-tidc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="match-tidc" type="462c0819:PsiDirectoryNode" />
+              <item name="consumer-8001" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="tidc" type="462c0819:PsiDirectoryNode" />
+              <item name="consumer8001" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="match-tidc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="match-tidc" type="462c0819:PsiDirectoryNode" />
+              <item name="consumer-8001" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="tidc" type="462c0819:PsiDirectoryNode" />
+              <item name="consumer8001" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="match-tidc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="match-tidc" type="462c0819:PsiDirectoryNode" />
+              <item name="consumer-8001" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="tidc" type="462c0819:PsiDirectoryNode" />
+              <item name="consumer8001" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="match-tidc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="match-tidc" type="462c0819:PsiDirectoryNode" />
+              <item name="consumer-8001" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="match-tidc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="match-tidc" type="462c0819:PsiDirectoryNode" />
+              <item name="consumer-8001" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="match-tidc" type="b2602c69:ProjectViewProjectNode" />
@@ -587,6 +747,18 @@
               <item name="messagemanager-8301" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="tidc" type="462c0819:PsiDirectoryNode" />
+              <item name="messagemanager" type="462c0819:PsiDirectoryNode" />
+              <item name="utiles" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="match-tidc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="match-tidc" type="462c0819:PsiDirectoryNode" />
+              <item name="messagemanager-8301" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -691,6 +863,19 @@
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="tidc" type="462c0819:PsiDirectoryNode" />
               <item name="usermanager" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="match-tidc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="match-tidc" type="462c0819:PsiDirectoryNode" />
+              <item name="usermanager-8101" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="tidc" type="462c0819:PsiDirectoryNode" />
+              <item name="usermanager" type="462c0819:PsiDirectoryNode" />
               <item name="utiles" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -709,8 +894,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -720,7 +903,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1573810023703" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1573892582441" />
     <property name="create.test.in.the.same.root" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/messagemanager-8301/pom.xml" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -736,11 +919,11 @@
       <recent name="com.tidc.api" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.tidc.api.utils" />
       <recent name="com.tidc.api.enummanager" />
       <recent name="com.tidc.api.pojo" />
       <recent name="com.tidc.usermanager.service.impl" />
       <recent name="com.tidc.messagemanager.enummanager" />
-      <recent name="com.tidc.usermanager.mapper" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\7\tidc\match-tidc\messagemanager\src\main\resources" />
@@ -762,7 +945,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.UsermanagerApplication">
+  <component name="RunManager" selected="Spring Boot.MessagemanagerApplication">
     <configuration name="Authentication9001Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="authentication-9001" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.tidc.authentication9001.Authentication9001Application" />
@@ -844,18 +1027,28 @@
       <workItem from="1573438996696" duration="17748000" />
       <workItem from="1573546665180" duration="21609000" />
       <workItem from="1573697370056" duration="23603000" />
-      <workItem from="1573739122575" duration="11898000" />
+      <workItem from="1573739122575" duration="13392000" />
+      <workItem from="1573816786520" duration="19461000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="74858000" />
+    <option name="totallyTimeSpent" value="95813000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2553305" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25799572" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -865,13 +1058,13 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3383948" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3383948" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3991323" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.329718" />
       <window_info anchor="bottom" id="Duplicate detector" order="7" weight="0.32936078" />
-      <window_info anchor="bottom" id="Spring" order="8" weight="0.32936078" />
+      <window_info anchor="bottom" id="Spring" order="8" weight="0.3286334" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.3286334" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
@@ -937,7 +1130,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/authentication-9001/src/main/java/com/tidc/authentication9001/config/MyUserDetailsService.java</url>
-          <line>55</line>
+          <line>53</line>
           <properties />
           <option name="timeStamp" value="2" />
         </line-breakpoint>
@@ -955,7 +1148,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/controller/AuthenticationController.java</url>
-          <line>25</line>
+          <line>37</line>
           <properties />
           <option name="timeStamp" value="5" />
         </line-breakpoint>
@@ -967,381 +1160,252 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/messagemanager-8301/src/main/java/com/tidc/messagemanager/service/impl/SendServiceImpl.java</url>
-          <line>37</line>
+          <line>41</line>
           <properties />
           <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/usermanager-8101/src/main/java/com/tidc/usermanager/service/impl/RegisterServiceImpl.java</url>
+          <line>61</line>
+          <properties />
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/service/impl/AuthenticationServiceImpl.java</url>
+          <line>23</line>
+          <properties />
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/messagemanager-8301/src/main/java/com/tidc/messagemanager/service/impl/CheckMessageImpl.java</url>
+          <line>34</line>
+          <properties />
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/service/impl/MessageManagerServiceImpl.java</url>
+          <line>27</line>
+          <properties />
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/controller/MessageManagerController.java</url>
+          <line>68</line>
+          <properties />
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/messagemanager-8301/src/main/java/com/tidc/messagemanager/service/impl/ApprovalServiceImpl.java</url>
+          <line>29</line>
+          <properties />
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/service/impl/MessageManagerServiceImpl.java</url>
+          <line>52</line>
+          <properties />
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/usermanager-8101/src/main/java/com/tidc/usermanager/service/impl/UpdateServiceImpl.java</url>
+          <line>27</line>
+          <properties />
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/mapper/MenuMapper.java</url>
+          <line>13</line>
+          <properties class="com.tidc.consumer8001.mapper.MenuMapper" method="getAllMenu">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="23" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$PROJECT_DIR$/../../javajdk/org/springframework/spring-webmvc/5.1.11.RELEASE/spring-webmvc-5.1.11.RELEASE.jar!/org/springframework/web/servlet/mvc/method/AbstractHandlerMethodAdapter.class">
+    <entry file="file://$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/mapper/MenuMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="39" selection-start-line="39" selection-end-line="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../javajdk/org/springframework/spring-webmvc/5.1.11.RELEASE/spring-webmvc-5.1.11.RELEASE.jar!/org/springframework/web/servlet/DispatcherServlet.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="437" selection-start-line="437" selection-end-line="437" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../javajdk/org/springframework/spring-webmvc/5.1.11.RELEASE/spring-webmvc-5.1.11.RELEASE.jar!/org/springframework/web/servlet/FrameworkServlet.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="439" selection-start-line="439" selection-end-line="439" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../javajdk/org/apache/tomcat/embed/tomcat-embed-websocket/9.0.27/tomcat-embed-websocket-9.0.27.jar!/org/apache/tomcat/websocket/server/WsFilter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="48" selection-start-line="48" selection-end-line="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../javajdk/org/springframework/spring-web/5.1.11.RELEASE/spring-web-5.1.11.RELEASE.jar!/org/springframework/web/filter/RequestContextFilter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="34" column="19" selection-start-line="34" selection-start-column="19" selection-end-line="34" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../javajdk/org/apache/tomcat/embed/tomcat-embed-core/9.0.27/tomcat-embed-core-9.0.27.jar!/org/apache/catalina/core/ApplicationFilterChain.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="74" selection-start-line="74" selection-end-line="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../javajdk/org/springframework/spring-web/5.1.11.RELEASE/spring-web-5.1.11.RELEASE.jar!/org/springframework/web/filter/FormContentFilter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="59" selection-start-line="59" selection-end-line="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../javajdk/org/springframework/spring-web/5.1.11.RELEASE/spring-web-5.1.11.RELEASE.jar!/org/springframework/web/filter/OncePerRequestFilter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="43" selection-start-line="43" selection-end-line="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../javajdk/org/springframework/spring-web/5.1.11.RELEASE/spring-web-5.1.11.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="107" selection-start-line="107" selection-end-line="107" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/main/java/com/tidc/api/controller/AuthenticationApi.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/messagemanager-8301/src/main/java/com/tidc/messagemanager/utiles/ApplicationContextProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
+        <state relative-caret-position="351">
+          <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
           <folding>
-            <element signature="e#902#903#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/main/java/com/tidc/api/pojo/IUserOV.java">
+    <entry file="file://$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/Consumer8001Application.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="621">
-          <caret line="23" column="11" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="11" />
+        <state relative-caret-position="405">
+          <caret line="31" column="20" lean-forward="true" selection-start-line="31" selection-start-column="20" selection-end-line="31" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/main/java/com/tidc/api/pojo/Student.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="18" column="44" lean-forward="true" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/main/java/com/tidc/api/pojo/Status.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="18" column="43" lean-forward="true" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/usermanager-8101/src/main/java/com/tidc/usermanager/pojo/Status.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="17" column="12" lean-forward="true" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/messagemanager-8301/src/main/java/com/tidc/messagemanager/enummanager/HttpEnum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="9" column="45" lean-forward="true" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/authentication-9001/src/main/java/com/tidc/authentication9001/Authentication9001Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="21" column="32" lean-forward="true" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/usermanager-8101/src/main/java/com/tidc/usermanager/enummanager/HttpEnum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/main/java/com/tidc/api/pojo/Message.java">
+    <entry file="file://$PROJECT_DIR$/consumer-8001/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/messagemanager-8301/src/main/resources/application.yml">
+    <entry file="file://$PROJECT_DIR$/consumer-8001/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="27">
           <caret line="1" column="36" selection-start-line="1" selection-start-column="36" selection-end-line="1" selection-end-column="36" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/main/java/com/tidc/api/pojo/Menu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/main/java/com/tidc/api/pojo/Role.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/usermanager-8101/src/main/java/com/tidc/usermanager/service/RegisterService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="16" column="33" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/usermanager-8101/src/main/java/com/tidc/usermanager/mapper/StatusMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="353">
-          <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/messagemanager-8301/src/main/java/com/tidc/messagemanager/service/SendService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="11" selection-start-line="11" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/usermanager-8101/src/main/java/com/tidc/usermanager/controller/RegisterController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="17" column="35" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/usermanager-8101/src/main/java/com/tidc/usermanager/UsermanagerApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="15" column="70" lean-forward="true" selection-start-line="15" selection-start-column="70" selection-end-line="15" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/messagemanager-8301/src/main/java/com/tidc/messagemanager/MessagemanagerApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="11" column="70" selection-start-line="11" selection-start-column="70" selection-end-line="11" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../javajdk/org/projectlombok/lombok/1.18.10/lombok-1.18.10.jar!/lombok/experimental/Accessors.class">
+    <entry file="file://$PROJECT_DIR$/consumer-8001/src/main/resources/mapper/MenuMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
-          <caret line="12" column="6" lean-forward="true" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+          <caret line="9" column="57" selection-start-line="9" selection-start-column="57" selection-end-line="9" selection-end-column="57" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/main/java/com/tidc/api/controller/MessageManagerApi.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/usermanager-8101/target/classes/com/tidc/usermanager/mapper/RoleMapper.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-          <folding>
-            <element signature="e#0#176#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/main/java/com/tidc/api/controller/UserManagerApi.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="21" column="7" lean-forward="true" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/main/java/com/tidc/api/enummanager/HttpEnum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/main/java/com/tidc/api/pojo/School.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="59">
-          <caret line="13" selection-start-line="13" selection-end-line="17" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/main/java/com/tidc/api/pojo/UserOV.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="23" column="18" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/usermanager-8101/src/main/java/com/tidc/usermanager/service/impl/RegisterServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="42" column="68" selection-start-line="42" selection-start-column="68" selection-end-line="42" selection-end-column="68" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/usermanager-8101/src/main/java/com/tidc/usermanager/controller/CheckUserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="21" column="37" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/usermanager-8101/src/main/java/com/tidc/usermanager/service/CheckUserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/messagemanager-8301/src/main/java/com/tidc/messagemanager/service/impl/SendServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="413">
-          <caret line="37" selection-start-line="37" selection-end-line="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/usermanager-8101/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-748">
-          <caret line="8" column="8" lean-forward="true" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/usermanager-8101/src/main/java/com/tidc/usermanager/mapper/RoleMapper.java">
+    <entry file="file://$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/controller/AuthenticationController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/usermanager-8101/src/main/java/com/tidc/usermanager/service/impl/CheckUserServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/authentication-9001/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="467">
-          <caret line="42" column="55" selection-start-line="42" selection-start-column="55" selection-end-line="42" selection-end-column="55" />
+        <state relative-caret-position="54">
+          <caret line="2" column="39" selection-start-line="2" selection-start-column="39" selection-end-line="2" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/authentication-9001/src/main/java/com/tidc/authentication9001/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-594">
+          <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/authentication-9001/src/main/java/com/tidc/authentication9001/config/LLGAuthenticationEntryPoint.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#3471#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/authentication-9001/src/main/java/com/tidc/authentication9001/config/DruidConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="19" selection-start-line="19" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/authentication-9001/src/main/java/com/tidc/authentication9001/config/AuthorizationConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1566">
+          <caret line="73" column="26" lean-forward="true" selection-start-line="73" selection-start-column="26" selection-end-line="73" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/authentication-9001/src/main/java/com/tidc/authentication9001/config/SecuirtyConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1161">
+          <caret line="55" column="40" selection-start-line="55" selection-start-column="40" selection-end-line="55" selection-end-column="40" />
+          <folding>
+            <element signature="e#1404#1405#0" expanded="true" />
+            <element signature="e#1444#1445#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/authentication-9001/src/main/java/com/tidc/authentication9001/Authentication9001Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="14" column="74" selection-start-line="14" selection-start-column="74" selection-end-line="14" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/authentication-9001/src/main/java/com/tidc/authentication9001/config/RedisConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/authentication-9001/src/main/java/com/tidc/authentication9001/mapper/RoleMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../javajdk/org/springframework/security/oauth/spring-security-oauth2/2.3.4.RELEASE/spring-security-oauth2-2.3.4.RELEASE.jar!/org/springframework/security/oauth2/provider/client/ClientCredentialsTokenEndpointFilter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="68" selection-start-line="68" selection-end-line="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../javajdk/org/springframework/security/spring-security-core/5.1.7.RELEASE/spring-security-core-5.1.7.RELEASE.jar!/org/springframework/security/authentication/dao/DaoAuthenticationProvider.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="63" selection-start-line="63" selection-end-line="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/authentication-9001/src/main/java/com/tidc/authentication9001/config/MyUserDetailsService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="67" column="51" lean-forward="true" selection-start-line="67" selection-start-column="51" selection-end-line="67" selection-end-column="51" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/usermanager-8101/src/main/java/com/tidc/usermanager/mapper/TeacherMapper.java">
+    <entry file="file://$PROJECT_DIR$/authentication-9001/src/main/java/com/tidc/authentication9001/mapper/SchoolMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="21" column="76" selection-start-line="21" selection-start-column="76" selection-end-line="21" selection-end-column="76" />
+        <state relative-caret-position="209">
+          <caret line="13" column="23" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/usermanager-8101/src/main/java/com/tidc/usermanager/mapper/StudentMapper.java">
+    <entry file="file://$PROJECT_DIR$/authentication-9001/src/main/java/com/tidc/authentication9001/mapper/TeacherMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="17" column="101" selection-start-line="17" selection-start-column="101" selection-end-line="17" selection-end-column="101" />
+        <state relative-caret-position="324">
+          <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/usermanager-8101/src/main/java/com/tidc/usermanager/mapper/SchoolMapper.java">
+    <entry file="file://$PROJECT_DIR$/authentication-9001/src/main/java/com/tidc/authentication9001/mapper/StatusMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="14" column="38" selection-start-line="13" selection-start-column="4" selection-end-line="14" selection-end-column="38" />
+        <state relative-caret-position="243">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/authentication-9001/src/main/java/com/tidc/authentication9001/mapper/StudentMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="17" column="77" selection-start-line="17" selection-start-column="67" selection-end-line="17" selection-end-column="77" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/messagemanager-8301/src/main/java/com/tidc/messagemanager/controller/SendController.java">
+    <entry file="file://$PROJECT_DIR$/authentication-9001/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="530">
-          <caret line="20" column="14" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state>
+          <caret selection-end-line="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/messagemanager-8301/src/main/java/com/tidc/messagemanager/mapper/MessageMapper.java">
+    <entry file="file://$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/service/impl/AuthenticationServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="17" column="60" selection-start-line="17" selection-start-column="60" selection-end-line="17" selection-end-column="60" />
+        <state relative-caret-position="399">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1350,28 +1414,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/messagemanager-8301/src/main/java/com/tidc/messagemanager/service/CheckService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="13" column="69" selection-start-line="13" selection-start-column="69" selection-end-line="13" selection-end-column="69" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/main/java/com/tidc/api/constant/CodeConstant.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="19" column="49" selection-start-line="19" selection-start-column="49" selection-end-line="19" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/messagemanager-8301/src/main/java/com/tidc/messagemanager/service/impl/CheckMessageImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="18" column="8" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
+        <state relative-caret-position="260">
+          <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1380,8 +1424,255 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/messagemanager-8301/src/main/java/com/tidc/messagemanager/controller/CheckMessage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="26" column="12" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="12" />
+        <state relative-caret-position="373">
+          <caret line="56" column="55" selection-start-line="56" selection-start-column="55" selection-end-line="56" selection-end-column="55" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#669#670#0" expanded="true" />
+            <element signature="e#724#725#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/controller/UserManagerController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="341">
+          <caret line="22" selection-start-line="22" selection-end-line="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/mapper/SchoolMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="314">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/utils/UserInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/messagemanager-8301/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/messagemanager-8301/src/main/java/com/tidc/messagemanager/utiles/ApplicationContextProvider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="13" selection-start-line="13" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/messagemanager-8301/src/main/java/com/tidc/messagemanager/mapper/MessageMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="344">
+          <caret line="25" column="11" selection-start-line="25" selection-start-column="11" selection-end-line="25" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/messagemanager-8301/src/main/java/com/tidc/messagemanager/utiles/PowerUtiles.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/mapper/TeacherMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="15" column="25" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/service/impl/UserManagerServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="287">
+          <caret line="15" column="65" selection-start-line="15" selection-start-column="65" selection-end-line="15" selection-end-column="65" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/com/tidc/api/pojo/Apply.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="26" column="27" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/service/MessageManagerService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="20" column="11" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/com/tidc/api/controller/MessageManagerApi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="59" column="44" selection-start-line="59" selection-start-column="33" selection-end-line="59" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/messagemanager-8301/src/main/java/com/tidc/messagemanager/mapper/ApplyMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="20" column="18" lean-forward="true" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/usermanager-8101/src/main/java/com/tidc/usermanager/service/impl/RegisterServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/com/tidc/api/constant/CodeConstant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/com/tidc/api/fallback/MessageManagerFallbackFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-148">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <folding>
+            <element signature="e#595#596#0" expanded="true" />
+            <element signature="e#617#618#0" expanded="true" />
+            <element signature="e#690#691#0" expanded="true" />
+            <element signature="e#712#713#0" expanded="true" />
+            <element signature="e#752#753#0" expanded="true" />
+            <element signature="e#774#775#0" expanded="true" />
+            <element signature="e#832#833#0" expanded="true" />
+            <element signature="e#854#855#0" expanded="true" />
+            <element signature="e#921#922#0" expanded="true" />
+            <element signature="e#943#944#0" expanded="true" />
+            <element signature="e#990#991#0" expanded="true" />
+            <element signature="e#1012#1013#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/controller/MessageManagerController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="317">
+          <caret line="68" selection-start-line="68" selection-end-line="68" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1450#1451#0" expanded="true" />
+            <element signature="e#1510#1511#0" expanded="true" />
+            <element signature="e#1758#1759#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/service/impl/MessageManagerServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="317">
+          <caret line="52" selection-start-line="52" selection-end-line="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1536#1537#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/messagemanager-8301/src/main/java/com/tidc/messagemanager/controller/ApprovalController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#778#779#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../javajdk/org/springframework/spring-web/5.1.11.RELEASE/spring-web-5.1.11.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="111" column="11" lean-forward="true" selection-start-line="111" selection-start-column="11" selection-end-line="111" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/messagemanager-8301/src/main/java/com/tidc/messagemanager/service/impl/CheckMessageImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="57" column="23" selection-start-line="57" selection-start-column="23" selection-end-line="57" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/usermanager-8101/src/main/java/com/tidc/usermanager/service/impl/UpdateServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/messagemanager-8301/src/main/java/com/tidc/messagemanager/service/impl/ApprovalServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="38" column="46" lean-forward="true" selection-start-line="38" selection-start-column="46" selection-end-line="38" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/com/tidc/api/controller/UserManagerApi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="20" column="35" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/usermanager-8101/src/main/java/com/tidc/usermanager/controller/UpdateController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="344">
+          <caret line="22" column="43" selection-start-line="22" selection-start-column="43" selection-end-line="22" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

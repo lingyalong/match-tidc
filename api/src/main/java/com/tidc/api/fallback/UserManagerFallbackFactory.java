@@ -20,6 +20,14 @@ public class UserManagerFallbackFactory implements FallbackFactory<UserManagerAp
 			public UserOV userInfo(String email) {
 				return null;
 			}
+
+			public UserOV teacherOpen(Teacher teacher) {
+				return null;
+			}
+
+			public UserOV teacherOpen(String email) {
+				return null;
+			}
 		};
 	}
 }

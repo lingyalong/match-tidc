@@ -4,10 +4,6 @@ import com.tidc.api.controller.AuthenticationApi;
 import com.tidc.consumer8001.service.AuthenticationService;
 import com.tidc.consumer8001.utils.UserInfo;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.core.token.TokenService;
-import org.springframework.security.oauth2.common.DefaultOAuth2AccessToken;
-import org.springframework.security.oauth2.provider.OAuth2Authentication;
-import org.springframework.security.oauth2.provider.token.ResourceServerTokenServices;
 import org.springframework.stereotype.Service;
 
 import java.util.LinkedHashMap;

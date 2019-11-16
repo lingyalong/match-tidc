@@ -18,5 +18,4 @@ public class UserInfo {
 		OAuth2Authentication oAuth2Authentication = tokenServices.loadAuthentication(token);
 		return (String) oAuth2Authentication.getUserAuthentication().getPrincipal();
 	}
-
 }

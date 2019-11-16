@@ -67,6 +67,7 @@ public class AuthorizationConfig extends AuthorizationServerConfigurerAdapter {
 				.tokenServices(tokenServices())
 				.tokenStore(tokenStore())
 				.authenticationManager(authenticationManager);
+		System.out.println("设置好过滤器链");
 	}
 	@Override
 	public void configure(AuthorizationServerSecurityConfigurer oauthServer) throws Exception {

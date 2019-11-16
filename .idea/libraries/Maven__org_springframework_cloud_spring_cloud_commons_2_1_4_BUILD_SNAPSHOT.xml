@@ -1,13 +1,13 @@
 <component name="libraryTable">
   <library name="Maven: org.springframework.cloud:spring-cloud-commons:2.1.4.BUILD-SNAPSHOT">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/../../javajdk/org/springframework/cloud/spring-cloud-commons/2.1.4.BUILD-SNAPSHOT/spring-cloud-commons-2.1.4.BUILD-20191114.063055-524.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../javajdk/org/springframework/cloud/spring-cloud-commons/2.1.4.BUILD-SNAPSHOT/spring-cloud-commons-2.1.4.BUILD-20191116.033058-538.jar!/" />
     </CLASSES>
     <JAVADOC>
-      <root url="jar://$PROJECT_DIR$/../../javajdk/org/springframework/cloud/spring-cloud-commons/2.1.4.BUILD-SNAPSHOT/spring-cloud-commons-2.1.4.BUILD-20191114.063055-524-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../javajdk/org/springframework/cloud/spring-cloud-commons/2.1.4.BUILD-SNAPSHOT/spring-cloud-commons-2.1.4.BUILD-20191116.033058-538-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
-      <root url="jar://$PROJECT_DIR$/../../javajdk/org/springframework/cloud/spring-cloud-commons/2.1.4.BUILD-SNAPSHOT/spring-cloud-commons-2.1.4.BUILD-20191114.063055-524-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../javajdk/org/springframework/cloud/spring-cloud-commons/2.1.4.BUILD-SNAPSHOT/spring-cloud-commons-2.1.4.BUILD-20191116.033058-538-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

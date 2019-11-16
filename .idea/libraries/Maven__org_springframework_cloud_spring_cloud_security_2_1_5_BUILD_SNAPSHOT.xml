@@ -1,13 +1,13 @@
 <component name="libraryTable">
   <library name="Maven: org.springframework.cloud:spring-cloud-security:2.1.5.BUILD-SNAPSHOT">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/../../javajdk/org/springframework/cloud/spring-cloud-security/2.1.5.BUILD-SNAPSHOT/spring-cloud-security-2.1.5.BUILD-20191114.045055-525.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../javajdk/org/springframework/cloud/spring-cloud-security/2.1.5.BUILD-SNAPSHOT/spring-cloud-security-2.1.5.BUILD-20191116.045101-541.jar!/" />
     </CLASSES>
     <JAVADOC>
-      <root url="jar://$PROJECT_DIR$/../../javajdk/org/springframework/cloud/spring-cloud-security/2.1.5.BUILD-SNAPSHOT/spring-cloud-security-2.1.5.BUILD-20191114.045055-525-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../javajdk/org/springframework/cloud/spring-cloud-security/2.1.5.BUILD-SNAPSHOT/spring-cloud-security-2.1.5.BUILD-20191116.045101-541-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
-      <root url="jar://$PROJECT_DIR$/../../javajdk/org/springframework/cloud/spring-cloud-security/2.1.5.BUILD-SNAPSHOT/spring-cloud-security-2.1.5.BUILD-20191114.045055-525-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../javajdk/org/springframework/cloud/spring-cloud-security/2.1.5.BUILD-SNAPSHOT/spring-cloud-security-2.1.5.BUILD-20191116.045101-541-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

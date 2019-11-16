@@ -40,7 +40,7 @@ public class SecuirtyConfig extends WebSecurityConfigurerAdapter {
 		http
 				.authorizeRequests()
 				.antMatchers("/oauth/check_token","/user").permitAll();
-		http.csrf().ignoringAntMatchers("/oauth/token/");
+		http.csrf().ignoringAntMatchers("/oauth/token");
 		http.formLogin().usernameParameter("username").passwordParameter("password");
 	}
 
@@ -53,6 +53,7 @@ public class SecuirtyConfig extends WebSecurityConfigurerAdapter {
 	@Lazy
 	@Override
 	public AuthenticationManager authenticationManagerBean() throws Exception {
+		System.out.println("容器中加入过滤器链");
 		return super.authenticationManagerBean();
 	}
 }

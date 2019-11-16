@@ -3,6 +3,8 @@ package com.tidc.messagemanager.mapper;
 import com.tidc.api.pojo.Message;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Select;
+import org.apache.ibatis.annotations.Update;
+import org.springframework.web.bind.annotation.GetMapping;
 
 import java.util.List;
 
@@ -13,7 +15,13 @@ import java.util.List;
  **/
 public interface MessageMapper {
 	@Insert("insert into message(receiver_email,message,head,is_read) values(#{receiver_email},#{message},#{head},#{is_read})")
-	public void insertMessage(Message message);
+	void insertMessage(Message message);
 	@Select("select * from message where receiver_email=#{receiver}")
-	public List<Message> listMessage(String receiver_email);
+	List<Message> listMessage(String receiver_email);
+	@Update("update message set is_read=1 where id=#{id}")
+	void updateMessageRead(int id);
+	@Update("update message set is_read=1 where receiver_email=#{value}")
+	void updateMessageReadAll(String email);
+	@Select("select id from message where receiver_email=#{receiver_emial} and id=#{id}")
+	Integer getMessagePower(Message message);
 }

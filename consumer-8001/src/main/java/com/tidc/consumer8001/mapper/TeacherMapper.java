@@ -1,5 +1,5 @@
 package com.tidc.consumer8001.mapper;
-import com.tidc.consumer8001.pojo.Teacher;
+import com.tidc.api.pojo.Teacher;
 import org.apache.ibatis.annotations.Select;
 
 import java.util.List;

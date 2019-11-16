@@ -1,6 +1,5 @@
 package com.tidc.authentication9001.mapper;
-import com.tidc.authentication9001.pojo.Student;
-import com.tidc.authentication9001.pojo.Teacher;
+import com.tidc.api.pojo.Teacher;
 import org.apache.ibatis.annotations.Select;
 
 import java.util.List;
@@ -11,11 +10,11 @@ import java.util.List;
  * @Author 冯涛滔
  **/
 public interface TeacherMapper {
-	@Select("select email,password from teacher where email=#{email}")
-	public Teacher chickEmail(String email);
-	@Select("select e.name from teacher_role r left outer join role e on r.student_role_id=e.id where r.student_id = #{id}")
-	public List<String> listPower(int id);
-	@Select("select name, age, email, telephone, deparment idEntity titles from teacher where email=#{email}")
-	public Teacher getTeacher(String email);
+	@Select("select id,email,password from teacher where email=#{email}")
+	Teacher chickEmail(String email);
+	@Select("select e.name from teacher_role r left outer join role e on r.teacher_role_id=e.id where r.teacher_id = #{id}")
+	List<String> listPower(int id);
+	@Select("select name, age, email, telephone, department idEntity titles from teacher where email=#{email}")
+	Teacher getTeacher(String email);
 
 }
