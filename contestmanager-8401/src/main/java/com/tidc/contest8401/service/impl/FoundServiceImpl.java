@@ -22,7 +22,7 @@ import java.util.LinkedHashMap;
  * @Author 冯涛滔
  **/
 @Service
-public class foundServiceImpl implements FoundService {
+public class FoundServiceImpl implements FoundService {
 	@Autowired
 	private UserManagerApi userManagerApi;
 	@Autowired

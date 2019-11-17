@@ -57,5 +57,13 @@ public interface MessageManagerApi {
 	 * @return
 	 */
 	@RequestMapping(value = "/apply/read",method = RequestMethod.PUT)
-	public UserOV approvalApply(@RequestBody Apply apply);
+	UserOV approvalApply(@RequestBody Apply apply);
+
+	/**
+	 * 任意发送一条信息
+	 * @param message
+	 * @return
+	 */
+	@RequestMapping(value = "/message",method =RequestMethod.POST)
+	UserOV sendMessage(@RequestBody Message message);
 }

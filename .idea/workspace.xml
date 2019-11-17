@@ -2,21 +2,54 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="81d75dca-410b-4d6a-9666-8ef92a5d3f76" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/api/src/main/java/com/tidc/api/pojo/Contest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/src/main/java/com/tidc/utils/CheckObjectIsNullUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/contestmanager-8401/src/main/java/com/tidc/contest8401/controller/FoundController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/contestmanager-8401/src/main/java/com/tidc/contest8401/mapper/ContestMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/contestmanager-8401/src/main/java/com/tidc/contest8401/service/FoundService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/contestmanager-8401/src/main/java/com/tidc/contest8401/service/impl/foundServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/contestmanager-8401/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_amqp_spring_amqp_2_2_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_amqp_spring_rabbit_2_2_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/main/java/com/tidc/api/pojo/Power.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/contestmanager-8401/src/main/java/com/tidc/contest8401/controller/AddController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/contestmanager-8401/src/main/java/com/tidc/contest8401/mapper/PowerMapeer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/contestmanager-8401/src/main/java/com/tidc/contest8401/service/AddService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/contestmanager-8401/src/main/java/com/tidc/contest8401/service/impl/AddServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rabbitmq-6002/src/main/java/com/tidc/rabbitmq/config/RabbitConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rabbitmq-6002/src/main/java/com/tidc/rabbitmq/consumer/MessageConsumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rabbitmq-6002/src/main/java/com/tidc/rabbitmq/controller/SendController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rabbitmq-6002/src/main/java/com/tidc/rabbitmq/service/SendService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rabbitmq-6002/src/main/java/com/tidc/rabbitmq/service/impl/SendServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rabbitmq-6002/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_1_11_BUILD_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_1_11_BUILD_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_1_11_BUILD_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_1_11_BUILD_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_1_11_BUILD_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_1_11_BUILD_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_aop_2_1_11_BUILD_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_aop_2_1_11_BUILD_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_1_11_BUILD_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_1_11_BUILD_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_1_11_BUILD_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_1_11_BUILD_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_2_1_11_BUILD_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_2_1_11_BUILD_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_2_1_11_BUILD_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_2_1_11_BUILD_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_1_11_BUILD_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_1_11_BUILD_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_1_11_BUILD_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_1_11_BUILD_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_2_1_11_BUILD_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_2_1_11_BUILD_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_commons_2_1_4_BUILD_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_commons_2_1_4_BUILD_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_context_2_1_4_BUILD_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_context_2_1_4_BUILD_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_netflix_archaius_2_1_4_BUILD_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_netflix_archaius_2_1_4_BUILD_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_netflix_eureka_client_2_1_4_BUILD_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_netflix_eureka_client_2_1_4_BUILD_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_netflix_hystrix_2_1_4_BUILD_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_netflix_hystrix_2_1_4_BUILD_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_netflix_ribbon_2_1_4_BUILD_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_netflix_ribbon_2_1_4_BUILD_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_openfeign_core_2_1_4_BUILD_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_openfeign_core_2_1_4_BUILD_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_2_1_4_BUILD_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_2_1_4_BUILD_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_netflix_archaius_2_1_4_BUILD_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_netflix_archaius_2_1_4_BUILD_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_netflix_eureka_client_2_1_4_BUILD_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_netflix_eureka_client_2_1_4_BUILD_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_netflix_ribbon_2_1_4_BUILD_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_netflix_ribbon_2_1_4_BUILD_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_openfeign_2_1_4_BUILD_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_openfeign_2_1_4_BUILD_SNAPSHOT.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/usermanager-8101/src/main/java/com/tidc/usermanager/mapper/SchoolMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/usermanager-8101/src/main/java/com/tidc/usermanager/mapper/SchoolMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/usermanager-8101/src/main/java/com/tidc/usermanager/mapper/StudentMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/usermanager-8101/src/main/java/com/tidc/usermanager/mapper/StudentMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/usermanager-8101/src/main/java/com/tidc/usermanager/mapper/TeacherMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/usermanager-8101/src/main/java/com/tidc/usermanager/mapper/TeacherMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/tidc/api/controller/ContestManagerApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/tidc/api/controller/ContestManagerApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/tidc/api/controller/MessageManagerApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/tidc/api/controller/MessageManagerApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contestmanager-8401/src/main/java/com/tidc/contest8401/controller/FoundController.java" beforeDir="false" afterPath="$PROJECT_DIR$/contestmanager-8401/src/main/java/com/tidc/contest8401/controller/FoundController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contestmanager-8401/src/main/java/com/tidc/contest8401/service/impl/foundServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/contestmanager-8401/src/main/java/com/tidc/contest8401/service/impl/FoundServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/messagemanager-8301/src/main/java/com/tidc/messagemanager/controller/SendController.java" beforeDir="false" afterPath="$PROJECT_DIR$/messagemanager-8301/src/main/java/com/tidc/messagemanager/controller/SendController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/messagemanager-8301/src/main/java/com/tidc/messagemanager/service/SendService.java" beforeDir="false" afterPath="$PROJECT_DIR$/messagemanager-8301/src/main/java/com/tidc/messagemanager/service/SendService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/messagemanager-8301/src/main/java/com/tidc/messagemanager/service/impl/SendServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/messagemanager-8301/src/main/java/com/tidc/messagemanager/service/impl/SendServiceImpl.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -31,6 +64,7 @@
     <ignored path="$PROJECT_DIR$/messagemanager-8202/target/" />
     <ignored path="$PROJECT_DIR$/messagemanager-8301/target/" />
     <ignored path="$PROJECT_DIR$/contestmanager-8401/target/" />
+    <ignored path="$PROJECT_DIR$/rabbitmq-6002/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,34 +74,56 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/contestmanager-8401/src/main/java/com/tidc/contest8401/service/FoundService.java">
+        <entry file="file://$PROJECT_DIR$/rabbitmq-6002/src/main/resources/application.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="11" column="59" selection-start-line="11" selection-start-column="59" selection-end-line="11" selection-end-column="59" />
+            <state relative-caret-position="729">
+              <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rabbitmq-6002/src/main/java/com/tidc/rabbitmq/controller/SendController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="515">
+              <caret line="28" column="41" selection-start-line="28" selection-start-column="41" selection-end-line="28" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#840#841#0" expanded="true" />
+                <element signature="e#880#881#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/contestmanager-8401/src/main/java/com/tidc/contest8401/service/impl/foundServiceImpl.java">
+        <entry file="file://$PROJECT_DIR$/rabbitmq-6002/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="353">
-              <caret line="33" selection-start-line="33" selection-end-line="33" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="620">
+              <caret line="63" column="21" selection-start-line="63" selection-start-column="21" selection-end-line="63" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/api/src/main/java/com/tidc/utils/CheckObjectIsNullUtils.java">
+        <entry file="file://$PROJECT_DIR$/rabbitmq-6002/src/main/java/com/tidc/rabbitmq/consumer/MessageConsumer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="351">
-              <caret line="28" column="27" selection-start-line="28" selection-start-column="27" selection-end-line="28" selection-end-column="27" />
+            <state relative-caret-position="380">
+              <caret line="41" column="74" selection-start-line="41" selection-start-column="74" selection-end-line="41" selection-end-column="74" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#731#732#0" expanded="true" />
+                <element signature="e#744#745#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/messagemanager-8301/src/main/java/com/tidc/messagemanager/service/impl/ApprovalServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="378">
+              <caret line="23" column="32" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -76,70 +132,52 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/usermanager-8101/src/main/java/com/tidc/usermanager/service/CheckUserService.java">
+        <entry file="file://$PROJECT_DIR$/rabbitmq-6002/src/main/java/com/tidc/rabbitmq/RabbitmqApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="15" column="7" lean-forward="true" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
+            <state relative-caret-position="162">
+              <caret line="9" column="57" selection-start-line="9" selection-start-column="57" selection-end-line="9" selection-end-column="57" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/usermanager-8101/src/main/java/com/tidc/usermanager/service/impl/CheckUserServiceImpl.java">
+        <entry file="file://$PROJECT_DIR$/messagemanager-8301/src/main/java/com/tidc/messagemanager/MessagemanagerApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="83">
-              <caret line="39" column="52" lean-forward="true" selection-start-line="39" selection-start-column="52" selection-end-line="39" selection-end-column="52" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="135">
+              <caret line="9" selection-start-line="9" selection-end-line="11" selection-end-column="73" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/usermanager-8101/src/main/java/com/tidc/usermanager/mapper/StudentMapper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="17" column="23" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/usermanager-8101/src/main/java/com/tidc/usermanager/mapper/TeacherMapper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="22" column="23" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/usermanager-8101/src/main/java/com/tidc/usermanager/mapper/SchoolMapper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="19" column="23" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/messagemanager-8301/src/main/java/com/tidc/messagemanager/service/impl/CheckMessageImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="57" column="23" selection-start-line="57" selection-start-column="23" selection-end-line="57" selection-end-column="23" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/messagemanager-8301/src/main/java/com/tidc/messagemanager/service/impl/SendServiceImpl.java">
+        <entry file="file://$PROJECT_DIR$/api/src/main/java/com/tidc/api/controller/MessageManagerApi.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="243">
-              <caret line="43" column="91" lean-forward="true" selection-start-line="41" selection-start-column="8" selection-end-line="43" selection-end-column="91" />
+              <caret line="62" column="15" selection-start-line="62" selection-start-column="15" selection-end-line="62" selection-end-column="15" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rabbitmq-6002/src/main/java/com/tidc/rabbitmq/service/impl/SendServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="326">
+              <caret line="40" column="22" selection-start-line="40" selection-start-column="22" selection-end-line="40" selection-end-column="22" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/messagemanager-8301/src/main/java/com/tidc/messagemanager/service/SendService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="353">
+              <caret line="14" column="53" selection-start-line="14" selection-start-column="53" selection-end-line="14" selection-end-column="53" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -161,7 +199,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>re</find>
       <find>oauth2</find>
       <find>attemptAuthentication</find>
       <find>DefaultOAuth2AccessToken</find>
@@ -191,6 +228,7 @@
       <find>receiver_email</find>
       <find>user</find>
       <find>usermanager</find>
+      <find>amqp</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -199,33 +237,11 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/service/UserManagerService.java" />
-        <option value="$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/Consumer8001Application.java" />
-        <option value="$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/controller/UserManagerController.java" />
-        <option value="$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/controller/MessageManager.java" />
-        <option value="$PROJECT_DIR$/messagemanager-8301/src/main/java/com/tidc/messagemanager/service/impl/CheckMessageImpl.java" />
-        <option value="$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/controller/AuthenticationController.java" />
-        <option value="$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/service/MessageManagerService.java" />
-        <option value="$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/service/impl/MessageManagerServiceImpl.java" />
-        <option value="$PROJECT_DIR$/api/src/main/java/com/tidc/api/fallback/MessageManagerFallbackFactory.java" />
-        <option value="$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/service/impl/UserManagerServiceImpl.java" />
-        <option value="$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/mapper/MenuMapper.java" />
-        <option value="$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/service/impl/AuthenticationServiceImpl.java" />
-        <option value="$PROJECT_DIR$/consumer-8001/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/consumer-8001/src/main/resources/mapper/MenuMapper.xml" />
-        <option value="$PROJECT_DIR$/authentication-9001/src/main/java/com/tidc/authentication9001/mapper/RoleMapper.java" />
-        <option value="$PROJECT_DIR$/authentication-9001/src/main/java/com/tidc/authentication9001/mapper/StatusMapper.java" />
-        <option value="$PROJECT_DIR$/authentication-9001/src/main/java/com/tidc/authentication9001/mapper/StudentMapper.java" />
-        <option value="$PROJECT_DIR$/authentication-9001/src/main/java/com/tidc/authentication9001/controller/UserController.java" />
-        <option value="$PROJECT_DIR$/authentication-9001/src/main/java/com/tidc/authentication9001/config/MyUserDetailsService.java" />
-        <option value="$PROJECT_DIR$/authentication-9001/src/main/java/com/tidc/authentication9001/config/SecuirtyConfig.java" />
-        <option value="$PROJECT_DIR$/authentication-9001/src/main/java/com/tidc/authentication9001/config/AuthorizationConfig.java" />
         <option value="$PROJECT_DIR$/authentication-9001/src/main/java/com/tidc/authentication9001/Authentication9001Application.java" />
         <option value="$PROJECT_DIR$/authentication-9001/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/authentication-9001/src/main/java/com/tidc/authentication9001/mapper/SchoolMapper.java" />
         <option value="$PROJECT_DIR$/authentication-9001/src/main/java/com/tidc/authentication9001/mapper/TeacherMapper.java" />
         <option value="$PROJECT_DIR$/messagemanager-8301/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/api/src/main/java/com/tidc/api/controller/MessageManagerApi.java" />
         <option value="$PROJECT_DIR$/messagemanager-8301/src/main/java/com/tidc/messagemanager/controller/CheckMessage.java" />
         <option value="$PROJECT_DIR$/messagemanager-8301/src/main/java/com/tidc/messagemanager/mapper/ApplyMapper.java" />
         <option value="$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/utils/UserInfo.java" />
@@ -242,14 +258,36 @@
         <option value="$PROJECT_DIR$/contestmanager-8401/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/api/src/main/java/com/tidc/api/pojo/Contest.java" />
         <option value="$PROJECT_DIR$/contestmanager-8401/src/main/java/com/tidc/contest8401/controller/foundController.java" />
-        <option value="$PROJECT_DIR$/contestmanager-8401/src/main/java/com/tidc/contest8401/mapper/ContestMapper.java" />
-        <option value="$PROJECT_DIR$/contestmanager-8401/src/main/java/com/tidc/contest8401/controller/FoundController.java" />
         <option value="$PROJECT_DIR$/contestmanager-8401/src/main/java/com/tidc/contest8401/service/FoundService.java" />
         <option value="$PROJECT_DIR$/usermanager-8101/src/main/java/com/tidc/usermanager/mapper/SchoolMapper.java" />
         <option value="$PROJECT_DIR$/usermanager-8101/src/main/java/com/tidc/usermanager/mapper/TeacherMapper.java" />
         <option value="$PROJECT_DIR$/usermanager-8101/src/main/java/com/tidc/usermanager/mapper/StudentMapper.java" />
-        <option value="$PROJECT_DIR$/contestmanager-8401/src/main/java/com/tidc/contest8401/service/impl/foundServiceImpl.java" />
         <option value="$PROJECT_DIR$/api/src/main/java/com/tidc/utils/CheckObjectIsNullUtils.java" />
+        <option value="$PROJECT_DIR$/contestmanager-8401/src/main/java/com/tidc/contest8401/mapper/ContestMapper.java" />
+        <option value="$PROJECT_DIR$/api/src/main/java/com/tidc/api/fallback/ContestManagerFallbackFactory.java" />
+        <option value="$PROJECT_DIR$/api/src/main/java/com/tidc/api/pojo/power.java" />
+        <option value="$PROJECT_DIR$/api/src/main/java/com/tidc/api/pojo/Power.java" />
+        <option value="$PROJECT_DIR$/contestmanager-8401/src/main/java/com/tidc/contest8401/controller/FoundController.java" />
+        <option value="$PROJECT_DIR$/contestmanager-8401/src/main/java/com/tidc/contest8401/service/AddService.java" />
+        <option value="$PROJECT_DIR$/contestmanager-8401/src/main/java/com/tidc/contest8401/service/impl/foundServiceImpl.java" />
+        <option value="$PROJECT_DIR$/contestmanager-8401/src/main/java/com/tidc/contest8401/mapper/PowerMapeer.java" />
+        <option value="$PROJECT_DIR$/contestmanager-8401/src/main/java/com/tidc/contest8401/controller/AddController.java" />
+        <option value="$PROJECT_DIR$/api/src/main/java/com/tidc/api/controller/ContestManagerApi.java" />
+        <option value="$PROJECT_DIR$/contestmanager-8401/src/main/java/com/tidc/contest8401/service/impl/AddServiceImpl.java" />
+        <option value="$PROJECT_DIR$/api/src/main/java/com/tidc/api/pojo/Message.java" />
+        <option value="$PROJECT_DIR$/rabbitmq-6002/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/rabbitmq-6002/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/rabbitmq-6002/src/main/java/com/tidc/rabbitmq/config/RabbitConfig.java" />
+        <option value="$PROJECT_DIR$/rabbitmq-6002/src/main/java/com/tidc/rabbitmq/service/SendService.java" />
+        <option value="$PROJECT_DIR$/rabbitmq-6002/src/main/java/com/tidc/rabbitmq/controller/SendController.java" />
+        <option value="$PROJECT_DIR$/messagemanager-8301/src/main/java/com/tidc/messagemanager/service/SendService.java" />
+        <option value="$PROJECT_DIR$/messagemanager-8301/src/main/java/com/tidc/messagemanager/service/impl/SendServiceImpl.java" />
+        <option value="$PROJECT_DIR$/messagemanager-8301/src/main/java/com/tidc/messagemanager/controller/SendController.java" />
+        <option value="$PROJECT_DIR$/api/src/main/java/com/tidc/api/controller/MessageManagerApi.java" />
+        <option value="$PROJECT_DIR$/rabbitmq-6002/src/main/java/com/tidc/rabbitmq/service/impl/SendServiceImpl.java" />
+        <option value="$PROJECT_DIR$/rabbitmq-6002/src/main/java/com/tidc/rabbitmq/RabbitmqApplication.java" />
+        <option value="$PROJECT_DIR$/rabbitmq-6002/pom.xml" />
+        <option value="$PROJECT_DIR$/rabbitmq-6002/src/main/java/com/tidc/rabbitmq/consumer/MessageConsumer.java" />
       </list>
     </option>
   </component>
@@ -292,8 +330,9 @@
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
+    <option name="y" value="-8" />
     <option name="width" value="1936" />
-    <option name="height" value="1096" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -303,7 +342,6 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -376,124 +414,24 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="tidc" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="constant" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="match-tidc" type="b2602c69:ProjectViewProjectNode" />
               <item name="match-tidc" type="462c0819:PsiDirectoryNode" />
-              <item name="contestmanager-8401" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="match-tidc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="match-tidc" type="462c0819:PsiDirectoryNode" />
-              <item name="contestmanager-8401" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="match-tidc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="match-tidc" type="462c0819:PsiDirectoryNode" />
-              <item name="contestmanager-8401" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="match-tidc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="match-tidc" type="462c0819:PsiDirectoryNode" />
-              <item name="contestmanager-8401" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="match-tidc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="match-tidc" type="462c0819:PsiDirectoryNode" />
-              <item name="contestmanager-8401" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="match-tidc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="match-tidc" type="462c0819:PsiDirectoryNode" />
-              <item name="contestmanager-8401" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="tidc" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="match-tidc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="match-tidc" type="462c0819:PsiDirectoryNode" />
-              <item name="contestmanager-8401" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="tidc" type="462c0819:PsiDirectoryNode" />
-              <item name="contest8401" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="match-tidc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="match-tidc" type="462c0819:PsiDirectoryNode" />
-              <item name="contestmanager-8401" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="tidc" type="462c0819:PsiDirectoryNode" />
-              <item name="contest8401" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
               <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="match-tidc" type="b2602c69:ProjectViewProjectNode" />
               <item name="match-tidc" type="462c0819:PsiDirectoryNode" />
-              <item name="contestmanager-8401" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="tidc" type="462c0819:PsiDirectoryNode" />
-              <item name="contest8401" type="462c0819:PsiDirectoryNode" />
-              <item name="mapper" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="match-tidc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="match-tidc" type="462c0819:PsiDirectoryNode" />
-              <item name="contestmanager-8401" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="tidc" type="462c0819:PsiDirectoryNode" />
-              <item name="contest8401" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="match-tidc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="match-tidc" type="462c0819:PsiDirectoryNode" />
-              <item name="contestmanager-8401" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="tidc" type="462c0819:PsiDirectoryNode" />
-              <item name="contest8401" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="match-tidc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="match-tidc" type="462c0819:PsiDirectoryNode" />
-              <item name="contestmanager-8401" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="match-tidc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="match-tidc" type="462c0819:PsiDirectoryNode" />
               <item name="messagemanager-8301" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -546,6 +484,18 @@
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="tidc" type="462c0819:PsiDirectoryNode" />
               <item name="messagemanager" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="match-tidc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="match-tidc" type="462c0819:PsiDirectoryNode" />
+              <item name="messagemanager-8301" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="tidc" type="462c0819:PsiDirectoryNode" />
+              <item name="messagemanager" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="match-tidc" type="b2602c69:ProjectViewProjectNode" />
@@ -571,18 +521,6 @@
               <item name="messagemanager" type="462c0819:PsiDirectoryNode" />
               <item name="service" type="462c0819:PsiDirectoryNode" />
               <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="match-tidc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="match-tidc" type="462c0819:PsiDirectoryNode" />
-              <item name="messagemanager-8301" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="tidc" type="462c0819:PsiDirectoryNode" />
-              <item name="messagemanager" type="462c0819:PsiDirectoryNode" />
-              <item name="utiles" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="match-tidc" type="b2602c69:ProjectViewProjectNode" />
@@ -595,83 +533,153 @@
             <path>
               <item name="match-tidc" type="b2602c69:ProjectViewProjectNode" />
               <item name="match-tidc" type="462c0819:PsiDirectoryNode" />
-              <item name="usermanager-8101" type="462c0819:PsiDirectoryNode" />
+              <item name="rabbitmq-6002" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="match-tidc" type="b2602c69:ProjectViewProjectNode" />
               <item name="match-tidc" type="462c0819:PsiDirectoryNode" />
-              <item name="usermanager-8101" type="462c0819:PsiDirectoryNode" />
+              <item name="rabbitmq-6002" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="match-tidc" type="b2602c69:ProjectViewProjectNode" />
               <item name="match-tidc" type="462c0819:PsiDirectoryNode" />
-              <item name="usermanager-8101" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="match-tidc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="match-tidc" type="462c0819:PsiDirectoryNode" />
-              <item name="usermanager-8101" type="462c0819:PsiDirectoryNode" />
+              <item name="rabbitmq-6002" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="match-tidc" type="b2602c69:ProjectViewProjectNode" />
               <item name="match-tidc" type="462c0819:PsiDirectoryNode" />
-              <item name="usermanager-8101" type="462c0819:PsiDirectoryNode" />
+              <item name="rabbitmq-6002" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="match-tidc" type="b2602c69:ProjectViewProjectNode" />
               <item name="match-tidc" type="462c0819:PsiDirectoryNode" />
-              <item name="usermanager-8101" type="462c0819:PsiDirectoryNode" />
+              <item name="rabbitmq-6002" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="tidc" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="match-tidc" type="b2602c69:ProjectViewProjectNode" />
               <item name="match-tidc" type="462c0819:PsiDirectoryNode" />
-              <item name="usermanager-8101" type="462c0819:PsiDirectoryNode" />
+              <item name="rabbitmq-6002" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="tidc" type="462c0819:PsiDirectoryNode" />
-              <item name="usermanager" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="match-tidc" type="b2602c69:ProjectViewProjectNode" />
               <item name="match-tidc" type="462c0819:PsiDirectoryNode" />
-              <item name="usermanager-8101" type="462c0819:PsiDirectoryNode" />
+              <item name="rabbitmq-6002" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="tidc" type="462c0819:PsiDirectoryNode" />
-              <item name="usermanager" type="462c0819:PsiDirectoryNode" />
+              <item name="rabbitmq" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="match-tidc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="match-tidc" type="462c0819:PsiDirectoryNode" />
+              <item name="rabbitmq-6002" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="tidc" type="462c0819:PsiDirectoryNode" />
+              <item name="rabbitmq" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="match-tidc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="match-tidc" type="462c0819:PsiDirectoryNode" />
+              <item name="rabbitmq-6002" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="tidc" type="462c0819:PsiDirectoryNode" />
+              <item name="rabbitmq" type="462c0819:PsiDirectoryNode" />
+              <item name="consumer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="match-tidc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="match-tidc" type="462c0819:PsiDirectoryNode" />
+              <item name="rabbitmq-6002" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="tidc" type="462c0819:PsiDirectoryNode" />
+              <item name="rabbitmq" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="match-tidc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="match-tidc" type="462c0819:PsiDirectoryNode" />
+              <item name="rabbitmq-6002" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="tidc" type="462c0819:PsiDirectoryNode" />
+              <item name="rabbitmq" type="462c0819:PsiDirectoryNode" />
               <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="match-tidc" type="b2602c69:ProjectViewProjectNode" />
               <item name="match-tidc" type="462c0819:PsiDirectoryNode" />
-              <item name="usermanager-8101" type="462c0819:PsiDirectoryNode" />
+              <item name="rabbitmq-6002" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="tidc" type="462c0819:PsiDirectoryNode" />
-              <item name="usermanager" type="462c0819:PsiDirectoryNode" />
+              <item name="rabbitmq" type="462c0819:PsiDirectoryNode" />
               <item name="service" type="462c0819:PsiDirectoryNode" />
               <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="match-tidc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="match-tidc" type="462c0819:PsiDirectoryNode" />
+              <item name="rabbitmq-6002" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="match-tidc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="match-tidc" type="462c0819:PsiDirectoryNode" />
+              <item name="usermanager-8101" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="match-tidc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="match-tidc" type="462c0819:PsiDirectoryNode" />
+              <item name="usermanager-8101" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="match-tidc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="match-tidc" type="462c0819:PsiDirectoryNode" />
+              <item name="usermanager-8101" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="match-tidc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="match-tidc" type="462c0819:PsiDirectoryNode" />
+              <item name="usermanager-8101" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="match-tidc" type="b2602c69:ProjectViewProjectNode" />
@@ -689,6 +697,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -698,9 +707,9 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1573908106219" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1574002162871" />
     <property name="create.test.in.the.same.root" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/contestmanager-8401/pom.xml" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../java/学习资料/rabbitmq" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -796,6 +805,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="RabbitmqApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="rabbitmq-6002" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.tidc.rabbitmq.RabbitmqApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="UsermanagerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="usermanager-8101" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.tidc.usermanager.UsermanagerApplication" />
@@ -830,12 +846,15 @@
       <workItem from="1573546665180" duration="21609000" />
       <workItem from="1573697370056" duration="23603000" />
       <workItem from="1573739122575" duration="13392000" />
-      <workItem from="1573816786520" duration="24428000" />
+      <workItem from="1573816786520" duration="29179000" />
+      <workItem from="1573974275456" duration="1739000" />
+      <workItem from="1573978207470" duration="3130000" />
+      <workItem from="1573997351089" duration="4000000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="100780000" />
+    <option name="totallyTimeSpent" value="114400000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -850,7 +869,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25799572" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26599148" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -1020,261 +1039,10 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/mapper/TeacherMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="15" column="25" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/main/java/com/tidc/api/pojo/Apply.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="26" column="27" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/service/MessageManagerService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="20" column="11" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/main/java/com/tidc/api/controller/MessageManagerApi.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="59" column="44" selection-start-line="59" selection-start-column="33" selection-end-line="59" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/messagemanager-8301/src/main/java/com/tidc/messagemanager/mapper/ApplyMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="20" column="18" lean-forward="true" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/usermanager-8101/src/main/java/com/tidc/usermanager/service/impl/RegisterServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/main/java/com/tidc/api/constant/CodeConstant.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/main/java/com/tidc/api/fallback/MessageManagerFallbackFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-148">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-          <folding>
-            <element signature="e#595#596#0" expanded="true" />
-            <element signature="e#617#618#0" expanded="true" />
-            <element signature="e#690#691#0" expanded="true" />
-            <element signature="e#712#713#0" expanded="true" />
-            <element signature="e#752#753#0" expanded="true" />
-            <element signature="e#774#775#0" expanded="true" />
-            <element signature="e#832#833#0" expanded="true" />
-            <element signature="e#854#855#0" expanded="true" />
-            <element signature="e#921#922#0" expanded="true" />
-            <element signature="e#943#944#0" expanded="true" />
-            <element signature="e#990#991#0" expanded="true" />
-            <element signature="e#1012#1013#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/service/impl/MessageManagerServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="52" selection-start-line="52" selection-end-line="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1536#1537#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/messagemanager-8301/src/main/java/com/tidc/messagemanager/controller/ApprovalController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#778#779#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../javajdk/org/springframework/spring-web/5.1.11.RELEASE/spring-web-5.1.11.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="111" column="11" selection-start-line="111" selection-start-column="11" selection-end-line="111" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/usermanager-8101/src/main/java/com/tidc/usermanager/service/impl/UpdateServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/main/java/com/tidc/api/controller/UserManagerApi.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="20" column="35" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/usermanager-8101/src/main/java/com/tidc/usermanager/controller/UpdateController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="25" column="1" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/controller/UserManagerController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="22" column="46" selection-start-line="22" selection-start-column="46" selection-end-line="22" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/service/UserManagerService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/service/impl/UserManagerServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="17" column="42" selection-start-line="17" selection-start-column="42" selection-end-line="17" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/controller/MessageManagerController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="67" column="27" selection-start-line="67" selection-start-column="27" selection-end-line="67" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1450#1451#0" expanded="true" />
-            <element signature="e#1510#1511#0" expanded="true" />
-            <element signature="e#1702#1703#0" expanded="true" />
-            <element signature="e#1758#1759#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/controller/AuthenticationController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="33" column="10" selection-start-line="33" selection-start-column="10" selection-end-line="33" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/usermanager-8101/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="515">
-          <caret line="42" column="21" selection-start-line="22" selection-start-column="8" selection-end-line="42" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/contestmanager-8401/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="515">
-          <caret line="42" column="21" selection-start-line="42" selection-start-column="21" selection-end-line="42" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/usermanager-8101/src/main/java/com/tidc/usermanager/UsermanagerApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="13" selection-start-line="13" selection-end-line="15" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../javajdk/org/springframework/cloud/spring-cloud-openfeign-core/2.1.4.BUILD-SNAPSHOT/spring-cloud-openfeign-core-2.1.4.BUILD-20191116.054441-510.jar!/org/springframework/cloud/openfeign/EnableFeignClients.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/contestmanager-8401/src/main/resources/application">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/usermanager-8101/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/usermanager-8101/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="53" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/contestmanager-8401/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="20" column="27" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/messagemanager-8301/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/contestmanager-8401/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="36" selection-start-column="36" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/main/java/com/tidc/api/pojo/Menu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1308,16 +1076,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/contestmanager-8401/src/main/java/com/tidc/contest8401/mapper/ContestMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/messagemanager-8301/src/main/java/com/tidc/messagemanager/utiles/PowerUtiles.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
@@ -1332,23 +1090,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="437">
           <caret line="27" column="19" lean-forward="true" selection-start-line="27" selection-start-column="19" selection-end-line="27" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/messagemanager-8301/src/main/java/com/tidc/messagemanager/service/impl/ApprovalServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="2" column="42" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/contestmanager-8401/src/main/java/com/tidc/contest8401/controller/FoundController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="353">
-          <caret line="17" column="109" selection-start-line="17" selection-start-column="97" selection-end-line="17" selection-end-column="109" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1373,16 +1114,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="57" column="23" selection-start-line="57" selection-start-column="23" selection-end-line="57" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/messagemanager-8301/src/main/java/com/tidc/messagemanager/service/impl/SendServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="43" column="91" lean-forward="true" selection-start-line="41" selection-start-column="8" selection-end-line="43" selection-end-column="91" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1427,10 +1158,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/contestmanager-8401/src/main/java/com/tidc/contest8401/service/impl/foundServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/usermanager-8101/src/main/java/com/tidc/usermanager/service/impl/RegisterServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="353">
-          <caret line="33" selection-start-line="33" selection-end-line="33" />
+        <state relative-caret-position="176">
+          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/contestmanager-8401/src/main/java/com/tidc/contest8401/mapper/ContestMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="11" column="320" selection-start-line="11" selection-start-column="320" selection-end-line="11" selection-end-column="320" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1439,10 +1180,293 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/api/src/main/java/com/tidc/utils/CheckObjectIsNullUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="28" column="27" selection-start-line="28" selection-start-column="27" selection-end-line="28" selection-end-column="27" />
+        <state relative-caret-position="-135">
+          <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/com/tidc/api/fallback/ContestManagerFallbackFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="14" column="22" lean-forward="true" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#553#554#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/com/tidc/api/pojo/Menu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="134">
+          <caret line="15" selection-start-line="15" selection-end-line="18" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/contestmanager-8401/src/main/java/com/tidc/contest8401/controller/FoundController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="22" column="36" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/contestmanager-8401/src/main/java/com/tidc/contest8401/controller/AddController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="19" column="52" selection-start-line="18" selection-start-column="4" selection-end-line="19" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/com/tidc/api/controller/ContestManagerApi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="20" column="4" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/contestmanager-8401/src/main/java/com/tidc/contest8401/service/AddService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="11" column="33" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/contestmanager-8401/src/main/java/com/tidc/contest8401/service/impl/AddServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/messagemanager-8301/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="18" column="54" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/contestmanager-8401/src/main/java/com/tidc/contest8401/mapper/PowerMapeer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/contestmanager-8401/src/main/java/com/tidc/contest8401/service/impl/FoundServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="24" column="14" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/com/tidc/api/pojo/Power.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="19" column="31" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/usermanager-8101/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-243">
+          <caret selection-end-line="53" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/jre/lib/rt.jar!/sun/misc/Queue.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/com/tidc/api/pojo/Message.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rabbitmq-6002/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../javajdk/org/springframework/amqp/spring-amqp/2.2.1.RELEASE/spring-amqp-2.2.1.RELEASE.jar!/org/springframework/amqp/core/AmqpTemplate.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="20" column="43" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rabbitmq-6002/src/main/java/com/tidc/rabbitmq/service/SendService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="353">
+          <caret line="14" column="52" selection-start-line="14" selection-start-column="52" selection-end-line="14" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rabbitmq-6002/src/main/java/com/tidc/rabbitmq/config/RabbitConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="15" column="70" lean-forward="true" selection-start-line="14" selection-start-column="4" selection-end-line="15" selection-end-column="70" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/messagemanager-8301/src/main/java/com/tidc/messagemanager/controller/CheckMessage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="22" column="7" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/messagemanager-8301/src/main/java/com/tidc/messagemanager/controller/ApprovalController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/messagemanager-8301/src/main/java/com/tidc/messagemanager/service/impl/SendServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="434">
+          <caret line="65" column="43" selection-start-line="65" selection-start-column="43" selection-end-line="65" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/messagemanager-8301/src/main/java/com/tidc/messagemanager/controller/SendController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="407">
+          <caret line="22" column="59" selection-start-line="21" selection-start-column="4" selection-end-line="22" selection-end-column="59" />
+          <folding>
+            <element signature="e#784#785#0" expanded="true" />
+            <element signature="e#808#809#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/com/tidc/api/controller/MessageManagerApi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="62" column="15" selection-start-line="62" selection-start-column="15" selection-end-line="62" selection-end-column="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rabbitmq-6002/src/main/java/com/tidc/rabbitmq/controller/SendController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="515">
+          <caret line="28" column="41" selection-start-line="28" selection-start-column="41" selection-end-line="28" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#840#841#0" expanded="true" />
+            <element signature="e#880#881#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/messagemanager-8301/src/main/java/com/tidc/messagemanager/service/impl/ApprovalServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="23" column="32" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/messagemanager-8301/src/main/java/com/tidc/messagemanager/MessagemanagerApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" selection-start-line="9" selection-end-line="11" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rabbitmq-6002/src/main/java/com/tidc/rabbitmq/RabbitmqApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="57" selection-start-line="9" selection-start-column="57" selection-end-line="9" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/messagemanager-8301/src/main/java/com/tidc/messagemanager/service/SendService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="353">
+          <caret line="14" column="53" selection-start-line="14" selection-start-column="53" selection-end-line="14" selection-end-column="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rabbitmq-6002/src/main/java/com/tidc/rabbitmq/service/impl/SendServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="326">
+          <caret line="40" column="22" selection-start-line="40" selection-start-column="22" selection-end-line="40" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rabbitmq-6002/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="729">
+          <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rabbitmq-6002/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="620">
+          <caret line="63" column="21" selection-start-line="63" selection-start-column="21" selection-end-line="63" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rabbitmq-6002/src/main/java/com/tidc/rabbitmq/consumer/MessageConsumer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="41" column="74" selection-start-line="41" selection-start-column="74" selection-end-line="41" selection-end-column="74" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#731#732#0" expanded="true" />
+            <element signature="e#744#745#0" expanded="true" />
           </folding>
         </state>
       </provider>

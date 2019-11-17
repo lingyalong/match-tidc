@@ -60,4 +60,10 @@ public class SendServiceImpl implements SendService {
 		applyMapper.insertApply(apply);
 		return userOV.setStatus(CodeConstant.SUCCESS);
 	}
+
+	@Override
+	public UserOV sendMessage(Message message) {
+		messageMapper.insertMessage(message);
+		return null;
+	}
 }

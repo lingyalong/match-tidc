@@ -16,6 +16,13 @@ import org.springframework.web.bind.annotation.*;
 public class FoundController {
 	@Autowired
 	private FoundService foundService;
+
+	/**
+	 * 创建一个比赛
+	 * @param contest
+	 * @param school_email 发起学校emial
+	 * @return
+	 */
 	@PostMapping("/contest")
 	public UserOV foundContest(@RequestBody Contest contest, @RequestParam("school_email")String school_email){
 		return foundService.foundService(contest, school_email);
