@@ -8,6 +8,7 @@ import com.tidc.api.pojo.Contest;
 import com.tidc.api.pojo.School;
 import com.tidc.api.pojo.Teacher;
 import com.tidc.api.pojo.UserOV;
+import com.tidc.contest8401.mapper.ContestMapper;
 import com.tidc.contest8401.service.FoundService;
 import com.tidc.utils.CheckObjectIsNullUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -27,11 +28,14 @@ public class FoundServiceImpl implements FoundService {
 	private UserManagerApi userManagerApi;
 	@Autowired
 	private ObjectMapper objectMapper;
+	@Autowired
+	private ContestMapper contestMapper;
 	@Override
 	public UserOV foundService(Contest contest, String school_email) {
 		UserOV userOV2 = userManagerApi.userInfo(school_email);
 		LinkedHashMap data = (LinkedHashMap) userOV2.getData();
-		School school = objectMapper.convertValue(data, new TypeReference<School>() {});
+		//这里获取到创建学校的所有信息
+		School school = objectMapper.convertValue(data, new TypeReference<School>(){});
 		contest.setSchool_id(school.getId());
 		contest.setNumber(0);
 		UserOV userOV = new UserOV();
@@ -39,6 +43,7 @@ public class FoundServiceImpl implements FoundService {
 		if (!CheckObjectIsNullUtils.contestObjCheckIsNull(contest)) {
 			userOV.setStatus(CodeConstant.FAIL).setMessage("有字段未填写");
 		}
+		contestMapper.insetContest(contest);
 		return userOV;
 	}
 }

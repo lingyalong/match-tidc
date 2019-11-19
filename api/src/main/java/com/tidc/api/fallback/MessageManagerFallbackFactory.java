@@ -39,6 +39,10 @@ public class MessageManagerFallbackFactory implements FallbackFactory<MessageMan
 			public UserOV approvalApply(Apply apply) {
 				return null;
 			}
+
+			public UserOV sendMessage(Message message) {
+				return null;
+			}
 		};
 	}
 }

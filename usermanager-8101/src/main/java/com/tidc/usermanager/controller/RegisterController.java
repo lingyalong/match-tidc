@@ -17,7 +17,7 @@ public class RegisterController {
 	@Autowired
 	private RegisterService registerService;
 	@PostMapping("/teacher/register")
-	public UserOV teacherRegister(Teacher teacher, String code){
+	public UserOV teacherRegister(@RequestBody Teacher teacher,@RequestParam("code") String code){
 		return registerService.teacherRegister(teacher,code);
 	}
 }

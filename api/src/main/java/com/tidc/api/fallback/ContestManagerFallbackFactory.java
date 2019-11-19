@@ -2,6 +2,7 @@ package com.tidc.api.fallback;
 
 import com.tidc.api.controller.ContestManagerApi;
 import com.tidc.api.pojo.Contest;
+import com.tidc.api.pojo.Power;
 import com.tidc.api.pojo.UserOV;
 import feign.hystrix.FallbackFactory;
 
@@ -14,6 +15,10 @@ public class ContestManagerFallbackFactory implements FallbackFactory<ContestMan
 	public ContestManagerApi create(Throwable throwable) {
 		return new ContestManagerApi() {
 			public UserOV foundContest(Contest contest, String school_email) {
+				return null;
+			}
+
+			public UserOV addPower(Power power, String email) {
 				return null;
 			}
 		};

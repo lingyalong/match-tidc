@@ -14,9 +14,34 @@ import java.util.List;
  * @Author 冯涛滔
  **/
 public interface MessageManagerService {
-	UserOV<List<Message>> checkMessage(String token);
+	/**
+	 * 查看个人的消息列表
+	 * @param access_token
+	 * @return
+	 */
+	UserOV<List<Message>> checkMessage(String access_token);
+	/**
+	 * 将某条消息设为已读
+	 * @param id
+	 * @return
+	 */
 	UserOV readMessage(int id);
+	/**
+	 * 将某个用户的所有消息设为已读
+	 * @param access_token
+	 * @return
+	 */
 	UserOV readMessageAll( String access_token);
+	/**
+	 * 获取某个账号的请求列表
+	 * @param access_token
+	 * @return
+	 */
 	UserOV<List<Apply>> checkApply(String access_token);
+	/**
+	 * 审批某个账号的某条记录
+	 * @param apply Proposer_email id is_read
+	 * @return
+	 */
 	UserOV approvalApply(Apply apply);
 }

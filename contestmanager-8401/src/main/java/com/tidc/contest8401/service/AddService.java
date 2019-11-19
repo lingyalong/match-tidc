@@ -9,5 +9,5 @@ import com.tidc.api.pojo.UserOV;
  * @Author 冯涛滔
  **/
 public interface AddService {
-	UserOV addPower(Power power);
+	UserOV addPower(Power power,String email);
 }

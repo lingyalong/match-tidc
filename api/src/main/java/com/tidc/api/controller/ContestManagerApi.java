@@ -18,5 +18,5 @@ public interface ContestManagerApi {
 	@RequestMapping(value = "/contest",method = RequestMethod.POST)
 	UserOV foundContest(@RequestBody Contest contest, @RequestParam("school_email")String school_email);
 	@RequestMapping(value = "/power",method = RequestMethod.POST)
-	UserOV addPower(@RequestBody Power power);
+	UserOV addPower(@RequestBody Power power,@RequestParam("email") String email);
 }

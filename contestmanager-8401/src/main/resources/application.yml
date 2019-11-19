@@ -1,5 +1,5 @@
 mybatis:
-  type-aliases-package: com.tidc.api.pojo
+  type-aliases-package: com.tidc.contest8401.pojo
   mapper-locations: classpath:mapper/*.xml
 spring:
   application:

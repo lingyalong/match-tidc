@@ -18,4 +18,5 @@ public class CodeConstant {
 	public static final String FAIL = "FAIL";
 	public static final String ERROR = "ERROR";
 	public static final String UPDATE = "UPDATE";
+	public static final String NMSL="nmsl";
 }

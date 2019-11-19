@@ -34,7 +34,7 @@ public class AuthenticationController {
 	 * @return
 	 */
 	@GetMapping("/user/info")
-	public Object getUserInfo(String access_token){
+	public Object getUserInfo(@RequestParam("access_token") String access_token){
 		return authenticationService.getUserInfo(access_token);
 	}
 }

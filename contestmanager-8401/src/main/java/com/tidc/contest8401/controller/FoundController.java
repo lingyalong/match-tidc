@@ -18,9 +18,9 @@ public class FoundController {
 	private FoundService foundService;
 
 	/**
-	 * 创建一个比赛
-	 * @param contest
-	 * @param school_email 发起学校emial
+	 *
+	 * @param contest 比赛名字 类型 各种功能 简介 开始/结束时间 试卷id 文件/图片地址 收多少钱
+	 * @param school_email 发起学校email
 	 * @return
 	 */
 	@PostMapping("/contest")

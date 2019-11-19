@@ -25,7 +25,7 @@ public class MessageManagerController {
 	 * @return
 	 */
 	@RequestMapping(value = "/message/all",method = RequestMethod.GET)
-	UserOV<List<Message>> checkMessage( String access_token){
+	UserOV<List<Message>> checkMessage(@RequestParam("access_token") String access_token){
 		return messageManagerService.checkMessage(access_token);
 	}
 
@@ -45,7 +45,7 @@ public class MessageManagerController {
 	 * @return
 	 */
 	@RequestMapping(value = "/message/read/all",method = RequestMethod.PUT)
-	UserOV readMessageAll( String access_token){
+	UserOV readMessageAll(@RequestParam("access_token")String access_token){
 		return messageManagerService.readMessageAll(access_token);
 	}
 
@@ -55,7 +55,7 @@ public class MessageManagerController {
 	 * @return
 	 */
 	@RequestMapping(value = "/apply/all",method = RequestMethod.GET)
-	UserOV<List<Apply>> checkApply( String access_token){
+	UserOV<List<Apply>> checkApply(@RequestParam("access_token") String access_token){
 		return messageManagerService.checkApply(access_token);
 	}
 

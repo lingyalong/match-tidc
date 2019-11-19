@@ -17,7 +17,7 @@ public class AddController {
 	@Autowired
 	private AddService addService;
 	@PostMapping("/power")
-	public UserOV addPower(@RequestBody Power power){
-		return addService.addPower(power);
+	public UserOV addPower(@RequestBody Power power,@RequestParam("email") String email){
+		return addService.addPower(power,email);
 	}
 }
