@@ -4,10 +4,7 @@ import com.tidc.api.controller.FileManagerApi;
 import com.tidc.api.pojo.UserOV;
 import com.tidc.consumer8001.service.FileManagerService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
 /**
@@ -20,7 +17,7 @@ import org.springframework.web.multipart.MultipartFile;
 public class FileManagerController {
 	@Autowired
 	private FileManagerService fileManagerService;
-	@PostMapping("/file")
+	@PostMapping(value = "/file" ,headers = "content-type=multipart/form-data")
 	public UserOV uploadFile(@RequestParam("file") MultipartFile file, @RequestParam("name") String name){
 		return fileManagerService.uploadFile(file, name);
 	}

@@ -3,6 +3,7 @@ package com.tidc.consumer8001.service.impl;
 import com.tidc.api.controller.FileManagerApi;
 import com.tidc.api.pojo.UserOV;
 import com.tidc.consumer8001.service.FileManagerService;
+import feign.Feign;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.RequestParam;

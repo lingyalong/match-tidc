@@ -2,45 +2,103 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="81d75dca-410b-4d6a-9666-8ef92a5d3f76" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/api/src/main/java/com/tidc/api/controller/FileManagerApi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/src/main/java/com/tidc/api/controller/RabbitManagerApi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/src/main/java/com/tidc/api/fallback/FileManagerFallbackFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/src/main/java/com/tidc/api/fallback/RabbitManagerFallbcakFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/src/main/java/com/tidc/utils/ApplicationContextProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/controller/ContestManagerController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/controller/FileManagerController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/service/ContestManagerService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/service/FileManagerService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/service/impl/FileManagerServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/filemanager-6003/src/main/java/com/tidc/filemanager/controller/FileController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/filemanager-6003/src/main/java/com/tidc/filemanager/properties/FileProperties.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/filemanager-6003/src/main/java/com/tidc/filemanager/properties/MatchProperties.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/filemanager-6003/src/main/java/com/tidc/filemanager/service/FileService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/filemanager-6003/src/main/java/com/tidc/filemanager/service/impl/FileServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/filemanager-6003/src/main/java/com/tidc/filemanager/utiles/FileUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/filemanager-6003/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/main/java/com/tidc/api/config/FeignSpringFormEncoder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/main/java/com/tidc/api/config/MultipartSupportConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_5_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_10_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_10_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_10_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_10_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_10_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_10_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_woodstox_woodstox_core_5_2_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_13.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_projectreactor_addons_reactor_extra_3_3_0_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_projectreactor_reactor_core_3_3_0_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_activation_jakarta_activation_api_1_2_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_annotation_jakarta_annotation_api_1_3_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_validation_jakarta_validation_api_2_0_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_xml_bind_jakarta_xml_bind_api_2_3_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_10_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_10_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_12_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_12_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_assertj_assertj_core_3_13_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_2_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_4_1_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_5_5_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_5_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_5_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_params_5_5_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_5_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_5_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_core_3_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_junit_jupiter_3_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_13.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_26.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_2_1_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_actuator_2_1_11_BUILD_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_actuator_2_1_11_BUILD_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_actuator_autoconfigure_2_1_11_BUILD_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_actuator_autoconfigure_2_1_11_BUILD_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_2_1_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_2_1_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_actuator_2_1_11_BUILD_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_actuator_2_1_11_BUILD_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_aop_2_2_1_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_cache_2_2_1_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_2_1_11_BUILD_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_2_1_11_BUILD_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_2_1_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_2_1_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_security_2_1_11_BUILD_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_security_2_1_11_BUILD_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_2_2_1_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_2_2_1_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_validation_2_2_1_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_2_1_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_2_1_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_2_2_1_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_commons_2_1_4_BUILD_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_commons_2_1_4_BUILD_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_commons_2_2_0_RC2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_context_2_2_0_RC2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_loadbalancer_2_2_0_RC2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_netflix_archaius_2_2_0_RC2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_netflix_eureka_client_2_2_0_RC2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_netflix_hystrix_2_2_0_RC2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_netflix_ribbon_2_2_0_RC2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_openfeign_core_2_1_4_BUILD_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_openfeign_core_2_1_4_BUILD_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_openfeign_core_2_2_0_RC2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_security_2_1_5_BUILD_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_security_2_1_5_BUILD_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_2_2_0_RC2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_loadbalancer_2_2_0_RC2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_netflix_archaius_2_2_0_RC2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_netflix_eureka_client_2_2_0_RC2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_netflix_ribbon_2_2_0_RC2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_oauth2_2_1_5_BUILD_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_oauth2_2_1_5_BUILD_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_openfeign_2_1_4_BUILD_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_openfeign_2_1_4_BUILD_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_openfeign_2_2_0_RC2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_security_2_1_5_BUILD_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_security_2_1_5_BUILD_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_crypto_5_2_1_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_2_1_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_1_5_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_2_1_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_1_5_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_2_1_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_support_5_2_1_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_2_1_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_1_5_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_2_1_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_2_1_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_5_1_5_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_5_2_1_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_5_2_1_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_5_2_1_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_25.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/tidc/api/constant/CodeConstant.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/tidc/api/constant/CodeConstant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/tidc/api/controller/ContestManagerApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/tidc/api/controller/ContestManagerApi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/tidc/api/fallback/ContestManagerFallbackFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/tidc/api/fallback/ContestManagerFallbackFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/tidc/api/fallback/MessageManagerFallbackFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/tidc/api/fallback/MessageManagerFallbackFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/controller/AuthenticationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/controller/AuthenticationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/controller/MessageManagerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/controller/MessageManagerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/controller/UserManagerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/controller/UserManagerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/service/MessageManagerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/service/MessageManagerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/service/UserManagerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/service/UserManagerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contestmanager-8401/src/main/java/com/tidc/contest8401/controller/AddController.java" beforeDir="false" afterPath="$PROJECT_DIR$/contestmanager-8401/src/main/java/com/tidc/contest8401/controller/AddController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contestmanager-8401/src/main/java/com/tidc/contest8401/controller/FoundController.java" beforeDir="false" afterPath="$PROJECT_DIR$/contestmanager-8401/src/main/java/com/tidc/contest8401/controller/FoundController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contestmanager-8401/src/main/java/com/tidc/contest8401/service/AddService.java" beforeDir="false" afterPath="$PROJECT_DIR$/contestmanager-8401/src/main/java/com/tidc/contest8401/service/AddService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contestmanager-8401/src/main/java/com/tidc/contest8401/service/impl/AddServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/contestmanager-8401/src/main/java/com/tidc/contest8401/service/impl/AddServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contestmanager-8401/src/main/java/com/tidc/contest8401/service/impl/FoundServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/contestmanager-8401/src/main/java/com/tidc/contest8401/service/impl/FoundServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contestmanager-8401/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/contestmanager-8401/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rabbitmq-6002/src/test/java/com/tidc/rabbitmq/RabbitmqApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/usermanager-8101/src/main/java/com/tidc/usermanager/controller/RegisterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/usermanager-8101/src/main/java/com/tidc/usermanager/controller/RegisterController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/tidc/api/controller/FileManagerApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/tidc/api/controller/FileManagerApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumer-8001/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/consumer-8001/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/controller/FileManagerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/controller/FileManagerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/service/impl/FileManagerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/service/impl/FileManagerServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumer-8001/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/consumer-8001/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/filemanager-6003/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/filemanager-6003/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/filemanager-6003/src/main/java/com/tidc/filemanager/controller/FileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/filemanager-6003/src/main/java/com/tidc/filemanager/controller/FileController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/filemanager-6003/src/main/java/com/tidc/filemanager/service/impl/FileServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/filemanager-6003/src/main/java/com/tidc/filemanager/service/impl/FileServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/filemanager-6003/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/filemanager-6003/src/main/resources/application.properties" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -66,19 +124,82 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/controller/AuthenticationController.java">
+        <entry file="file://$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/service/impl/FileManagerServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="506">
-              <caret line="36" column="57" selection-start-line="36" selection-start-column="57" selection-end-line="36" selection-end-column="57" />
+            <state relative-caret-position="317">
+              <caret line="22" selection-start-line="22" selection-end-line="22" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#762#763#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/filemanager-6003/src/main/java/com/tidc/filemanager/service/impl/FileServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="413">
+              <caret line="26" column="28" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="28" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/controller/ContestManagerController.java">
+        <entry file="file://$PROJECT_DIR$/filemanager-6003/src/main/java/com/tidc/filemanager/utiles/FileUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="449">
-              <caret line="38" column="79" selection-start-line="38" selection-start-column="79" selection-end-line="38" selection-end-column="79" />
+            <state relative-caret-position="419">
+              <caret line="64" column="64" selection-start-line="64" selection-start-column="64" selection-end-line="64" selection-end-column="64" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/filemanager-6003/src/main/java/com/tidc/filemanager/controller/FileController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="261">
+              <caret line="20" selection-start-line="20" selection-end-line="20" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/filemanager-6003/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="81">
+              <caret line="21" column="18" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/src/main/java/com/tidc/api/config/FeignSpringFormEncoder.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="510">
+              <caret line="40" selection-start-line="40" selection-end-line="40" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#277#278#0" expanded="true" />
+                <element signature="e#311#312#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/src/main/java/com/tidc/api/controller/FileManagerApi.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="217">
+              <caret line="24" column="157" selection-start-line="24" selection-start-column="157" selection-end-line="24" selection-end-column="157" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -89,8 +210,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/controller/FileManagerController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="24" column="57" selection-start-line="24" selection-start-column="57" selection-end-line="24" selection-end-column="57" />
+            <state relative-caret-position="263">
+              <caret line="19" column="25" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -99,42 +220,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/controller/MessageManagerController.java">
+        <entry file="file://$PROJECT_DIR$/consumer-8001/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-145">
-              <caret line="47" column="26" selection-start-line="47" selection-start-column="26" selection-end-line="47" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/controller/UserManagerController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="290">
-              <caret line="26" column="82" selection-start-line="26" selection-start-column="82" selection-end-line="26" selection-end-column="82" />
+            <state relative-caret-position="47">
+              <caret line="22" selection-start-line="22" selection-end-line="22" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/service/impl/FileManagerServiceImpl.java">
+        <entry file="jar://$PROJECT_DIR$/../../javajdk/org/springframework/spring-web/5.1.11.RELEASE/spring-web-5.1.11.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="20" column="29" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#704#705#0" expanded="true" />
-                <element signature="e#754#755#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/service/impl/AuthenticationServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="29" selection-start-line="29" selection-end-line="30" />
+            <state relative-caret-position="145">
+              <caret line="58" selection-start-line="58" selection-end-line="58" />
             </state>
           </provider>
         </entry>
@@ -153,9 +251,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>oauth2</find>
-      <find>attemptAuthentication</find>
-      <find>DefaultOAuth2AccessToken</find>
       <find>OAuth2AccessToken</find>
       <find>AbstractTokenGranter</find>
       <find>AuthenticationManager</find>
@@ -183,6 +278,9 @@
       <find>usermanager</find>
       <find>amqp</find>
       <find>setApplicationContext</find>
+      <find>form</find>
+      <find>open</find>
+      <find>uploadFile</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -191,15 +289,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/rabbitmq-6002/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/rabbitmq-6002/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/rabbitmq-6002/src/main/java/com/tidc/rabbitmq/config/RabbitConfig.java" />
-        <option value="$PROJECT_DIR$/rabbitmq-6002/src/main/java/com/tidc/rabbitmq/service/SendService.java" />
-        <option value="$PROJECT_DIR$/rabbitmq-6002/src/main/java/com/tidc/rabbitmq/controller/SendController.java" />
-        <option value="$PROJECT_DIR$/messagemanager-8301/src/main/java/com/tidc/messagemanager/service/SendService.java" />
-        <option value="$PROJECT_DIR$/messagemanager-8301/src/main/java/com/tidc/messagemanager/service/impl/SendServiceImpl.java" />
-        <option value="$PROJECT_DIR$/messagemanager-8301/src/main/java/com/tidc/messagemanager/controller/SendController.java" />
-        <option value="$PROJECT_DIR$/rabbitmq-6002/src/main/java/com/tidc/rabbitmq/service/impl/SendServiceImpl.java" />
         <option value="$PROJECT_DIR$/rabbitmq-6002/src/main/java/com/tidc/rabbitmq/RabbitmqApplication.java" />
         <option value="$PROJECT_DIR$/rabbitmq-6002/pom.xml" />
         <option value="$PROJECT_DIR$/rabbitmq-6002/src/main/java/com/tidc/rabbitmq/consumer/MessageConsumer.java" />
@@ -220,28 +309,37 @@
         <option value="$PROJECT_DIR$/filemanager-6003/src/main/java/com/tidc/filemanager/utiles/FileUtile.java" />
         <option value="$PROJECT_DIR$/filemanager-6003/src/main/java/com/tidc/filemanager/properties/FileProperties.java" />
         <option value="$PROJECT_DIR$/filemanager-6003/src/main/java/com/tidc/filemanager/properties/MatchProperties.java" />
-        <option value="$PROJECT_DIR$/filemanager-6003/pom.xml" />
         <option value="$PROJECT_DIR$/filemanager-6003/src/main/java/com/tidc/filemanager/service/FileController.java" />
         <option value="$PROJECT_DIR$/filemanager-6003/src/main/java/com/tidc/filemanager/service/FileService.java" />
         <option value="$PROJECT_DIR$/filemanager-6003/src/main/java/com/tidc/filemanager/utiles/FileUtil.java" />
-        <option value="$PROJECT_DIR$/filemanager-6003/src/main/java/com/tidc/filemanager/service/impl/FileServiceImpl.java" />
         <option value="$PROJECT_DIR$/filemanager-6003/src/main/java/com/tidc/filemanager/FilemanagerApplication.java" />
         <option value="$PROJECT_DIR$/api/src/main/java/com/tidc/api/controller/RabbitManagerApi.java" />
         <option value="$PROJECT_DIR$/api/src/main/java/com/tidc/api/constant/CodeConstant.java" />
-        <option value="$PROJECT_DIR$/filemanager-6003/src/main/java/com/tidc/filemanager/controller/FileController.java" />
         <option value="$PROJECT_DIR$/api/src/main/java/com/tidc/api/fallback/FileManagerFallbackFactory.java" />
-        <option value="$PROJECT_DIR$/api/src/main/java/com/tidc/api/controller/FileManagerApi.java" />
         <option value="$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/service/FileManagerService.java" />
-        <option value="$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/controller/FileManagerController.java" />
         <option value="$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/controller/ContestController.java" />
         <option value="$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/controller/ContestManagerController.java" />
         <option value="$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/service/ContestManagerService.java" />
         <option value="$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/service/MessageManagerService.java" />
         <option value="$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/service/UserManagerService.java" />
         <option value="$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/controller/AuthenticationController.java" />
-        <option value="$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/service/impl/FileManagerServiceImpl.java" />
         <option value="$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/controller/MessageManagerController.java" />
         <option value="$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/controller/UserManagerController.java" />
+        <option value="$PROJECT_DIR$/filemanager-6003/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/consumer-8001/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/config/FeignSpringFormEncoder.java" />
+        <option value="$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/config/FeignMultipartSupportConfig.java" />
+        <option value="$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/service/impl/FileManagerServiceImpl.java" />
+        <option value="$PROJECT_DIR$/api/pom.xml" />
+        <option value="$PROJECT_DIR$/api/src/main/java/com/tidc/api/config/FeignMultipartSupportConfig.java" />
+        <option value="$PROJECT_DIR$/api/src/main/java/com/tidc/api/config/FeignSpringFormEncoder.java" />
+        <option value="$PROJECT_DIR$/api/src/main/java/com/tidc/api/config/MultipartSupportConfig.java" />
+        <option value="$PROJECT_DIR$/api/src/main/java/com/tidc/api/controller/FileManagerApi.java" />
+        <option value="$PROJECT_DIR$/filemanager-6003/src/main/java/com/tidc/filemanager/controller/FileController.java" />
+        <option value="$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/controller/FileManagerController.java" />
+        <option value="$PROJECT_DIR$/consumer-8001/pom.xml" />
+        <option value="$PROJECT_DIR$/filemanager-6003/pom.xml" />
+        <option value="$PROJECT_DIR$/filemanager-6003/src/main/java/com/tidc/filemanager/service/impl/FileServiceImpl.java" />
       </list>
     </option>
   </component>
@@ -313,6 +411,12 @@
               <item name="match-tidc" type="b2602c69:ProjectViewProjectNode" />
               <item name="match-tidc" type="462c0819:PsiDirectoryNode" />
               <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name=".mvn" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="match-tidc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="match-tidc" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -370,7 +474,7 @@
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="tidc" type="462c0819:PsiDirectoryNode" />
               <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="constant" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="match-tidc" type="b2602c69:ProjectViewProjectNode" />
@@ -393,8 +497,7 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="tidc" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="fallback" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="match-tidc" type="b2602c69:ProjectViewProjectNode" />
@@ -451,6 +554,18 @@
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="tidc" type="462c0819:PsiDirectoryNode" />
               <item name="consumer8001" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="match-tidc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="match-tidc" type="462c0819:PsiDirectoryNode" />
+              <item name="consumer-8001" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="tidc" type="462c0819:PsiDirectoryNode" />
+              <item name="consumer8001" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="match-tidc" type="b2602c69:ProjectViewProjectNode" />
@@ -463,31 +578,6 @@
               <item name="tidc" type="462c0819:PsiDirectoryNode" />
               <item name="consumer8001" type="462c0819:PsiDirectoryNode" />
               <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="match-tidc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="match-tidc" type="462c0819:PsiDirectoryNode" />
-              <item name="consumer-8001" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="tidc" type="462c0819:PsiDirectoryNode" />
-              <item name="consumer8001" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="match-tidc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="match-tidc" type="462c0819:PsiDirectoryNode" />
-              <item name="consumer-8001" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="tidc" type="462c0819:PsiDirectoryNode" />
-              <item name="consumer8001" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="match-tidc" type="b2602c69:ProjectViewProjectNode" />
@@ -581,82 +671,6 @@
               <item name="filemanager" type="462c0819:PsiDirectoryNode" />
               <item name="service" type="462c0819:PsiDirectoryNode" />
               <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="match-tidc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="match-tidc" type="462c0819:PsiDirectoryNode" />
-              <item name="filemanager-6003" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="tidc" type="462c0819:PsiDirectoryNode" />
-              <item name="filemanager" type="462c0819:PsiDirectoryNode" />
-              <item name="utiles" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="match-tidc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="match-tidc" type="462c0819:PsiDirectoryNode" />
-              <item name="filemanager-6003" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="match-tidc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="match-tidc" type="462c0819:PsiDirectoryNode" />
-              <item name="messagemanager-8301" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="match-tidc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="match-tidc" type="462c0819:PsiDirectoryNode" />
-              <item name="messagemanager-8301" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="match-tidc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="match-tidc" type="462c0819:PsiDirectoryNode" />
-              <item name="messagemanager-8301" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="match-tidc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="match-tidc" type="462c0819:PsiDirectoryNode" />
-              <item name="messagemanager-8301" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="match-tidc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="match-tidc" type="462c0819:PsiDirectoryNode" />
-              <item name="messagemanager-8301" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="match-tidc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="match-tidc" type="462c0819:PsiDirectoryNode" />
-              <item name="messagemanager-8301" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="tidc" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="match-tidc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="match-tidc" type="462c0819:PsiDirectoryNode" />
-              <item name="messagemanager-8301" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="tidc" type="462c0819:PsiDirectoryNode" />
-              <item name="messagemanager" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="match-tidc" type="b2602c69:ProjectViewProjectNode" />
@@ -675,7 +689,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1574156535307" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1574180365835" />
     <property name="create.test.in.the.same.root" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../java/学习资料/rabbitmq" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -718,7 +732,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.UsermanagerApplication">
+  <component name="RunManager" selected="Spring Boot.FilemanagerApplication">
     <configuration name="Authentication9001Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="authentication-9001" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.tidc.authentication9001.Authentication9001Application" />
@@ -826,12 +840,12 @@
       <workItem from="1573974275456" duration="1739000" />
       <workItem from="1573978207470" duration="3130000" />
       <workItem from="1573997351089" duration="5034000" />
-      <workItem from="1574083306771" duration="13259000" />
+      <workItem from="1574083306771" duration="24040000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="128693000" />
+    <option name="totallyTimeSpent" value="139474000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -845,7 +859,7 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26865673" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26865673" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -855,20 +869,20 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3383948" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3991323" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49946696" visible="true" weight="0.3383948" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49946696" weight="0.3991323" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.329718" />
       <window_info anchor="bottom" id="Duplicate detector" order="7" weight="0.32936078" />
       <window_info anchor="bottom" id="Spring" order="8" weight="0.3286334" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.3286334" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.07049891" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="Statistic" order="12" />
-      <window_info anchor="bottom" id="Java Enterprise" order="13" />
-      <window_info anchor="bottom" id="Database Changes" order="14" />
-      <window_info anchor="bottom" id="Version Control" order="15" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50053304" side_tool="true" weight="0.3991323" />
+      <window_info anchor="bottom" id="Statistic" order="12" weight="0.329718" />
+      <window_info anchor="bottom" id="Version Control" order="13" weight="0.329718" />
+      <window_info anchor="bottom" id="Java Enterprise" order="14" weight="0.329718" />
+      <window_info anchor="bottom" id="Database Changes" order="15" />
       <window_info anchor="bottom" id="Messages" order="16" weight="0.3286334" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -962,12 +976,6 @@
           <option name="timeStamp" value="21" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/service/impl/AuthenticationServiceImpl.java</url>
-          <line>23</line>
-          <properties />
-          <option name="timeStamp" value="24" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/messagemanager-8301/src/main/java/com/tidc/messagemanager/service/impl/CheckMessageImpl.java</url>
           <line>34</line>
           <properties />
@@ -997,6 +1005,18 @@
           <properties />
           <option name="timeStamp" value="30" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/filemanager-6003/src/main/java/com/tidc/filemanager/service/impl/FileServiceImpl.java</url>
+          <line>25</line>
+          <properties />
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/service/impl/FileManagerServiceImpl.java</url>
+          <line>22</line>
+          <properties />
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/mapper/MenuMapper.java</url>
           <line>13</line>
@@ -1009,376 +1029,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/rabbitmq-6002/src/test/java/com/tidc/rabbitmq/RabbitmqApplicationTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="19" lean-forward="true" selection-start-column="19" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/usermanager-8101/src/main/java/com/tidc/usermanager/mapper/StudentMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="17" column="82" selection-start-line="17" selection-start-column="82" selection-end-line="17" selection-end-column="82" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/usermanager-8101/src/main/java/com/tidc/usermanager/service/impl/CheckUserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="39" column="53" lean-forward="true" selection-start-line="39" selection-start-column="53" selection-end-line="39" selection-end-column="53" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/contestmanager-8401/src/main/java/com/tidc/contest8401/mapper/ContestMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="12" column="9" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/contestmanager-8401/src/main/java/com/tidc/contest8401/service/impl/FoundServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="407">
-          <caret line="42" column="42" lean-forward="true" selection-start-line="42" selection-start-column="42" selection-end-line="42" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/main/java/com/tidc/api/pojo/Message.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="21" column="21" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/main/java/com/tidc/api/fallback/MessageManagerFallbackFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="515">
-          <caret line="43" column="16" selection-start-line="43" selection-start-column="16" selection-end-line="43" selection-end-column="28" />
-          <folding>
-            <element signature="e#1061#1062#0" expanded="true" />
-            <element signature="e#1083#1084#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rabbitmq-6002/src/main/java/com/tidc/rabbitmq/controller/SendController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="21" column="36" lean-forward="true" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#840#841#0" expanded="true" />
-            <element signature="e#880#881#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/contestmanager-8401/src/main/java/com/tidc/contest8401/service/impl/AddServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="20" column="14" lean-forward="true" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/main/java/com/tidc/api/fallback/RabbitManagerFallbcakFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="13" column="23" lean-forward="true" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/contestmanager-8401/src/main/java/com/tidc/contest8401/controller/FoundController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="26" column="110" selection-start-line="25" selection-start-column="4" selection-end-line="26" selection-end-column="110" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/contestmanager-8401/src/main/java/com/tidc/contest8401/controller/AddController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="19" column="44" selection-start-line="19" selection-start-column="44" selection-end-line="19" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/main/java/com/tidc/api/fallback/ContestManagerFallbackFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#559#560#0" expanded="true" />
-            <element signature="e#581#582#0" expanded="true" />
-            <element signature="e#637#638#0" expanded="true" />
-            <element signature="e#659#660#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/main/java/com/tidc/api/pojo/Power.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/main/java/com/tidc/api/pojo/Contest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="383">
-          <caret line="30" selection-start-line="20" selection-start-column="13" selection-end-line="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/usermanager-8101/src/main/java/com/tidc/usermanager/mapper/TeacherMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="16" column="139" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="139" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/usermanager-8101/src/main/java/com/tidc/usermanager/service/impl/RegisterServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="37" column="25" selection-start-line="37" selection-start-column="25" selection-end-line="37" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/usermanager-8101/src/main/java/com/tidc/usermanager/controller/RegisterController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="19" column="82" selection-start-line="19" selection-start-column="82" selection-end-line="19" selection-end-column="82" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/main/java/com/tidc/api/controller/UserManagerApi.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="16" column="62" selection-start-line="16" selection-start-column="62" selection-end-line="16" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rabbitmq-6002/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="45" column="5" selection-end-line="46" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/filemanager-6003/src/main/java/com/tidc/filemanager/properties/FileProperties.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="12" column="38" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/filemanager-6003/src/main/java/com/tidc/filemanager/properties/MatchProperties.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="13" column="57" selection-start-line="13" selection-start-column="57" selection-end-line="13" selection-end-column="57" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/filemanager-6003/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="50" column="35" selection-start-line="50" selection-start-column="35" selection-end-line="50" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/filemanager-6003/src/main/java/com/tidc/filemanager/service/FileService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="11" column="54" selection-start-line="11" selection-start-column="54" selection-end-line="11" selection-end-column="54" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/filemanager-6003/src/main/java/com/tidc/filemanager/utiles/FileUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="61" column="21" lean-forward="true" selection-start-line="61" selection-start-column="21" selection-end-line="61" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../javajdk/org/springframework/spring-web/5.2.1.RELEASE/spring-web-5.2.1.RELEASE.jar!/org/springframework/web/multipart/MultipartFile.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="38" column="9" selection-start-line="38" selection-start-column="9" selection-end-line="38" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/messagemanager-8301/src/main/java/com/tidc/messagemanager/MessagemanagerApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" selection-start-line="9" selection-end-line="11" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/filemanager-6003/src/main/java/com/tidc/filemanager/service/impl/FileServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="35" column="23" selection-start-line="35" selection-start-column="23" selection-end-line="35" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/filemanager-6003/src/main/java/com/tidc/filemanager/FilemanagerApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-          <folding>
-            <element signature="e#440#441#0" expanded="true" />
-            <element signature="e#504#505#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/filemanager-6003/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="2" column="21" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/main/java/com/tidc/api/controller/AuthenticationApi.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/main/java/com/tidc/api/controller/RabbitManagerApi.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="14" column="77" selection-start-line="14" selection-start-column="77" selection-end-line="14" selection-end-column="77" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/main/java/com/tidc/api/controller/MessageManagerApi.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="16" column="12" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/main/java/com/tidc/api/constant/CodeConstant.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="395">
-          <caret line="20" column="43" lean-forward="true" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/filemanager-6003/src/main/java/com/tidc/filemanager/controller/FileController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="22" column="104" selection-start-line="22" selection-start-column="104" selection-end-line="22" selection-end-column="104" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/main/java/com/tidc/api/fallback/FileManagerFallbackFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="17" column="13" lean-forward="true" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#440#551#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/main/java/com/tidc/api/controller/ContestManagerApi.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="20" column="80" selection-start-line="20" selection-start-column="80" selection-end-line="20" selection-end-column="80" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/main/java/com/tidc/api/controller/FileManagerApi.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="17" column="78" selection-start-line="17" selection-start-column="78" selection-end-line="17" selection-end-column="78" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/service/ContestManagerService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="23" column="16" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/service/FileManagerService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="11" column="41" lean-forward="true" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/service/impl/MessageManagerServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="302">
@@ -1407,49 +1057,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/service/impl/FileManagerServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="20" column="29" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#704#705#0" expanded="true" />
-            <element signature="e#754#755#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/service/impl/AuthenticationServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="29" selection-start-line="29" selection-end-line="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/controller/AuthenticationController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="506">
           <caret line="36" column="57" selection-start-line="36" selection-start-column="57" selection-end-line="36" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/controller/ContestManagerController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="449">
-          <caret line="38" column="79" selection-start-line="38" selection-start-column="79" selection-end-line="38" selection-end-column="79" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/controller/FileManagerController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="24" column="57" selection-start-line="24" selection-start-column="57" selection-end-line="24" selection-end-column="57" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1464,6 +1075,376 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="290">
           <caret line="26" column="82" selection-start-line="26" selection-start-column="82" selection-end-line="26" selection-end-column="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/com/tidc/api/controller/AuthenticationApi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/com/tidc/api/controller/ContestManagerApi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="20" column="80" selection-start-line="20" selection-start-column="80" selection-end-line="20" selection-end-column="80" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/com/tidc/api/controller/MessageManagerApi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="16" selection-start-line="16" selection-end-line="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/com/tidc/api/controller/RabbitManagerApi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="14" column="77" selection-start-line="14" selection-start-column="77" selection-end-line="14" selection-end-column="77" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/com/tidc/api/controller/UserManagerApi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="16" column="62" selection-start-line="16" selection-start-column="62" selection-end-line="16" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/service/impl/AuthenticationServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="22" column="20" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/filemanager-6003/src/main/java/com/tidc/filemanager/FilemanagerApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="12" column="61" selection-start-line="12" selection-start-column="61" selection-end-line="12" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/filemanager-6003/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="2" column="21" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/filemanager-6003/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="5" column="36" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/com/tidc/api/fallback/FileManagerFallbackFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="15" column="44" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#550#551#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/service/FileManagerService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="11" column="31" lean-forward="true" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/jre/lib/rt.jar!/sun/reflect/NativeMethodAccessorImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="33" column="33" selection-start-line="33" selection-start-column="33" selection-end-line="33" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/filemanager-6003/mvnw.cmd">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/contestmanager-8401/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="18" column="54" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/config/FeignSpringFormEncoder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="4" selection-start-line="4" selection-end-line="4" selection-end-column="27" />
+          <folding>
+            <element signature="e#212#213#0" expanded="true" />
+            <element signature="e#238#239#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/config/FeignMultipartSupportConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="19" column="28" lean-forward="true" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#390#391#0" expanded="true" />
+            <element signature="e#427#428#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/consumer-8001/mvnw.cmd">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/consumer-8001/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="5" column="36" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/controller/ContestManagerController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="28" column="40" selection-start-line="28" selection-start-column="40" selection-end-line="28" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/com/tidc/api/constant/CodeConstant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="395">
+          <caret line="20" column="43" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../javajdk/org/springframework/cloud/spring-cloud-dependencies/Greenwich.BUILD-SNAPSHOT/spring-cloud-dependencies-Greenwich.BUILD-SNAPSHOT.pom">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="34" column="10" selection-start-line="34" selection-start-column="10" selection-end-line="34" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="23" column="54" selection-start-line="23" selection-start-column="54" selection-end-line="23" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../javajdk/io/github/openfeign/form/feign-form-spring/3.8.0/feign-form-spring-3.8.0.jar!/feign/form/spring/SpringFormEncoder.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="21" column="44" selection-start-line="21" selection-start-column="44" selection-end-line="21" selection-end-column="44" />
+          <folding>
+            <element signature="e#652#653#0" expanded="true" />
+            <element signature="e#687#688#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../javajdk/io/github/openfeign/form/feign-form/3.8.0/feign-form-3.8.0.jar!/feign/form/FormEncoder.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="25" column="39" selection-start-line="25" selection-start-column="39" selection-end-line="25" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../javajdk/io/github/openfeign/feign-core/10.4.0/feign-core-10.4.0.jar!/feign/codec/Encoder.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/com/tidc/api/config/FeignMultipartSupportConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="20" column="17" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../javajdk/org/springframework/spring-webmvc/5.1.11.RELEASE/spring-webmvc-5.1.11.RELEASE.jar!/org/springframework/web/servlet/mvc/method/annotation/ServletInvocableHandlerMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="51" selection-start-line="51" selection-end-line="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../javajdk/org/springframework/spring-webmvc/5.1.11.RELEASE/spring-webmvc-5.1.11.RELEASE.jar!/org/springframework/web/servlet/mvc/method/annotation/RequestMappingHandlerAdapter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="560" selection-start-line="560" selection-end-line="560" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../javajdk/io/github/openfeign/feign-core/10.4.0/feign-core-10.4.0.jar!/feign/MethodMetadata.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="109" selection-start-line="109" selection-end-line="109" />
+          <folding>
+            <element signature="e#2872#2873#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../javajdk/io/github/openfeign/feign-core/10.4.0/feign-core-10.4.0.jar!/feign/Request.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="187" selection-start-line="187" selection-end-line="187" />
+          <folding>
+            <element signature="e#6047#6048#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../javajdk/io/github/openfeign/feign-core/10.4.0/feign-core-10.4.0.jar!/feign/RequestTemplate.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="401">
+          <caret line="87" selection-start-line="87" selection-end-line="87" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../javajdk/io/github/openfeign/feign-core/10.4.0/feign-core-10.4.0.jar!/feign/ReflectiveFeign.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="183" selection-start-line="183" selection-end-line="183" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../javajdk/io/github/openfeign/feign-core/10.4.0/feign-core-10.4.0.jar!/feign/SynchronousMethodHandler.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="61" selection-start-line="61" selection-end-line="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/com/tidc/api/config/MultipartSupportConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="558">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#605#606#0" expanded="true" />
+            <element signature="e#683#684#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/com/tidc/api/controller/FileManagerApi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="24" column="157" selection-start-line="24" selection-start-column="157" selection-end-line="24" selection-end-column="157" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/com/tidc/api/config/FeignSpringFormEncoder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="40" selection-start-line="40" selection-end-line="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#277#278#0" expanded="true" />
+            <element signature="e#311#312#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/controller/FileManagerController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="263">
+          <caret line="19" column="25" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/consumer-8001/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="47">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/filemanager-6003/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="21" column="18" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/service/impl/FileManagerServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="317">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#762#763#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../javajdk/org/springframework/spring-web/5.1.11.RELEASE/spring-web-5.1.11.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="58" selection-start-line="58" selection-end-line="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/filemanager-6003/src/main/java/com/tidc/filemanager/controller/FileController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/filemanager-6003/src/main/java/com/tidc/filemanager/utiles/FileUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="419">
+          <caret line="64" column="64" selection-start-line="64" selection-start-column="64" selection-end-line="64" selection-end-column="64" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/filemanager-6003/src/main/java/com/tidc/filemanager/service/impl/FileServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="413">
+          <caret line="26" column="28" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1520,7 +1501,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>filemanager-6003</last-edited>
+          <last-edited>api</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

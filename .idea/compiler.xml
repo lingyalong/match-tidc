@@ -20,7 +20,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="api" target="6" />
+      <module name="api" target="1.5" />
       <module name="authentication-9001" target="1.8" />
       <module name="consumer-8001" target="1.8" />
       <module name="contestmanager-8401" target="1.8" />
