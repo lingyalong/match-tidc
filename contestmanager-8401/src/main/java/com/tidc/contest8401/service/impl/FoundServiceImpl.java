@@ -10,11 +10,13 @@ import com.tidc.api.pojo.Teacher;
 import com.tidc.api.pojo.UserOV;
 import com.tidc.contest8401.mapper.ContestMapper;
 import com.tidc.contest8401.service.FoundService;
+import com.tidc.contest8401.utils.TimeUtil;
 import com.tidc.utils.CheckObjectIsNullUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import sun.reflect.generics.scope.Scope;
 
+import java.text.ParseException;
 import java.util.LinkedHashMap;
 
 /**
@@ -31,19 +33,27 @@ public class FoundServiceImpl implements FoundService {
 	@Autowired
 	private ContestMapper contestMapper;
 	@Override
-	public UserOV foundService(Contest contest, String school_email) {
+	public UserOV<Integer> foundService(Contest contest, String school_email) throws ParseException {
 		UserOV userOV2 = userManagerApi.userInfo(school_email);
 		LinkedHashMap data = (LinkedHashMap) userOV2.getData();
 		//这里获取到创建学校的所有信息
 		School school = objectMapper.convertValue(data, new TypeReference<School>(){});
 		contest.setSchool_id(school.getId());
 		contest.setNumber(0);
-		UserOV userOV = new UserOV();
-		userOV.setStatus(CodeConstant.UPDATE);
+		contest.setIs_show(0);
+		boolean open = TimeUtil.is_open(contest.getStart());
+		if(open){
+			contest.setIs_open(1);
+		}else{
+			contest.setIs_open(0);
+		}
+		UserOV<Integer> userOV = new UserOV<>();
 		if (!CheckObjectIsNullUtils.contestObjCheckIsNull(contest)) {
 			userOV.setStatus(CodeConstant.FAIL).setMessage("有字段未填写");
+		}else{
+			contestMapper.insetContest(contest);
+			userOV.setStatus(CodeConstant.SUCCESS).setData(contest.getId());
 		}
-		contestMapper.insetContest(contest);
 		return userOV;
 	}
 }

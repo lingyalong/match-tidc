@@ -24,14 +24,14 @@ public class FileUtil {
 	 * @param fileName  文件名
 	 * @return boolean
 	 */
-	public boolean isNumType(String fileType,String fileName){
+	public static boolean isNumType(String fileType,String fileName){
 		if (fileType!=null && fileName!=null){
 			String substring = fileName.substring(fileName.indexOf("."));  //获取文件后缀名（判断类型）
 			System.out.println("文件上传类型是："+substring);
 			String[] str = fileType.split(",");                     //截取出来后缀名 也就是要匹配什么类型
 			System.out.println(Arrays.toString(str));
 			for (String s : str) {//遍历是否符合后缀
-				if (substring.equals(s))  return true;
+				if (substring.toLowerCase().equals(s))  return true;
 			}
 			return false;
 		}

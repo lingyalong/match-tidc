@@ -17,8 +17,12 @@ import org.springframework.web.multipart.MultipartFile;
 public class FileManagerController {
 	@Autowired
 	private FileManagerService fileManagerService;
-	@PostMapping(value = "/file" ,headers = "content-type=multipart/form-data")
-	public UserOV uploadFile(@RequestParam("file") MultipartFile file, @RequestParam("name") String name){
-		return fileManagerService.uploadFile(file, name);
+	@PostMapping(value = "/photo/file")
+	public UserOV<String> uploadPhoto(@RequestParam("file") MultipartFile file, @RequestParam("name") String name){
+		return fileManagerService.uploadPhoto(file,name);
+	}
+	@PostMapping("/details/file")
+	public UserOV<String> uploadDetails(@RequestParam("file") MultipartFile file, @RequestParam("name") String name){
+		return fileManagerService.uploadDetails(file,name);
 	}
 }

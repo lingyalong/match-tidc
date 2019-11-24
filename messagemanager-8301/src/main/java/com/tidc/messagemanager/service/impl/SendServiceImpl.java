@@ -4,10 +4,7 @@ import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.tidc.api.constant.CodeConstant;
 import com.tidc.api.controller.UserManagerApi;
-import com.tidc.api.pojo.Apply;
-import com.tidc.api.pojo.Message;
-import com.tidc.api.pojo.Teacher;
-import com.tidc.api.pojo.UserOV;
+import com.tidc.api.pojo.*;
 import com.tidc.messagemanager.mapper.ApplyMapper;
 import com.tidc.messagemanager.mapper.MessageMapper;
 import com.tidc.messagemanager.service.SendService;
@@ -65,5 +62,21 @@ public class SendServiceImpl implements SendService {
 	public UserOV sendMessage(Message message) {
 		messageMapper.insertMessage(message);
 		return null;
+	}
+
+	@Override
+	public UserOV sendSchoolMessage(int id, String message) {
+		//获取所有的该学校学生
+		UserOV<List<Student>> userOV = userManagerApi.listSchoolStudent(id);
+		Message msg = ac.getBean(Message.class);
+		msg.setHead("你的学校发布了一个比赛");
+		msg.setMessage(message);
+		msg.setIs_read(0);
+		for (Student student : userOV.getData()) {
+			msg.setReceiver_email(student.getEmail());
+			messageMapper.insertMessage(msg);
+		}
+		userOV.setStatus(CodeConstant.SUCCESS);
+		return userOV;
 	}
 }

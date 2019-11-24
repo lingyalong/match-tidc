@@ -24,7 +24,7 @@ public class FoundController {
 	 * @return
 	 */
 	@PostMapping("/contest")
-	public UserOV foundContest(@RequestBody Contest contest, @RequestParam("school_email")String school_email){
+	public UserOV<Integer> foundContest(@RequestBody Contest contest, @RequestParam("school_email")String school_email){
 		return foundService.foundService(contest, school_email);
 	}
 }

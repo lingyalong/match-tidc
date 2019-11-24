@@ -9,6 +9,6 @@ import org.apache.ibatis.annotations.Insert;
  * @Author 冯涛滔
  **/
 public interface PowerMapeer {
-	@Insert("insert into power(teacher_id,school_id) values(#{teacher_id},#{school_id})")
+	@Insert("insert into power(teacher_id,contest_id) values(#{teacher_id},#{contest_id})")
 	void insetPower(Power power);
 }

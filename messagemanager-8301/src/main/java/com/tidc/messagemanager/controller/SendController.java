@@ -24,4 +24,14 @@ public class SendController {
 		return sendService.sendMessage(message);
 	}
 
+	/**
+	 * 根据学校的id给所有学生发送信息
+	 * @param id 学校id
+	 * @param message 具体信息
+	 * @return
+	 */
+	@PostMapping("/school/message")
+	public UserOV sendSchoolMessage(@RequestParam("id") int id,@RequestParam("message") String message){
+		return sendService.sendSchoolMessage(id, message);
+	}
 }

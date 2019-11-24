@@ -1,5 +1,7 @@
 package com.tidc.rabbitmq.config;
 
+import org.springframework.amqp.rabbit.connection.ConnectionFactory;
+import org.springframework.amqp.rabbit.core.RabbitAdmin;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.amqp.core.Queue;
@@ -14,6 +16,11 @@ public class RabbitConfig {
 	//分配队列
 	public static String SEND_MESSAGE_QUEUES = "sendMessage";
 	public static String SEND_LIST_MESSAGE_QUEUES = "sendListMessage";
+	//配置
+	@Bean
+	RabbitAdmin rabbitAdmin(ConnectionFactory connectionFactory) {
+		return new RabbitAdmin(connectionFactory);
+	}
 	//队列声明
 	@Bean("sendMessage")
 	public Queue sendMessage(){

@@ -14,6 +14,8 @@ import com.tidc.usermanager.utiles.ApplicationContextProvider;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 /**
  * @ClassNmae CheckUserServiceImpl
  * @Description TODO
@@ -47,5 +49,13 @@ public class CheckUserServiceImpl implements CheckUserService {
 				return userOV.setStatus(CodeConstant.SUCCESS).setData(school);
 		}
 		return userOV.setStatus(CodeConstant.FAIL).setMessage("这个用户不存在");
+	}
+
+	@Override
+	public UserOV<List<Student>> listSchoolStudent(int id) {
+		UserOV<List<Student>> userOV = new UserOV<>();
+		List<Student> students = studentMapper.listSchoolStudent(id);
+		userOV.setStatus(CodeConstant.SUCCESS).setData(students);
+		return userOV;
 	}
 }

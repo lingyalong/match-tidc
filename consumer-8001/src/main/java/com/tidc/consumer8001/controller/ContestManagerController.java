@@ -4,8 +4,11 @@ import com.tidc.api.controller.ContestManagerApi;
 import com.tidc.api.pojo.Contest;
 import com.tidc.api.pojo.Power;
 import com.tidc.api.pojo.UserOV;
+import com.tidc.consumer8001.service.ContestManagerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 /**
  * @ClassNmae ContestController
@@ -16,28 +19,47 @@ import org.springframework.web.bind.annotation.*;
 @CrossOrigin
 public class ContestManagerController {
 	@Autowired
-	private ContestManagerApi contestManagerApi;
-
+	private ContestManagerService contestManagerService;
 	/**
 	 * 创建一个比赛
 	 * @param contest
-	 * @param school_email
+	 * @param access_token
 	 * @return
 	 */
 	@PostMapping("/contest")
-	public UserOV foundContest(@RequestBody Contest contest, @RequestParam("school_email")String school_email){
-		return contestManagerApi.foundContest(contest, school_email);
+	public UserOV<Integer> foundContest(@RequestBody Contest contest,@RequestParam("access_token") String access_token){
+		return contestManagerService.foundContest(contest,access_token);
 	}
 
 	/**
 	 * 为一个比赛增加评委
 	 * @param power
-	 * @param email
+	 * @param access_token
 	 * @return
 	 */
 	@PostMapping("/power")
-	public UserOV addPower(@RequestBody Power power, @RequestParam("email") String email){
-		return contestManagerApi.addPower(power, email);
+	public UserOV addPower(@RequestBody Power power, @RequestParam("access_token") String access_token){
+		return contestManagerService.addPower(power,access_token);
 	}
+
+	/**
+	 * 增加一个比赛类型
+	 * @param name
+	 * @return
+	 */
+	@PostMapping("/type" )
+	public UserOV addType(@RequestParam("name") String name){
+		return contestManagerService.addType(name);
+	}
+
+	/**
+	 * 查看所有比赛的详细信息
+	 * @return
+	 */
+	@GetMapping("/contest")
+	public UserOV<List<Contest>> getContestAll() {
+		return contestManagerService.getContestAll();
+	}
+
 
 }

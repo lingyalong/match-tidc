@@ -6,6 +6,8 @@ import com.tidc.api.pojo.Power;
 import com.tidc.api.pojo.UserOV;
 import feign.hystrix.FallbackFactory;
 
+import java.util.List;
+
 /**
  * @ClassNmae ContestManagerFallbackFactory
  * @Description TODO
@@ -19,6 +21,14 @@ public class ContestManagerFallbackFactory implements FallbackFactory<ContestMan
 			}
 
 			public UserOV addPower(Power power, String email) {
+				return null;
+			}
+
+			public UserOV addType(String name) {
+				return null;
+			}
+
+			public UserOV<List<Contest>> getContestAll() {
 				return null;
 			}
 		};

@@ -6,6 +6,8 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
+import java.io.Serializable;
+
 /**
  * @ClassNmae Apply
  * @Description TODO
@@ -15,7 +17,7 @@ import org.springframework.stereotype.Component;
 @Accessors(chain = true)
 @Scope(value = "prototype")
 @Component
-public class Apply {
+public class Apply implements Serializable {
 	private Integer id;
 	//申请人
 	private String proposer_email;

@@ -2,6 +2,7 @@ package com.tidc.utils;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.Type;
+import java.util.Arrays;
 
 /**
  * @ClassNmae CheckObjectIsNullUtils
@@ -26,7 +27,10 @@ public class CheckObjectIsNullUtils {
 			} catch (IllegalAccessException e) {
 				e.printStackTrace();
 			}
-			if (fieldValue == null&&!field.getName().equals("money")) { // 只要有一个属性值不为null 就返回false 表示对象不为null
+
+			String[] array = {"id","test_id","money",};
+			boolean nullFlag = Arrays.asList(array).contains(field.getName());
+			if (fieldValue == null&&!nullFlag) { //
 				flag = false;
 				break;
 			}

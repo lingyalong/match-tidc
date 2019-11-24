@@ -17,4 +17,6 @@ public interface StudentMapper {
 	List<String> listPower(int id);
 	@Select("select id,name, email, age, idEntity, telephone, school, department, major, grade, studentNumber from student where email=#{email}")
 	Student getStudent(String email);
+	@Select("select * from student where student_school_id=#{id}")
+	List<Student> listSchoolStudent(int id);
 }

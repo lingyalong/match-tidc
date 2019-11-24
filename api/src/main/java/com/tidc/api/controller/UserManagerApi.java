@@ -1,10 +1,13 @@
 package com.tidc.api.controller;
 
 import com.tidc.api.fallback.UserManagerFallbackFactory;
+import com.tidc.api.pojo.Student;
 import com.tidc.api.pojo.Teacher;
 import com.tidc.api.pojo.UserOV;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 /**
  * @ClassNmae UserManagerApi
@@ -19,4 +22,6 @@ public interface UserManagerApi {
 	UserOV userInfo(@RequestParam("email") String email);
 	@RequestMapping(value = "/teacher/open",method = RequestMethod.PUT)
 	UserOV teacherOpen(@RequestBody  Teacher teacher);
+	@RequestMapping(value = "/school/student/{id}",method = RequestMethod.GET)
+	UserOV<List<Student>> listSchoolStudent(@PathVariable("id") int id);
 }

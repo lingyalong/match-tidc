@@ -19,7 +19,12 @@ public class FileManagerServiceImpl implements FileManagerService {
 	@Autowired
 	private FileManagerApi fileManagerApi;
 	@Override
-	public UserOV uploadFile( MultipartFile file, String name) {
-		return fileManagerApi.uploadFile(file,name);
+	public UserOV<String> uploadPhoto( MultipartFile file, String name) {
+		return fileManagerApi.uploadPhoto(file,name);
+	}
+
+	@Override
+	public UserOV<String> uploadDetails(MultipartFile file, String name) {
+		return fileManagerApi.uploadDetails(file,name);
 	}
 }

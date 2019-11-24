@@ -1,8 +1,8 @@
 spring:
   application:
-    name: ribbitmq  #服务名
+    name: rabbitmq  #服务名
   rabbitmq:
-    host: localhost
+    host: 127.0.0.1
     port: 5672
     username: root
     password: 546100
@@ -39,7 +39,7 @@ server:
 eureka:
   instance:
     prefer-ip-address: true #以ip来注册服务
-    instance-id: ribbitmq-6002
+    instance-id: rabbitmq-6002
   client:
     service-url:
       defaultZone: http://localhost:6001/eureka/

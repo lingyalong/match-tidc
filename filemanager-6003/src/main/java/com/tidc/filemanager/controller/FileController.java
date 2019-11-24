@@ -16,8 +16,13 @@ import org.springframework.web.multipart.MultipartFile;
 public class FileController{
 	@Autowired
 	private FileService fileService;
-	@PostMapping("/file")
-	public UserOV uploadFile(@RequestParam("file") MultipartFile file,@RequestParam("name") String name){
-		return fileService.uploadFile(file, name);
+	@PostMapping("/photo/file")
+	public UserOV<String> uploadPhoto(@RequestParam("file") MultipartFile file,@RequestParam("name") String name){
+		return fileService.uploadPhoto(file, name);
+	}
+	@PostMapping("/details/file")
+	public UserOV<String> uploadDetails(@RequestParam("file") MultipartFile file,@RequestParam("name") String name){
+		return fileService.uploadDetails(file,name);
+
 	}
 }

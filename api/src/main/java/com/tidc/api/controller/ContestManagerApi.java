@@ -8,6 +8,8 @@ import com.tidc.api.pojo.UserOV;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 /**
  * @ClassNmae ContestManagerApi
  * @Description TODO
@@ -16,7 +18,11 @@ import org.springframework.web.bind.annotation.*;
 @FeignClient(value = "CONTESTMANAGER",fallbackFactory = ContestManagerFallbackFactory.class)
 public interface ContestManagerApi {
 	@RequestMapping(value = "/contest",method = RequestMethod.POST)
-	UserOV foundContest(@RequestBody Contest contest, @RequestParam("school_email")String school_email);
+	UserOV<Integer> foundContest(@RequestBody Contest contest, @RequestParam("school_email")String school_email);
 	@RequestMapping(value = "/power",method = RequestMethod.POST)
 	UserOV addPower(@RequestBody Power power,@RequestParam("email") String email);
+	@RequestMapping(value = "/type",method = RequestMethod.POST)
+	UserOV addType(@RequestParam("name") String name);
+	@RequestMapping(value = "/contest",method = RequestMethod.GET)
+	UserOV<List<Contest>> getContestAll();
 }

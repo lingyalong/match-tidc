@@ -22,8 +22,10 @@ import feign.form.spring.SpringFormEncoder;
 //@Headers("Content-Type: multipart/form-data")
 @FeignClient(value = "FILEMANAGER",fallbackFactory = FileManagerFallbackFactory.class)
 public interface FileManagerApi {
-	@RequestMapping(value = "/file", method = RequestMethod.POST, consumes = MediaType.MULTIPART_FORM_DATA_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
-	UserOV uploadFile(@RequestPart("file") MultipartFile file, @RequestParam("name") String name);
+	@RequestMapping(value = "/photo/file", method = RequestMethod.POST,consumes = MediaType.MULTIPART_FORM_DATA_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
+	UserOV<String> uploadPhoto(@RequestPart("file") MultipartFile file, @RequestParam("name") String name);
+	@RequestMapping(value = "/details/file",method =RequestMethod.POST,consumes = MediaType.MULTIPART_FORM_DATA_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
+	UserOV<String> uploadDetails(@RequestPart("file") MultipartFile file,@RequestParam("name") String name);
 
 
 }

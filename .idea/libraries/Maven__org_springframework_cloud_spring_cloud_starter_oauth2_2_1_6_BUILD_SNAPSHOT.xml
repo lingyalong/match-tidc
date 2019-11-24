@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.springframework.cloud:spring-cloud-starter-oauth2:2.1.6.BUILD-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../javajdk/org/springframework/cloud/spring-cloud-starter-oauth2/2.1.6.BUILD-SNAPSHOT/spring-cloud-starter-oauth2-2.1.6.BUILD-20191121.015007-20.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/../../javajdk/org/springframework/cloud/spring-cloud-starter-oauth2/2.1.6.BUILD-SNAPSHOT/spring-cloud-starter-oauth2-2.1.6.BUILD-20191121.015007-20-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../../javajdk/org/springframework/cloud/spring-cloud-starter-oauth2/2.1.6.BUILD-SNAPSHOT/spring-cloud-starter-oauth2-2.1.6.BUILD-20191121.015007-20-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

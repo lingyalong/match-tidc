@@ -34,6 +34,7 @@ public class MessageConsumer {
 			channel.basicAck(message.getMessageProperties().getDeliveryTag(), false);
 		} catch (IOException e) {
 			channel.basicNack(message.getMessageProperties().getDeliveryTag(), false, true);
+
 		}
 
 	}

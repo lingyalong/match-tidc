@@ -1,6 +1,8 @@
 mybatis:
-  type-aliases-package: com.tidc.contest8401.pojo
-  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.tidc.api.pojo
+  mapper-locations: mapper/ContestMapper
+  configuration:
+    map-underscore-to-camel-case: true
 spring:
   application:
     name: contestmanager  #服务名
@@ -52,3 +54,20 @@ eureka:
       defaultZone: http://localhost:6001/eureka/
 info:
   app.name: match-tidc
+ribbon:
+  ReadTimeout: 10000
+  ConnectTimeout: 10000
+  MaxAutoRetries: 0
+  MaxAutoRetriesNextServer: 1
+  eureka:
+    enabled: true
+hystrix:
+  command:
+    default:
+      execution:
+        timeout:
+          enabled: true
+        isolation:
+          thread:
+            timeoutInMilliseconds: 60000
+

@@ -13,15 +13,8 @@ eureka:
 info:
   app.name: match-tidc
 zuul:
-  max:
-    host:
-      connections: 500
-      socket-timeout-millis: 60000
-      connect-timeout-millis: 60000
   routes:
-    foundProvider-7001: /found/**
-    authentication: /au/**
-  ignoredServices: "*"
+    consumer: /con/**
 ribbon:
   ReadTimeout: 10000
   ConnectTimeout: 10000
@@ -38,3 +31,4 @@ hystrix:
         isolation:
           thread:
             timeoutInMilliseconds: 60000
+

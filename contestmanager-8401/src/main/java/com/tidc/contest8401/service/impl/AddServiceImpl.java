@@ -2,9 +2,11 @@ package com.tidc.contest8401.service.impl;
 
 import com.tidc.api.constant.CodeConstant;
 import com.tidc.api.controller.RabbitManagerApi;
+import com.tidc.api.pojo.ContestType;
 import com.tidc.api.pojo.Message;
 import com.tidc.api.pojo.Power;
 import com.tidc.api.pojo.UserOV;
+import com.tidc.contest8401.mapper.ContestTypeMapper;
 import com.tidc.contest8401.mapper.PowerMapeer;
 import com.tidc.contest8401.service.AddService;
 import com.tidc.utils.ApplicationContextProvider;
@@ -22,6 +24,8 @@ public class AddServiceImpl implements AddService {
 	private PowerMapeer powerMapeer;
 	@Autowired
 	private RabbitManagerApi rabbitManagerApi;
+	@Autowired
+	private ContestTypeMapper contestTypeMapper;
 	@Override
 	public UserOV addPower(Power power,String email) {
 		UserOV userOV = new UserOV();
@@ -31,8 +35,16 @@ public class AddServiceImpl implements AddService {
 		message.setIs_read(0);
 		message.setReceiver_email(email);
 		message.setMessage("详情查看个人页面");
-		rabbitManagerApi.sendMessage(message);
 		powerMapeer.insetPower(power);
+		rabbitManagerApi.sendMessage(message);
+		userOV.setStatus(CodeConstant.UPDATE);
+		return userOV;
+	}
+
+	@Override
+	public UserOV addType(String name) {
+		contestTypeMapper.insertContestType(name);
+		UserOV userOV = new UserOV();
 		userOV.setStatus(CodeConstant.UPDATE);
 		return userOV;
 	}
