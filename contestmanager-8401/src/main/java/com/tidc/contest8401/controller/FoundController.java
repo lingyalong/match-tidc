@@ -2,9 +2,12 @@ package com.tidc.contest8401.controller;
 
 import com.tidc.api.pojo.Contest;
 import com.tidc.api.pojo.UserOV;
+import com.tidc.api.pojo.Work;
 import com.tidc.contest8401.service.FoundService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+
+import java.text.ParseException;
 
 /**
  * @ClassNmae foundController
@@ -24,7 +27,12 @@ public class FoundController {
 	 * @return
 	 */
 	@PostMapping("/contest")
-	public UserOV<Integer> foundContest(@RequestBody Contest contest, @RequestParam("school_email")String school_email){
+	public UserOV<Integer> foundContest(@RequestBody Contest contest, @RequestParam("school_email")String school_email) throws ParseException {
 		return foundService.foundService(contest, school_email);
+	}
+	//
+	@PostMapping("/apply")
+	public UserOV apply(@RequestBody Work work,@RequestParam("email") String email){
+		return foundService.apply(work,email);
 	}
 }

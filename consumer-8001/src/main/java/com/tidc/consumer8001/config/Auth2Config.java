@@ -17,12 +17,14 @@ import org.springframework.security.oauth2.provider.token.RemoteTokenServices;
 @Configuration
 @EnableResourceServer//这个配置相当于securityConfig
 public class Auth2Config extends ResourceServerConfigurerAdapter {
-//	@Override
-//	public void configure(ResourceServerSecurityConfigurer resources) throws Exception {
-//		super.configure(resources);
-//		resources.authenticationEntryPoint(new LLGAuthenticationEntryPoint());
-//
-//	}
+
+	@Override
+	public void configure(ResourceServerSecurityConfigurer resources) throws Exception {
+		super.configure(resources);
+		//配置自动续签
+		resources.authenticationEntryPoint(new LLGAuthenticationEntryPoint());
+
+	}
 
 
 	@Primary

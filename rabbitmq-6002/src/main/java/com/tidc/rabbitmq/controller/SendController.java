@@ -28,5 +28,4 @@ public class SendController {
 	public void sendListMessage(List<Message> list){
 		sendService.sendListMessage(list);
 	}
-
 }

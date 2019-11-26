@@ -1,5 +1,6 @@
 package com.tidc.usermanager.controller;
 
+import com.tidc.api.pojo.Student;
 import com.tidc.api.pojo.Teacher;
 import com.tidc.api.pojo.UserOV;
 import com.tidc.usermanager.service.RegisterService;
@@ -19,5 +20,9 @@ public class RegisterController {
 	@PostMapping("/teacher/register")
 	public UserOV teacherRegister(@RequestBody Teacher teacher,@RequestParam("code") String code){
 		return registerService.teacherRegister(teacher,code);
+	}
+	@PostMapping("/student/register")
+	public UserOV studentRegister(@RequestBody Student student,@RequestParam("code") String code){
+		return registerService.studentRegister(student,code);
 	}
 }

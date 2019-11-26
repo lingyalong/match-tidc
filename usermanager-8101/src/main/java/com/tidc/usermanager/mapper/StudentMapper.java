@@ -1,6 +1,7 @@
 package com.tidc.usermanager.mapper;
 
 import com.tidc.api.pojo.Student;
+import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Select;
 
 import java.util.List;
@@ -19,4 +20,6 @@ public interface StudentMapper {
 	Student getStudent(String email);
 	@Select("select * from student where student_school_id=#{id}")
 	List<Student> listSchoolStudent(int id);
+	@Insert("insert into student(name.email,password,age,idEntity,telephone,school,department,major,grade,studentNumber,student_school_id) values(#{name},#{email},#{password},#{age},#{idEntity},#{telephone},#{school},#{department},#{major},#{grade},#{studentNumber},#{student_school_id})")
+	void insertStudent(Student student);
 }

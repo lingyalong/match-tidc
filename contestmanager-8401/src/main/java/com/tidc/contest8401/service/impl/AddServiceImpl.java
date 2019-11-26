@@ -2,12 +2,11 @@ package com.tidc.contest8401.service.impl;
 
 import com.tidc.api.constant.CodeConstant;
 import com.tidc.api.controller.RabbitManagerApi;
-import com.tidc.api.pojo.ContestType;
-import com.tidc.api.pojo.Message;
-import com.tidc.api.pojo.Power;
-import com.tidc.api.pojo.UserOV;
+import com.tidc.api.exception.RepetitionException;
+import com.tidc.api.pojo.*;
 import com.tidc.contest8401.mapper.ContestTypeMapper;
 import com.tidc.contest8401.mapper.PowerMapeer;
+import com.tidc.contest8401.mapper.TeamMapper;
 import com.tidc.contest8401.service.AddService;
 import com.tidc.utils.ApplicationContextProvider;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,6 +25,8 @@ public class AddServiceImpl implements AddService {
 	private RabbitManagerApi rabbitManagerApi;
 	@Autowired
 	private ContestTypeMapper contestTypeMapper;
+	@Autowired
+	private TeamMapper teamMapper;
 	@Override
 	public UserOV addPower(Power power,String email) {
 		UserOV userOV = new UserOV();
@@ -46,6 +47,19 @@ public class AddServiceImpl implements AddService {
 		contestTypeMapper.insertContestType(name);
 		UserOV userOV = new UserOV();
 		userOV.setStatus(CodeConstant.UPDATE);
+		return userOV;
+	}
+
+	@Override
+	public UserOV addMember(Team team) throws RepetitionException {
+		Integer repetition = teamMapper.CheckRepetition(team);
+		if(repetition!=null){
+			//重复了
+			throw new RepetitionException(429,"重复添加队员操作"+team);
+		}
+		teamMapper.insertMember(team);
+		UserOV userOV = new UserOV();
+		userOV.setStatus(CodeConstant.SUCCESS);
 		return userOV;
 	}
 }

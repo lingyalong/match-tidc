@@ -3,6 +3,7 @@ package com.tidc.consumer8001.service;
 import com.tidc.api.pojo.Contest;
 import com.tidc.api.pojo.Power;
 import com.tidc.api.pojo.UserOV;
+import com.tidc.api.pojo.Work;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -36,11 +37,19 @@ public interface ContestManagerService {
 	 * @param name
 	 * @return
 	 */
-	UserOV addType(@RequestParam("name") String name);
+	UserOV addType( String name);
 
 	/**
 	 * 获取所有比赛的展示信息
 	 * @return
 	 */
 	 UserOV<List<Contest>> getContestAll();
+
+	/**
+	 * 学生报名比赛
+	 * @param work
+	 * @return
+	 */
+	 UserOV apply( Work work,String access_token);
+
 }

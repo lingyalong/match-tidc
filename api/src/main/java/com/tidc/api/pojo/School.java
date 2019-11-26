@@ -23,5 +23,4 @@ public class School implements Serializable {
 	private String email;
 	private String password;
 	private String code;
-
 }

@@ -52,6 +52,5 @@ public class MessageConsumer {
 			// 拒绝当前消息，并把消息返回原队列
 			channel.basicNack(message.getMessageProperties().getDeliveryTag(), false, true);
 		}
-
 	}
 }

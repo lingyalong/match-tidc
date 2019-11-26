@@ -5,6 +5,7 @@ import com.tidc.api.fallback.MessageManagerFallbackFactory;
 import com.tidc.api.pojo.Contest;
 import com.tidc.api.pojo.Power;
 import com.tidc.api.pojo.UserOV;
+import com.tidc.api.pojo.Work;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.*;
 
@@ -25,4 +26,6 @@ public interface ContestManagerApi {
 	UserOV addType(@RequestParam("name") String name);
 	@RequestMapping(value = "/contest",method = RequestMethod.GET)
 	UserOV<List<Contest>> getContestAll();
+	@RequestMapping(value = "/apply",method = RequestMethod.POST)
+	UserOV apply(@RequestBody Work work,@RequestParam("email") String email);
 }

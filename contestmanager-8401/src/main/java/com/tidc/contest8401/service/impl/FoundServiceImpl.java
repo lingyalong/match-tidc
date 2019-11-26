@@ -4,11 +4,10 @@ import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.tidc.api.constant.CodeConstant;
 import com.tidc.api.controller.UserManagerApi;
-import com.tidc.api.pojo.Contest;
-import com.tidc.api.pojo.School;
-import com.tidc.api.pojo.Teacher;
-import com.tidc.api.pojo.UserOV;
+import com.tidc.api.pojo.*;
 import com.tidc.contest8401.mapper.ContestMapper;
+import com.tidc.contest8401.mapper.TeamMapper;
+import com.tidc.contest8401.mapper.WorkMapper;
 import com.tidc.contest8401.service.FoundService;
 import com.tidc.contest8401.utils.TimeUtil;
 import com.tidc.utils.CheckObjectIsNullUtils;
@@ -32,6 +31,10 @@ public class FoundServiceImpl implements FoundService {
 	private ObjectMapper objectMapper;
 	@Autowired
 	private ContestMapper contestMapper;
+	@Autowired
+	private WorkMapper workMapper;
+	@Autowired
+	private TeamMapper teamMapper;
 	@Override
 	public UserOV<Integer> foundService(Contest contest, String school_email) throws ParseException {
 		UserOV userOV2 = userManagerApi.userInfo(school_email);
@@ -56,4 +59,28 @@ public class FoundServiceImpl implements FoundService {
 		}
 		return userOV;
 	}
+
+	/**
+	 * 报名比赛
+	 * @param work
+	 * @param email
+	 * @return
+	 */
+	@Override
+	public UserOV apply(Work work,String email) {
+		UserOV userOV1 = userManagerApi.userInfo(email);
+		Student student = (Student) userOV1.getData();
+		work.setStudent_id(student.getId());
+		work.setScore(0.0);
+		workMapper.insetWork(work);
+		//增加一个队长
+		Team team = new Team();
+		team.setStudent_id(student.getId());
+		team.setWork_id(work.getId());
+		teamMapper.insertLeader(team);
+		UserOV userOV = new UserOV();
+		userOV.setStatus(CodeConstant.SUCCESS);
+		return userOV;
+	}
+
 }

@@ -4,6 +4,7 @@ import com.tidc.api.controller.ContestManagerApi;
 import com.tidc.api.pojo.Contest;
 import com.tidc.api.pojo.Power;
 import com.tidc.api.pojo.UserOV;
+import com.tidc.api.pojo.Work;
 import com.tidc.consumer8001.service.ContestManagerService;
 import com.tidc.consumer8001.utils.UserInfo;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -42,5 +43,11 @@ public class ContestManagerServiceImpl implements ContestManagerService {
 	@Override
 	public UserOV<List<Contest>> getContestAll() {
 		return contestManagerApi.getContestAll();
+	}
+
+	@Override
+	public UserOV apply(Work work,String access_token) {
+		String email = userInfo.getUserName(access_token);
+		return contestManagerApi.apply(work,email);
 	}
 }

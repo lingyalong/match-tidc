@@ -41,26 +41,9 @@ public class Oauth2ResourceServerConfig extends GlobalMethodSecurityConfiguratio
 	{
 		OAuth2MethodSecurityExpressionHandler oAuth2MethodSecurityExpressionHandler = new OAuth2MethodSecurityExpressionHandler();
 		return oAuth2MethodSecurityExpressionHandler;
+
+
 	}
-//	@Autowired
-//	CustomMetadataSource metadataSource;
-//	@Autowired
-//	UrlAccessDecisionManager urlAccessDecisionManager;
-//	@Override
-//	protected void configure(HttpSecurity http) throws Exception {
-//		http.authorizeRequests()
-//				.withObjectPostProcessor(new ObjectPostProcessor<FilterSecurityInterceptor>() {
-//					@Override
-//					public <O extends FilterSecurityInterceptor> O postProcess(O o) {
-//						o.setSecurityMetadataSource(metadataSource);
-//						o.setAccessDecisionManager(urlAccessDecisionManager);
-//						return o;
-//					}
-//				})
-//				.and().csrf().disable();
-////                權限不足的控制器
-//
-//	}
 
 }
 
