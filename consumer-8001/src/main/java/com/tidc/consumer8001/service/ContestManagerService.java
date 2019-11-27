@@ -1,9 +1,6 @@
 package com.tidc.consumer8001.service;
 
-import com.tidc.api.pojo.Contest;
-import com.tidc.api.pojo.Power;
-import com.tidc.api.pojo.UserOV;
-import com.tidc.api.pojo.Work;
+import com.tidc.api.pojo.*;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -64,4 +61,11 @@ public interface ContestManagerService {
 	 * @return
 	 */
 	UserOV<Contest> updateContest( Contest contest);
+
+	/**
+	 * 添加队员
+	 * @param team
+	 * @return
+	 */
+	UserOV addMember(Team team);
 }

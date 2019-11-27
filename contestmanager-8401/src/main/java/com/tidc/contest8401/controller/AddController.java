@@ -40,6 +40,13 @@ public class AddController {
 	public UserOV addType(@RequestParam("name") String name) throws RepetitionException {
 		return addService.addType(name);
 	}
+
+	/**
+	 * 添加一个队员
+	 * @param team
+	 * @return
+	 * @throws RepetitionException
+	 */
 	@PostMapping("/member")
 	public UserOV addMember(@RequestBody Team team) throws RepetitionException {
 		return addService.addMember(team);

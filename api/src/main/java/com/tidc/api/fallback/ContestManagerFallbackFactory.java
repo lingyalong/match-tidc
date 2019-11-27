@@ -1,10 +1,7 @@
 package com.tidc.api.fallback;
 
 import com.tidc.api.controller.ContestManagerApi;
-import com.tidc.api.pojo.Contest;
-import com.tidc.api.pojo.Power;
-import com.tidc.api.pojo.UserOV;
-import com.tidc.api.pojo.Work;
+import com.tidc.api.pojo.*;
 import feign.hystrix.FallbackFactory;
 
 import java.util.List;
@@ -42,6 +39,10 @@ public class ContestManagerFallbackFactory implements FallbackFactory<ContestMan
 			}
 
 			public UserOV<Contest> updateContest(Contest contest) {
+				return null;
+			}
+
+			public UserOV addMember(Team team) {
 				return null;
 			}
 		};

@@ -1,10 +1,7 @@
 package com.tidc.consumer8001.controller;
 
 import com.tidc.api.controller.ContestManagerApi;
-import com.tidc.api.pojo.Contest;
-import com.tidc.api.pojo.Power;
-import com.tidc.api.pojo.UserOV;
-import com.tidc.api.pojo.Work;
+import com.tidc.api.pojo.*;
 import com.tidc.consumer8001.service.ContestManagerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -63,7 +60,7 @@ public class ContestManagerController {
 	/**
 	 * 学生报名比赛
 	 * 需要字段
-	 * name(比赛名字)
+	 * name(项目名字)
 	 * logo(封面地址)
 	 * url(文件地址)
 	 * contest_id(比赛id)
@@ -95,4 +92,10 @@ public class ContestManagerController {
 	public UserOV<Contest> updateContest(@RequestBody Contest contest){
 		return contestManagerService.updateContest(contest);
 	}
+
+	@PostMapping("/member")
+	public UserOV addMember(@RequestBody Team team){
+		return contestManagerService.addMember(team);
+	}
+
 }

@@ -1,10 +1,7 @@
 package com.tidc.consumer8001.service.impl;
 
 import com.tidc.api.controller.ContestManagerApi;
-import com.tidc.api.pojo.Contest;
-import com.tidc.api.pojo.Power;
-import com.tidc.api.pojo.UserOV;
-import com.tidc.api.pojo.Work;
+import com.tidc.api.pojo.*;
 import com.tidc.consumer8001.service.ContestManagerService;
 import com.tidc.consumer8001.utils.UserInfo;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -59,5 +56,10 @@ public class ContestManagerServiceImpl implements ContestManagerService {
 	@Override
 	public UserOV<Contest> updateContest(Contest contest) {
 		return contestManagerApi.updateContest(contest);
+	}
+
+	@Override
+	public UserOV addMember(Team team) {
+		return contestManagerApi.addMember(team);
 	}
 }

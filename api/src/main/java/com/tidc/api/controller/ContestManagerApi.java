@@ -2,10 +2,7 @@ package com.tidc.api.controller;
 
 import com.tidc.api.fallback.ContestManagerFallbackFactory;
 import com.tidc.api.fallback.MessageManagerFallbackFactory;
-import com.tidc.api.pojo.Contest;
-import com.tidc.api.pojo.Power;
-import com.tidc.api.pojo.UserOV;
-import com.tidc.api.pojo.Work;
+import com.tidc.api.pojo.*;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.*;
 
@@ -39,4 +36,7 @@ public interface ContestManagerApi {
 
 	@RequestMapping(value = "/contest",method = RequestMethod.PUT)
 	UserOV<Contest> updateContest(@RequestBody Contest contest);
+
+	@RequestMapping(value = "/member",method = RequestMethod.POST)
+	UserOV addMember(@RequestBody Team team);
 }

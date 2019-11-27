@@ -69,7 +69,8 @@ public class FoundServiceImpl implements FoundService {
 	@Override
 	public UserOV apply(Work work,String email) {
 		UserOV userOV1 = userManagerApi.userInfo(email);
-		Student student = (Student) userOV1.getData();
+//		Student student = (Student) userOV1.getData();
+		Student student = objectMapper.convertValue(userOV1.getData(), new TypeReference<Student>() {});
 		work.setStudent_id(student.getId());
 		work.setScore(0.0);
 		workMapper.insetWork(work);
