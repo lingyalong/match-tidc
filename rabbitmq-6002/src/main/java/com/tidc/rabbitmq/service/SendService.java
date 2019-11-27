@@ -3,6 +3,7 @@ package com.tidc.rabbitmq.service;
 import com.tidc.api.pojo.Message;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * @ClassNmae SendService
@@ -11,6 +12,7 @@ import java.util.List;
  **/
 
 public interface SendService {
-	public void sendMessage(Message message);
-	public void sendListMessage(List<Message> list);
+	void sendMessage(Message message);
+	void sendListMessage(Map map);
+	void deleteFile(String path);
 }

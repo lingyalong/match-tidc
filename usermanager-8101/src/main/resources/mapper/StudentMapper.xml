@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.tidc.usermanager.mapper.StudentMapper">
+    <select id="listStudentEmail" parameterType="java.util.List">
+        select email
+        from student
+        where id in
+        <foreach collection="list" item="employeeId" index="index" open="(" close=")" separator=",">
+            #{employeeId}
+        </foreach>
+    </select>
+</mapper>

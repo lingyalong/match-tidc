@@ -55,4 +55,9 @@ public class ContestManagerServiceImpl implements ContestManagerService {
 	public UserOV<List<Contest>> getTypeContest(String type) {
 		return contestManagerApi.getTypeContest(type);
 	}
+
+	@Override
+	public UserOV<Contest> updateContest(Contest contest) {
+		return contestManagerApi.updateContest(contest);
+	}
 }

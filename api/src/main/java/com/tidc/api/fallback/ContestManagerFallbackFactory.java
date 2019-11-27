@@ -40,6 +40,10 @@ public class ContestManagerFallbackFactory implements FallbackFactory<ContestMan
 			public UserOV<List<Contest>> getTypeContest(String type) {
 				return null;
 			}
+
+			public UserOV<Contest> updateContest(Contest contest) {
+				return null;
+			}
 		};
 	}
 }

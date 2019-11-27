@@ -30,4 +30,7 @@ public interface UserManagerApi {
 
 	@RequestMapping(value = "/student/register",method = RequestMethod.POST)
 	UserOV studentRegister(@RequestBody Student student);
+
+	@RequestMapping(value = "/list/student/email",method = RequestMethod.GET)
+	UserOV<List<String>> listStudentEmail(@RequestParam("list") List<Integer> list);
 }

@@ -2,10 +2,12 @@ package com.tidc.api.controller;
 
 import com.tidc.api.fallback.ContestManagerFallbackFactory;
 import com.tidc.api.pojo.Message;
+import com.tidc.api.pojo.UserOV;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * @ClassNmae RabbitManagerApi
@@ -17,5 +19,7 @@ public interface RabbitManagerApi {
 	@RequestMapping(value = "/send/message",method = RequestMethod.POST)
 	void sendMessage(@RequestBody Message message);
 	@RequestMapping(value = "/send/list/message",method = RequestMethod.POST)
-	void sendListMessage(@RequestBody List<Message> list);
+	void sendListMessage(@RequestBody Map map);
+	@RequestMapping(value = "/delete/file",method = RequestMethod.POST)
+	void deleteFile(@RequestParam("path") String path);
 }

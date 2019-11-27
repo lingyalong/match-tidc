@@ -36,4 +36,7 @@ public interface ContestManagerApi {
 
 	@RequestMapping(value = "/type/contest",method = RequestMethod.GET)
 	UserOV<List<Contest>> getTypeContest(@RequestParam("type") String type);
+
+	@RequestMapping(value = "/contest",method = RequestMethod.PUT)
+	UserOV<Contest> updateContest(@RequestBody Contest contest);
 }

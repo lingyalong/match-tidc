@@ -5,6 +5,7 @@ import com.tidc.api.pojo.Message;
 import feign.hystrix.FallbackFactory;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * @ClassNmae RabbitFallbcakFactory
@@ -15,6 +16,14 @@ public class RabbitManagerFallbcakFactory implements FallbackFactory<RabbitManag
 	public RabbitManagerApi create(Throwable throwable) {
 		return new RabbitManagerApi() {
 			public void sendMessage(Message message) {
+
+			}
+
+			public void sendListMessage(Map map) {
+
+			}
+
+			public void deleteFile(String path) {
 
 			}
 

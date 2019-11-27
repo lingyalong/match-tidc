@@ -27,5 +27,6 @@ public interface FileManagerApi {
 	@RequestMapping(value = "/details/file",method =RequestMethod.POST,consumes = MediaType.MULTIPART_FORM_DATA_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
 	UserOV<String> uploadDetails(@RequestPart("file") MultipartFile file,@RequestParam("name") String name);
 
-
+	@RequestMapping(value = "/file",method = RequestMethod.DELETE)
+	UserOV deleteFile(@RequestParam("path") String path);
 }

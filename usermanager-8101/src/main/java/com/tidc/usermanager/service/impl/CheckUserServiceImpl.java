@@ -58,4 +58,12 @@ public class CheckUserServiceImpl implements CheckUserService {
 		userOV.setStatus(CodeConstant.SUCCESS).setData(students);
 		return userOV;
 	}
+
+	@Override
+	public UserOV<List<String>> listStudentEmail(List<Integer> list) {
+		List<String> listEmail = studentMapper.listStudentEmail(list);
+		UserOV<List<String>> userOV = new UserOV<>();
+		userOV.setStatus(CodeConstant.SUCCESS).setData(listEmail);
+		return userOV;
+	}
 }

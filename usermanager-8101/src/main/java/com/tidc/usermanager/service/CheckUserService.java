@@ -26,4 +26,11 @@ public interface CheckUserService {
 	 * @return
 	 */
 	UserOV<List<Student>> listSchoolStudent( int id);
+
+	/**
+	 * 使用学生id查询他们的email
+	 * @param list
+	 * @return
+	 */
+	UserOV<List<String>> listStudentEmail(List<Integer> list);
 }

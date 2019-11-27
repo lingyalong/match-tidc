@@ -5,6 +5,7 @@ import com.tidc.api.pojo.Power;
 import com.tidc.api.pojo.UserOV;
 import com.tidc.api.pojo.Work;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
 
@@ -56,4 +57,11 @@ public interface ContestManagerService {
 	 * @return
 	 */
 	UserOV<List<Contest>> getTypeContest(String type);
+
+	/**
+	 * 修改比赛
+	 * @param contest
+	 * @return
+	 */
+	UserOV<Contest> updateContest( Contest contest);
 }

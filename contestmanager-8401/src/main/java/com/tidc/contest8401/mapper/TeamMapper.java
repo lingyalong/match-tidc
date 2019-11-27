@@ -16,4 +16,5 @@ public interface TeamMapper {
 	void insertMember(Team team);
 	@Select("select id from Team where student_id = #{student_id} and work_id = #{work_id} ")
 	Integer CheckRepetition(Team team);
+
 }

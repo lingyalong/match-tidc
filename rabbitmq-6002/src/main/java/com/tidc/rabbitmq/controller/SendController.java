@@ -3,12 +3,10 @@ package com.tidc.rabbitmq.controller;
 import com.tidc.api.pojo.Message;
 import com.tidc.rabbitmq.service.SendService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * @ClassNmae SendController
@@ -25,7 +23,12 @@ public class SendController {
 		sendService.sendMessage(message);
 	}
 	@PostMapping("/send/list/message")
-	public void sendListMessage(List<Message> list){
-		sendService.sendListMessage(list);
+	public void sendListMessage(Map map){
+		sendService.sendListMessage(map);
 	}
+	@PostMapping("/delete/file")
+	public void deleteFile(@RequestParam("path") String path){
+		sendService.deleteFile(path);
+	}
+
 }

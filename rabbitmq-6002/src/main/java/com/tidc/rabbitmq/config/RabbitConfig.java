@@ -16,6 +16,7 @@ public class RabbitConfig {
 	//分配队列
 	public static String SEND_MESSAGE_QUEUES = "sendMessage";
 	public static String SEND_LIST_MESSAGE_QUEUES = "sendListMessage";
+	public static String DELETE_FILE = "deleteFile";
 	//配置
 	@Bean
 	RabbitAdmin rabbitAdmin(ConnectionFactory connectionFactory) {
@@ -30,4 +31,7 @@ public class RabbitConfig {
 	public Queue sendListMessage(){
 		return new Queue(SEND_LIST_MESSAGE_QUEUES);
 	}
+	@Bean
+	public Queue deleteFile(){return new Queue(DELETE_FILE);}
+
 }

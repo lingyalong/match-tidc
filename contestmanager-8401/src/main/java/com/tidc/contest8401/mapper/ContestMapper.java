@@ -31,4 +31,7 @@ public interface ContestMapper {
 	void upOpen(int id);
 	@Update("update contest set is_open = 0 where = id=#{id}")
 	void downOpen(int id);
+	@Select("select * from contest where id = #{id}")
+	Contest getContest(int id);
+	void updateContest(Contest contest);
 }

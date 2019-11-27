@@ -4,10 +4,7 @@ import com.tidc.api.pojo.Student;
 import com.tidc.api.pojo.UserOV;
 import com.tidc.usermanager.service.CheckUserService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -38,5 +35,14 @@ public class CheckUserController {
 	@GetMapping("/school/student/{id}")
 	public UserOV<List<Student>> listSchoolStudent(@PathVariable("id") int id){
 		return checkUserService.listSchoolStudent(id);
+	}
+	/**
+	 * 使用学生id查询他们的email
+	 * @param list
+	 * @return
+	 */
+	@GetMapping("/list/student/email")
+	public UserOV<List<String>> listStudentEmail(@RequestParam("list") List<Integer> list){
+		return checkUserService.listStudentEmail(list);
 	}
 }

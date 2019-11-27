@@ -21,6 +21,10 @@ public class FileManagerFallbackFactory implements FallbackFactory<FileManagerAp
 				return null;
 			}
 
+			public UserOV deleteFile(String path) {
+				return null;
+			}
+
 			public UserOV uploadFile(MultipartFile file, String name) {
 				return null;
 			}

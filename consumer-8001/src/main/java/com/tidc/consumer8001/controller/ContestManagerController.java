@@ -85,4 +85,14 @@ public class ContestManagerController {
 	public UserOV<List<Contest>> getTypeContest(@RequestParam("type") String type){
 		return contestManagerService.getTypeContest(type);
 	}
+
+	/**
+	 * 修改比赛
+	 * @param contest
+	 * @return
+	 */
+	@PutMapping("/contest")
+	public UserOV<Contest> updateContest(@RequestBody Contest contest){
+		return contestManagerService.updateContest(contest);
+	}
 }

@@ -22,4 +22,6 @@ public interface StudentMapper {
 	List<Student> listSchoolStudent(int id);
 	@Insert("insert into student(name,email,password,idEntity,telephone,school,department,major,grade,studentNumber,student_school_id) values(#{name},#{email},#{password},#{idEntity},#{telephone},#{school},#{department},#{major},#{grade},#{studentNumber},#{student_school_id})")
 	void insertStudent(Student student);
+
+	List<String> listStudentEmail(List<Integer> list);
 }

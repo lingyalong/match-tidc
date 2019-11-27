@@ -33,7 +33,7 @@ public class Contest implements Serializable {
 	private Integer is_exam;
 	//是否使用系统改卷
 	private Integer is_automation;
-	//是否收费 如果收这个字段就是收多少钱
+	//是否收费
 	private Integer is_money;
 	private String brief;
 //	@JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd", timezone = "GMT+8")

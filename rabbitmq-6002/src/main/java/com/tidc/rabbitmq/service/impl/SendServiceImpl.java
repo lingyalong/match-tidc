@@ -9,6 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * @ClassNmae SendServiceImpl
@@ -42,8 +43,13 @@ public class SendServiceImpl implements SendService {
 	}
 
 	@Override
-	public void sendListMessage(List<Message> list) {
-		amqpTemplate.convertAndSend(RabbitConfig.SEND_LIST_MESSAGE_QUEUES,list);
+	public void sendListMessage(Map map) {
+		amqpTemplate.convertAndSend(RabbitConfig.SEND_LIST_MESSAGE_QUEUES,map);
+	}
+
+	@Override
+	public void deleteFile(String path) {
+		amqpTemplate.convertAndSend(RabbitConfig.DELETE_FILE,path);
 	}
 
 }
