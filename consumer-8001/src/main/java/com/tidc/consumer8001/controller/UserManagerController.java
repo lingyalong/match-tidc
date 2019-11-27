@@ -47,4 +47,14 @@ public class UserManagerController {
 	public UserOV studentRegister(@RequestBody Student student){
 		return userManagerService.studentRegister(student);
 	}
+
+	/**
+	 * 使用email查看student信息
+	 * @param email
+	 * @return
+	 */
+	@GetMapping("/student")
+	public UserOV<Student> getStudent(@RequestParam("email") String email){
+		return userManagerService.getStudent(email);
+	}
 }

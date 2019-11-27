@@ -46,15 +46,24 @@ public class RegisterServiceImpl implements RegisterService {
 		teacher.setTeacher_school_id(school.getId());
 		teacher.setSchoolName(school.getName());
 		teacher.setIs_open(0);
-		teacherMapper.teacherRegister(teacher);
-		//这里应该有一个权限添加的语句?还没有
-		Status status = ac.getBean(Status.class);
-		status.setEmail(teacher.getEmail()).setIs_status(2);
-		//插入身份信息
-		statusMapper.insertStatus(status);
-		//发送信息 和 申请
-		messageManagerApi.teacherApproveMessage(school.getEmail(),teacher.getEmail());
-		return userOV.setStatus(CodeConstant.SUCCESS).setData(teacher.getEmail());
+		int count = teacherMapper.teacherRegister(teacher);
+		if(count==1){
+			//这里应该有一个权限添加的语句?还没有
+			Status status = ac.getBean(Status.class);
+			status.setEmail(teacher.getEmail()).setIs_status(2);
+			//插入身份信息
+			int count2 = statusMapper.insertStatus(status);
+			//发送信息 和 申请
+			messageManagerApi.teacherApproveMessage(school.getEmail(),teacher.getEmail());
+			if(count2==1){
+				userOV.setStatus(CodeConstant.SUCCESS).setData(teacher.getEmail());
+			}else{
+				userOV.setStatus(CodeConstant.FAIL).setMessage("身份插入失败");
+			}
+		}else{
+			userOV.setStatus(CodeConstant.FAIL).setMessage("注册失败");
+		}
+		return userOV;
 	}
 
 	@Override
@@ -68,13 +77,22 @@ public class RegisterServiceImpl implements RegisterService {
 		student.setPassword(passwordEncoder.encode(student.getPassword()));
 		student.setStudent_school_id(school.getId());
 		student.setSchool(school.getName());
-		studentMapper.insertStudent(student);
-		//这里应该有一个权限添加的语句?还没有
-		Status status = ac.getBean(Status.class);
-		status.setEmail(student.getEmail()).setIs_status(1);
-		//插入身份信息
-		statusMapper.insertStatus(status);
-		userOV.setStatus(CodeConstant.SUCCESS);
+		int count = studentMapper.insertStudent(student);
+		if(count==1){
+			//这里应该有一个权限添加的语句?还没有
+			Status status = ac.getBean(Status.class);
+			status.setEmail(student.getEmail()).setIs_status(1);
+			//插入身份信息
+			int count2 = statusMapper.insertStatus(status);
+			if(count2==1){
+				userOV.setStatus(CodeConstant.SUCCESS);
+			}else{
+				userOV.setStatus(CodeConstant.FAIL).setMessage("身份插入失败");
+			}
+		}else{
+			userOV.setStatus(CodeConstant.FAIL).setMessage("注册失败");
+		}
+
 		return userOV;
 	}
 	public School check(String email,String code){

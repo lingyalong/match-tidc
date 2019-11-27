@@ -54,8 +54,12 @@ public class FoundServiceImpl implements FoundService {
 		if (!CheckObjectIsNullUtils.contestObjCheckIsNull(contest)) {
 			userOV.setStatus(CodeConstant.FAIL).setMessage("有字段未填写");
 		}else{
-			contestMapper.insetContest(contest);
-			userOV.setStatus(CodeConstant.SUCCESS).setData(contest.getId());
+			int count = contestMapper.insetContest(contest);
+			if (count == 1) {
+				userOV.setStatus(CodeConstant.SUCCESS).setData(contest.getId());
+			} else {
+				userOV.setStatus(CodeConstant.FAIL);
+			}
 		}
 		return userOV;
 	}
@@ -78,11 +82,17 @@ public class FoundServiceImpl implements FoundService {
 		Team team = new Team();
 		team.setStudent_id(student.getId());
 		team.setWork_id(work.getId());
-		teamMapper.insertLeader(team);
+		int count = teamMapper.insertLeader(team);
 		//增加比赛number
-		contestMapper.addNumber(work.getContest_id());
+		int count2 = contestMapper.addNumber(work.getContest_id());
 		UserOV userOV = new UserOV();
-		userOV.setStatus(CodeConstant.SUCCESS);
+
+		if(count==1&&count2==1){
+			userOV.setStatus(CodeConstant.SUCCESS);
+		}else{
+			userOV.setStatus(CodeConstant.FAIL);
+		}
+
 		return userOV;
 	}
 

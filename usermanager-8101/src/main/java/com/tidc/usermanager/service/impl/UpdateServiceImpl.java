@@ -25,9 +25,13 @@ public class UpdateServiceImpl implements UpdateService {
 	 */
 	@Override
 	public UserOV openTeacher(Teacher teacher) {
-		teacherMapper.updateTeacherOpen(teacher);
 		UserOV userOV = new UserOV();
-		userOV.setStatus(CodeConstant.UPDATE);
+		int count = teacherMapper.updateTeacherOpen(teacher);
+		if(count==1){
+			userOV.setStatus(CodeConstant.UPDATE);
+		}else{
+			userOV.setStatus(CodeConstant.FAIL).setMessage("解封失败");
+		}
 		return userOV;
 	}
 

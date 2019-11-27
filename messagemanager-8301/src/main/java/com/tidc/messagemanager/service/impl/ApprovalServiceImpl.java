@@ -26,9 +26,9 @@ public class ApprovalServiceImpl implements ApprovalService {
 	private ApplicationContextProvider ac;
 	@Override
 	public UserOV readApply(Apply apply) {
-		applyMapper.updateApplyRead(apply);
 		Teacher teacher = ac.getBean(Teacher.class);
 		teacher.setEmail(apply.getProposer_email());
+		int count = applyMapper.updateApplyRead(apply);
 
 		if(apply.getIs_read()==1){
 			teacher.setIs_open(1);

@@ -62,4 +62,9 @@ public class ContestManagerServiceImpl implements ContestManagerService {
 	public UserOV addMember(Team team) {
 		return contestManagerApi.addMember(team);
 	}
+
+	@Override
+	public UserOV deleteMember(Team team) {
+		return contestManagerApi.deleteMember(team);
+	}
 }

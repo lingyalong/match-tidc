@@ -60,7 +60,7 @@ public class AddServiceImpl implements AddService {
 
 	@Override
 	public UserOV addMember(Team team) throws RepetitionException {
-		Integer repetition = teamMapper.CheckRepetition(team);
+		Integer repetition = teamMapper.checkRepetition(team);
 		if(repetition!=null){
 			//重复了
 			throw new RepetitionException(429,"重复添加队员操作"+team);

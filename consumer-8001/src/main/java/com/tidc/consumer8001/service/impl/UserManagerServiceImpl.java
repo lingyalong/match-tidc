@@ -40,4 +40,9 @@ public class UserManagerServiceImpl implements UserManagerService {
 	public UserOV studentRegister(Student student) {
 		return userManagerApi.studentRegister(student);
 	}
+
+	@Override
+	public UserOV<Student> getStudent(String email) {
+		return userManagerApi.getStudent(email);
+	}
 }

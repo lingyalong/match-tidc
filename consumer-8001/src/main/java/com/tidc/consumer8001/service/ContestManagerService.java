@@ -68,4 +68,11 @@ public interface ContestManagerService {
 	 * @return
 	 */
 	UserOV addMember(Team team);
+
+	/**
+	 * 删除队员
+	 * @param team
+	 * @return
+	 */
+	UserOV deleteMember(Team team);
 }

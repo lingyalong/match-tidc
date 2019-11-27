@@ -45,6 +45,10 @@ public class ContestManagerFallbackFactory implements FallbackFactory<ContestMan
 			public UserOV addMember(Team team) {
 				return null;
 			}
+
+			public UserOV deleteMember(Team team) {
+				return null;
+			}
 		};
 	}
 }

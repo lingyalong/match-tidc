@@ -15,7 +15,7 @@ import java.util.List;
  **/
 public interface MessageMapper {
 	@Insert("insert into message(receiver_email,message,head,is_read) values(#{receiver_email},#{message},#{head},#{is_read})")
-	void insertMessage(Message message);
+	int insertMessage(Message message);
 	@Select("select * from message where receiver_email=#{receiver}")
 	List<Message> listMessage(String receiver_email);
 	@Update("update message set is_read=1 where id=#{id}")

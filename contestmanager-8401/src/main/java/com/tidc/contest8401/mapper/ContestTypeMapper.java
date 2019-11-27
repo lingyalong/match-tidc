@@ -2,6 +2,7 @@ package com.tidc.contest8401.mapper;
 
 import com.tidc.api.pojo.ContestType;
 import org.apache.ibatis.annotations.Insert;
+import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
 
 import java.util.List;

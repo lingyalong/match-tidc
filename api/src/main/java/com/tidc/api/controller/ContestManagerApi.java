@@ -39,4 +39,7 @@ public interface ContestManagerApi {
 
 	@RequestMapping(value = "/member",method = RequestMethod.POST)
 	UserOV addMember(@RequestBody Team team);
+
+	@RequestMapping(value = "/member",method = RequestMethod.DELETE)
+	UserOV deleteMember(@RequestBody Team team);
 }

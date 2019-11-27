@@ -16,7 +16,7 @@ import java.util.List;
 public interface ContestMapper {
 	@Insert("insert into contest(name,domain,is_mark,is_anonymous,is_exam,is_automation,is_money,brief,start,finish,test_id,url,logo,school_id,number,money,is_open,is_show) values(#{name},#{domain},#{is_mark},#{is_anonymous},#{is_exam},#{is_automation},#{is_money},#{brief},#{start},#{finish},#{test_id},#{url},#{logo},#{school_id},#{number},#{money},#{is_open},#{is_show})")
 	@Options(useGeneratedKeys = true,keyProperty = "id")
-	void insetContest(Contest contest);
+	int insetContest(Contest contest);
 	@Select("select id,name,start,finish,logo,domain,number from contest where is_open = 1")
 	List<Contest> listContestAll();
 	@Select("select id,name,start,finish,logo,domain,number from contest where domain=#{type} and is_open = 1")
@@ -34,6 +34,6 @@ public interface ContestMapper {
 	@Select("select * from contest where id = #{id}")
 	Contest getContest(int id);
 	@Update("update contest set number = number+1 where id = #{id}")
-	void addNumber(int id);
-	void updateContest(Contest contest);
+	int addNumber(int id);
+	int updateContest(Contest contest);
 }

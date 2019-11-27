@@ -3,6 +3,7 @@ package com.tidc.consumer8001.service;
 import com.tidc.api.pojo.Student;
 import com.tidc.api.pojo.Teacher;
 import com.tidc.api.pojo.UserOV;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -35,4 +36,11 @@ public interface UserManagerService {
 	 * @return
 	 */
 	UserOV studentRegister(Student student);
+
+	/**
+	 * 使用email查看student信息
+	 * @param email
+	 * @return
+	 */
+	UserOV<Student> getStudent(String email);
 }

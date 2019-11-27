@@ -33,4 +33,11 @@ public interface CheckUserService {
 	 * @return
 	 */
 	UserOV<List<String>> listStudentEmail(List<Integer> list);
+
+	/**
+	 * 使用email查询学生
+	 * @param email
+	 * @return
+	 */
+	UserOV<Student> getStudent(String email);
 }

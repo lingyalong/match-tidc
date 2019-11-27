@@ -45,4 +45,14 @@ public class CheckUserController {
 	public UserOV<List<String>> listStudentEmail(@RequestParam("list") List<Integer> list){
 		return checkUserService.listStudentEmail(list);
 	}
+
+	/**
+	 * 使用email查询学生
+	 * @param email
+	 * @return
+	 */
+	@GetMapping("/student")
+	public UserOV<Student> getStudent(@RequestParam("email") String email){
+		return checkUserService.getStudent(email);
+	}
 }

@@ -1,12 +1,12 @@
-package com.tidc.filemanager.controller;
+package com.tidc.contest8401.controller;
 
-import com.tidc.api.exception.DeleteFailedException;
+import com.tidc.api.pojo.Team;
 import com.tidc.api.pojo.UserOV;
-import com.tidc.filemanager.service.DeleteService;
+import com.tidc.contest8401.service.DeleteService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
@@ -19,16 +19,8 @@ import org.springframework.web.bind.annotation.RestController;
 public class DeleteController {
 	@Autowired
 	private DeleteService deleteService;
-
-	/**
-	 * 删除文件
-	 * @param path
-	 * @return
-	 * @throws DeleteFailedException
-	 */
-	@DeleteMapping("/file")
-	public UserOV deleteFile(@RequestParam("path") String path) throws DeleteFailedException {
-		return deleteService.deleteFile(path);
+	@DeleteMapping("/member")
+	public UserOV deleteMember(@RequestBody Team team){
+		return deleteService.deleteMember(team);
 	}
-
 }

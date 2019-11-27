@@ -93,9 +93,25 @@ public class ContestManagerController {
 		return contestManagerService.updateContest(contest);
 	}
 
+	/**
+	 * 增加队员
+	 * @param team
+	 * @return
+	 */
 	@PostMapping("/member")
 	public UserOV addMember(@RequestBody Team team){
 		return contestManagerService.addMember(team);
 	}
+
+	/**
+	 * 删除队员
+	 * @param team
+	 * @return
+	 */
+	@DeleteMapping("/member")
+	public UserOV deleteMember(@RequestBody Team team){
+		return  contestManagerService.deleteMember(team);
+	}
+
 
 }

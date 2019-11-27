@@ -13,5 +13,5 @@ public interface StatusMapper {
 	@Select("select is_status from status where email=#{email}")
 	Integer getStatus(String email);
 	@Insert("insert into status(email,is_status) values(#{email},#{is_status})")
-	void insertStatus(Status status);
+	int insertStatus(Status status);
 }

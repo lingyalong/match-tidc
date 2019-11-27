@@ -17,7 +17,7 @@ import java.io.Serializable;
 @Accessors(chain = true) //这个注解可以使这个类的set方法返回当前对象
 @Scope(value = "prototype")
 @Component()
-public class UserOV<T> implements Serializable {
+public class UserOV<T> implements Serializable{
 	/**
 	 * 状态标识
 	 */

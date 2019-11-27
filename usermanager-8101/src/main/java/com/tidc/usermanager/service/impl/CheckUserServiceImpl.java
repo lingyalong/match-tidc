@@ -66,4 +66,12 @@ public class CheckUserServiceImpl implements CheckUserService {
 		userOV.setStatus(CodeConstant.SUCCESS).setData(listEmail);
 		return userOV;
 	}
+
+	@Override
+	public UserOV<Student> getStudent(String email) {
+		UserOV<Student> userOV = new UserOV<>();
+		Student student = studentMapper.getStudent(email);
+		userOV.setStatus(CodeConstant.SUCCESS).setData(student);
+		return userOV;
+	}
 }
