@@ -22,15 +22,29 @@ public class UserManagerController {
 	/**
 	 * 注册一个老师账号
 	 * @param teacher
-	 * @param code
 	 * @return
 	 */
 	@PostMapping("/teacher/register")
-	public UserOV teacherRegister(@RequestBody Teacher teacher,@RequestParam("code") String code){
-		return userManagerService.teacherRegister(teacher, code);
+	public UserOV teacherRegister(@RequestBody Teacher teacher){
+		return userManagerService.teacherRegister(teacher);
 	}
-	@GetMapping("/school/student/{id}")
-	public UserOV<List<Student>> listSchoolStudent(@PathVariable("id") int id){
-		return userManagerService.listSchoolStudent(id);
+	/**
+	 * 根据学校id查询该学校的所有学生信息(通过token获取id)
+	 * @param token
+	 * @return
+	 */
+	@GetMapping("/school/student")
+	public UserOV<List<Student>> listSchoolStudent(@RequestParam("token") String token){
+		return userManagerService.listSchoolStudent(token);
+	}
+
+	/**
+	 * 注册学生账号
+	 * @param student
+	 * @return
+	 */
+	@PostMapping("/student/register")
+	public UserOV studentRegister(@RequestBody Student student){
+		return userManagerService.studentRegister(student);
 	}
 }

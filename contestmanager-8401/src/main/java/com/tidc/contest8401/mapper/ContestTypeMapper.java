@@ -16,4 +16,6 @@ public interface ContestTypeMapper {
 	List<String> listType();
 	@Insert("insert into contest_type(name) values(#{name})")
 	void insertContestType(String name);
+	@Select("select id from contest_type where name = #{name}")
+	Integer checkRepetition(String name);
 }

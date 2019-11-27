@@ -27,7 +27,7 @@ public class AddController {
 	 * @return
 	 */
 	@PostMapping("/power")
-	public UserOV addPower(@RequestBody Power power,@RequestParam("email") String email){
+	public UserOV addPower(@RequestBody Power power,@RequestParam("email") String email) throws RepetitionException {
 		return addService.addPower(power,email);
 	}
 
@@ -37,7 +37,7 @@ public class AddController {
 	 * @return
 	 */
 	@PostMapping("/type")
-	public UserOV addType(@RequestParam("name") String name){
+	public UserOV addType(@RequestParam("name") String name) throws RepetitionException {
 		return addService.addType(name);
 	}
 	@PostMapping("/member")

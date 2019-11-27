@@ -20,7 +20,8 @@ import java.util.List;
  * @Author 冯涛滔
  **/
 @Service
-public class CheckMessageImpl implements CheckService {
+public class
+CheckMessageImpl implements CheckService {
 	@Autowired
 	private MessageMapper messageMapper;
 	@Autowired

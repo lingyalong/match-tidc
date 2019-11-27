@@ -17,13 +17,12 @@ public interface RegisterService {
 	 * @param teacher
 	 * @return Data.email
 	 */
-	UserOV teacherRegister(Teacher teacher, String code);
+	UserOV teacherRegister(Teacher teacher);
 
 	/**
 	 * 注册学生账号
 	 * @param student
-	 * @param code
 	 * @return
 	 */
-	UserOV studentRegister(@RequestBody Student student, @RequestParam("code") String code);
+	UserOV studentRegister( Student student);
 }

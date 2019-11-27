@@ -21,12 +21,12 @@ public class MessageManagerController {
 	private MessageManagerService messageManagerService;
 	/**
 	 * 查看个人的消息列表
-	 * @param access_token
+	 * @param token
 	 * @return
 	 */
 	@RequestMapping(value = "/message/all",method = RequestMethod.GET)
-	UserOV<List<Message>> checkMessage(@RequestParam("access_token") String access_token){
-		return messageManagerService.checkMessage(access_token);
+	UserOV<List<Message>> checkMessage(@RequestParam("token") String token){
+		return messageManagerService.checkMessage(token);
 	}
 
 	/**
@@ -41,22 +41,22 @@ public class MessageManagerController {
 
 	/**
 	 * 将某个用户的所有消息设为已读
-	 * @param access_token
+	 * @param token
 	 * @return
 	 */
 	@RequestMapping(value = "/message/read/all",method = RequestMethod.PUT)
-	UserOV readMessageAll(@RequestParam("access_token")String access_token){
-		return messageManagerService.readMessageAll(access_token);
+	UserOV readMessageAll(@RequestParam("token")String token){
+		return messageManagerService.readMessageAll(token);
 	}
 
 	/**
 	 * 获取某个账号的请求列表
-	 * @param access_token
+	 * @param token
 	 * @return
 	 */
 	@RequestMapping(value = "/apply/all",method = RequestMethod.GET)
-	UserOV<List<Apply>> checkApply(@RequestParam("access_token") String access_token){
-		return messageManagerService.checkApply(access_token);
+	UserOV<List<Apply>> checkApply(@RequestParam("token") String token){
+		return messageManagerService.checkApply(token);
 	}
 
 	/**

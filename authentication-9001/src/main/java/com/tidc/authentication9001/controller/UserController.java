@@ -44,7 +44,7 @@ public class UserController {
 				Teacher teacher = teacherMapper.getTeacher(email);
 				return teacher;
 			case 3:
-				School school = schoolMapper.chickEmail(email);
+				School school = schoolMapper.getSchool(email);
 				return school;
 		}
 		return null;

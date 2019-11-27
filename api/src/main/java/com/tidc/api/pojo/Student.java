@@ -21,7 +21,6 @@ public class Student implements Serializable  {
 	private String name;
 	private String email;
 	private String password;
-	private Integer age;
 	private String idEntity;
 	private String telephone;
 	private String school;
@@ -33,4 +32,6 @@ public class Student implements Serializable  {
 	private String grade;
 	private String studentNumber;
 	private Integer student_school_id;
+	//额外的封装
+	private String code;
 }

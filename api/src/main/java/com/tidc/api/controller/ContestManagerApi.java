@@ -18,14 +18,22 @@ import java.util.List;
  **/
 @FeignClient(value = "CONTESTMANAGER",fallbackFactory = ContestManagerFallbackFactory.class)
 public interface ContestManagerApi {
+
 	@RequestMapping(value = "/contest",method = RequestMethod.POST)
 	UserOV<Integer> foundContest(@RequestBody Contest contest, @RequestParam("school_email")String school_email);
+
 	@RequestMapping(value = "/power",method = RequestMethod.POST)
 	UserOV addPower(@RequestBody Power power,@RequestParam("email") String email);
+
 	@RequestMapping(value = "/type",method = RequestMethod.POST)
 	UserOV addType(@RequestParam("name") String name);
+
 	@RequestMapping(value = "/contest",method = RequestMethod.GET)
 	UserOV<List<Contest>> getContestAll();
+
 	@RequestMapping(value = "/apply",method = RequestMethod.POST)
 	UserOV apply(@RequestBody Work work,@RequestParam("email") String email);
+
+	@RequestMapping(value = "/type/contest",method = RequestMethod.GET)
+	UserOV<List<Contest>> getTypeContest(@RequestParam("type") String type);
 }

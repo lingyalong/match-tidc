@@ -19,7 +19,6 @@ import java.io.Serializable;
 public class Teacher implements Serializable {
 	private Integer id;
 	private String name;
-	private Integer age;
 	private String email;
 	private String Telephone;
 	//部门
@@ -32,5 +31,7 @@ public class Teacher implements Serializable {
 	private String password;
 	private Integer teacher_school_id;
 	private String schoolName;
-	private int is_open;
+	private Integer is_open;
+	//额外的封装
+	private String code;
 }

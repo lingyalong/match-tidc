@@ -24,23 +24,21 @@ public class ContestManagerController {
 	/**
 	 * 创建一个比赛
 	 * @param contest
-	 * @param access_token
 	 * @return
 	 */
 	@PostMapping("/contest")
-	public UserOV<Integer> foundContest(@RequestBody Contest contest,@RequestParam("access_token") String access_token){
-		return contestManagerService.foundContest(contest,access_token);
+	public UserOV<Integer> foundContest(@RequestBody Contest contest){
+		return contestManagerService.foundContest(contest);
 	}
 
 	/**
 	 * 为一个比赛增加评委
 	 * @param power
-	 * @param access_token
 	 * @return
 	 */
 	@PostMapping("/power")
-	public UserOV addPower(@RequestBody Power power, @RequestParam("access_token") String access_token){
-		return contestManagerService.addPower(power,access_token);
+	public UserOV addPower(@RequestBody Power power){
+		return contestManagerService.addPower(power);
 	}
 
 	/**
@@ -75,8 +73,16 @@ public class ContestManagerController {
 	 * @return
 	 */
 	@PostMapping("/apply")
-	public UserOV apply(@RequestBody Work work,@RequestParam("access_token") String access_token){
-		return contestManagerService.apply(work,access_token);
+	public UserOV apply(@RequestBody Work work){
+		return contestManagerService.apply(work);
 	}
-
+	/**
+	 * 根据类型查看比赛列表
+	 * @param type
+	 * @return
+	 */
+	@GetMapping("/type/contest")
+	public UserOV<List<Contest>> getTypeContest(@RequestParam("type") String type){
+		return contestManagerService.getTypeContest(type);
+	}
 }

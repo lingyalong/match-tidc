@@ -16,10 +16,10 @@ public interface StudentMapper {
 	Student chickEmail(String email);
 	@Select("select e.name from student_role r left outer join role e on r.student_role_id=e.id where r.student_id = #{id}")
 	List<String> listPower(int id);
-	@Select("select id,name, email, age, idEntity, telephone, school, department, major, grade, studentNumber from student where email=#{email}")
+	@Select("select id,name, email, idEntity, telephone, school, department, major, grade, studentNumber from student where email=#{email}")
 	Student getStudent(String email);
 	@Select("select * from student where student_school_id=#{id}")
 	List<Student> listSchoolStudent(int id);
-	@Insert("insert into student(name.email,password,age,idEntity,telephone,school,department,major,grade,studentNumber,student_school_id) values(#{name},#{email},#{password},#{age},#{idEntity},#{telephone},#{school},#{department},#{major},#{grade},#{studentNumber},#{student_school_id})")
+	@Insert("insert into student(name,email,password,idEntity,telephone,school,department,major,grade,studentNumber,student_school_id) values(#{name},#{email},#{password},#{idEntity},#{telephone},#{school},#{department},#{major},#{grade},#{studentNumber},#{student_school_id})")
 	void insertStudent(Student student);
 }

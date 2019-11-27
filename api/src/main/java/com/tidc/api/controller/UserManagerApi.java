@@ -17,11 +17,17 @@ import java.util.List;
 @FeignClient(value = "USERMANAGER",fallbackFactory = UserManagerFallbackFactory.class)
 public interface UserManagerApi {
 	@RequestMapping(value = "/teacher/register",method = RequestMethod.POST)
-	UserOV teacherRegister(@RequestBody Teacher teacher, @RequestParam("code") String code);
+	UserOV teacherRegister(@RequestBody Teacher teacher);
+
 	@RequestMapping(value = "/user/info",method = RequestMethod.GET)
 	UserOV userInfo(@RequestParam("email") String email);
+
 	@RequestMapping(value = "/teacher/open",method = RequestMethod.PUT)
 	UserOV teacherOpen(@RequestBody  Teacher teacher);
+
 	@RequestMapping(value = "/school/student/{id}",method = RequestMethod.GET)
 	UserOV<List<Student>> listSchoolStudent(@PathVariable("id") int id);
+
+	@RequestMapping(value = "/student/register",method = RequestMethod.POST)
+	UserOV studentRegister(@RequestBody Student student);
 }

@@ -19,18 +19,16 @@ public interface ContestManagerService {
 	/**
 	 *创建一个比赛
 	 * @param contest
-	 * @param access_token
 	 * @return
 	 */
-	UserOV<Integer> foundContest(Contest contest,String access_token);
+	UserOV<Integer> foundContest(Contest contest);
 
 	/**
 	 * 为一个比赛增加评委
 	 * @param power
-	 * @param access_token
 	 * @return
 	 */
-	UserOV addPower(Power power, String access_token);
+	UserOV addPower(Power power);
 
 	/**
 	 * 增加一个比赛类型
@@ -50,6 +48,12 @@ public interface ContestManagerService {
 	 * @param work
 	 * @return
 	 */
-	 UserOV apply( Work work,String access_token);
+	 UserOV apply( Work work);
 
+	/**
+	 * 根据类型查看比赛列表
+	 * @param type
+	 * @return
+	 */
+	UserOV<List<Contest>> getTypeContest(String type);
 }

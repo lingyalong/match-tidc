@@ -5,8 +5,6 @@ import com.tidc.api.pojo.ContestType;
 import com.tidc.api.pojo.Power;
 import com.tidc.api.pojo.Team;
 import com.tidc.api.pojo.UserOV;
-import com.tidc.contest8401.exception.RepetitionException;
-import org.springframework.web.bind.annotation.RequestBody;
 
 /**
  * @ClassNmae AddService
@@ -20,14 +18,14 @@ public interface AddService {
 	 * @param email
 	 * @return
 	 */
-	UserOV addPower(Power power,String email);
+	UserOV addPower(Power power,String email) throws RepetitionException;
 
 	/**
 	 * 增加比赛类型
 	 * @param name
 	 * @return
 	 */
-	UserOV addType(String name);
+	UserOV addType(String name) throws RepetitionException;
 
 	/**
 	 * 增加队员

@@ -1,13 +1,13 @@
 <component name="libraryTable">
   <library name="Maven: org.springframework.boot:spring-boot:2.1.11.BUILD-SNAPSHOT">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/../../javajdk/org/springframework/boot/spring-boot/2.1.11.BUILD-SNAPSHOT/spring-boot-2.1.11.BUILD-20191121.151630-14.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../javajdk/org/springframework/boot/spring-boot/2.1.11.BUILD-SNAPSHOT/spring-boot-2.1.11.BUILD-20191125.143002-15.jar!/" />
     </CLASSES>
     <JAVADOC>
-      <root url="jar://$PROJECT_DIR$/../../javajdk/org/springframework/boot/spring-boot/2.1.11.BUILD-SNAPSHOT/spring-boot-2.1.11.BUILD-20191121.151630-14-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../javajdk/org/springframework/boot/spring-boot/2.1.11.BUILD-SNAPSHOT/spring-boot-2.1.11.BUILD-20191125.143002-15-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
-      <root url="jar://$PROJECT_DIR$/../../javajdk/org/springframework/boot/spring-boot/2.1.11.BUILD-SNAPSHOT/spring-boot-2.1.11.BUILD-20191121.151630-14-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../javajdk/org/springframework/boot/spring-boot/2.1.11.BUILD-SNAPSHOT/spring-boot-2.1.11.BUILD-20191125.143002-15-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

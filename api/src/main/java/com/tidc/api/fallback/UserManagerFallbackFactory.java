@@ -16,7 +16,9 @@ import java.util.List;
 public class UserManagerFallbackFactory implements FallbackFactory<UserManagerApi> {
 	public UserManagerApi create(Throwable throwable) {
 		return new UserManagerApi() {
-			public UserOV teacherRegister(Teacher teacher, String code) {
+
+
+			public UserOV teacherRegister(Teacher teacher) {
 				return null;
 			}
 
@@ -31,6 +33,11 @@ public class UserManagerFallbackFactory implements FallbackFactory<UserManagerAp
 			public UserOV<List<Student>> listSchoolStudent(int id) {
 				return null;
 			}
+
+			public UserOV studentRegister(Student student) {
+				return null;
+			}
+
 
 			public UserOV teacherOpen(String email) {
 				return null;

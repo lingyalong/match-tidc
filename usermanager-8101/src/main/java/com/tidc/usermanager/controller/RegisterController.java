@@ -18,11 +18,11 @@ public class RegisterController {
 	@Autowired
 	private RegisterService registerService;
 	@PostMapping("/teacher/register")
-	public UserOV teacherRegister(@RequestBody Teacher teacher,@RequestParam("code") String code){
-		return registerService.teacherRegister(teacher,code);
+	public UserOV teacherRegister(@RequestBody Teacher teacher){
+		return registerService.teacherRegister(teacher);
 	}
 	@PostMapping("/student/register")
-	public UserOV studentRegister(@RequestBody Student student,@RequestParam("code") String code){
-		return registerService.studentRegister(student,code);
+	public UserOV studentRegister(@RequestBody Student student){
+		return registerService.studentRegister(student);
 	}
 }

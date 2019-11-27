@@ -4,6 +4,7 @@ import com.tidc.api.controller.ContestManagerApi;
 import com.tidc.api.pojo.Contest;
 import com.tidc.api.pojo.Power;
 import com.tidc.api.pojo.UserOV;
+import com.tidc.api.pojo.Work;
 import feign.hystrix.FallbackFactory;
 
 import java.util.List;
@@ -29,6 +30,14 @@ public class ContestManagerFallbackFactory implements FallbackFactory<ContestMan
 			}
 
 			public UserOV<List<Contest>> getContestAll() {
+				return null;
+			}
+
+			public UserOV apply(Work work, String email) {
+				return null;
+			}
+
+			public UserOV<List<Contest>> getTypeContest(String type) {
 				return null;
 			}
 		};

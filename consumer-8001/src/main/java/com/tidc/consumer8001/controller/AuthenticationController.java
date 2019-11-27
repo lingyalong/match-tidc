@@ -30,11 +30,11 @@ public class AuthenticationController {
 
 	/**
 	 * 使用token查看个人信息
-	 * @param access_token
+	 * @param token
 	 * @return
 	 */
 	@GetMapping("/user/info")
-	public Object getUserInfo(@RequestParam("access_token") String access_token){
-		return authenticationService.getUserInfo(access_token);
+	public Object getUserInfo(@RequestParam("token") String token){
+		return authenticationService.getUserInfo(token);
 	}
 }

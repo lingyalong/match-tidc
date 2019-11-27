@@ -26,4 +26,6 @@ public class Work implements Serializable {
 	private Integer is_money;
 	private Double score;
 	private String brief;
+	//额外的封装
+	private String token;
 }

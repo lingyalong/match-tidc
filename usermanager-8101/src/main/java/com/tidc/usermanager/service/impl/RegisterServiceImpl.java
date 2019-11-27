@@ -35,8 +35,8 @@ public class RegisterServiceImpl implements RegisterService {
 	@Autowired
 	private PasswordEncoder passwordEncoder;
 	@Override
-	public UserOV teacherRegister(Teacher teacher, String code) {
-		School school = check(teacher.getEmail(),code);
+	public UserOV teacherRegister(Teacher teacher) {
+		School school = check(teacher.getEmail(),teacher.getCode());
 		UserOV userOV = new UserOV();
 		if(school==null){
 			//邀请码错误
@@ -58,8 +58,8 @@ public class RegisterServiceImpl implements RegisterService {
 	}
 
 	@Override
-	public UserOV studentRegister(Student student, String code) {
-		School school = check(student.getEmail(),code);
+	public UserOV studentRegister(Student student) {
+		School school = check(student.getEmail(),student.getCode());
 		UserOV userOV = new UserOV();
 		if(school==null){
 			//邀请码错误

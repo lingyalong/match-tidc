@@ -28,7 +28,11 @@ public class AddServiceImpl implements AddService {
 	@Autowired
 	private TeamMapper teamMapper;
 	@Override
-	public UserOV addPower(Power power,String email) {
+	public UserOV addPower(Power power,String email) throws RepetitionException {
+		Integer repetition = powerMapeer.checkRepetition(power);
+		if(repetition!=null){
+			throw new RepetitionException(429,"无法重复添加同一个评委");
+		}
 		UserOV userOV = new UserOV();
 		//这里可以发一条消息说他获得了某某比赛的评分权限
 		Message message = new Message();
@@ -43,7 +47,11 @@ public class AddServiceImpl implements AddService {
 	}
 
 	@Override
-	public UserOV addType(String name) {
+	public UserOV addType(String name) throws RepetitionException {
+		Integer repetition = contestTypeMapper.checkRepetition(name);
+		if(repetition!=null){
+			throw new RepetitionException(429,"已有这个类型");
+		}
 		contestTypeMapper.insertContestType(name);
 		UserOV userOV = new UserOV();
 		userOV.setStatus(CodeConstant.UPDATE);

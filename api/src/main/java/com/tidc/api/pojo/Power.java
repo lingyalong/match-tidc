@@ -20,4 +20,5 @@ public class Power implements Serializable {
 	private Integer id;
 	private Integer teacher_id;
 	private Integer contest_id;
+	String token;
 }

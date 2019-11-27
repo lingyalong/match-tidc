@@ -24,14 +24,14 @@ public class ContestManagerServiceImpl implements ContestManagerService {
 	@Autowired
 	private UserInfo userInfo;
 	@Override
-	public UserOV<Integer> foundContest(Contest contest, String access_token) {
-		String school_email = userInfo.getUserName(access_token);
+	public UserOV<Integer> foundContest(Contest contest) {
+		String school_email = userInfo.getUserName(contest.getToken());
 		return contestManagerApi.foundContest(contest,school_email);
 	}
 
 	@Override
-	public UserOV addPower(Power power, String access_token) {
-		String teacher_email = userInfo.getUserName(access_token);
+	public UserOV addPower(Power power) {
+		String teacher_email = userInfo.getUserName(power.getToken());
 		return contestManagerApi.addPower(power,teacher_email);
 	}
 
@@ -46,8 +46,13 @@ public class ContestManagerServiceImpl implements ContestManagerService {
 	}
 
 	@Override
-	public UserOV apply(Work work,String access_token) {
-		String email = userInfo.getUserName(access_token);
+	public UserOV apply(Work work) {
+		String email = userInfo.getUserName(work.getToken());
 		return contestManagerApi.apply(work,email);
+	}
+
+	@Override
+	public UserOV<List<Contest>> getTypeContest(String type) {
+		return contestManagerApi.getTypeContest(type);
 	}
 }
