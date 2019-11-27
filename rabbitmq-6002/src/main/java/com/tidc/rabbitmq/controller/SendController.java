@@ -23,7 +23,7 @@ public class SendController {
 		sendService.sendMessage(message);
 	}
 	@PostMapping("/send/list/message")
-	public void sendListMessage(Map map){
+	public void sendListMessage(@RequestBody Map map){
 		sendService.sendListMessage(map);
 	}
 	@PostMapping("/delete/file")

@@ -79,6 +79,8 @@ public class FoundServiceImpl implements FoundService {
 		team.setStudent_id(student.getId());
 		team.setWork_id(work.getId());
 		teamMapper.insertLeader(team);
+		//增加比赛number
+		contestMapper.addNumber(work.getContest_id());
 		UserOV userOV = new UserOV();
 		userOV.setStatus(CodeConstant.SUCCESS);
 		return userOV;

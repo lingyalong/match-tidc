@@ -3,11 +3,9 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.tidc.usermanager.mapper.StudentMapper">
-    <select id="listStudentEmail" parameterType="java.util.List">
-        select email
-        from student
-        where id in
-        <foreach collection="list" item="employeeId" index="index" open="(" close=")" separator=",">
+    <select id="listStudentEmail" parameterType="java.util.List" resultType="String">
+        select email from student where id in
+        <foreach collection="list" item="employeeId" open="(" close=")" separator=",">
             #{employeeId}
         </foreach>
     </select>

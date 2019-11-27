@@ -40,6 +40,6 @@
               is_show = #{is_show}
           </if>
         </set>
-          where id = #{id}.DOMAIN
+          where id = #{id}
     </update>
 </mapper>

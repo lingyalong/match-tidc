@@ -43,13 +43,14 @@ public class MessageConsumer {
 
 	}
 
-	@RabbitListener(queues = "sendMessage")
+	@RabbitListener(queues = "sendListMessage")
 	@RabbitHandler
 	public void sendListMessage(Map map, Channel channel, Message message) throws IOException {
 		try {
 			channel.basicQos(1);
 			List<String> list = (List) map.get("list");
 			com.tidc.api.pojo.Message msg = new com.tidc.api.pojo.Message();
+			msg.setHead((String) map.get("head"));
 			msg.setMessage((String) map.get("message"));
 			for (String email: list) {
 				msg.setReceiver_email(email);

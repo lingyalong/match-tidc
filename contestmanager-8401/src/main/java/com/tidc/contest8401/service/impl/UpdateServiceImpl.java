@@ -48,7 +48,9 @@ public class UpdateServiceImpl implements UpdateService {
 			//邮箱集合
 			List<String> listEmail = userOV1.getData();
 			Map map = new HashMap();
+
 			map.put("list",listEmail);
+			map.put("head","您参加的比赛发生了变化");
 			map.put("message","您参加的"+contest2.getName()+"发生了改变请去查看一下");
 			rabbitManagerApi.sendListMessage(map);
 		}
