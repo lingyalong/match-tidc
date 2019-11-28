@@ -22,13 +22,20 @@ public class SendController {
 	public void sendMessage(@RequestBody  Message message){
 		sendService.sendMessage(message);
 	}
+
 	@PostMapping("/send/list/message")
 	public void sendListMessage(@RequestBody Map map){
 		sendService.sendListMessage(map);
 	}
+
 	@PostMapping("/delete/file")
 	public void deleteFile(@RequestParam("path") String path){
 		sendService.deleteFile(path);
+	}
+
+	@PostMapping("/delete/contest/work/team")
+	public void deleteWorkANdTeam(@RequestParam("contestId") int contestId){
+		sendService.deleteWorkANdTeam(contestId);
 	}
 
 }

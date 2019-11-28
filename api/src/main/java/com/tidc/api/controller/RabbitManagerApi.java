@@ -18,8 +18,13 @@ import java.util.Map;
 public interface RabbitManagerApi {
 	@RequestMapping(value = "/send/message",method = RequestMethod.POST)
 	void sendMessage(@RequestBody Message message);
+
 	@RequestMapping(value = "/send/list/message",method = RequestMethod.POST)
 	void sendListMessage(@RequestBody Map map);
+
 	@RequestMapping(value = "/delete/file",method = RequestMethod.POST)
 	void deleteFile(@RequestParam("path") String path);
+
+	@RequestMapping(value = "/delete/contest/work/team",method = RequestMethod.POST)
+	void deleteWorkANdTeam(@RequestParam("contestId") int contestId);
 }

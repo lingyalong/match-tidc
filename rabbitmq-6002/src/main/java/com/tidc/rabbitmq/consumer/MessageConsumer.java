@@ -1,6 +1,7 @@
 package com.tidc.rabbitmq.consumer;
 
 import com.rabbitmq.client.Channel;
+import com.tidc.api.controller.ContestManagerApi;
 import com.tidc.api.controller.FileManagerApi;
 import com.tidc.api.controller.MessageManagerApi;
 import com.tidc.rabbitmq.config.RabbitConfig;
@@ -24,6 +25,8 @@ import java.util.Map;
 public class MessageConsumer {
 	@Autowired
 	private MessageManagerApi messageManagerApi;
+	@Autowired
+	private ContestManagerApi contestManagerApi;
 	@Autowired
 	private FileManagerApi fileManagerApi;
 	public static String SEND_MESSAGE_QUEUES = "sendMessage";
@@ -71,6 +74,17 @@ public class MessageConsumer {
 			channel.basicAck(message.getMessageProperties().getDeliveryTag(), false);
 		}catch (IOException e) {
 			// 拒绝当前消息，并把消息返回原队列
+			channel.basicNack(message.getMessageProperties().getDeliveryTag(), false, true);
+		}
+	}
+	@RabbitListener(queues = "deleteWorkAndTeam")
+	@RabbitHandler
+	public void deleteWorkAndTeam(int contest_id,Channel channel, Message message) throws IOException {
+		try {
+			channel.basicQos(1);
+			contestManagerApi.deleteWorkAndTeam(contest_id);
+			channel.basicAck(message.getMessageProperties().getDeliveryTag(), false);
+		} catch (IOException e) {
 			channel.basicNack(message.getMessageProperties().getDeliveryTag(), false, true);
 		}
 	}

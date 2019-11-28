@@ -1,7 +1,9 @@
 package com.tidc.consumer8001.service.impl;
 
+import com.tidc.api.controller.AuthenticationApi;
 import com.tidc.api.controller.ContestManagerApi;
 import com.tidc.api.pojo.*;
+import com.tidc.consumer8001.service.AuthenticationService;
 import com.tidc.consumer8001.service.ContestManagerService;
 import com.tidc.consumer8001.utils.UserInfo;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,6 +22,8 @@ public class ContestManagerServiceImpl implements ContestManagerService {
 	private ContestManagerApi contestManagerApi;
 	@Autowired
 	private UserInfo userInfo;
+	@Autowired
+	private AuthenticationApi authenticationApi;
 	@Override
 	public UserOV<Integer> foundContest(Contest contest) {
 		String school_email = userInfo.getUserName(contest.getToken());
@@ -65,6 +69,31 @@ public class ContestManagerServiceImpl implements ContestManagerService {
 
 	@Override
 	public UserOV deleteMember(Team team) {
+		Student student = (Student) userInfo.userInfo(team.getToken());
+		team.setLeaderId(student.getId());
 		return contestManagerApi.deleteMember(team);
 	}
+
+	@Override
+	public UserOV deleteContest(Contest contest) {
+		School school = (School) userInfo.userInfo(contest.getToken());
+		contest.setSchool_id(school.getId());
+		return contestManagerApi.deleteContest(contest);
+	}
+
+	@Override
+	public UserOV deleteWork(Work work) {
+		Student student = (Student) userInfo.userInfo(work.getToken());
+		work.setStudent_id(student.getId());
+		return contestManagerApi.deleteWork(work);
+	}
+
+	@Override
+	public UserOV deletePower(Power power) {
+		School school = (School) userInfo.userInfo(power.getToken());
+		power.setUserId(school.getId());
+		return contestManagerApi.deletePower(power);
+	}
+
+
 }

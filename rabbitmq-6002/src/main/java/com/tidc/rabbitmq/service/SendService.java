@@ -1,6 +1,7 @@
 package com.tidc.rabbitmq.service;
 
 import com.tidc.api.pojo.Message;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.List;
 import java.util.Map;
@@ -15,4 +16,6 @@ public interface SendService {
 	void sendMessage(Message message);
 	void sendListMessage(Map map);
 	void deleteFile(String path);
+	void deleteWorkANdTeam(int contestId);
+
 }

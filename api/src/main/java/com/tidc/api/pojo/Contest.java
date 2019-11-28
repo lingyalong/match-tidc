@@ -52,5 +52,5 @@ public class Contest implements Serializable {
 	private Integer is_open;
 	private Integer is_show;
 	//额外的封装
-	String token;
+	private String token;
 }

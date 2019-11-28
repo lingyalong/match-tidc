@@ -113,5 +113,33 @@ public class ContestManagerController {
 		return  contestManagerService.deleteMember(team);
 	}
 
+	/**
+	 * 删除比赛
+	 * @param contest id token
+	 * @return
+	 */
+	@DeleteMapping("/contest")
+	public UserOV deleteContest(@RequestBody Contest contest){
+		return contestManagerService.deleteContest(contest);
+	}
 
+	/**
+	 * 删除项目
+	 * @param work id token
+	 * @return
+	 */
+	@DeleteMapping("/work")
+	public UserOV deleteWork(@RequestBody Work work){
+		return contestManagerService.deleteWork(work);
+	}
+
+	/**
+	 * 删除评委
+	 * @param power id token
+	 * @return
+	 */
+	@DeleteMapping("/power")
+	public UserOV deletePower(@RequestBody Power power){
+		return
+	}
 }

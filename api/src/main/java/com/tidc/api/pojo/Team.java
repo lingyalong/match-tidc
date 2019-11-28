@@ -21,4 +21,6 @@ public class Team implements Serializable {
 	private Integer student_id;
 	private Integer work_id;
 	private Integer is_leader;
+	private Integer leaderId;
+	private String token;
 }

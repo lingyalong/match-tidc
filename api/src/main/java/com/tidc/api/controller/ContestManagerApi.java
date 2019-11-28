@@ -42,4 +42,16 @@ public interface ContestManagerApi {
 
 	@RequestMapping(value = "/member",method = RequestMethod.DELETE)
 	UserOV deleteMember(@RequestBody Team team);
+
+	@RequestMapping(value = "/contest",method = RequestMethod.DELETE)
+	UserOV deleteContest(@RequestBody Contest contest);
+
+	@RequestMapping(value = "/work",method = RequestMethod.DELETE)
+	UserOV deleteWork(@RequestBody Work work);
+
+	@RequestMapping(value = "/contest/work/team",method = RequestMethod.DELETE)
+	UserOV deleteWorkAndTeam(@RequestParam("contest_id") int contest_id);
+
+	@RequestMapping(value = "/power",method = RequestMethod.DELETE)
+	UserOV deletePower(@RequestBody Power power);
 }

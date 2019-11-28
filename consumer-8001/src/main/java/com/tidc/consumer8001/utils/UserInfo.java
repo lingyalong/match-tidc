@@ -1,5 +1,6 @@
 package com.tidc.consumer8001.utils;
 
+import com.tidc.api.controller.AuthenticationApi;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.oauth2.provider.OAuth2Authentication;
 import org.springframework.security.oauth2.provider.token.ResourceServerTokenServices;
@@ -13,9 +14,16 @@ import org.springframework.stereotype.Component;
 @Component
 public class UserInfo {
 	@Autowired
-	ResourceServerTokenServices tokenServices;
-	public  String getUserName(String token){
+	private ResourceServerTokenServices tokenServices;
+	@Autowired
+	private AuthenticationApi authenticationApi;
+	public String getUserName(String token){
 		OAuth2Authentication oAuth2Authentication = tokenServices.loadAuthentication(token);
 		return (String) oAuth2Authentication.getUserAuthentication().getPrincipal();
+	}
+	public Object userInfo(String token){
+		OAuth2Authentication oAuth2Authentication = tokenServices.loadAuthentication(token);
+		String email = (String) oAuth2Authentication.getUserAuthentication().getPrincipal();
+		return authenticationApi.getUserInfo(email);
 	}
 }

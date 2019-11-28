@@ -52,4 +52,9 @@ public class SendServiceImpl implements SendService {
 		amqpTemplate.convertAndSend(RabbitConfig.DELETE_FILE,path);
 	}
 
+	@Override
+	public void deleteWorkANdTeam(int contestId) {
+		amqpTemplate.convertAndSend(RabbitConfig.DELETEWORKANDTEAM,contestId);
+	}
+
 }
