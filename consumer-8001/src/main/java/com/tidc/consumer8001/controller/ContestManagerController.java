@@ -49,6 +49,16 @@ public class ContestManagerController {
 	}
 
 	/**
+	 * 使用id查看比赛的详细信息
+	 * @param id
+	 * @return
+	 */
+	@GetMapping("/contest/details/{id}")
+	public UserOV<Contest> getContestDetails(@PathVariable("id") int id){
+		return contestManagerService.getContestDetails(id);
+	}
+
+	/**
 	 * 查看所有比赛的详细信息
 	 * @return
 	 */
@@ -142,4 +152,26 @@ public class ContestManagerController {
 	public UserOV deletePower(@RequestBody Power power){
 		return contestManagerService.deletePower(power);
 	}
+
+	/**
+	 * 评分
+	 * @param grade
+	 * @return
+	 */
+	@PostMapping("/score")
+	public UserOV addScore(@RequestBody Grade grade){
+		return contestManagerService.addScore(grade);
+	}
+
+	/**
+	 * 修改评分
+	 * @param grade
+	 * @return
+	 */
+	@PutMapping("/score")
+	public UserOV updateScore(@RequestBody Grade grade){
+		return contestManagerService.updateScore(grade);
+	}
+
+
 }

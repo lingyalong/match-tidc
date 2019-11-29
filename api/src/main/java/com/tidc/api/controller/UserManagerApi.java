@@ -37,4 +37,6 @@ public interface UserManagerApi {
 	@GetMapping("/student")
 	UserOV<Student> getStudent(@RequestParam("email") String email);
 
+	@RequestMapping(value = "/teacher/down",method = RequestMethod.PUT)
+	UserOV closeTeacher(@RequestBody Teacher teacher);
 }

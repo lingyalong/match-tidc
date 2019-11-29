@@ -39,6 +39,13 @@ public interface ContestManagerService {
 	 UserOV<List<Contest>> getContestAll();
 
 	/**
+	 * 使用比赛id查看比赛的详细信息
+	 * @param id
+	 * @return
+	 */
+	UserOV<Contest> getContestDetails( int id);
+
+	/**
 	 * 学生报名比赛
 	 * @param work
 	 * @return
@@ -93,5 +100,21 @@ public interface ContestManagerService {
 	 * @return
 	 */
 	UserOV deletePower(Power power);
+
+	/**
+	 * 评分
+	 * @param grade
+	 * @return
+	 */
+	UserOV addScore(Grade grade);
+
+	/**
+	 * 修改评分
+	 * @param grade
+	 * @return
+	 */
+	UserOV updateScore(Grade grade);
+
+
 
 }

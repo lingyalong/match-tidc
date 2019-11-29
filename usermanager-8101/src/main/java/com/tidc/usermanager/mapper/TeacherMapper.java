@@ -22,7 +22,9 @@ public interface TeacherMapper {
 	List<String> listPower(int id);
 	@Select("select id,name, email, telephone, department, idEntity, titles from teacher where email=#{email}")
 	Teacher getTeacher(String email);
-	@Update("update teacher set is_open=#{is_open} where email=#{email}")
-	int updateTeacherOpen(Teacher teacher);
+	@Update("update teacher set is_open= 1 where email=#{email}")
+	int updateTeacherOpen(String  email);
+	@Update("update teacher set is_open= 0 where email=#{email}")
+	int updateTeacherClose(String email);
 
 }

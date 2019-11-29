@@ -28,6 +28,9 @@ public interface ContestManagerApi {
 	@RequestMapping(value = "/contest",method = RequestMethod.GET)
 	UserOV<List<Contest>> getContestAll();
 
+	@RequestMapping(value = "/contest/details/{id}",method = RequestMethod.GET)
+	UserOV<Contest> getContestDetails(@PathVariable("id") int id);
+
 	@RequestMapping(value = "/apply",method = RequestMethod.POST)
 	UserOV apply(@RequestBody Work work,@RequestParam("email") String email);
 
@@ -54,4 +57,10 @@ public interface ContestManagerApi {
 
 	@RequestMapping(value = "/power",method = RequestMethod.DELETE)
 	UserOV deletePower(@RequestBody Power power);
+
+	@RequestMapping(value = "/score",method = RequestMethod.POST)
+	UserOV addScore(@RequestBody Grade grade);
+
+	@RequestMapping(value = "/score",method = RequestMethod.PUT)
+	UserOV updateScore(@RequestBody Grade grade);
 }

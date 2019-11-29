@@ -47,6 +47,11 @@ public class ContestManagerServiceImpl implements ContestManagerService {
 	}
 
 	@Override
+	public UserOV<Contest> getContestDetails(int id) {
+		return contestManagerApi.getContestDetails(id);
+	}
+
+	@Override
 	public UserOV apply(Work work) {
 		String email = userInfo.getUserName(work.getToken());
 		return contestManagerApi.apply(work,email);
@@ -93,6 +98,20 @@ public class ContestManagerServiceImpl implements ContestManagerService {
 		School school = (School) userInfo.userInfo(power.getToken(),3);
 		power.setUserId(school.getId());
 		return contestManagerApi.deletePower(power);
+	}
+
+	@Override
+	public UserOV addScore(Grade grade) {
+		Teacher teacher = (Teacher) userInfo.userInfo(grade.getToken(),2);
+		grade.setTeacher_id(teacher.getId());
+		return contestManagerApi.addScore(grade);
+	}
+
+	@Override
+	public UserOV updateScore(Grade grade) {
+		Teacher teacher = (Teacher) userInfo.userInfo(grade.getToken(),2);
+		grade.setTeacher_id(teacher.getId());
+		return contestManagerApi.updateScore(grade);
 	}
 
 

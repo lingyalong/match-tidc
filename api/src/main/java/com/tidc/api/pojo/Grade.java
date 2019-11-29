@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 import java.io.Serializable;
 
 /**
- * @ClassNmae Teacher
+ * @ClassNmae Grade
  * @Description TODO
  * @Author 冯涛滔
  **/
@@ -16,23 +16,11 @@ import java.io.Serializable;
 @Accessors(chain = true) //这个注解可以使这个类的set方法返回当前对象
 @Scope(value = "prototype")
 @Component()
-public class Teacher implements Serializable {
+public class Grade implements Serializable {
 	private Integer id;
-	private String name;
-	private String email;
-	private String Telephone;
-	//部门
-	private String department;
-	private String idEntity;
-	//职务
-	private String position;
-	//职称
-	private String titles;
-	private String password;
-	private Integer teacher_school_id;
-	private String schoolName;
-	private Integer is_open;
-	//额外的封装
-	private String code;
+	private Integer teacher_id;
+	private Integer work_id;
+	private Double score;
 	private String token;
+	private Integer Contest_id;
 }

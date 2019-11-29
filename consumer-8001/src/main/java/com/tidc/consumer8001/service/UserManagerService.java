@@ -43,4 +43,11 @@ public interface UserManagerService {
 	 * @return
 	 */
 	UserOV<Student> getStudent(String email);
+
+	/**
+	 * 关闭老师的权限
+	 * @param teacher email
+	 * @return
+	 */
+	UserOV closeTeacher(Teacher teacher);
 }

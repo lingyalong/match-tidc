@@ -45,4 +45,11 @@ public class UserManagerServiceImpl implements UserManagerService {
 	public UserOV<Student> getStudent(String email) {
 		return userManagerApi.getStudent(email);
 	}
+
+	@Override
+	public UserOV closeTeacher(Teacher teacher) {
+		School school = (School) userInfo.userInfo(teacher.getToken(), 3);
+		teacher.setTeacher_school_id(school.getId());
+		return userManagerApi.closeTeacher(teacher);
+	}
 }

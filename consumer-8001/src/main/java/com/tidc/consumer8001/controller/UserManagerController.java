@@ -57,4 +57,14 @@ public class UserManagerController {
 	public UserOV<Student> getStudent(@RequestParam("email") String email){
 		return userManagerService.getStudent(email);
 	}
+
+	/**
+	 * 关闭老师的权限
+	 * @param teacher email
+	 * @return
+	 */
+	@PutMapping("/teacher/down")
+	public UserOV closeTeacher(@RequestBody Teacher teacher){
+		return userManagerService.closeTeacher(teacher);
+	}
 }
