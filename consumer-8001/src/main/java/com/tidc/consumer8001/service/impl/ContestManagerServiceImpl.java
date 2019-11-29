@@ -69,28 +69,28 @@ public class ContestManagerServiceImpl implements ContestManagerService {
 
 	@Override
 	public UserOV deleteMember(Team team) {
-		Student student = (Student) userInfo.userInfo(team.getToken());
+		Student student = (Student) userInfo.userInfo(team.getToken(),1);
 		team.setLeaderId(student.getId());
 		return contestManagerApi.deleteMember(team);
 	}
 
 	@Override
 	public UserOV deleteContest(Contest contest) {
-		School school = (School) userInfo.userInfo(contest.getToken());
+		School school = (School) userInfo.userInfo(contest.getToken(),3);
 		contest.setSchool_id(school.getId());
 		return contestManagerApi.deleteContest(contest);
 	}
 
 	@Override
 	public UserOV deleteWork(Work work) {
-		Student student = (Student) userInfo.userInfo(work.getToken());
+		Student student = (Student) userInfo.userInfo(work.getToken(),1);
 		work.setStudent_id(student.getId());
 		return contestManagerApi.deleteWork(work);
 	}
 
 	@Override
 	public UserOV deletePower(Power power) {
-		School school = (School) userInfo.userInfo(power.getToken());
+		School school = (School) userInfo.userInfo(power.getToken(),3);
 		power.setUserId(school.getId());
 		return contestManagerApi.deletePower(power);
 	}

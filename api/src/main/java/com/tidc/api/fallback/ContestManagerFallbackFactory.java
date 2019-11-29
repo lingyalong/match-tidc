@@ -49,6 +49,22 @@ public class ContestManagerFallbackFactory implements FallbackFactory<ContestMan
 			public UserOV deleteMember(Team team) {
 				return null;
 			}
+
+			public UserOV deleteContest(Contest contest) {
+				return null;
+			}
+
+			public UserOV deleteWork(Work work) {
+				return null;
+			}
+
+			public UserOV deleteWorkAndTeam(int contest_id) {
+				return null;
+			}
+
+			public UserOV deletePower(Power power) {
+				return null;
+			}
 		};
 	}
 }

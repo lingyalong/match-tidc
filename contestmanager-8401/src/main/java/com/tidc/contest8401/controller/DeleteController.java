@@ -66,6 +66,6 @@ public class DeleteController {
 	 */
 	@DeleteMapping("/power")
 	public UserOV deletePower(@RequestBody Power power){
-		return deletePower(power)
+		return deleteService.deletePower(power);
 	}
 }

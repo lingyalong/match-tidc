@@ -140,6 +140,6 @@ public class ContestManagerController {
 	 */
 	@DeleteMapping("/power")
 	public UserOV deletePower(@RequestBody Power power){
-		return
+		return contestManagerService.deletePower(power);
 	}
 }

@@ -27,6 +27,10 @@ public class RabbitManagerFallbcakFactory implements FallbackFactory<RabbitManag
 
 			}
 
+			public void deleteWorkANdTeam(int contestId) {
+
+			}
+
 			public void sendListMessage(List<Message> list) {
 
 			}

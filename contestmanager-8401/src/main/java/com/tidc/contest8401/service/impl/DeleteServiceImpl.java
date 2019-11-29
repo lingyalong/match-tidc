@@ -69,6 +69,9 @@ public class DeleteServiceImpl implements DeleteService{
 				userOV.setStatus(CodeConstant.SUCCESS);
 
 			}
+		}else{
+			userOV.setMessage("你没有权限删除这个比赛");
+			logger.info("schoolID: " + contest.getSchool_id() + "试图越权删除contestID: " + contest.getId());
 		}
 
 		return userOV;
