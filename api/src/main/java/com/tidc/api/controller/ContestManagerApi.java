@@ -63,4 +63,52 @@ public interface ContestManagerApi {
 
 	@RequestMapping(value = "/score",method = RequestMethod.PUT)
 	UserOV updateScore(@RequestBody Grade grade);
+
+	@RequestMapping(value = "/contest/score",method = RequestMethod.GET)
+	UserOV<List<Contest>> checkShowScoreContest();
+
+	@RequestMapping(value = "/contest/score/{id}",method = RequestMethod.GET)
+	UserOV<Work> checkContestWorkScore(@PathVariable("id")int id);
+
+	/**
+	 * 修改比赛排行榜是否公开
+	 * @param contest
+	 * @return
+	 */
+	@RequestMapping(value = "/contest/show",method = RequestMethod.PUT)
+	UserOV updateContestIsShow(@RequestBody Contest contest);
+
+	/**
+	 * 修改项目
+	 * @param work
+	 * @return
+	 */
+	@RequestMapping(value = "/work",method = RequestMethod.PUT)
+	UserOV updateWork(@RequestBody Work work);
+
+	/**
+	 * 比赛修改是否开放报名
+	 * @param contest
+	 * @return
+	 */
+	@PutMapping("/contest/open")
+	UserOV updateContestIsOpen(@RequestBody Contest contest);
+
+	/**
+	 * 获取当前老师拥有权限的比赛列表
+	 * @param teacherId
+	 * @return
+	 */
+	@GetMapping("/teacher/contest")
+	UserOV<List<Contest>> listTeacherContest(@RequestParam("teacherId") int teacherId);
+
+
+	/**
+	 * 获取根据id获取当前老师的比赛的项目列表
+	 * @param id
+	 * @return
+	 */
+	@GetMapping("/teacher/contest/work/{id}")
+	UserOV<List<Work>> listTeacherContestWork(@PathVariable("id") int id,@RequestParam("teacherId") int teacherId);
+
 }

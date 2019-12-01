@@ -30,6 +30,10 @@ public class ContestManagerFallbackFactory implements FallbackFactory<ContestMan
 				return null;
 			}
 
+			public UserOV<Contest> getContestDetails(int id) {
+				return null;
+			}
+
 			public UserOV apply(Work work, String email) {
 				return null;
 			}
@@ -63,6 +67,46 @@ public class ContestManagerFallbackFactory implements FallbackFactory<ContestMan
 			}
 
 			public UserOV deletePower(Power power) {
+				return null;
+			}
+
+			public UserOV addScore(Grade grade) {
+				return null;
+			}
+
+			public UserOV updateScore(Grade grade) {
+				return null;
+			}
+
+			public UserOV<List<Contest>> checkShowScoreContest() {
+				return null;
+			}
+
+			public UserOV<Work> checkContestWorkScore(int id) {
+				return null;
+			}
+
+			public UserOV<Work> checkWorkScore(int id) {
+				return null;
+			}
+
+			public UserOV updateContestIsShow(Contest contest) {
+				return null;
+			}
+
+			public UserOV updateWork(Work work) {
+				return null;
+			}
+
+			public UserOV updateContestIsOpen(Contest contest) {
+				return null;
+			}
+
+			public UserOV<List<Contest>> listTeacherContest(int teacherId) {
+				return null;
+			}
+
+			public UserOV<List<Work>> listTeacherContestWork(int id, int teacherId) {
 				return null;
 			}
 		};

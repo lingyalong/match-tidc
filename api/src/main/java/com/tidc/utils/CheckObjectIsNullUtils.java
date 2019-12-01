@@ -28,7 +28,7 @@ public class CheckObjectIsNullUtils {
 				e.printStackTrace();
 			}
 
-			String[] array = {"id","test_id","money",};
+			String[] array = {"id","test_id","money","token"};
 			boolean nullFlag = Arrays.asList(array).contains(field.getName());
 			if (fieldValue == null&&!nullFlag) { //
 				flag = false;

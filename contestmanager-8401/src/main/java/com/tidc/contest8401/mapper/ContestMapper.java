@@ -48,6 +48,22 @@ public interface ContestMapper {
 	@Select("select school_id from contest where id = #{id}")
 	Integer checkLeader(int id);
 
+	@Select("select name,brief,logo,url,school_id,number from contest where is_show = 1")
+	List<Contest> checkShowScoreContest();
+
+	@Update("update contest set is_show = #{is_show} where id = #{id}")
+	int updateIsShow(Contest contest);
+
+	@Update("update contest set is_open = #{is_open} where id = #{id}")
+	int updateIsOpen(Contest contest);
+
+	@Select("select * from contest where id in (select contest_id from power where teacher_id =#{teacher_id})")
+	List<Contest> listTeacherContest(int teacher_id);
+
+	@Select("select is_anonymous from contest where id = #{contestId}")
+	int checkAnonymous(int contestId);
+
+
 
 	int updateContest(Contest contest);
 

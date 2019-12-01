@@ -3,7 +3,9 @@ package com.tidc.contest8401.mapper;
 import com.tidc.api.pojo.Power;
 import org.apache.ibatis.annotations.Delete;
 import org.apache.ibatis.annotations.Insert;
+import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
+import org.springframework.stereotype.Repository;
 import org.springframework.web.bind.annotation.DeleteMapping;
 
 /**
@@ -11,6 +13,8 @@ import org.springframework.web.bind.annotation.DeleteMapping;
  * @Description TODO
  * @Author 冯涛滔
  **/
+@Mapper
+@Repository
 public interface PowerMapeer {
 	@Insert("insert into power(teacher_id,contest_id) values(#{teacher_id},#{contest_id})")
 	void insetPower(Power power);

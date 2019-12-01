@@ -1,5 +1,7 @@
 package com.tidc.consumer8001.service;
 
+import javax.servlet.http.HttpServletRequest;
+
 /**
  * @ClassNmae AuthenticationService
  * @Description TODO
@@ -16,8 +18,8 @@ public interface AuthenticationService {
 
 	/**
 	 *
-	 * @param access_token token
+	 * @param req
 	 * @return 返回用户详细信息
 	 */
-	public Object getUserInfo(String access_token);
+	public Object getUserInfo(HttpServletRequest req);
 }

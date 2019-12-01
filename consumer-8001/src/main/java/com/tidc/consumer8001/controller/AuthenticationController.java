@@ -5,6 +5,8 @@ import com.tidc.consumer8001.service.AuthenticationService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import javax.servlet.http.HttpServletRequest;
+
 /**
  * @ClassNmae AuthenticationController
  * @Description TODO
@@ -30,11 +32,11 @@ public class AuthenticationController {
 
 	/**
 	 * 使用token查看个人信息
-	 * @param token
+	 * @param req
 	 * @return
 	 */
 	@GetMapping("/user/info")
-	public Object getUserInfo(@RequestParam("token") String token){
-		return authenticationService.getUserInfo(token);
+	public Object getUserInfo(HttpServletRequest req){
+		return authenticationService.getUserInfo(req);
 	}
 }

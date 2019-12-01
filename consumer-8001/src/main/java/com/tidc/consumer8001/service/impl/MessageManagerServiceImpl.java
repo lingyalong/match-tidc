@@ -9,6 +9,7 @@ import com.tidc.consumer8001.utils.UserInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 
 /**
@@ -23,8 +24,8 @@ public class MessageManagerServiceImpl implements MessageManagerService {
 	@Autowired
 	private MessageManagerApi messageManagerApi;
 	@Override
-	public UserOV<List<Message>> checkMessage(String access_token) {
-		String email = userInfo.getUserName(access_token);
+	public UserOV<List<Message>> checkMessage(HttpServletRequest req) {
+		String email = userInfo.getUserName(req);
 		UserOV<List<Message>> userOV = messageManagerApi.checkMessage(email);
 		return userOV;
 	}
@@ -35,15 +36,15 @@ public class MessageManagerServiceImpl implements MessageManagerService {
 	}
 
 	@Override
-	public UserOV readMessageAll(String access_token) {
-		String email = userInfo.getUserName(access_token);
+	public UserOV readMessageAll(HttpServletRequest req) {
+		String email = userInfo.getUserName(req);
 		UserOV userOV = messageManagerApi.readMessageAll(email);
 		return userOV;
 	}
 
 	@Override
-	public UserOV<List<Apply>> checkApply(String access_token) {
-		String email = userInfo.getUserName(access_token);
+	public UserOV<List<Apply>> checkApply(HttpServletRequest req) {
+		String email = userInfo.getUserName(req);
 		UserOV<List<Apply>> userOV = messageManagerApi.checkApply(email);
 		return userOV;
 	}

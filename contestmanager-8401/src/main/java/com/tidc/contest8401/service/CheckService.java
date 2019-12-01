@@ -2,7 +2,10 @@ package com.tidc.contest8401.service;
 
 import com.tidc.api.pojo.Contest;
 import com.tidc.api.pojo.UserOV;
+import com.tidc.api.pojo.Work;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.List;
 
@@ -44,5 +47,34 @@ public interface CheckService {
 	 * @return
 	 */
 	UserOV<List<String>> listType();
+
+	/**
+	 * 展示对外公开的比赛排行
+	 * @return
+	 */
+	UserOV<List<Contest>> checkShowScoreContest();
+
+	/**
+	 * 根据id查看某个比赛的项目分数列表
+	 * @param id
+	 * @return
+	 */
+	UserOV<List<Work>> checkContestWorkScore(int id);
+
+	/**
+	 * 获取当前老师拥有权限的列表
+	 * @param teacherId
+	 * @return
+	 */
+	UserOV<List<Contest>> listTeacherContest(int teacherId);
+
+	/**
+	 * 获取根据id获取当前老师的比赛的项目列表
+	 * @param id
+	 * @return
+	 */
+	UserOV<List<Work>> listTeacherContestWork(int id,int teacherId);
+
+
 }
 

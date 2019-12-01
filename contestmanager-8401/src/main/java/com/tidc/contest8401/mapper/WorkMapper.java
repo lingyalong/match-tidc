@@ -1,11 +1,9 @@
 package com.tidc.contest8401.mapper;
 
 import com.tidc.api.pojo.Work;
-import org.apache.ibatis.annotations.Delete;
-import org.apache.ibatis.annotations.Insert;
-import org.apache.ibatis.annotations.Options;
-import org.apache.ibatis.annotations.Select;
+import org.apache.ibatis.annotations.*;
 
+import java.math.BigDecimal;
 import java.util.List;
 
 /**
@@ -29,4 +27,11 @@ public interface WorkMapper {
 
 	@Select("select * from work where contest_id = #{contest_id}")
 	List<Work> listWork(int contest_id);
+
+	@Update("update work set score = score+#{score}")
+	int updateScore(BigDecimal  score);
+
+	Integer updateWork(Work work);
+
+	List<Work> checkScore(int Contest_id);
 }

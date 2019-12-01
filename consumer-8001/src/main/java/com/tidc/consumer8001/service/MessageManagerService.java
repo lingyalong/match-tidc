@@ -6,6 +6,7 @@ import com.tidc.api.pojo.UserOV;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 
 /**
@@ -16,10 +17,10 @@ import java.util.List;
 public interface MessageManagerService {
 	/**
 	 * 查看个人的消息列表
-	 * @param access_token
+	 * @param req
 	 * @return
 	 */
-	UserOV<List<Message>> checkMessage(String access_token);
+	UserOV<List<Message>> checkMessage(HttpServletRequest req);
 	/**
 	 * 将某条消息设为已读
 	 * @param id
@@ -28,16 +29,16 @@ public interface MessageManagerService {
 	UserOV readMessage(int id);
 	/**
 	 * 将某个用户的所有消息设为已读
-	 * @param access_token
+	 * @param req
 	 * @return
 	 */
-	UserOV readMessageAll( String access_token);
+	UserOV readMessageAll( HttpServletRequest req);
 	/**
 	 * 获取某个账号的请求列表
-	 * @param access_token
+	 * @param req
 	 * @return
 	 */
-	UserOV<List<Apply>> checkApply(String access_token);
+	UserOV<List<Apply>> checkApply(HttpServletRequest req);
 	/**
 	 * 审批某个账号的某条记录
 	 * @param apply Proposer_email id is_read

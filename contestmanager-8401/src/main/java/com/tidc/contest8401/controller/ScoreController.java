@@ -33,7 +33,6 @@ public class ScoreController {
 	 */
 	@PutMapping("/score")
 	public UserOV updateScore(@RequestBody Grade grade){
-
 		return	scoreService.updateScore(grade);
 	}
 }

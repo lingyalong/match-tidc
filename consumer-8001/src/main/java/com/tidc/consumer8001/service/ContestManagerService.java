@@ -3,6 +3,7 @@ package com.tidc.consumer8001.service;
 import com.tidc.api.pojo.*;
 import org.springframework.web.bind.annotation.*;
 
+import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 
 /**
@@ -16,14 +17,14 @@ public interface ContestManagerService {
 	 * @param contest
 	 * @return
 	 */
-	UserOV<Integer> foundContest(Contest contest);
+	UserOV<Integer> foundContest(Contest contest, HttpServletRequest req);
 
 	/**
 	 * 为一个比赛增加评委
 	 * @param power
 	 * @return
 	 */
-	UserOV addPower(Power power);
+	UserOV addPower(Power power, HttpServletRequest req);
 
 	/**
 	 * 增加一个比赛类型
@@ -50,7 +51,7 @@ public interface ContestManagerService {
 	 * @param work
 	 * @return
 	 */
-	 UserOV apply( Work work);
+	 UserOV apply( Work work, HttpServletRequest req);
 
 	/**
 	 * 根据类型查看比赛列表
@@ -64,7 +65,7 @@ public interface ContestManagerService {
 	 * @param contest
 	 * @return
 	 */
-	UserOV<Contest> updateContest( Contest contest);
+	UserOV<Contest> updateContest(Contest contest, HttpServletRequest req);
 
 	/**
 	 * 添加队员
@@ -78,43 +79,89 @@ public interface ContestManagerService {
 	 * @param team
 	 * @return
 	 */
-	UserOV deleteMember(Team team);
+	UserOV deleteMember(Team team, HttpServletRequest req);
 
 	/**
 	 * 删除比赛
 	 * @param contest
 	 * @return
 	 */
-	UserOV deleteContest(Contest contest);
+	UserOV deleteContest(Contest contest, HttpServletRequest req);
 
 	/**
 	 * 删除项目
 	 * @param work
 	 * @return
 	 */
-	UserOV deleteWork(Work work);
+	UserOV deleteWork(Work work, HttpServletRequest req);
 
 	/**
 	 * 删除评委
 	 * @param power token
 	 * @return
 	 */
-	UserOV deletePower(Power power);
+	UserOV deletePower(Power power, HttpServletRequest req);
 
 	/**
 	 * 评分
 	 * @param grade
 	 * @return
 	 */
-	UserOV addScore(Grade grade);
+	UserOV addScore(Grade grade, HttpServletRequest req);
 
 	/**
 	 * 修改评分
 	 * @param grade
 	 * @return
 	 */
-	UserOV updateScore(Grade grade);
+	UserOV updateScore(Grade grade, HttpServletRequest req);
+
+	/**
+	 * 查看公开了排行榜的比赛列表
+	 * @return
+	 */
+	UserOV<List<Contest>> checkShowScoreContest();
+
+	/**
+	 * 根据id查看某个比赛的项目分数列表
+	 * @param id
+	 * @return
+	 */
+	UserOV<Work> checkWorkScore(int id);
+
+	/**
+	 * 修改比赛排行榜是否公开
+	 * @param contest
+	 * @return
+	 */
+	UserOV updateContestIsShow(Contest contest, HttpServletRequest req);
+
+	/**
+	 * 修改项目
+	 * @param work
+	 * @return
+	 */
+	UserOV updateWork(Work work, HttpServletRequest req);
+
+	/**
+	 * 比赛修改是否开放报名
+	 * @param contest
+	 * @return
+	 */
+	UserOV updateContestIsOpen(Contest contest,HttpServletRequest req);
+
+	/**
+	 * 获取当前老师拥有权限的比赛列表
+	 * @param req
+	 * @return
+	 */
+	UserOV<List<Contest>> listTeacherContest(HttpServletRequest req);
 
 
-
+	/**
+	 * 获取根据id获取当前老师的比赛的项目列表
+	 * @param id
+	 * @return
+	 */
+	public UserOV<List<Work>> listTeacherContestWork(int id,HttpServletRequest req);
 }

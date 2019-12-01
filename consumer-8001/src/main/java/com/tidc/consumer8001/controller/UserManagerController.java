@@ -7,6 +7,7 @@ import com.tidc.consumer8001.service.UserManagerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 
 /**
@@ -30,12 +31,12 @@ public class UserManagerController {
 	}
 	/**
 	 * 根据学校id查询该学校的所有学生信息(通过token获取id)
-	 * @param token
+	 * @param req
 	 * @return
 	 */
 	@GetMapping("/school/student")
-	public UserOV<List<Student>> listSchoolStudent(@RequestParam("token") String token){
-		return userManagerService.listSchoolStudent(token);
+	public UserOV<List<Student>> listSchoolStudent(HttpServletRequest req){
+		return userManagerService.listSchoolStudent(req);
 	}
 
 	/**
@@ -64,7 +65,7 @@ public class UserManagerController {
 	 * @return
 	 */
 	@PutMapping("/teacher/down")
-	public UserOV closeTeacher(@RequestBody Teacher teacher){
-		return userManagerService.closeTeacher(teacher);
+	public UserOV closeTeacher(@RequestBody Teacher teacher,HttpServletRequest req){
+		return userManagerService.closeTeacher(teacher,req);
 	}
 }

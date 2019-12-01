@@ -15,6 +15,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import sun.reflect.generics.scope.Scope;
 
+import java.math.BigDecimal;
 import java.text.ParseException;
 import java.util.LinkedHashMap;
 
@@ -76,7 +77,7 @@ public class FoundServiceImpl implements FoundService {
 //		Student student = (Student) userOV1.getData();
 		Student student = objectMapper.convertValue(userOV1.getData(), new TypeReference<Student>() {});
 		work.setStudent_id(student.getId());
-		work.setScore(0.0);
+		work.setScore(new BigDecimal("0.00"));
 		workMapper.insetWork(work);
 		//增加一个队长
 		Team team = new Team();

@@ -2,6 +2,7 @@ package com.tidc.contest8401.controller;
 
 import com.tidc.api.pojo.Contest;
 import com.tidc.api.pojo.UserOV;
+import com.tidc.api.pojo.Work;
 import com.tidc.contest8401.service.CheckService;
 import org.apache.catalina.User;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -67,4 +68,44 @@ public class CheckController {
 	public UserOV<List<String>> listType(){
 		return checkService.listType();
 	}
+
+	/**
+	 * 展示所有对外公开的比赛排行
+	 * @return
+	 */
+	@GetMapping("/contest/score")
+	public UserOV<List<Contest>> checkShowScoreContest(){
+		return checkService.checkShowScoreContest();
+	}
+
+	/**
+	 * 根据id查看某个比赛的项目分数列表
+	 * @param id
+	 * @return
+	 */
+	@GetMapping("/contest/score/{id}")
+	public UserOV<List<Work>> checkContestWorkScore(@PathVariable("id")int id){
+		return checkService.checkContestWorkScore(id);
+	}
+
+	/**
+	 * 获取当前老师拥有权限的比赛列表
+	 * @param teacherId
+	 * @return
+	 */
+	@GetMapping("/teacher/contest")
+	public UserOV<List<Contest>> listTeacherContest(@RequestParam("teacherId") int teacherId){
+		return checkService.listTeacherContest(teacherId);
+	}
+
+	/**
+	 * 获取根据id获取当前老师的比赛的项目列表
+	 * @param id
+	 * @return
+	 */
+	@GetMapping("/teacher/contest/work/{id}")
+	public UserOV<List<Work>> listTeacherContestWork(@PathVariable("id") int id,@RequestParam("teacherId") int teacherId){
+		return checkService.listTeacherContestWork(id,teacherId);
+	}
+
 }

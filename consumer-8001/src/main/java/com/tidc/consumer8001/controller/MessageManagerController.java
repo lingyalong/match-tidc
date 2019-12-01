@@ -7,6 +7,7 @@ import com.tidc.consumer8001.service.MessageManagerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 
 /**
@@ -21,12 +22,12 @@ public class MessageManagerController {
 	private MessageManagerService messageManagerService;
 	/**
 	 * 查看个人的消息列表
-	 * @param token
+	 * @param req
 	 * @return
 	 */
 	@RequestMapping(value = "/message/all",method = RequestMethod.GET)
-	UserOV<List<Message>> checkMessage(@RequestParam("token") String token){
-		return messageManagerService.checkMessage(token);
+	UserOV<List<Message>> checkMessage(HttpServletRequest req){
+		return messageManagerService.checkMessage(req);
 	}
 
 	/**
@@ -41,22 +42,22 @@ public class MessageManagerController {
 
 	/**
 	 * 将某个用户的所有消息设为已读
-	 * @param token
+	 * @param req
 	 * @return
 	 */
 	@RequestMapping(value = "/message/read/all",method = RequestMethod.PUT)
-	UserOV readMessageAll(@RequestParam("token")String token){
-		return messageManagerService.readMessageAll(token);
+	UserOV readMessageAll(HttpServletRequest req){
+		return messageManagerService.readMessageAll(req);
 	}
 
 	/**
 	 * 获取某个账号的请求列表
-	 * @param token
+	 * @param req
 	 * @return
 	 */
 	@RequestMapping(value = "/apply/all",method = RequestMethod.GET)
-	UserOV<List<Apply>> checkApply(@RequestParam("token") String token){
-		return messageManagerService.checkApply(token);
+	UserOV<List<Apply>> checkApply(HttpServletRequest req){
+		return messageManagerService.checkApply(req);
 	}
 
 	/**

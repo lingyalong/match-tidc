@@ -6,6 +6,7 @@ import com.tidc.consumer8001.utils.UserInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import javax.servlet.http.HttpServletRequest;
 import java.util.LinkedHashMap;
 
 /**
@@ -26,8 +27,8 @@ public class AuthenticationServiceImpl implements AuthenticationService {
 	}
 
 	@Override
-	public Object getUserInfo(String access_token) {
-		String email = userInfo.getUserName(access_token);
+	public Object getUserInfo(HttpServletRequest req) {
+		String email = userInfo.getUserName(req);
 		Object userInfo = authenticationApi.getUserInfo(email);
 		return userInfo;
 	}

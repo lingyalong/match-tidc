@@ -2,7 +2,10 @@ package com.tidc.contest8401.mapper;
 
 import com.tidc.api.pojo.Grade;
 import org.apache.ibatis.annotations.Insert;
+import org.apache.ibatis.annotations.Select;
 import org.apache.ibatis.annotations.Update;
+
+import java.math.BigDecimal;
 
 
 /**
@@ -15,4 +18,6 @@ public interface GradeMapper {
 	int insertGrade(Grade grade);
 	@Update("update grade set score = #{score} where teacher_id = #{teacher_id} and work_id = #{work_id}")
 	int updateGrade(Grade grade);
+	@Select("select score from grade where teacher_id = #{teacher_id} and work_id = #{work_id}")
+	BigDecimal  getOldScore(Grade grade);
 }

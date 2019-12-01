@@ -2,7 +2,10 @@ package com.tidc.contest8401.service;
 
 import com.tidc.api.pojo.Contest;
 import com.tidc.api.pojo.UserOV;
+import com.tidc.api.pojo.Work;
 import org.springframework.web.bind.annotation.RequestBody;
+
+import javax.servlet.http.HttpServletRequest;
 
 /**
  * @ClassNmae UpdateService
@@ -16,4 +19,26 @@ public interface UpdateService {
 	 * @return
 	 */
 	UserOV<Contest> updateContest(Contest contest);
+
+	/**
+	 * 是否发布比赛排行榜
+	 * @param contest
+	 * @return
+	 */
+	UserOV updateContestIsShow(Contest contest);
+
+	/**
+	 * 修改项目
+	 * @param work
+	 * @return
+	 */
+	UserOV updateWork(Work work);
+
+	/**
+	 * 比赛修改是否开放报名
+	 * @param contest
+	 * @return
+	 */
+	UserOV updateContestIsOpen(Contest contest);
+
 }

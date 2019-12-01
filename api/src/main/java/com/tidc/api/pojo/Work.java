@@ -6,6 +6,8 @@ import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 import java.io.Serializable;
+import java.math.BigDecimal;
+import java.util.List;
 
 /**
  * @ClassNmae Work
@@ -24,8 +26,9 @@ public class Work implements Serializable {
 	private String url;
 	private Integer contest_id;
 	private Integer is_money;
-	private Double score;
+	private BigDecimal  score;
 	private String brief;
+	private List<Team> teamList;
 	//额外的封装
 	private String token;
 }

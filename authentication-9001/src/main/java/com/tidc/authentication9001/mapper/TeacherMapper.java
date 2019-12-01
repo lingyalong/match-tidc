@@ -14,7 +14,7 @@ public interface TeacherMapper {
 	Teacher chickEmail(String email);
 	@Select("select e.name from teacher_role r left outer join role e on r.teacher_role_id=e.id where r.teacher_id = #{id}")
 	List<String> listPower(int id);
-	@Select("select id,name, email, telephone, department idEntity titles from teacher where email=#{email}")
+	@Select("select id,name, email, telephone, department, idEntity, titles from teacher where email=#{email}")
 	Teacher getTeacher(String email);
 
 }

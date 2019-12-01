@@ -6,6 +6,7 @@ import com.tidc.consumer8001.service.ContestManagerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 
 /**
@@ -24,8 +25,8 @@ public class ContestManagerController {
 	 * @return
 	 */
 	@PostMapping("/contest")
-	public UserOV<Integer> foundContest(@RequestBody Contest contest){
-		return contestManagerService.foundContest(contest);
+	public UserOV<Integer> foundContest(@RequestBody Contest contest, HttpServletRequest req){
+		return contestManagerService.foundContest(contest,req);
 	}
 
 	/**
@@ -34,8 +35,8 @@ public class ContestManagerController {
 	 * @return
 	 */
 	@PostMapping("/power")
-	public UserOV addPower(@RequestBody Power power){
-		return contestManagerService.addPower(power);
+	public UserOV addPower(@RequestBody Power power, HttpServletRequest req){
+		return contestManagerService.addPower(power,req);
 	}
 
 	/**
@@ -80,8 +81,8 @@ public class ContestManagerController {
 	 * @return
 	 */
 	@PostMapping("/apply")
-	public UserOV apply(@RequestBody Work work){
-		return contestManagerService.apply(work);
+	public UserOV apply(@RequestBody Work work, HttpServletRequest req){
+		return contestManagerService.apply(work, req);
 	}
 	/**
 	 * 根据类型查看比赛列表
@@ -99,8 +100,8 @@ public class ContestManagerController {
 	 * @return
 	 */
 	@PutMapping("/contest")
-	public UserOV<Contest> updateContest(@RequestBody Contest contest){
-		return contestManagerService.updateContest(contest);
+	public UserOV<Contest> updateContest(@RequestBody Contest contest, HttpServletRequest req){
+		return contestManagerService.updateContest(contest,req);
 	}
 
 	/**
@@ -119,8 +120,8 @@ public class ContestManagerController {
 	 * @return
 	 */
 	@DeleteMapping("/member")
-	public UserOV deleteMember(@RequestBody Team team){
-		return  contestManagerService.deleteMember(team);
+	public UserOV deleteMember(@RequestBody Team team, HttpServletRequest req){
+		return  contestManagerService.deleteMember(team,req);
 	}
 
 	/**
@@ -129,8 +130,8 @@ public class ContestManagerController {
 	 * @return
 	 */
 	@DeleteMapping("/contest")
-	public UserOV deleteContest(@RequestBody Contest contest){
-		return contestManagerService.deleteContest(contest);
+	public UserOV deleteContest(@RequestBody Contest contest, HttpServletRequest req){
+		return contestManagerService.deleteContest(contest,req);
 	}
 
 	/**
@@ -139,8 +140,8 @@ public class ContestManagerController {
 	 * @return
 	 */
 	@DeleteMapping("/work")
-	public UserOV deleteWork(@RequestBody Work work){
-		return contestManagerService.deleteWork(work);
+	public UserOV deleteWork(@RequestBody Work work, HttpServletRequest req){
+		return contestManagerService.deleteWork(work,req);
 	}
 
 	/**
@@ -149,8 +150,8 @@ public class ContestManagerController {
 	 * @return
 	 */
 	@DeleteMapping("/power")
-	public UserOV deletePower(@RequestBody Power power){
-		return contestManagerService.deletePower(power);
+	public UserOV deletePower(@RequestBody Power power, HttpServletRequest req){
+		return contestManagerService.deletePower(power,req);
 	}
 
 	/**
@@ -159,8 +160,8 @@ public class ContestManagerController {
 	 * @return
 	 */
 	@PostMapping("/score")
-	public UserOV addScore(@RequestBody Grade grade){
-		return contestManagerService.addScore(grade);
+	public UserOV addScore(@RequestBody Grade grade, HttpServletRequest req){
+		return contestManagerService.addScore(grade,req);
 	}
 
 	/**
@@ -169,8 +170,77 @@ public class ContestManagerController {
 	 * @return
 	 */
 	@PutMapping("/score")
-	public UserOV updateScore(@RequestBody Grade grade){
-		return contestManagerService.updateScore(grade);
+	public UserOV updateScore(@RequestBody Grade grade, HttpServletRequest req){
+		return contestManagerService.updateScore(grade,req);
+	}
+
+	/**
+	 * 查看公开了排行榜的比赛列表
+	 * @return
+	 */
+	@GetMapping("/contest/score")
+	public UserOV<List<Contest>> checkShowScoreContest(){
+		return contestManagerService.checkShowScoreContest();
+	}
+
+	/**
+	 * 根据id查看某个比赛的项目分数列表
+	 * @param id
+	 * @return
+	 */
+	@GetMapping("/contest/score/{id}")
+	public UserOV<Work> checkWorkScore(@PathVariable("id")int id){
+		return contestManagerService.checkWorkScore(id);
+	}
+
+	/**
+	 * 修改比赛排行榜是否公开
+	 * @param contest
+	 * @return
+	 */
+	@PutMapping("/contest/show")
+	public UserOV updateContestIsShow(@RequestBody Contest contest, HttpServletRequest req){
+		return contestManagerService.updateContestIsShow(contest,req);
+	}
+
+	/**
+	 * 修改项目
+	 * @param work
+	 * @return
+	 */
+	@PutMapping("/work")
+	public UserOV updateWork(@RequestBody Work work, HttpServletRequest req){
+		return contestManagerService.updateWork(work,req);
+	}
+
+	/**
+	 * 比赛修改是否开放报名
+	 * @param contest
+	 * @return
+	 */
+	@PutMapping("/contest/open")
+	public UserOV updateContestIsOpen(@RequestBody Contest contest,HttpServletRequest req){
+		return contestManagerService.updateContestIsOpen(contest,req);
+	}
+	//未测试
+	/**
+	 * 获取当前老师拥有权限的比赛列表
+	 * @param req
+	 * @return
+	 */
+	@GetMapping("/teacher/contest")
+	public UserOV<List<Contest>> listTeacherContest(HttpServletRequest req){
+		return contestManagerService.listTeacherContest(req);
+	}
+
+	/**
+	 * 获取根据比赛id获取比赛的项目列表
+	 * @param id
+	 * @return
+	 */
+	@GetMapping("/teacher/contest/work/{id}")
+	public UserOV<List<Work>> listTeacherContestWork(@PathVariable("id") int id,HttpServletRequest req){
+		return contestManagerService.listTeacherContestWork(id,req);
 	}
 
 

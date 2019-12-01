@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 
 /**
@@ -25,10 +26,10 @@ public interface UserManagerService {
 
 	/**
 	 * 根据学校id查询该学校的所有学生
-	 * @param token
+	 * @param req
 	 * @return
 	 */
-	UserOV<List<Student>> listSchoolStudent(String token);
+	UserOV<List<Student>> listSchoolStudent(HttpServletRequest req);
 
 	/**
 	 * 注册学生账号
@@ -49,5 +50,5 @@ public interface UserManagerService {
 	 * @param teacher email
 	 * @return
 	 */
-	UserOV closeTeacher(Teacher teacher);
+	UserOV closeTeacher(Teacher teacher,HttpServletRequest req);
 }

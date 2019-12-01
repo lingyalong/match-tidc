@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.tidc.contest8401.mapper.ContestMapper">
+    <update id="updateContest" parameterType="contest">
+        update contest
+        <set>
+            <if test="name!=null">
+                name = #{name},
+            </if>
+            <if test="domain!=null">
+                domain = #{domain},
+            </if>
+            <if test="is_mark!=null">
+                is_mark = #{is_mark},
+            </if>
+            <if test="is_anonymous">
+                is_anonymous = #{is_anonymous},
+            </if>
+            <if test="brief!=null">
+                brief = #{brief},
+            </if>
+            <if test="start!=null">
+                start = #{start},
+            </if>
+            <if test="finish!=null">
+                finish = #{finish},
+            </if>
+            <if test="test_id!=null">
+                test_id = #{test_id},
+            </if>
+            <if test="url!=null">
+                url = #{url},
+            </if>
+            <if test="logo!=null">
+                logo = #{logo},
+            </if>
+            <if test="is_show">
+                is_show = #{is_show}
+            </if>
+        </set>
+        where id = #{id}
+    </update>
+</mapper>

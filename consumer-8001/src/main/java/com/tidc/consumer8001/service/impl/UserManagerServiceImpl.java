@@ -11,6 +11,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.PathVariable;
 
+import javax.servlet.http.HttpServletRequest;
 import java.util.LinkedHashMap;
 import java.util.List;
 
@@ -29,8 +30,8 @@ public class UserManagerServiceImpl implements UserManagerService {
 		return userManagerApi.teacherRegister(teacher);
 	}
 
-	public UserOV<List<Student>> listSchoolStudent(String token){
-		String email = userInfo.getUserName(token);
+	public UserOV<List<Student>> listSchoolStudent(HttpServletRequest req){
+		String email = userInfo.getUserName(req);
 		UserOV userOV = userManagerApi.userInfo(email);
 		LinkedHashMap map = (LinkedHashMap) userOV.getData();
 		return userManagerApi.listSchoolStudent((Integer) map.get("id"));
@@ -47,8 +48,8 @@ public class UserManagerServiceImpl implements UserManagerService {
 	}
 
 	@Override
-	public UserOV closeTeacher(Teacher teacher) {
-		School school = (School) userInfo.userInfo(teacher.getToken(), 3);
+	public UserOV closeTeacher(Teacher teacher,HttpServletRequest req) {
+		School school = (School) userInfo.userInfo(req, 3);
 		teacher.setTeacher_school_id(school.getId());
 		return userManagerApi.closeTeacher(teacher);
 	}

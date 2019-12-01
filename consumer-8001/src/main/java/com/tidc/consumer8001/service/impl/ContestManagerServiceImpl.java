@@ -9,6 +9,7 @@ import com.tidc.consumer8001.utils.UserInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 
 /**
@@ -25,14 +26,14 @@ public class ContestManagerServiceImpl implements ContestManagerService {
 	@Autowired
 	private AuthenticationApi authenticationApi;
 	@Override
-	public UserOV<Integer> foundContest(Contest contest) {
-		String school_email = userInfo.getUserName(contest.getToken());
+	public UserOV<Integer> foundContest(Contest contest, HttpServletRequest req) {
+		String school_email = userInfo.getUserName(req);
 		return contestManagerApi.foundContest(contest,school_email);
 	}
 
 	@Override
-	public UserOV addPower(Power power) {
-		String teacher_email = userInfo.getUserName(power.getToken());
+	public UserOV addPower(Power power, HttpServletRequest req) {
+		String teacher_email = userInfo.getUserName(req);
 		return contestManagerApi.addPower(power,teacher_email);
 	}
 
@@ -52,8 +53,8 @@ public class ContestManagerServiceImpl implements ContestManagerService {
 	}
 
 	@Override
-	public UserOV apply(Work work) {
-		String email = userInfo.getUserName(work.getToken());
+	public UserOV apply(Work work, HttpServletRequest req) {
+		String email = userInfo.getUserName(req);
 		return contestManagerApi.apply(work,email);
 	}
 
@@ -63,7 +64,9 @@ public class ContestManagerServiceImpl implements ContestManagerService {
 	}
 
 	@Override
-	public UserOV<Contest> updateContest(Contest contest) {
+	public UserOV<Contest> updateContest(Contest contest, HttpServletRequest req) {
+		School school = (School) userInfo.userInfo(req,3);
+		contest.setSchool_id(school.getId());
 		return contestManagerApi.updateContest(contest);
 	}
 
@@ -73,45 +76,88 @@ public class ContestManagerServiceImpl implements ContestManagerService {
 	}
 
 	@Override
-	public UserOV deleteMember(Team team) {
-		Student student = (Student) userInfo.userInfo(team.getToken(),1);
+	public UserOV deleteMember(Team team, HttpServletRequest req) {
+		Student student = (Student) userInfo.userInfo(req,1);
 		team.setLeaderId(student.getId());
 		return contestManagerApi.deleteMember(team);
 	}
 
 	@Override
-	public UserOV deleteContest(Contest contest) {
-		School school = (School) userInfo.userInfo(contest.getToken(),3);
+	public UserOV deleteContest(Contest contest, HttpServletRequest req) {
+		School school = (School) userInfo.userInfo(req,3);
 		contest.setSchool_id(school.getId());
 		return contestManagerApi.deleteContest(contest);
 	}
 
 	@Override
-	public UserOV deleteWork(Work work) {
-		Student student = (Student) userInfo.userInfo(work.getToken(),1);
+	public UserOV deleteWork(Work work, HttpServletRequest req) {
+		Student student = (Student) userInfo.userInfo(req,1);
 		work.setStudent_id(student.getId());
 		return contestManagerApi.deleteWork(work);
 	}
 
 	@Override
-	public UserOV deletePower(Power power) {
-		School school = (School) userInfo.userInfo(power.getToken(),3);
+	public UserOV deletePower(Power power, HttpServletRequest req) {
+		School school = (School) userInfo.userInfo(req,3);
 		power.setUserId(school.getId());
 		return contestManagerApi.deletePower(power);
 	}
 
 	@Override
-	public UserOV addScore(Grade grade) {
-		Teacher teacher = (Teacher) userInfo.userInfo(grade.getToken(),2);
+	public UserOV addScore(Grade grade, HttpServletRequest req) {
+		Teacher teacher = (Teacher) userInfo.userInfo(req,2);
 		grade.setTeacher_id(teacher.getId());
 		return contestManagerApi.addScore(grade);
 	}
 
 	@Override
-	public UserOV updateScore(Grade grade) {
-		Teacher teacher = (Teacher) userInfo.userInfo(grade.getToken(),2);
+	public UserOV updateScore(Grade grade, HttpServletRequest req) {
+		Teacher teacher = (Teacher) userInfo.userInfo(req,2);
 		grade.setTeacher_id(teacher.getId());
 		return contestManagerApi.updateScore(grade);
+	}
+
+	@Override
+	public UserOV<List<Contest>> checkShowScoreContest() {
+		return contestManagerApi.checkShowScoreContest();
+	}
+
+	@Override
+	public UserOV<Work> checkWorkScore(int id) {
+		return contestManagerApi.checkContestWorkScore(id);
+	}
+
+	@Override
+	public UserOV updateContestIsShow(Contest contest, HttpServletRequest req) {
+		School school = (School) userInfo.userInfo(req,3);
+		contest.setSchool_id(school.getId());
+		return contestManagerApi.updateContestIsShow(contest);
+	}
+
+	@Override
+	public UserOV updateWork(Work work, HttpServletRequest req) {
+		Student student = (Student) userInfo.userInfo(req,1);
+		work.setStudent_id(student.getId());
+		return contestManagerApi.updateWork(work);
+	}
+
+	@Override
+	public UserOV updateContestIsOpen(Contest contest, HttpServletRequest req) {
+		School school = (School) userInfo.userInfo(req,3);
+		contest.setSchool_id(school.getId());
+		return contestManagerApi.updateContestIsOpen(contest);
+	}
+
+	@Override
+	public UserOV<List<Contest>> listTeacherContest(HttpServletRequest req) {
+		Teacher teacher = (Teacher) userInfo.userInfo(req,2);
+		return contestManagerApi.listTeacherContest(teacher.getId());
+	}
+
+	@Override
+	public UserOV<List<Work>> listTeacherContestWork(int id, HttpServletRequest req) {
+		Teacher teacher = (Teacher) userInfo.userInfo(req,2);
+		return contestManagerApi.listTeacherContestWork(id,teacher.getId());
 	}
 
 

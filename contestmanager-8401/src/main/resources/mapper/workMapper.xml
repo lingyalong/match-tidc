@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.tidc.contest8401.mapper.WorkMapper">
+    <!--column 查询语句里的列名或者说字段别名-->
+    <!--property pojo的参数名-->
+    <resultMap id="workScore" type="work">
+        <id column="id" property="id"  />
+        <result column="name" property="name" />
+        <result column="student_id" property="student_id" />
+        <result column="logo" property="logo" />
+        <result column="url" property="url" />
+        <result column="contest_id" property="contest_id" />
+        <result column="is_money" property="is_money" />
+        <result column="score" property="score" />
+        <result column="brief" property="brief" />
+        <collection  property="teamList" ofType="com.tidc.api.pojo.Team" javaType="java.util.List" >
+            <id column="team_id" property="id" />
+            <result column="student_id" property="student_id" />
+            <result column="work_id" property="work_id" />
+            <result column="is_leader" property="is_leader" />
+            <result column="leaderId" property="leaderId" />
+        </collection>
+    </resultMap>
+    <select id="checkScore" parameterType="int" resultMap="workScore">
+       select work.id,work.name,work.brief,work.url,work.logo,team.id as team_id,team.student_id,is_leader from work left outer join team on work.id = team.work_id where work.contest_id = #{contest_id}
+   </select>
+
+    <update id="updateWork" parameterType="work">
+        update work
+        <set>
+            <if test="name!=null">
+                name = #{name},
+            </if>
+            <if test="logo!=null">
+                logo = #{logo},
+            </if>
+            <if test="url!=url">
+                url = #{url},
+            </if>
+            <if test="brief!=null">
+                brief = #{brief}
+            </if>
+        </set>
+        where id = #{id}
+    </update>
+</mapper>

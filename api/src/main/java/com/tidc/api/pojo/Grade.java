@@ -6,6 +6,7 @@ import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 import java.io.Serializable;
+import java.math.BigDecimal;
 
 /**
  * @ClassNmae Grade
@@ -20,7 +21,7 @@ public class Grade implements Serializable {
 	private Integer id;
 	private Integer teacher_id;
 	private Integer work_id;
-	private Double score;
+	private BigDecimal  score;
 	private String token;
-	private Integer Contest_id;
+	private Integer contest_id;
 }
