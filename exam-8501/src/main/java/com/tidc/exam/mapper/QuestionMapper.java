@@ -23,7 +23,5 @@ public interface QuestionMapper {
 	List<Question> listSchoolQuestion(int schoolId);
 
 
-
-
 	int updateQuestion(Question question);
 }
