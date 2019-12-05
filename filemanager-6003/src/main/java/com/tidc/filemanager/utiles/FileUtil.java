@@ -117,7 +117,7 @@ public class FileUtil {
 	 * @param path         文件的绝对路径
 	 * @param downloadName 文件下载的名字  自定义名字
 	 */
-	public void downloadFile(final HttpServletResponse resp, final String path, final String downloadName) throws Exception{
+	public static void downloadFile(final HttpServletResponse resp, final String path, final String downloadName) throws Exception{
 		String fileName = null;
 		try {
 			fileName = new String(downloadName.getBytes("GBK"), StandardCharsets.ISO_8859_1);
@@ -175,4 +175,5 @@ public class FileUtil {
 			return false;
 		}
 	}
+
 }

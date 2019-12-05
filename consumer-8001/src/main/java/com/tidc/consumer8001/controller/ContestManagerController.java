@@ -222,7 +222,7 @@ public class ContestManagerController {
 	public UserOV updateContestIsOpen(@RequestBody Contest contest,HttpServletRequest req){
 		return contestManagerService.updateContestIsOpen(contest,req);
 	}
-	//未测试
+
 	/**
 	 * 获取当前老师拥有权限的比赛列表
 	 * @param req

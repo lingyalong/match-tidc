@@ -11,6 +11,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
+import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 /**
@@ -64,5 +65,13 @@ public class FileServiceImpl implements FileService {
 		}
 		userOV.setStatus(CodeConstant.SUCCESS).setData(fileName);
 		return userOV;
+	}
+
+	@Override
+	public void downFile(String path, HttpServletResponse resp) throws Exception {
+		String[] split = path.split("/");
+		int i = split.length;
+		String fileName = split[i-1];
+		FileUtil.downloadFile(resp,path,fileName);
 	}
 }

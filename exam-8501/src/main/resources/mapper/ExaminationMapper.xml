@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.tidc.exam.mapper.ExaminationMapper">
+    <resultMap id="examination_question" type="examination">
+        <id column="id" property="id" />
+        <result column="name" property="name"/>
+        <result column="brief" property="brief"/>
+        <result column="time" property="time"/>
+        <collection property="questionList" ofType="com.tidc.api.pojo.Question" javaType="java.util.List">
+            <id column="que_id" property="id"/>
+            <result column="title" property="title"/>
+            <result column="genre" property="genre"/>
+            <result column="answer" property="answer"/>
+            <result column="option" property="option"/>
+            <result column="analysis" property="analysis"/>
+            <result column="score" property="score"/>
+        </collection>
+    </resultMap>
+    <select id="getExaminationInQuestion" parameterType="int" resultMap="examination_question">
+        select ex.*,que.id as que_id,que.title,que.genre,que.answer,que.option,que.analysis,que.score
+        from examination_question eq left join examination ex on eq.examination_id = ex.id
+        left join question que on eq.question_id = que.id where ex.id = #{id};
+    </select>
+</mapper>

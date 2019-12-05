@@ -1,13 +1,13 @@
 <component name="libraryTable">
   <library name="Maven: org.springframework.boot:spring-boot-autoconfigure:2.1.11.BUILD-SNAPSHOT">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/../../javajdk/org/springframework/boot/spring-boot-autoconfigure/2.1.11.BUILD-SNAPSHOT/spring-boot-autoconfigure-2.1.11.BUILD-20191125.142859-15.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../javajdk/org/springframework/boot/spring-boot-autoconfigure/2.1.11.BUILD-SNAPSHOT/spring-boot-autoconfigure-2.1.11.BUILD-20191203.160127-24.jar!/" />
     </CLASSES>
     <JAVADOC>
-      <root url="jar://$PROJECT_DIR$/../../javajdk/org/springframework/boot/spring-boot-autoconfigure/2.1.11.BUILD-SNAPSHOT/spring-boot-autoconfigure-2.1.11.BUILD-20191125.142859-15-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../javajdk/org/springframework/boot/spring-boot-autoconfigure/2.1.11.BUILD-SNAPSHOT/spring-boot-autoconfigure-2.1.11.BUILD-20191203.160127-24-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
-      <root url="jar://$PROJECT_DIR$/../../javajdk/org/springframework/boot/spring-boot-autoconfigure/2.1.11.BUILD-SNAPSHOT/spring-boot-autoconfigure-2.1.11.BUILD-20191125.142859-15-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../javajdk/org/springframework/boot/spring-boot-autoconfigure/2.1.11.BUILD-SNAPSHOT/spring-boot-autoconfigure-2.1.11.BUILD-20191203.160127-24-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

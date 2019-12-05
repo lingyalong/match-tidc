@@ -15,6 +15,7 @@ import org.springframework.stereotype.Component;
 public class CheckUtils {
 	@Autowired
 	private ContestMapper contestMapper;
+	//查重
 	public boolean checkContest(Contest contest){
 		Integer contestLeader = contestMapper.checkLeader(contest.getId());
 		if(contestLeader.equals(contest.getSchool_id())){

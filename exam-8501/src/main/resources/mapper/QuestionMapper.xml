@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.tidc.exam.mapper.QuestionMapper">
+   <update id="updateQuestion" parameterType="question">
+       update question
+       <set>
+           <if test="title!=null">
+               title = #{title},
+           </if>
+           <if test="genre!=null">
+               grenre = #{grenre},
+           </if>
+           <if test="answer!=null">
+               answer = #{answer}
+           </if>
+           <if test="option!=null">
+               option = #{option},
+           </if>
+           <if test="analysis!=null">
+               analysis = #{analysis},
+           </if>
+           <if test="score!=null">
+               score = #{score}
+           </if>
+       </set>
+       where id = #{id}
+   </update>
+</mapper>

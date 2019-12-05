@@ -11,6 +11,7 @@
         <module name="consumer-8001" />
         <module name="contestmanager-8401" />
         <module name="eureka-6001" />
+        <module name="exam-8501" />
         <module name="filemanager-6003" />
         <module name="match-tidc" />
         <module name="messagemanager-8301" />
@@ -25,6 +26,7 @@
       <module name="consumer-8001" target="1.8" />
       <module name="contestmanager-8401" target="1.8" />
       <module name="eureka-6001" target="1.8" />
+      <module name="exam-8501" target="1.8" />
       <module name="filemanager-6003" target="1.8" />
       <module name="match-tidc" target="1.5" />
       <module name="messagemanager-8301" target="1.8" />
@@ -40,6 +42,7 @@
       <module name="consumer-8001" options="-parameters" />
       <module name="contestmanager-8401" options="-parameters" />
       <module name="eureka-6001" options="-parameters" />
+      <module name="exam-8501" options="-parameters" />
       <module name="filemanager-6003" options="-parameters" />
       <module name="match-tidc" options="" />
       <module name="messagemanager-8301" options="-parameters" />
