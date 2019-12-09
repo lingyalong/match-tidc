@@ -8,12 +8,14 @@ import com.tidc.api.pojo.School;
 import com.tidc.api.pojo.Student;
 import com.tidc.api.pojo.Teacher;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.oauth2.common.exceptions.InvalidTokenException;
 import org.springframework.security.oauth2.provider.OAuth2Authentication;
 import org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationDetails;
 import org.springframework.security.oauth2.provider.token.ResourceServerTokenServices;
 import org.springframework.stereotype.Component;
 
 import javax.servlet.http.HttpServletRequest;
+import java.security.InvalidParameterException;
 import java.util.Enumeration;
 import java.util.LinkedHashMap;
 
@@ -36,7 +38,7 @@ public class UserInfo {
 		OAuth2Authentication oAuth2Authentication = tokenServices.loadAuthentication(token);
 		return (String) oAuth2Authentication.getUserAuthentication().getPrincipal();
 	}
-	public Object userInfo(HttpServletRequest req, int i){
+	public Object userInfo(HttpServletRequest req, int i) throws InvalidTokenException {
 //		String token =getToken(req);
 		String token = req.getHeader("tidc");
 		OAuth2Authentication oAuth2Authentication = tokenServices.loadAuthentication(token);

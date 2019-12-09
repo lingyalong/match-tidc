@@ -7,6 +7,7 @@ import com.tidc.api.pojo.UserOV;
 import com.tidc.consumer8001.service.ExamManagerService;
 import com.tidc.utils.CheckObjectIsNullUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.oauth2.common.exceptions.InvalidTokenException;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
@@ -28,7 +29,7 @@ public class ExamManagerController {
 	 * @return
 	 */
 	@GetMapping("/school/examination")
-	public UserOV<List<Examination>> listExamination(HttpServletRequest req){
+	public UserOV<List<Examination>> listExamination(HttpServletRequest req)throws InvalidTokenException{
 		return examManagerService.listExamination(req);
 	}
 
@@ -37,7 +38,7 @@ public class ExamManagerController {
 	 * @return
 	 */
 	@GetMapping("/school/question")
-	public UserOV<List<Question>> listQuestion(HttpServletRequest req) {
+	public UserOV<List<Question>> listQuestion(HttpServletRequest req)throws InvalidTokenException {
 		return examManagerService.listQuestion(req);
 	}
 
@@ -57,7 +58,7 @@ public class ExamManagerController {
 	 * @return
 	 */
 	@PostMapping("/question")
-	public UserOV foundQuestion(@RequestBody Question question, HttpServletRequest req){
+	public UserOV foundQuestion(@RequestBody Question question, HttpServletRequest req)throws InvalidTokenException{
 		return examManagerService.foundQuestion(question,req);
 	}
 
@@ -67,7 +68,7 @@ public class ExamManagerController {
 	 * @return
 	 */
 	@PostMapping("/examination")
-	public UserOV foundExamination(@RequestBody Examination examination,HttpServletRequest req){
+	public UserOV foundExamination(@RequestBody Examination examination,HttpServletRequest req)throws InvalidTokenException{
 		return examManagerService.foundExamination(examination,req);
 	}
 
@@ -77,7 +78,7 @@ public class ExamManagerController {
 	 * @return
 	 */
 	@PostMapping("/examination/question")
-	public UserOV ExaminationAddQuestion(@RequestBody ExaminationQuestion examinationQuestion,HttpServletRequest req){
+	public UserOV ExaminationAddQuestion(@RequestBody ExaminationQuestion examinationQuestion,HttpServletRequest req)throws InvalidTokenException{
 		return examManagerService.ExaminationAddQuestion(examinationQuestion,req);
 	}
 	/**
@@ -86,10 +87,49 @@ public class ExamManagerController {
 	 * @return
 	 */
 	@PutMapping("/question")
-	public UserOV alterQuestion(@RequestBody Question question,HttpServletRequest req){
+	public UserOV alterQuestion(@RequestBody Question question,HttpServletRequest req)throws InvalidTokenException{
 		return examManagerService.alterQuestion(question,req);
 
 	}
 
+	/**
+	 * 修改试卷
+	 * @param examination
+	 * @return
+	 */
+	@PutMapping("examination")
+	public UserOV alterExamination(@RequestBody Examination examination,HttpServletRequest req)throws InvalidTokenException{
+		return examManagerService.alterExamination(examination,req);
+	}
+
+	/**
+	 * 删除题目
+	 * @param question
+	 * @return
+	 */
+	@DeleteMapping("/question")
+	public UserOV deleteQuestion(@RequestBody Question question,HttpServletRequest req)throws InvalidTokenException{
+		return examManagerService.deleteQuestion(question,req);
+	}
+
+	/**
+	 * 删除试卷
+	 * @param examination
+	 * @return
+	 */
+	@DeleteMapping("/examination")
+	public UserOV deleteExamination(@RequestBody Examination examination,HttpServletRequest req)throws InvalidTokenException {
+		return examManagerService.deleteExamination(examination,req);
+	}
+
+	/**
+	 * 给一张试卷删除试题
+	 * @param examinationQuestion
+	 * @return
+	 */
+	@DeleteMapping("/examination/question")
+	public UserOV examinationDeleteQuestion(@RequestBody ExaminationQuestion examinationQuestion,HttpServletRequest req){
+		return examManagerService.examinationDeleteQuestion(examinationQuestion,req);
+	}
 
 }

@@ -45,6 +45,18 @@ public class ExamManagerFallbackFactory implements FallbackFactory<ExamManagerAp
 			public UserOV alterQuestion(Question question) {
 				return null;
 			}
+
+			public UserOV alterExamination(Examination examination) {
+				return null;
+			}
+
+			public UserOV deleteQuestion(Question question) {
+				return null;
+			}
+
+			public UserOV deleteExamination(Examination examination) {
+				return null;
+			}
 		};
 	}
 }

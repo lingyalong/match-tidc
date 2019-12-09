@@ -1,9 +1,11 @@
 package com.tidc.exam.mapper;
 
 import com.tidc.api.pojo.Question;
+import org.apache.ibatis.annotations.Delete;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Select;
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.DeleteMapping;
 
 import java.util.List;
 
@@ -21,6 +23,9 @@ public interface QuestionMapper {
 
 	@Select("select id,title,genre,score from question where school_id = #{schoolId}")
 	List<Question> listSchoolQuestion(int schoolId);
+
+	@Delete("delete from question where id = #{id}")
+	int deleteQuestion(int id);
 
 
 	int updateQuestion(Question question);

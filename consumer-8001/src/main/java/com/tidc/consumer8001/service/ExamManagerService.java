@@ -64,5 +64,33 @@ public interface ExamManagerService {
 	 */
 	UserOV alterQuestion(Question question,HttpServletRequest req);
 
+	/**
+	 * 修改试卷
+	 * @param examination
+	 * @return
+	 */
+	UserOV alterExamination(Examination examination,HttpServletRequest req);
+
+
+	/**
+	 * 删除题目
+	 * @param question
+	 * @return
+	 */
+	UserOV deleteQuestion(Question question,HttpServletRequest req);
+
+	/**
+	 * 删除试卷
+	 * @param examination
+	 * @return
+	 */
+	UserOV deleteExamination(Examination examination,HttpServletRequest req);
+
+	/**
+	 * 给一张试卷删除试题
+	 * @param examinationQuestion
+	 * @return
+	 */
+	UserOV examinationDeleteQuestion(ExaminationQuestion examinationQuestion,HttpServletRequest req);
 
 }

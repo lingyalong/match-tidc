@@ -1,7 +1,9 @@
 package com.tidc.exam.service.impl;
 
+import com.tidc.api.pojo.Examination;
 import com.tidc.api.pojo.Question;
 import com.tidc.api.pojo.UserOV;
+import com.tidc.exam.mapper.ExaminationMapper;
 import com.tidc.exam.mapper.QuestionMapper;
 import com.tidc.exam.service.AlterService;
 import com.tidc.exam.util.CheckPowerUtils;
@@ -21,11 +23,23 @@ public class AlterServiceImpl implements AlterService {
 
 	@Autowired
 	private CheckPowerUtils checkPowerUtils;
+	@Autowired
+	private ExaminationMapper examinationMapper;
 	@Override
 	public UserOV alterQuestion(Question question) {
 		UserOV userOV = new UserOV();
-		if (checkPowerUtils.CheckQuestionPower(question.getId(),question.getSchool_id())) {
+		if (checkPowerUtils.checkQuestionPower(question.getId(),question.getSchool_id())) {
 			int count = questionMapper.updateQuestion(question);
+			AffectUtils.affectOne(count,userOV);
+		}
+		return userOV;
+	}
+
+	@Override
+	public UserOV alterExamination(Examination examination) {
+		UserOV userOV = new UserOV();
+		if(checkPowerUtils.checkExaminationPower(examination.getId(),examination.getSchool_id())){
+			int count = examinationMapper.updateExamination(examination);
 			AffectUtils.affectOne(count,userOV);
 		}
 		return userOV;

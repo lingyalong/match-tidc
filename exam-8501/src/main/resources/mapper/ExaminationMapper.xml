@@ -23,4 +23,19 @@
         from examination_question eq left join examination ex on eq.examination_id = ex.id
         left join question que on eq.question_id = que.id where ex.id = #{id};
     </select>
+    <update id="updateExamination" parameterType="examination">
+        update examination
+        <set>
+            <if test="name!=null">
+                name = #{name},
+            </if>
+            <if test="brief!=null">
+                brief = #{brief},
+            </if>
+            <if test="time!=null">
+                time = #{time}
+            </if>
+
+        </set>
+    </update>
 </mapper>

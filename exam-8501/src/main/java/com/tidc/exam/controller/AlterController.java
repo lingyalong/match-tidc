@@ -1,5 +1,6 @@
 package com.tidc.exam.controller;
 
+import com.tidc.api.pojo.Examination;
 import com.tidc.api.pojo.Question;
 import com.tidc.api.pojo.UserOV;
 import com.tidc.exam.mapper.QuestionMapper;
@@ -30,5 +31,15 @@ public class AlterController {
 	@PutMapping("/question")
 	public UserOV alterQuestion(@RequestBody Question question){
 		return alterService.alterQuestion(question);
+	}
+
+	/**
+	 * 修改试卷
+	 * @param examination
+	 * @return
+	 */
+	@PutMapping("examination")
+	public UserOV alterExamination(@RequestBody Examination examination){
+		return alterService.alterExamination(examination);
 	}
 }

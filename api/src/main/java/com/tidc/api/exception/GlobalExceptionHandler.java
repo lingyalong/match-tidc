@@ -31,4 +31,5 @@ public class GlobalExceptionHandler {
 		userOV.setStatus(CodeConstant.FAIL).setMessage(exception.getMessage()).setCode(408);
 		return userOV;
 	}
+
 }

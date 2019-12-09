@@ -7,6 +7,7 @@ import com.tidc.consumer8001.service.ExamManagerService;
 import com.tidc.consumer8001.utils.UserInfo;
 import com.tidc.utils.CheckObjectIsNullUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.oauth2.common.exceptions.InvalidTokenException;
 import org.springframework.stereotype.Service;
 
 import javax.servlet.http.HttpServletRequest;
@@ -25,13 +26,13 @@ public class ExamManagerServiceImpl implements ExamManagerService {
 	private UserInfo userInfo;
 
 	@Override
-	public UserOV<List<Examination>> listExamination(HttpServletRequest req) {
+	public UserOV<List<Examination>> listExamination(HttpServletRequest req) throws InvalidTokenException{
 		School school = (School) userInfo.userInfo(req,3);
 		return examManagerApi.listExamination(school.getId());
 	}
 
 	@Override
-	public UserOV<List<Question>> listQuestion(HttpServletRequest req) {
+	public UserOV<List<Question>> listQuestion(HttpServletRequest req) throws InvalidTokenException{
 		School school = (School) userInfo.userInfo(req,3);
 		return examManagerApi.listQuestion(school.getId());
 	}
@@ -42,21 +43,21 @@ public class ExamManagerServiceImpl implements ExamManagerService {
 	}
 
 	@Override
-	public UserOV foundQuestion(Question question, HttpServletRequest req){
+	public UserOV foundQuestion(Question question, HttpServletRequest req)throws InvalidTokenException{
 		School school = (School) userInfo.userInfo(req,3);
 		question.setSchool_id(school.getId());
 		return examManagerApi.foundQuestion(question);
 	}
 
 	@Override
-	public UserOV foundExamination(Examination examination,HttpServletRequest req) {
+	public UserOV foundExamination(Examination examination,HttpServletRequest req) throws InvalidTokenException{
 		School school = (School) userInfo.userInfo(req,3);
 		examination.setSchool_id(school.getId());
 		return examManagerApi.foundExamination(examination);
 	}
 
 	@Override
-	public UserOV ExaminationAddQuestion(ExaminationQuestion examinationQuestion,HttpServletRequest req) {
+	public UserOV ExaminationAddQuestion(ExaminationQuestion examinationQuestion,HttpServletRequest req) throws InvalidTokenException{
 		School school = (School) userInfo.userInfo(req,3);
 		examinationQuestion.setSchool_id(school.getId());
 		boolean b = CheckObjectIsNullUtils.contestObjCheckIsNull(examinationQuestion);
@@ -70,10 +71,38 @@ public class ExamManagerServiceImpl implements ExamManagerService {
 	}
 
 	@Override
-	public UserOV alterQuestion(Question question,HttpServletRequest req) {
+	public UserOV alterQuestion(Question question,HttpServletRequest req) throws InvalidTokenException{
 		School school = (School) userInfo.userInfo(req,3);
 		question.setSchool_id(school.getId());
 		return examManagerApi.alterQuestion(question);
+	}
+
+	@Override
+	public UserOV alterExamination(Examination examination,HttpServletRequest req) throws InvalidTokenException{
+		School school = (School) userInfo.userInfo(req,3);
+		examination.setSchool_id(school.getId());
+		return examManagerApi.alterExamination(examination);
+	}
+
+	@Override
+	public UserOV deleteQuestion(Question question, HttpServletRequest req) throws InvalidTokenException{
+		School school = (School) userInfo.userInfo(req,3);
+		question.setSchool_id(school.getId());
+		return examManagerApi.deleteQuestion(question);
+	}
+
+	@Override
+	public UserOV deleteExamination(Examination examination, HttpServletRequest req) throws InvalidTokenException {
+		School school = (School) userInfo.userInfo(req,3);
+		examination.setSchool_id(school.getId());
+		return examManagerApi.deleteExamination(examination);
+	}
+
+	@Override
+	public UserOV examinationDeleteQuestion(ExaminationQuestion examinationQuestion, HttpServletRequest req) {
+		School school = (School) userInfo.userInfo(req,3);
+		examinationQuestion.setSchool_id(school.getId());
+		return examManagerApi.examinationDeleteQuestion(examinationQuestion);
 	}
 
 

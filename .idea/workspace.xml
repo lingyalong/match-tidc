@@ -2,8 +2,64 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="81d75dca-410b-4d6a-9666-8ef92a5d3f76" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_9_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/exception/GlobalExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam-8501/src/main/java/com/tidc/exam/controller/DeleteController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam-8501/src/main/java/com/tidc/exam/service/DeleteService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_1_11_BUILD_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_1_11_BUILD_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_actuator_2_1_11_BUILD_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_actuator_2_1_11_BUILD_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_actuator_autoconfigure_2_1_11_BUILD_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_actuator_autoconfigure_2_1_11_BUILD_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_1_11_BUILD_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_1_11_BUILD_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_1_11_BUILD_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_1_11_BUILD_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_actuator_2_1_11_BUILD_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_actuator_2_1_11_BUILD_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_aop_2_1_11_BUILD_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_aop_2_1_11_BUILD_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_2_1_11_BUILD_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_2_1_11_BUILD_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_1_11_BUILD_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_1_11_BUILD_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_1_11_BUILD_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_1_11_BUILD_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_2_1_11_BUILD_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_2_1_11_BUILD_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_1_11_BUILD_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_1_11_BUILD_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_commons_2_1_5_BUILD_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_commons_2_1_5_BUILD_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_context_2_1_5_BUILD_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_context_2_1_5_BUILD_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_netflix_archaius_2_1_5_BUILD_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_netflix_archaius_2_1_5_BUILD_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_netflix_eureka_client_2_1_5_BUILD_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_netflix_eureka_client_2_1_5_BUILD_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_netflix_hystrix_2_1_5_BUILD_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_netflix_hystrix_2_1_5_BUILD_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_netflix_ribbon_2_1_5_BUILD_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_netflix_ribbon_2_1_5_BUILD_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_openfeign_core_2_1_5_BUILD_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_openfeign_core_2_1_5_BUILD_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_2_1_5_BUILD_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_2_1_5_BUILD_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_netflix_eureka_client_2_1_5_BUILD_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_netflix_eureka_client_2_1_5_BUILD_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_netflix_ribbon_2_1_5_BUILD_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_netflix_ribbon_2_1_5_BUILD_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_openfeign_2_1_5_BUILD_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_openfeign_2_1_5_BUILD_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_1_12_BUILD_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_1_12_BUILD_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_1_12_BUILD_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_1_12_BUILD_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_1_5_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_1_12_BUILD_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_1_12_BUILD_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_1_12_BUILD_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_1_12_BUILD_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_1_5_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_1_12_BUILD_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_1_12_BUILD_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_1_12_BUILD_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_1_12_BUILD_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_1_5_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_5_1_12_BUILD_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_5_1_12_BUILD_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_5_1_12_BUILD_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_5_1_12_BUILD_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_5_1_12_BUILD_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_5_1_12_BUILD_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_5_1_12_BUILD_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_5_1_12_BUILD_SNAPSHOT.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/tidc/api/controller/ExamManagerApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/tidc/api/controller/ExamManagerApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/tidc/api/exception/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/tidc/api/exception/GlobalExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/tidc/api/fallback/ExamManagerFallbackFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/tidc/api/fallback/ExamManagerFallbackFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/tidc/utils/AffectUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/tidc/utils/AffectUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/controller/ExamManagerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/controller/ExamManagerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/service/ExamManagerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/service/ExamManagerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/service/impl/ExamManagerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/service/impl/ExamManagerServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/utils/UserInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/utils/UserInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exam-8501/src/main/java/com/tidc/exam/controller/AlterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/exam-8501/src/main/java/com/tidc/exam/controller/AlterController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exam-8501/src/main/java/com/tidc/exam/mapper/ExaminationMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/exam-8501/src/main/java/com/tidc/exam/mapper/ExaminationMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exam-8501/src/main/java/com/tidc/exam/mapper/ExaminationQuestionMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/exam-8501/src/main/java/com/tidc/exam/mapper/ExaminationQuestionMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/exam-8501/src/main/java/com/tidc/exam/mapper/QuestionMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/exam-8501/src/main/java/com/tidc/exam/mapper/QuestionMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exam-8501/src/main/java/com/tidc/exam/service/AlterService.java" beforeDir="false" afterPath="$PROJECT_DIR$/exam-8501/src/main/java/com/tidc/exam/service/AlterService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exam-8501/src/main/java/com/tidc/exam/service/impl/AlterServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/exam-8501/src/main/java/com/tidc/exam/service/impl/AlterServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exam-8501/src/main/java/com/tidc/exam/util/CheckPowerUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/exam-8501/src/main/java/com/tidc/exam/util/CheckPowerUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exam-8501/src/main/resources/mapper/ExaminationMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/exam-8501/src/main/resources/mapper/ExaminationMapper.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -32,8 +88,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/exam-8501/src/main/java/com/tidc/exam/controller/CheckController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="602">
-              <caret line="27" column="52" selection-start-line="27" selection-start-column="37" selection-end-line="27" selection-end-column="52" />
+            <state relative-caret-position="243">
+              <caret line="16" selection-start-line="16" selection-end-line="17" selection-end-column="12" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -42,10 +98,24 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/src/main/java/com/tidc/api/controller/ExamManagerApi.java">
+        <entry file="file://$PROJECT_DIR$/exam-8501/src/main/java/com/tidc/exam/controller/DeleteController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-532">
-              <caret line="38" column="16" lean-forward="true" selection-start-line="38" selection-start-column="16" selection-end-line="38" selection-end-column="16" />
+            <state relative-caret-position="467">
+              <caret line="43" column="16" lean-forward="true" selection-start-line="43" selection-start-column="16" selection-end-line="43" selection-end-column="16" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1193#1194#0" expanded="true" />
+                <element signature="e#1220#1221#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/exam-8501/src/main/java/com/tidc/exam/service/DeleteService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="791">
+              <caret line="36" column="12" selection-start-line="36" selection-start-column="12" selection-end-line="36" selection-end-column="12" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -54,10 +124,28 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/exam-8501/src/main/java/com/tidc/exam/mapper/QuestionMapper.java">
+        <entry file="file://$PROJECT_DIR$/api/src/main/java/com/tidc/api/exception/GlobalExceptionHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="389">
-              <caret line="24" selection-start-line="24" selection-end-line="24" />
+            <state relative-caret-position="332">
+              <caret line="21" column="39" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="334">
+              <caret line="49" selection-start-line="49" selection-end-line="49" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/service/impl/ExamManagerServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="108">
+              <caret line="28" column="105" selection-start-line="28" selection-start-column="84" selection-end-line="28" selection-end-column="105" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -66,63 +154,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/messagemanager-8301/src/main/java/com/tidc/messagemanager/service/impl/ApprovalServiceImpl.java">
+        <entry file="file://$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/exception/GlobalExceptionHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="305">
-              <caret line="27" column="40" lean-forward="true" selection-start-line="27" selection-start-column="40" selection-end-line="27" selection-end-column="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/messagemanager-8301/src/main/java/com/tidc/messagemanager/service/impl/CheckMessageImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-42">
-              <caret line="23" selection-start-line="23" selection-end-line="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/messagemanager-8301/src/main/java/com/tidc/messagemanager/controller/CheckMessage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="392">
-              <caret line="58" column="5" lean-forward="true" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
-              <folding>
-                <element signature="e#669#670#0" expanded="true" />
-                <element signature="e#724#725#0" expanded="true" />
-                <element signature="e#849#850#0" expanded="true" />
-                <element signature="e#891#892#0" expanded="true" />
-                <element signature="e#1035#1036#0" expanded="true" />
-                <element signature="e#1092#1093#0" expanded="true" />
-                <element signature="e#1247#1248#0" expanded="true" />
-                <element signature="e#1300#1301#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/messagemanager-8301/src/main/java/com/tidc/messagemanager/controller/ApprovalController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
-              <folding>
-                <element signature="e#806#807#0" expanded="true" />
-                <element signature="e#852#853#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/exam-8501/src/main/java/com/tidc/exam/mapper/ExaminationMapper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="365">
-              <caret line="23" column="42" lean-forward="true" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="459">
+              <caret line="23" column="22" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -130,8 +165,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/exam-8501/src/main/java/com/tidc/exam/mapper/ExaminationQuestionMapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="11" column="112" selection-start-line="11" selection-start-column="112" selection-end-line="11" selection-end-column="112" />
+            <state relative-caret-position="621">
+              <caret line="23" column="33" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/exam-8501/src/main/java/com/tidc/exam/service/impl/DeleteServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="467">
+              <caret line="53" column="19" selection-start-line="53" selection-start-column="19" selection-end-line="53" selection-end-column="19" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -140,10 +187,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/exam-8501/src/main/java/com/tidc/exam/controller/FoundController.java">
+        <entry file="file://$PROJECT_DIR$/exam-8501/src/main/java/com/tidc/exam/util/CheckPowerUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="39" selection-start-line="39" selection-end-line="40" />
+            <state relative-caret-position="290">
+              <caret line="19" column="26" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -166,8 +213,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>rabbitmq</find>
-      <find>open</find>
       <find>authenticationEntryPoint</find>
       <find>authenticationDetailsSource</find>
       <find>service</find>
@@ -196,6 +241,8 @@
       <find>listTeacherContestWork</find>
       <find>/teacher/contest</find>
       <find>('1+1=?',1</find>
+      <find>se'c</find>
+      <find>se</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -204,14 +251,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/authentication-9001/src/main/java/com/tidc/authentication9001/mapper/TeacherMapper.java" />
-        <option value="$PROJECT_DIR$/api/src/main/java/com/tidc/api/controller/ContestManagerApi.java" />
-        <option value="$PROJECT_DIR$/api/src/main/java/com/tidc/api/pojo/Grade.java" />
-        <option value="$PROJECT_DIR$/api/src/main/java/com/tidc/api/pojo/Work.java" />
-        <option value="$PROJECT_DIR$/contestmanager-8401/src/main/java/com/tidc/contest8401/service/impl/FoundServiceImpl.java" />
-        <option value="$PROJECT_DIR$/contestmanager-8401/src/main/java/com/tidc/contest8401/mapper/GradeMapper.java" />
-        <option value="$PROJECT_DIR$/contestmanager-8401/src/main/java/com/tidc/contest8401/mapper/WorkMapper.java" />
-        <option value="$PROJECT_DIR$/contestmanager-8401/src/main/java/com/tidc/contest8401/service/impl/ScoreServiceImpl.java" />
         <option value="$PROJECT_DIR$/contestmanager-8401/src/main/java/com/tidc/contest8401/controller/ScoreController.java" />
         <option value="$PROJECT_DIR$/contestmanager-8401/src/main/java/com/tidc/contest8401/controller/CheckController.java" />
         <option value="$PROJECT_DIR$/filemanager-6003/src/main/java/com/tidc/filemanager/utiles/FileUtil.java" />
@@ -232,29 +271,37 @@
         <option value="$PROJECT_DIR$/contestmanager-8401/src/main/java/com/tidc/contest8401/utils/CheckUtils.java" />
         <option value="$PROJECT_DIR$/exam-8501/src/main/java/com/tidc/exam/service/FoundService.java" />
         <option value="$PROJECT_DIR$/api/src/main/java/com/tidc/utils/CheckObjectIsNullUtils.java" />
-        <option value="$PROJECT_DIR$/api/src/main/java/com/tidc/utils/AffectUtils.java" />
-        <option value="$PROJECT_DIR$/exam-8501/src/main/java/com/tidc/exam/mapper/ExaminationQuestionMapper.java" />
-        <option value="$PROJECT_DIR$/exam-8501/src/main/java/com/tidc/exam/service/AlterService.java" />
-        <option value="$PROJECT_DIR$/exam-8501/src/main/java/com/tidc/exam/controller/AlterController.java" />
         <option value="$PROJECT_DIR$/api/src/main/java/com/tidc/api/pojo/Question.java" />
         <option value="$PROJECT_DIR$/exam-8501/src/main/java/com/tidc/exam/service/impl/FoundServiceImpl.java" />
         <option value="$PROJECT_DIR$/api/src/main/java/com/tidc/api/pojo/ExaminationQuestion.java" />
-        <option value="$PROJECT_DIR$/exam-8501/src/main/java/com/tidc/exam/service/impl/AlterServiceImpl.java" />
         <option value="$PROJECT_DIR$/exam-8501/src/main/resources/mapper/QuestionMapper.xml" />
         <option value="$PROJECT_DIR$/exam-8501/src/main/java/com/tidc/exam/controller/FoundController.java" />
-        <option value="$PROJECT_DIR$/exam-8501/src/main/java/com/tidc/exam/mapper/ExaminationMapper.java" />
-        <option value="$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/service/ExamManagerService.java" />
-        <option value="$PROJECT_DIR$/exam-8501/src/main/java/com/tidc/exam/util/CheckPowerUtils.java" />
         <option value="$PROJECT_DIR$/exam-8501/src/main/java/com/tidc/exam/service/impl/CheckServiceImpl.java" />
         <option value="$PROJECT_DIR$/exam-8501/src/main/java/com/tidc/exam/service/CheckService.java" />
+        <option value="$PROJECT_DIR$/messagemanager-8301/src/main/java/com/tidc/messagemanager/controller/ApprovalController.java" />
         <option value="$PROJECT_DIR$/exam-8501/src/main/java/com/tidc/exam/controller/CheckController.java" />
+        <option value="$PROJECT_DIR$/exam-8501/src/main/resources/mapper/ExaminationMapper.xml" />
+        <option value="$PROJECT_DIR$/exam-8501/src/main/java/com/tidc/exam/service/AlterService.java" />
+        <option value="$PROJECT_DIR$/api/src/main/java/com/tidc/utils/AffectUtils.java" />
+        <option value="$PROJECT_DIR$/exam-8501/src/main/java/com/tidc/exam/service/impl/AlterServiceImpl.java" />
+        <option value="$PROJECT_DIR$/exam-8501/src/main/java/com/tidc/exam/controller/AlterController.java" />
+        <option value="$PROJECT_DIR$/exam-8501/src/main/java/com/tidc/exam/mapper/QuestionMapper.java" />
+        <option value="$PROJECT_DIR$/exam-8501/src/main/java/com/tidc/exam/mapper/ExaminationMapper.java" />
         <option value="$PROJECT_DIR$/api/src/main/java/com/tidc/api/controller/ExamManagerApi.java" />
+        <option value="$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/service/ExamManagerService.java" />
+        <option value="$PROJECT_DIR$/api/src/main/java/com/tidc/api/fallback/ExamManagerFallbackFactory.java" />
+        <option value="$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/utils/UserInfo.java" />
         <option value="$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/service/impl/ExamManagerServiceImpl.java" />
         <option value="$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/controller/ExamManagerController.java" />
-        <option value="$PROJECT_DIR$/api/src/main/java/com/tidc/api/fallback/ExamManagerFallbackFactory.java" />
-        <option value="$PROJECT_DIR$/exam-8501/src/main/resources/mapper/ExaminationMapper.xml" />
-        <option value="$PROJECT_DIR$/exam-8501/src/main/java/com/tidc/exam/mapper/QuestionMapper.java" />
-        <option value="$PROJECT_DIR$/messagemanager-8301/src/main/java/com/tidc/messagemanager/controller/ApprovalController.java" />
+        <option value="$PROJECT_DIR$/consumer-8001/pom.xml" />
+        <option value="$PROJECT_DIR$/api/src/main/java/com/tidc/api/exception/GlobalExceptionHandler.java" />
+        <option value="$PROJECT_DIR$/api/pom.xml" />
+        <option value="$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/exception/GlobalExceptionHandler.java" />
+        <option value="$PROJECT_DIR$/exam-8501/src/main/java/com/tidc/exam/util/CheckPowerUtils.java" />
+        <option value="$PROJECT_DIR$/exam-8501/src/main/java/com/tidc/exam/mapper/ExaminationQuestionMapper.java" />
+        <option value="$PROJECT_DIR$/exam-8501/src/main/java/com/tidc/exam/controller/DeleteController.java" />
+        <option value="$PROJECT_DIR$/exam-8501/src/main/java/com/tidc/exam/service/DeleteService.java" />
+        <option value="$PROJECT_DIR$/exam-8501/src/main/java/com/tidc/exam/service/impl/DeleteServiceImpl.java" />
       </list>
     </option>
   </component>
@@ -297,9 +344,9 @@
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-7" />
-    <option name="y" value="1" />
-    <option name="width" value="1934" />
-    <option name="height" value="1046" />
+    <option name="y" value="5" />
+    <option name="width" value="1925" />
+    <option name="height" value="1042" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -309,6 +356,7 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -319,82 +367,174 @@
             <path>
               <item name="match-tidc" type="b2602c69:ProjectViewProjectNode" />
               <item name="match-tidc" type="462c0819:PsiDirectoryNode" />
-              <item name="consumer-8001" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="match-tidc" type="b2602c69:ProjectViewProjectNode" />
               <item name="match-tidc" type="462c0819:PsiDirectoryNode" />
-              <item name="consumer-8001" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="match-tidc" type="b2602c69:ProjectViewProjectNode" />
               <item name="match-tidc" type="462c0819:PsiDirectoryNode" />
-              <item name="consumer-8001" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="match-tidc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="match-tidc" type="462c0819:PsiDirectoryNode" />
-              <item name="consumer-8001" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="match-tidc" type="b2602c69:ProjectViewProjectNode" />
               <item name="match-tidc" type="462c0819:PsiDirectoryNode" />
-              <item name="consumer-8001" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="match-tidc" type="b2602c69:ProjectViewProjectNode" />
               <item name="match-tidc" type="462c0819:PsiDirectoryNode" />
-              <item name="consumer-8001" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="tidc" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="match-tidc" type="b2602c69:ProjectViewProjectNode" />
               <item name="match-tidc" type="462c0819:PsiDirectoryNode" />
-              <item name="consumer-8001" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="tidc" type="462c0819:PsiDirectoryNode" />
-              <item name="consumer8001" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="match-tidc" type="b2602c69:ProjectViewProjectNode" />
               <item name="match-tidc" type="462c0819:PsiDirectoryNode" />
-              <item name="consumer-8001" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="tidc" type="462c0819:PsiDirectoryNode" />
-              <item name="consumer8001" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="match-tidc" type="b2602c69:ProjectViewProjectNode" />
               <item name="match-tidc" type="462c0819:PsiDirectoryNode" />
-              <item name="consumer-8001" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="tidc" type="462c0819:PsiDirectoryNode" />
-              <item name="consumer8001" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="constant" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="match-tidc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="match-tidc" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="tidc" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
               <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="match-tidc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="match-tidc" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="tidc" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="exception" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="match-tidc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="match-tidc" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="tidc" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="fallback" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="match-tidc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="match-tidc" type="462c0819:PsiDirectoryNode" />
+              <item name="consumer-8001" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="match-tidc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="match-tidc" type="462c0819:PsiDirectoryNode" />
+              <item name="consumer-8001" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="match-tidc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="match-tidc" type="462c0819:PsiDirectoryNode" />
+              <item name="consumer-8001" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="match-tidc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="match-tidc" type="462c0819:PsiDirectoryNode" />
+              <item name="consumer-8001" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="match-tidc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="match-tidc" type="462c0819:PsiDirectoryNode" />
+              <item name="consumer-8001" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="match-tidc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="match-tidc" type="462c0819:PsiDirectoryNode" />
+              <item name="consumer-8001" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="tidc" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="match-tidc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="match-tidc" type="462c0819:PsiDirectoryNode" />
+              <item name="consumer-8001" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="tidc" type="462c0819:PsiDirectoryNode" />
+              <item name="consumer8001" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="match-tidc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="match-tidc" type="462c0819:PsiDirectoryNode" />
+              <item name="consumer-8001" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="tidc" type="462c0819:PsiDirectoryNode" />
+              <item name="consumer8001" type="462c0819:PsiDirectoryNode" />
+              <item name="exception" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="match-tidc" type="b2602c69:ProjectViewProjectNode" />
@@ -420,18 +560,6 @@
               <item name="consumer8001" type="462c0819:PsiDirectoryNode" />
               <item name="service" type="462c0819:PsiDirectoryNode" />
               <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="match-tidc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="match-tidc" type="462c0819:PsiDirectoryNode" />
-              <item name="consumer-8001" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="tidc" type="462c0819:PsiDirectoryNode" />
-              <item name="consumer8001" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="match-tidc" type="b2602c69:ProjectViewProjectNode" />
@@ -586,130 +714,12 @@
             </path>
             <path>
               <item name="match-tidc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="match-tidc" type="462c0819:PsiDirectoryNode" />
-              <item name="usermanager-8101" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="match-tidc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="match-tidc" type="462c0819:PsiDirectoryNode" />
-              <item name="usermanager-8101" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="match-tidc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="match-tidc" type="462c0819:PsiDirectoryNode" />
-              <item name="usermanager-8101" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="match-tidc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="match-tidc" type="462c0819:PsiDirectoryNode" />
-              <item name="usermanager-8101" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="match-tidc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="match-tidc" type="462c0819:PsiDirectoryNode" />
-              <item name="usermanager-8101" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="match-tidc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="match-tidc" type="462c0819:PsiDirectoryNode" />
-              <item name="usermanager-8101" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="tidc" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="match-tidc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="match-tidc" type="462c0819:PsiDirectoryNode" />
-              <item name="usermanager-8101" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="tidc" type="462c0819:PsiDirectoryNode" />
-              <item name="usermanager" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="match-tidc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="match-tidc" type="462c0819:PsiDirectoryNode" />
-              <item name="usermanager-8101" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="tidc" type="462c0819:PsiDirectoryNode" />
-              <item name="usermanager" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="match-tidc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="match-tidc" type="462c0819:PsiDirectoryNode" />
-              <item name="usermanager-8101" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="tidc" type="462c0819:PsiDirectoryNode" />
-              <item name="usermanager" type="462c0819:PsiDirectoryNode" />
-              <item name="mapper" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="match-tidc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="match-tidc" type="462c0819:PsiDirectoryNode" />
-              <item name="usermanager-8101" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="tidc" type="462c0819:PsiDirectoryNode" />
-              <item name="usermanager" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="match-tidc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="match-tidc" type="462c0819:PsiDirectoryNode" />
-              <item name="usermanager-8101" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="tidc" type="462c0819:PsiDirectoryNode" />
-              <item name="usermanager" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="match-tidc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="match-tidc" type="462c0819:PsiDirectoryNode" />
-              <item name="usermanager-8101" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="tidc" type="462c0819:PsiDirectoryNode" />
-              <item name="usermanager" type="462c0819:PsiDirectoryNode" />
-              <item name="utiles" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="match-tidc" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -719,11 +729,11 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1575516847866" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1575900140952" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="create.test.in.the.same.root" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../wei/vhr/hrserver" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -741,13 +751,6 @@
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.tidc.api" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\7\tidc\match-tidc\exam-8501\src\main\resources" />
-      <recent name="D:\7\tidc\match-tidc\messagemanager\src\main\resources" />
-      <recent name="D:\7\tidc\match-tidc\messagemanager\src\main\java\com\tidc\messagemanager" />
-      <recent name="D:\7\tidc\match-tidc\messagemanager-8202\src\main\java\com\tidc" />
-      <recent name="D:\7\tidc\match-tidc\api\src\main\java\com\tidc\api" />
-    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.tidc.api.exception" />
       <recent name="com.tidc.consumer8001.config" />
@@ -757,6 +760,13 @@
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\7\tidc\match-tidc\consumer-8001\src\main\java\com\tidc\consumer8001" />
+      <recent name="D:\7\tidc\match-tidc\exam-8501\src\main\resources" />
+      <recent name="D:\7\tidc\match-tidc\messagemanager\src\main\resources" />
+      <recent name="D:\7\tidc\match-tidc\messagemanager\src\main\java\com\tidc\messagemanager" />
+      <recent name="D:\7\tidc\match-tidc\messagemanager-8202\src\main\java\com\tidc" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -892,12 +902,15 @@
       <workItem from="1574775359080" duration="27026000" />
       <workItem from="1574854592249" duration="48556000" />
       <workItem from="1575089518473" duration="71395000" />
-      <workItem from="1575474361103" duration="8669000" />
+      <workItem from="1575474361103" duration="13894000" />
+      <workItem from="1575774408633" duration="1904000" />
+      <workItem from="1575876156451" duration="9431000" />
+      <workItem from="1575898619932" duration="1515000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="378010000" />
+    <option name="totallyTimeSpent" value="396085000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -910,8 +923,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.34754798" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29530916" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -921,14 +935,14 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3275488" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" weight="0.38069415" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" weight="0.44656488" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49946696" weight="0.39696312" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.329718" />
       <window_info anchor="bottom" id="Duplicate detector" order="7" weight="0.3286334" />
       <window_info anchor="bottom" id="Spring" order="8" weight="0.3286334" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49946696" visible="true" weight="0.31561822" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49946696" weight="0.2537961" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50053304" side_tool="true" weight="0.19522777" />
       <window_info anchor="bottom" id="Statistic" order="12" weight="0.329718" />
@@ -1121,15 +1135,9 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/utils/UserInfo.java</url>
-          <line>59</line>
+          <line>61</line>
           <properties />
           <option name="timeStamp" value="85" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/utils/UserInfo.java</url>
-          <line>41</line>
-          <properties />
-          <option name="timeStamp" value="87" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/contestmanager-8401/src/main/java/com/tidc/contest8401/service/impl/ScoreServiceImpl.java</url>
@@ -1145,9 +1153,15 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/exam-8501/src/main/java/com/tidc/exam/service/impl/AlterServiceImpl.java</url>
-          <line>26</line>
+          <line>30</line>
           <properties />
           <option name="timeStamp" value="94" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/exam-8501/src/main/java/com/tidc/exam/service/impl/DeleteServiceImpl.java</url>
+          <line>35</line>
+          <properties />
+          <option name="timeStamp" value="95" />
         </line-breakpoint>
         <line-breakpoint type="java-method">
           <url>file://$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/mapper/MenuMapper.java</url>
@@ -1197,214 +1211,9 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/service/FileManagerService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/main/java/com/tidc/api/pojo/Power.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/main/java/com/tidc/api/pojo/ContestType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="14" selection-start-line="14" selection-end-line="17" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/main/java/com/tidc/utils/ApplicationContextProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/usermanager-8101/src/main/java/com/tidc/usermanager/service/impl/CheckUserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-135">
-          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/main/java/com/tidc/utils/CheckObjectIsNullUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="656">
-          <caret line="30" column="58" selection-start-line="30" selection-start-column="58" selection-end-line="30" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/usermanager-8101/src/main/java/com/tidc/usermanager/utiles/ApplicationContextProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="13" selection-start-line="13" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/messagemanager-8301/src/main/java/com/tidc/messagemanager/utiles/ApplicationContextProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/messagemanager-8301/src/main/java/com/tidc/messagemanager/utiles/PowerUtiles.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="16" column="27" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/contestmanager-8401/src/main/java/com/tidc/contest8401/utils/CheckUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="18" column="32" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/contestmanager-8401/src/main/java/com/tidc/contest8401/utils/TimeUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-297">
-          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/main/java/com/tidc/utils/AffectUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="13" column="40" lean-forward="true" selection-start-line="13" selection-start-column="40" selection-end-line="13" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/service/impl/AuthenticationServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/main/java/com/tidc/api/pojo/Work.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="567">
-          <caret line="28" column="22" selection-start-line="28" selection-start-column="12" selection-end-line="28" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/main/java/com/tidc/api/pojo/Record.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="18" column="38" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/exam-8501/src/main/java/com/tidc/exam/service/AlterService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="11" column="44" selection-start-line="11" selection-start-column="44" selection-end-line="11" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/exam-8501/src/main/java/com/tidc/exam/service/FoundService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="764">
-          <caret line="35" column="34" selection-start-line="35" selection-start-column="34" selection-end-line="35" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/main/java/com/tidc/api/controller/ContestManagerApi.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/utils/UserInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="41" selection-start-line="41" selection-end-line="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/exam-8501/src/main/java/com/tidc/exam/service/impl/FoundServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="31" selection-start-line="31" selection-end-line="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/main/java/com/tidc/api/pojo/ExaminationQuestion.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="21" column="31" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../javajdk/org/springframework/spring-web/5.1.12.RELEASE/spring-web-5.1.12.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="107" selection-start-line="107" selection-end-line="107" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../javajdk/org/mybatis/mybatis/3.5.3/mybatis-3.5.3.jar!/org/apache/ibatis/binding/MapperProxy.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="52" selection-start-line="52" selection-end-line="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/exam-8501/src/main/java/com/tidc/exam/controller/AlterController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="27" column="14" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#894#895#0" expanded="true" />
-            <element signature="e#944#945#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/contestmanager-8401/src/main/resources/mapper/ContestMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-829" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/exam-8501/src/main/resources/mapper/QuestionMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="29" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/main/java/com/tidc/api/pojo/Examination.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="22" lean-forward="true" selection-start-column="22" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/api/src/main/java/com/tidc/api/pojo/Question.java">
@@ -1424,50 +1233,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/controller/ContestManagerController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="28" column="32" lean-forward="true" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/service/impl/ContestManagerServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="243">
           <caret line="31" column="5" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/service/ExamManagerService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="386">
-          <caret line="35" column="35" lean-forward="true" selection-start-line="35" selection-start-column="35" selection-end-line="35" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/exam-8501/src/main/java/com/tidc/exam/service/impl/AlterServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="26" column="37" selection-start-line="26" selection-start-column="37" selection-end-line="26" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/exam-8501/src/main/java/com/tidc/exam/util/CheckPowerUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="24" column="33" lean-forward="true" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1481,54 +1250,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/service/impl/ExamManagerServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="386">
-          <caret line="40" column="57" selection-start-line="40" selection-start-column="57" selection-end-line="40" selection-end-column="57" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1209#1210#0" expanded="true" />
-            <element signature="e#1264#1265#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/controller/ExamManagerController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
-          <caret line="48" column="34" lean-forward="true" selection-start-line="48" selection-start-column="17" selection-end-line="48" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/main/java/com/tidc/api/fallback/ExamManagerFallbackFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="29" column="16" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#666#667#0" expanded="true" />
-            <element signature="e#688#689#0" expanded="true" />
-            <element signature="e#751#752#0" expanded="true" />
-            <element signature="e#773#774#0" expanded="true" />
-            <element signature="e#839#840#0" expanded="true" />
-            <element signature="e#861#862#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/exam-8501/src/main/java/com/tidc/exam/service/impl/CheckServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="48" column="68" selection-start-line="48" selection-start-column="68" selection-end-line="48" selection-end-column="68" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/consumer-8001/src/main/resources/mapper/MenuMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
@@ -1536,102 +1257,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/exam-8501/src/main/resources/mapper/ExaminationMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="25" column="9" lean-forward="true" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/main/java/com/tidc/api/controller/ExamManagerApi.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-532">
-          <caret line="38" column="16" lean-forward="true" selection-start-line="38" selection-start-column="16" selection-end-line="38" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/exam-8501/src/main/java/com/tidc/exam/controller/CheckController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="602">
-          <caret line="27" column="52" selection-start-line="27" selection-start-column="37" selection-end-line="27" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/exam-8501/src/main/java/com/tidc/exam/controller/FoundController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="39" selection-start-line="39" selection-end-line="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/exam-8501/src/main/java/com/tidc/exam/mapper/ExaminationMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="365">
-          <caret line="23" column="42" lean-forward="true" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/exam-8501/src/main/java/com/tidc/exam/mapper/ExaminationQuestionMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="11" column="112" selection-start-line="11" selection-start-column="112" selection-end-line="11" selection-end-column="112" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/exam-8501/src/main/java/com/tidc/exam/mapper/QuestionMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="389">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/messagemanager-8301/src/main/java/com/tidc/messagemanager/service/impl/ApprovalServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="27" column="40" lean-forward="true" selection-start-line="27" selection-start-column="40" selection-end-line="27" selection-end-column="40" />
+        <state relative-caret-position="486">
+          <caret line="27" column="40" selection-start-line="27" selection-start-column="40" selection-end-line="27" selection-end-column="40" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/messagemanager-8301/src/main/java/com/tidc/messagemanager/service/impl/CheckMessageImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-42">
+        <state relative-caret-position="297">
           <caret line="23" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/messagemanager-8301/src/main/java/com/tidc/messagemanager/controller/ApprovalController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
-          <folding>
-            <element signature="e#806#807#0" expanded="true" />
-            <element signature="e#852#853#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/messagemanager-8301/src/main/java/com/tidc/messagemanager/controller/CheckMessage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="58" column="5" lean-forward="true" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
+        <state relative-caret-position="1161">
+          <caret line="58" column="5" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
           <folding>
             <element signature="e#669#670#0" expanded="true" />
             <element signature="e#724#725#0" expanded="true" />
@@ -1641,6 +1284,379 @@
             <element signature="e#1092#1093#0" expanded="true" />
             <element signature="e#1247#1248#0" expanded="true" />
             <element signature="e#1300#1301#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/messagemanager-8301/src/main/java/com/tidc/messagemanager/controller/ApprovalController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
+          <folding>
+            <element signature="e#806#807#0" expanded="true" />
+            <element signature="e#852#853#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exam-8501/src/main/resources/mapper/QuestionMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="5" column="54" selection-start-line="5" selection-start-column="46" selection-end-line="5" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/com/tidc/api/pojo/Examination.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="419">
+          <caret line="24" column="29" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exam-8501/src/main/resources/mapper/ExaminationMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="25" column="33" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exam-8501/src/main/java/com/tidc/exam/service/AlterService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="449">
+          <caret line="26" column="44" lean-forward="true" selection-start-line="26" selection-start-column="44" selection-end-line="26" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/com/tidc/utils/AffectUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="287">
+          <caret line="12" column="15" selection-start-line="12" selection-start-column="15" selection-end-line="12" selection-end-column="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/com/tidc/api/constant/CodeConstant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/com/tidc/api/controller/AuthenticationApi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/controller/ContestManagerController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-783">
+          <caret line="28" column="32" lean-forward="true" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exam-8501/src/main/java/com/tidc/exam/mapper/QuestionMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="467">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exam-8501/src/main/java/com/tidc/exam/mapper/ExaminationMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="278">
+          <caret line="26" column="34" lean-forward="true" selection-start-line="26" selection-start-column="34" selection-end-line="26" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../javajdk/org/springframework/spring-web/5.1.12.RELEASE/spring-web-5.1.12.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="107" selection-start-line="107" selection-end-line="107" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exam-8501/src/main/java/com/tidc/exam/service/impl/FoundServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="359">
+          <caret line="40" column="28" selection-start-line="40" selection-start-column="28" selection-end-line="40" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exam-8501/src/main/java/com/tidc/exam/service/impl/CheckServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="48" column="47" lean-forward="true" selection-start-line="48" selection-start-column="47" selection-end-line="48" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exam-8501/src/main/java/com/tidc/exam/service/impl/AlterServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="410">
+          <caret line="39" column="37" lean-forward="true" selection-start-line="39" selection-start-column="8" selection-end-line="39" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exam-8501/src/main/java/com/tidc/exam/controller/AlterController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="305">
+          <caret line="43" column="5" lean-forward="true" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exam-8501/src/main/java/com/tidc/exam/controller/FoundController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="51" column="5" lean-forward="true" selection-start-line="43" selection-start-column="4" selection-end-line="51" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/com/tidc/api/pojo/ExaminationQuestion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../javajdk/org/springframework/security/oauth/spring-security-oauth2/2.3.5.RELEASE/spring-security-oauth2-2.3.5.RELEASE.jar!/org/springframework/security/oauth2/common/exceptions/InvalidTokenException.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/controller/ExamManagerController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="837">
+          <caret line="31" column="104" selection-start-line="31" selection-start-column="104" selection-end-line="31" selection-end-column="104" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/com/tidc/api/exception/DeleteFailedException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/com/tidc/api/exception/RepetitionException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/service/impl/FileManagerServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/service/ExamManagerService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2322">
+          <caret line="86" column="76" selection-start-line="86" selection-start-column="76" selection-end-line="86" selection-end-column="76" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/utils/UserInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="621">
+          <caret line="40" column="86" selection-start-line="40" selection-start-column="58" selection-end-line="40" selection-end-column="86" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/com/tidc/api/controller/ExamManagerApi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="599">
+          <caret line="96" column="7" selection-start-line="96" selection-start-column="7" selection-end-line="96" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/com/tidc/api/fallback/ExamManagerFallbackFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="51" selection-start-line="51" selection-end-line="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#666#667#0" expanded="true" />
+            <element signature="e#688#689#0" expanded="true" />
+            <element signature="e#751#752#0" expanded="true" />
+            <element signature="e#773#774#0" expanded="true" />
+            <element signature="e#839#840#0" expanded="true" />
+            <element signature="e#861#862#0" expanded="true" />
+            <element signature="e#1263#1264#0" expanded="true" />
+            <element signature="e#1285#1286#0" expanded="true" />
+            <element signature="e#1339#1340#0" expanded="true" />
+            <element signature="e#1361#1362#0" expanded="true" />
+            <element signature="e#1424#1425#0" expanded="true" />
+            <element signature="e#1446#1447#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/Consumer8001Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/consumer-8001/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="53" column="23" selection-start-line="53" selection-start-column="23" selection-end-line="53" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/mvnw.cmd">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="334">
+          <caret line="49" selection-start-line="49" selection-end-line="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/exception/RepetitionException.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/exception/DeleteFailedException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/com/tidc/api/exception/GlobalExceptionHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="332">
+          <caret line="21" column="39" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/service/impl/ExamManagerServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="28" column="105" selection-start-line="28" selection-start-column="84" selection-end-line="28" selection-end-column="105" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/consumer-8001/src/main/java/com/tidc/consumer8001/exception/GlobalExceptionHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="23" column="22" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exam-8501/src/main/java/com/tidc/exam/util/CheckPowerUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="19" column="26" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exam-8501/src/main/java/com/tidc/exam/controller/CheckController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="16" selection-start-line="16" selection-end-line="17" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exam-8501/src/main/java/com/tidc/exam/mapper/ExaminationQuestionMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="621">
+          <caret line="23" column="33" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exam-8501/src/main/java/com/tidc/exam/controller/DeleteController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="467">
+          <caret line="43" column="16" lean-forward="true" selection-start-line="43" selection-start-column="16" selection-end-line="43" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1193#1194#0" expanded="true" />
+            <element signature="e#1220#1221#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exam-8501/src/main/java/com/tidc/exam/service/DeleteService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="791">
+          <caret line="36" column="12" selection-start-line="36" selection-start-column="12" selection-end-line="36" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exam-8501/src/main/java/com/tidc/exam/service/impl/DeleteServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="467">
+          <caret line="53" column="19" selection-start-line="53" selection-start-column="19" selection-end-line="53" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

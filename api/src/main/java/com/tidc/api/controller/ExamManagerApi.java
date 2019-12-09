@@ -74,4 +74,36 @@ public interface ExamManagerApi {
 	@RequestMapping(value = "/question",method = RequestMethod.PUT)
 	UserOV alterQuestion(@RequestBody Question question);
 
+	/**
+	 * 修改试卷
+	 * @param examination
+	 * @return
+	 */
+	@RequestMapping(value = "examination",method = RequestMethod.PUT)
+	UserOV alterExamination(@RequestBody Examination examination);
+
+	/**
+	 * 删除题目
+	 * @param question
+	 * @return
+	 */
+	@RequestMapping(value = "/question",method = RequestMethod.DELETE)
+	UserOV deleteQuestion(@RequestBody Question question);
+
+	/**
+	 * 删除试卷
+	 * @param examination
+	 * @return
+	 */
+	@RequestMapping(value = "/examination",method = RequestMethod.DELETE)
+	UserOV deleteExamination(@RequestBody Examination examination);
+
+	/**
+	 * 给一张试卷删除试题
+	 * @param examinationQuestion
+	 * @return
+	 */
+	@RequestMapping(value = "/examination/question",method = RequestMethod.DELETE)
+	UserOV examinationDeleteQuestion(@RequestBody ExaminationQuestion examinationQuestion);
+
 }

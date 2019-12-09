@@ -9,6 +9,11 @@ import com.tidc.api.pojo.UserOV;
  * @Author 冯涛滔
  **/
 public class AffectUtils {
+	/**
+	 * 判断是否修改成功
+	 * @param count
+	 * @param userOV
+	 */
 	public static void affectOne(int count,UserOV userOV){
 		if(count==1){
 			userOV.setStatus(CodeConstant.SUCCESS);

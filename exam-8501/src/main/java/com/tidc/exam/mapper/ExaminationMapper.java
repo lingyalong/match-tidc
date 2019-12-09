@@ -1,8 +1,10 @@
 package com.tidc.exam.mapper;
 
 import com.tidc.api.pojo.Examination;
+import org.apache.ibatis.annotations.Delete;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Select;
+import org.springframework.web.bind.annotation.DeleteMapping;
 
 import java.util.List;
 
@@ -21,5 +23,9 @@ public interface ExaminationMapper {
 	@Select("select * from examination where id = #{id}")
 	Examination getExamination(int id);
 
+	@Delete("delete from examination where id = #{id}")
+	int deleteExamination(int id);
+
+	int updateExamination(Examination examination);
 	Examination getExaminationInQuestion(int id);
 }
