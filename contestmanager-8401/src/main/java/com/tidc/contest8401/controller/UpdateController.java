@@ -3,13 +3,11 @@ package com.tidc.contest8401.controller;
 import com.tidc.api.pojo.Contest;
 import com.tidc.api.pojo.UserOV;
 import com.tidc.api.pojo.Work;
+import com.tidc.api.pojo.exam.HistoryExamination;
 import com.tidc.contest8401.service.UpdateService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpRequest;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.PutMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
 
@@ -63,5 +61,15 @@ public class UpdateController {
 	@PutMapping("/contest/open")
 	public UserOV updateContestIsOpen(@RequestBody Contest contest){
 		return  updateService.updateContestIsOpen(contest);
+	}
+
+	/**
+	 * 修改某个比赛的历史试卷id
+	 * @param historyExamination
+	 * @return
+	 */
+	@PutMapping("/contest/history/examination")
+	public UserOV updateContestHistoryExamination(@RequestBody HistoryExamination historyExamination){
+		return updateService.updateContestHistoryExamination(historyExamination);
 	}
 }

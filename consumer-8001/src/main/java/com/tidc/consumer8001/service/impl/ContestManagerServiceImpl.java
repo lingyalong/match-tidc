@@ -3,6 +3,8 @@ package com.tidc.consumer8001.service.impl;
 import com.tidc.api.controller.AuthenticationApi;
 import com.tidc.api.controller.ContestManagerApi;
 import com.tidc.api.pojo.*;
+import com.tidc.api.pojo.exam.HistoryExamination;
+import com.tidc.api.pojo.exam.Record;
 import com.tidc.consumer8001.service.AuthenticationService;
 import com.tidc.consumer8001.service.ContestManagerService;
 import com.tidc.consumer8001.utils.UserInfo;
@@ -53,9 +55,30 @@ public class ContestManagerServiceImpl implements ContestManagerService {
 	}
 
 	@Override
-	public UserOV apply(Work work, HttpServletRequest req) {
+	public UserOV<HistoryExamination> getContestExamination(int id) {
+		return contestManagerApi.getContestExamination(id);
+	}
+
+
+	@Override
+	public UserOV work(Work work,HttpServletRequest req) {
 		String email = userInfo.getUserName(req);
-		return contestManagerApi.apply(work,email);
+		return contestManagerApi.work(work,email);
+	}
+
+	@Override
+	public UserOV apply(ContestApply contestApply, HttpServletRequest req) {
+		Student student = (Student) userInfo.userInfo(req, 1);
+		contestApply.setStudent_id(student.getId());
+		return contestManagerApi.apply(contestApply);
+	}
+
+	@Override
+	public UserOV record(Record record,HttpServletRequest req) {
+		Student student = (Student) userInfo.userInfo(req, 1);
+		record.setStudent_id(student.getId());
+
+		return contestManagerApi.record(record);
 	}
 
 	@Override

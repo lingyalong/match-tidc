@@ -1,10 +1,12 @@
 package com.tidc.exam.service.impl;
 
 import com.tidc.api.constant.CodeConstant;
-import com.tidc.api.pojo.Examination;
-import com.tidc.api.pojo.Question;
+import com.tidc.api.pojo.exam.Examination;
+import com.tidc.api.pojo.exam.HistoryExamination;
+import com.tidc.api.pojo.exam.Question;
 import com.tidc.api.pojo.UserOV;
 import com.tidc.exam.mapper.ExaminationMapper;
+import com.tidc.exam.mapper.HistoryExaminationMapper;
 import com.tidc.exam.mapper.QuestionMapper;
 import com.tidc.exam.service.CheckService;
 import com.tidc.exam.util.CheckPowerUtils;
@@ -26,6 +28,8 @@ public class CheckServiceImpl implements CheckService {
 	private QuestionMapper questionMapper;
 	@Autowired
 	private CheckPowerUtils checkPowerUtils;
+	@Autowired
+	private HistoryExaminationMapper historyExaminationMapper;;
 
 	@Override
 	public UserOV<List<Examination>> listExamination(int schoolId) {
@@ -48,6 +52,18 @@ public class CheckServiceImpl implements CheckService {
 		UserOV<Examination> userOV = new UserOV<>();
 		Examination examination = examinationMapper.getExaminationInQuestion(id);
 		userOV.setData(examination).setStatus(CodeConstant.SUCCESS);
+		return userOV;
+	}
+
+	@Override
+	public UserOV<HistoryExamination> getHistoryExamination(int id) {
+		UserOV<HistoryExamination> userOV = new UserOV<>();
+		HistoryExamination historyExaminationAndQuestion = historyExaminationMapper.getHistoryExaminationAndQuestion(id);
+		if(historyExaminationAndQuestion!=null){
+			userOV.setData(historyExaminationAndQuestion).setStatus(CodeConstant.SUCCESS);
+		}else{
+			userOV.setStatus(CodeConstant.FAIL).setMessage("这个试卷不存在");
+		}
 		return userOV;
 	}
 }

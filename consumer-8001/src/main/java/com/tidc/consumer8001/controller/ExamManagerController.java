@@ -1,17 +1,15 @@
 package com.tidc.consumer8001.controller;
 
-import com.tidc.api.pojo.Examination;
-import com.tidc.api.pojo.ExaminationQuestion;
-import com.tidc.api.pojo.Question;
+import com.tidc.api.pojo.exam.Examination;
+import com.tidc.api.pojo.exam.ExaminationQuestion;
+import com.tidc.api.pojo.exam.Question;
 import com.tidc.api.pojo.UserOV;
 import com.tidc.consumer8001.service.ExamManagerService;
-import com.tidc.utils.CheckObjectIsNullUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.oauth2.common.exceptions.InvalidTokenException;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
 import java.util.List;
 
 /**
@@ -81,6 +79,18 @@ public class ExamManagerController {
 	public UserOV ExaminationAddQuestion(@RequestBody ExaminationQuestion examinationQuestion,HttpServletRequest req)throws InvalidTokenException{
 		return examManagerService.ExaminationAddQuestion(examinationQuestion,req);
 	}
+
+	/**
+	 * 创建一个历史试卷 返回试卷id
+	 * @param contestId
+	 * @param examinationId
+	 * @return
+	 */
+	@PostMapping("/history/examination")
+	public UserOV<Integer> foundHistoryExamination(@RequestParam("contestId") int contestId,
+												   @RequestParam("examinationId") int examinationId){
+		return examManagerService.foundHistoryExamination(contestId,examinationId);
+	}
 	/**
 	 * 修改题目
 	 * @param question
@@ -131,5 +141,7 @@ public class ExamManagerController {
 	public UserOV examinationDeleteQuestion(@RequestBody ExaminationQuestion examinationQuestion,HttpServletRequest req){
 		return examManagerService.examinationDeleteQuestion(examinationQuestion,req);
 	}
+
+
 
 }

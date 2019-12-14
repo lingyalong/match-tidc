@@ -1,11 +1,11 @@
 package com.tidc.exam.service;
 
-import com.tidc.api.pojo.Examination;
-import com.tidc.api.pojo.Question;
+import com.tidc.api.pojo.exam.Examination;
+import com.tidc.api.pojo.exam.HistoryExamination;
+import com.tidc.api.pojo.exam.Question;
 import com.tidc.api.pojo.UserOV;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.List;
 
@@ -35,4 +35,11 @@ public interface CheckService {
 	 * @return
 	 */
 	UserOV<Examination> getExaminationInQuestion(int id);
+
+	/**
+	 * 根据id获取历史试卷
+	 * @param id
+	 * @return
+	 */
+	UserOV<HistoryExamination> getHistoryExamination(int id);
 }

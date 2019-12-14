@@ -2,11 +2,15 @@ package com.tidc.consumer8001.controller;
 
 import com.tidc.api.controller.ContestManagerApi;
 import com.tidc.api.pojo.*;
+import com.tidc.api.pojo.exam.HistoryExamination;
+import com.tidc.api.pojo.exam.Record;
 import com.tidc.consumer8001.service.ContestManagerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.swing.text.html.HTML;
+import java.text.ParseException;
 import java.util.List;
 
 /**
@@ -60,6 +64,16 @@ public class ContestManagerController {
 	}
 
 	/**
+	 * 获取某个比赛的试卷内容 ,只有开赛之后才能查看   准备测试
+	 * @param id
+	 * @return
+	 */
+	@GetMapping("/contest/history/{id}")
+	public UserOV<HistoryExamination> getContestExamination(@PathVariable("id") int id){
+		return contestManagerService.getContestExamination(id);
+	}
+
+	/**
 	 * 查看所有比赛的详细信息
 	 * @return
 	 */
@@ -80,10 +94,31 @@ public class ContestManagerController {
 	 * @param work
 	 * @return
 	 */
-	@PostMapping("/apply")
-	public UserOV apply(@RequestBody Work work, HttpServletRequest req){
-		return contestManagerService.apply(work, req);
+	@PostMapping("/work")
+	public UserOV work(@RequestBody Work work,HttpServletRequest req){
+		return contestManagerService.work(work, req);
 	}
+
+	/**
+	 * 报名线上比赛
+	 * @param contestApply
+	 * @return
+	 */
+	@PostMapping("/apply")
+	public UserOV apply(@RequestBody ContestApply contestApply,HttpServletRequest req){
+		return contestManagerService.apply(contestApply,req);
+	}
+
+	/**
+	 * 交卷 传个match_id 和 答案  学生id
+	 * @param record
+	 * @return
+	 */
+	@PostMapping("/record")
+	public UserOV record(@RequestBody Record record, HttpServletRequest req){
+		return contestManagerService.record(record,req);
+	}
+
 	/**
 	 * 根据类型查看比赛列表
 	 * @param type

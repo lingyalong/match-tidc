@@ -1,11 +1,10 @@
 package com.tidc.exam.controller;
 
-import com.tidc.api.pojo.Examination;
-import com.tidc.api.pojo.ExaminationQuestion;
-import com.tidc.api.pojo.Question;
+import com.tidc.api.pojo.exam.Examination;
+import com.tidc.api.pojo.exam.ExaminationQuestion;
+import com.tidc.api.pojo.exam.Question;
 import com.tidc.api.pojo.UserOV;
 import com.tidc.exam.service.DeleteService;
-import org.apache.ibatis.annotations.Delete;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

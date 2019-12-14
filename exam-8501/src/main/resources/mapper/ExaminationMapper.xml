@@ -8,7 +8,7 @@
         <result column="name" property="name"/>
         <result column="brief" property="brief"/>
         <result column="time" property="time"/>
-        <collection property="questionList" ofType="com.tidc.api.pojo.Question" javaType="java.util.List">
+        <collection property="questionList" ofType="com.tidc.api.pojo.exam.Question" javaType="java.util.List">
             <id column="que_id" property="id"/>
             <result column="title" property="title"/>
             <result column="genre" property="genre"/>

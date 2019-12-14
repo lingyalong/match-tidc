@@ -27,4 +27,11 @@
        </set>
        where id = #{id}
    </update>
+
+    <select id="listQuestion" parameterType="list" resultType="question">
+        select * from question where id in
+        <foreach collection="list" item="eq" open="(" close=")" separator=",">
+            #{eq.question_id}
+        </foreach>
+    </select>
 </mapper>

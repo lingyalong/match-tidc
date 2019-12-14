@@ -2,6 +2,7 @@ package com.tidc.rabbitmq.service.impl;
 
 import com.tidc.api.controller.MessageManagerApi;
 import com.tidc.api.pojo.Message;
+import com.tidc.api.pojo.exam.HistoryExamination;
 import com.tidc.rabbitmq.config.RabbitConfig;
 import com.tidc.rabbitmq.service.SendService;
 import org.springframework.amqp.core.AmqpTemplate;
@@ -56,5 +57,18 @@ public class SendServiceImpl implements SendService {
 	public void deleteWorkANdTeam(int contestId) {
 		amqpTemplate.convertAndSend(RabbitConfig.DELETEWORKANDTEAM,contestId);
 	}
+
+	@Override
+	public void foundHistoryExamination(int contestId, int examinationId) {
+		HistoryExamination historyExamination = new HistoryExamination();
+		historyExamination.setContest_id(contestId).setExaminationId(examinationId);
+		amqpTemplate.convertAndSend(RabbitConfig.FOUNDHISTORYEXAMINATION,historyExamination);
+	}
+
+	@Override
+	public void historyJoinQuestion(HistoryExamination historyExamination) {
+		amqpTemplate.convertAndSend(RabbitConfig.HISTORYJOINQUESTION,historyExamination);
+	}
+
 
 }

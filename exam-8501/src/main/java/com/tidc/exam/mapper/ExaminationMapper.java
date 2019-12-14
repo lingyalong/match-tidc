@@ -1,10 +1,10 @@
 package com.tidc.exam.mapper;
 
-import com.tidc.api.pojo.Examination;
+import com.tidc.api.pojo.exam.Examination;
 import org.apache.ibatis.annotations.Delete;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Select;
-import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
@@ -13,6 +13,7 @@ import java.util.List;
  * @Description TODO
  * @Author 冯涛滔
  **/
+@Repository
 public interface ExaminationMapper {
 	@Insert("insert into examination(name,brief,time,school_id) values(#{name},#{brief},#{time},#{school_id})")
 	int foundExamination(Examination examination);

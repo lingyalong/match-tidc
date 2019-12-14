@@ -1,7 +1,8 @@
 package com.tidc.exam.controller;
 
-import com.tidc.api.pojo.Examination;
-import com.tidc.api.pojo.Question;
+import com.tidc.api.pojo.exam.Examination;
+import com.tidc.api.pojo.exam.HistoryExamination;
+import com.tidc.api.pojo.exam.Question;
 import com.tidc.api.pojo.UserOV;
 import com.tidc.exam.service.CheckService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -49,5 +50,13 @@ public class CheckController{
 		return checkService.getExaminationInQuestion(id);
 	}
 
-
+	/**
+	 * 根据id获取历史试卷
+	 * @param id
+	 * @return
+	 */
+	@GetMapping("/contest/history/exam/{id}")
+	public UserOV<HistoryExamination> getHistoryExamination(@PathVariable("id") int id){
+		return checkService.getHistoryExamination(id);
+	}
 }

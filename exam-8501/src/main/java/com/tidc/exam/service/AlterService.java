@@ -1,16 +1,16 @@
 package com.tidc.exam.service;
 
-import com.tidc.api.pojo.Examination;
-import com.tidc.api.pojo.Question;
+import com.tidc.api.pojo.exam.Examination;
+import com.tidc.api.pojo.exam.Question;
 import com.tidc.api.pojo.UserOV;
-import org.springframework.web.bind.annotation.PutMapping;
-import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.stereotype.Repository;
 
 /**
  * @ClassNmae AlterService
  * @Description TODO
  * @Author 冯涛滔
  **/
+
 public interface AlterService {
 	/**
 	 * 修改题目

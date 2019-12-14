@@ -3,10 +3,12 @@ package com.tidc.contest8401.service;
 import com.tidc.api.pojo.Contest;
 import com.tidc.api.pojo.UserOV;
 import com.tidc.api.pojo.Work;
+import com.tidc.api.pojo.exam.HistoryExamination;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import java.text.ParseException;
 import java.util.List;
 
 /**
@@ -75,6 +77,11 @@ public interface CheckService {
 	 */
 	UserOV<List<Work>> listTeacherContestWork(int id,int teacherId);
 
-
+	/**
+	 * 获取某个比赛的试卷内容 ,只有开赛之后才能查看
+	 * @param id
+	 * @return
+	 */
+	UserOV<HistoryExamination> getContestExamination(int id) throws ParseException;
 }
 

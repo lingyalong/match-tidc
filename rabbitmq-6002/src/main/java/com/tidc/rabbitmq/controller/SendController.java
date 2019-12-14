@@ -1,6 +1,8 @@
 package com.tidc.rabbitmq.controller;
 
 import com.tidc.api.pojo.Message;
+import com.tidc.api.pojo.exam.Examination;
+import com.tidc.api.pojo.exam.HistoryExamination;
 import com.tidc.rabbitmq.service.SendService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -38,4 +40,22 @@ public class SendController {
 		sendService.deleteWorkANdTeam(contestId);
 	}
 
+	/**
+	 * 创建历史试卷
+	 * @param contestId
+	 * @param examinationId
+	 */
+	@PostMapping("/history/examination")
+	public void foundHistoryExamination(@RequestParam("contestId") int contestId,
+										@RequestParam("examinationId") int examinationId){
+		sendService.foundHistoryExamination(contestId,examinationId);
+	}
+	/**
+	 * 创建好历史试卷之后给他连接试题 需要原试卷id和历史试卷id
+	 * @param
+	 */
+	@PostMapping("/history/join/question")
+	public void historyJoinQuestion(@RequestBody HistoryExamination historyExamination){
+		sendService.historyJoinQuestion(historyExamination);
+	}
 }

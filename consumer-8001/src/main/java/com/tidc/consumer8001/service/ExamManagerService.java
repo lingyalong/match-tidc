@@ -1,10 +1,11 @@
 package com.tidc.consumer8001.service;
 
-import com.tidc.api.pojo.Examination;
-import com.tidc.api.pojo.ExaminationQuestion;
-import com.tidc.api.pojo.Question;
+import com.tidc.api.pojo.exam.Examination;
+import com.tidc.api.pojo.exam.ExaminationQuestion;
+import com.tidc.api.pojo.exam.Question;
 import com.tidc.api.pojo.UserOV;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.servlet.http.HttpServletRequest;
 import java.util.List;
@@ -56,6 +57,14 @@ public interface ExamManagerService {
 	 * @return
 	 */
 	UserOV ExaminationAddQuestion(ExaminationQuestion examinationQuestion,HttpServletRequest req);
+
+	/**
+	 * 创建一个历史试卷 返回试卷id
+	 * @param contestId
+	 * @param examinationId
+	 * @return
+	 */
+	UserOV<Integer> foundHistoryExamination(int contestId,int examinationId);
 
 	/**
 	 * 修改题目

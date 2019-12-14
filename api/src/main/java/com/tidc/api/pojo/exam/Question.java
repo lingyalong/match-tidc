@@ -1,4 +1,4 @@
-package com.tidc.api.pojo;
+package com.tidc.api.pojo.exam;
 
 import lombok.Data;
 import lombok.experimental.Accessors;

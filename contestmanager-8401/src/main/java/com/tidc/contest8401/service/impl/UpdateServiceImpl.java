@@ -7,10 +7,12 @@ import com.tidc.api.pojo.Contest;
 import com.tidc.api.pojo.School;
 import com.tidc.api.pojo.UserOV;
 import com.tidc.api.pojo.Work;
+import com.tidc.api.pojo.exam.HistoryExamination;
 import com.tidc.contest8401.mapper.ContestMapper;
 import com.tidc.contest8401.mapper.WorkMapper;
 import com.tidc.contest8401.service.UpdateService;
 import com.tidc.contest8401.utils.CheckUtils;
+import com.tidc.utils.AffectUtils;
 import org.aspectj.apache.bcel.classfile.Code;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -113,6 +115,14 @@ public class UpdateServiceImpl implements UpdateService {
 		}else{
 			userOV.setMessage("你没有权限操作这个项目");
 		}
+		return userOV;
+	}
+
+	@Override
+	public UserOV updateContestHistoryExamination(HistoryExamination historyExamination) {
+		UserOV userOV = new UserOV();
+		int count = contestMapper.updateHistoryExaminationId(historyExamination);
+		AffectUtils.affectOne(count,userOV);
 		return userOV;
 	}
 }

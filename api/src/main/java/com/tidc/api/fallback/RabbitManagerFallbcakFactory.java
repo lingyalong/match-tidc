@@ -2,6 +2,7 @@ package com.tidc.api.fallback;
 
 import com.tidc.api.controller.RabbitManagerApi;
 import com.tidc.api.pojo.Message;
+import com.tidc.api.pojo.exam.HistoryExamination;
 import feign.hystrix.FallbackFactory;
 
 import java.util.List;
@@ -28,6 +29,14 @@ public class RabbitManagerFallbcakFactory implements FallbackFactory<RabbitManag
 			}
 
 			public void deleteWorkANdTeam(int contestId) {
+
+			}
+
+			public void foundHistoryExamination(int contestId, int examinationId) {
+
+			}
+
+			public void historyJoinQuestion(HistoryExamination historyExamination) {
 
 			}
 

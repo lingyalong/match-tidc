@@ -3,6 +3,9 @@ package com.tidc.consumer8001.service.impl;
 import com.tidc.api.constant.CodeConstant;
 import com.tidc.api.controller.ExamManagerApi;
 import com.tidc.api.pojo.*;
+import com.tidc.api.pojo.exam.Examination;
+import com.tidc.api.pojo.exam.ExaminationQuestion;
+import com.tidc.api.pojo.exam.Question;
 import com.tidc.consumer8001.service.ExamManagerService;
 import com.tidc.consumer8001.utils.UserInfo;
 import com.tidc.utils.CheckObjectIsNullUtils;
@@ -57,7 +60,7 @@ public class ExamManagerServiceImpl implements ExamManagerService {
 	}
 
 	@Override
-	public UserOV ExaminationAddQuestion(ExaminationQuestion examinationQuestion,HttpServletRequest req) throws InvalidTokenException{
+	public UserOV ExaminationAddQuestion(ExaminationQuestion examinationQuestion, HttpServletRequest req) throws InvalidTokenException{
 		School school = (School) userInfo.userInfo(req,3);
 		examinationQuestion.setSchool_id(school.getId());
 		boolean b = CheckObjectIsNullUtils.contestObjCheckIsNull(examinationQuestion);
@@ -68,6 +71,11 @@ public class ExamManagerServiceImpl implements ExamManagerService {
 			userOV.setStatus(CodeConstant.FAIL).setMessage("有字段未填写");
 		}
 		return userOV;
+	}
+
+	@Override
+	public UserOV<Integer> foundHistoryExamination(int contestId, int examinationId) {
+		return examManagerApi.foundHistoryExamination(contestId,examinationId);
 	}
 
 	@Override

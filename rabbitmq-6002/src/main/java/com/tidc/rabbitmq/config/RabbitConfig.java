@@ -18,6 +18,8 @@ public class RabbitConfig {
 	public static String SEND_LIST_MESSAGE_QUEUES = "sendListMessage";
 	public static String DELETE_FILE = "deleteFile";
 	public static String DELETEWORKANDTEAM = "deleteWorkAndTeam";
+	public static String FOUNDHISTORYEXAMINATION = "foundHistoryExamination";
+	public static String HISTORYJOINQUESTION = "historyJoinQuestion";
 	//配置
 	@Bean
 	RabbitAdmin rabbitAdmin(ConnectionFactory connectionFactory) {
@@ -32,9 +34,19 @@ public class RabbitConfig {
 	public Queue sendListMessage(){
 		return new Queue(SEND_LIST_MESSAGE_QUEUES);
 	}
-	@Bean
+	@Bean("deleteFile")
 	public Queue deleteFile(){return new Queue(DELETE_FILE);}
-	@Bean Queue deleteContestWork(){
+	@Bean("deleteWorkAndTeam")
+	public Queue deleteContestWork(){
 		return new Queue(DELETEWORKANDTEAM);
 	}
+	@Bean("foundHistoryExamination")
+	public Queue foundHistoryExamination(){
+		return new Queue(FOUNDHISTORYEXAMINATION);
+	}
+	@Bean("historyJoinQuestion")
+	public Queue historyJoinQuestion(){
+		return new Queue(HISTORYJOINQUESTION);
+	}
+
 }

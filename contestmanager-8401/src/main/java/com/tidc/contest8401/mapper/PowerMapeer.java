@@ -13,7 +13,6 @@ import org.springframework.web.bind.annotation.DeleteMapping;
  * @Description TODO
  * @Author 冯涛滔
  **/
-@Mapper
 @Repository
 public interface PowerMapeer {
 	@Insert("insert into power(teacher_id,contest_id) values(#{teacher_id},#{contest_id})")

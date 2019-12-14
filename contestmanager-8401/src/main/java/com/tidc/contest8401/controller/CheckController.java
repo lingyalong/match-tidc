@@ -3,11 +3,13 @@ package com.tidc.contest8401.controller;
 import com.tidc.api.pojo.Contest;
 import com.tidc.api.pojo.UserOV;
 import com.tidc.api.pojo.Work;
+import com.tidc.api.pojo.exam.HistoryExamination;
 import com.tidc.contest8401.service.CheckService;
 import org.apache.catalina.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.text.ParseException;
 import java.util.List;
 
 /**
@@ -107,5 +109,16 @@ public class CheckController {
 	public UserOV<List<Work>> listTeacherContestWork(@PathVariable("id") int id,@RequestParam("teacherId") int teacherId){
 		return checkService.listTeacherContestWork(id,teacherId);
 	}
+
+	/**
+	 * 获取某个比赛的试卷内容 ,只有开赛之后才能查看   准备测试
+	 * @param id
+	 * @return
+	 */
+	@GetMapping("/contest/history/{id}")
+	public UserOV<HistoryExamination> getContestExamination(@PathVariable("id") int id) throws ParseException {
+		return checkService.getContestExamination(id);
+	}
+
 
 }

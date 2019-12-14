@@ -2,6 +2,8 @@ package com.tidc.api.fallback;
 
 import com.tidc.api.controller.ContestManagerApi;
 import com.tidc.api.pojo.*;
+import com.tidc.api.pojo.exam.HistoryExamination;
+import com.tidc.api.pojo.exam.Record;
 import feign.hystrix.FallbackFactory;
 
 import java.util.List;
@@ -34,6 +36,18 @@ public class ContestManagerFallbackFactory implements FallbackFactory<ContestMan
 				return null;
 			}
 
+			public UserOV<HistoryExamination> getContestExamination(int id) {
+				return null;
+			}
+
+			public UserOV work(Work work, String email) {
+				return null;
+			}
+
+			public UserOV apply(ContestApply contestApply) {
+				return null;
+			}
+
 			public UserOV apply(Work work, String email) {
 				return null;
 			}
@@ -47,6 +61,10 @@ public class ContestManagerFallbackFactory implements FallbackFactory<ContestMan
 			}
 
 			public UserOV addMember(Team team) {
+				return null;
+			}
+
+			public UserOV record(Record record) {
 				return null;
 			}
 
@@ -107,6 +125,10 @@ public class ContestManagerFallbackFactory implements FallbackFactory<ContestMan
 			}
 
 			public UserOV<List<Work>> listTeacherContestWork(int id, int teacherId) {
+				return null;
+			}
+
+			public UserOV updateContestHistoryExamination(HistoryExamination historyExamination) {
 				return null;
 			}
 		};

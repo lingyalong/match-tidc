@@ -1,8 +1,6 @@
 package com.tidc.exam.service;
 
-import com.tidc.api.pojo.Examination;
-import com.tidc.api.pojo.ExaminationQuestion;
-import com.tidc.api.pojo.Question;
+import com.tidc.api.pojo.exam.*;
 import com.tidc.api.pojo.UserOV;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -34,4 +32,28 @@ public interface FoundService {
 	 * @return
 	 */
 	UserOV ExaminationAddQuestion(ExaminationQuestion examinationQuestion);
+
+
+	/**
+	 * 创建一个历史试卷 返回试卷id
+	 * @param contestId
+	 * @param examinationId
+	 * @return
+	 */
+	UserOV<Integer> foundHistoryExamination(int contestId,int examinationId);
+
+
+	/**
+	 * 给历史试卷连接题目
+	 * @param historyExamination
+	 * @return
+	 */
+	UserOV historyJoinQuestion(HistoryExamination historyExamination);
+
+	/**
+	 * 交卷
+	 * @param record
+	 * @return
+	 */
+	UserOV<Record> record(Record record);
 }

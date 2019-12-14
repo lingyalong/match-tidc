@@ -1,8 +1,8 @@
 package com.tidc.exam.util;
 
-import com.tidc.api.pojo.Examination;
-import com.tidc.api.pojo.ExaminationQuestion;
-import com.tidc.api.pojo.Question;
+import com.tidc.api.pojo.exam.Examination;
+import com.tidc.api.pojo.exam.ExaminationQuestion;
+import com.tidc.api.pojo.exam.Question;
 import com.tidc.exam.mapper.ExaminationMapper;
 import com.tidc.exam.mapper.QuestionMapper;
 import org.springframework.beans.factory.annotation.Autowired;

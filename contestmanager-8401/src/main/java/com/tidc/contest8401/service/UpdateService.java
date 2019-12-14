@@ -3,6 +3,8 @@ package com.tidc.contest8401.service;
 import com.tidc.api.pojo.Contest;
 import com.tidc.api.pojo.UserOV;
 import com.tidc.api.pojo.Work;
+import com.tidc.api.pojo.exam.HistoryExamination;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 
 import javax.servlet.http.HttpServletRequest;
@@ -40,5 +42,13 @@ public interface UpdateService {
 	 * @return
 	 */
 	UserOV updateContestIsOpen(Contest contest);
+
+
+	/**
+	 * 修改某个比赛的历史试卷id
+	 * @param historyExamination
+	 * @return
+	 */
+	UserOV updateContestHistoryExamination(HistoryExamination historyExamination);
 
 }

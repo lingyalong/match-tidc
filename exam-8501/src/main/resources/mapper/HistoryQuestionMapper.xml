@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.tidc.exam.mapper.HistoryQuestionMapper">
+    <insert id="copyQuestion" parameterType="list" useGeneratedKeys="true" keyProperty="list.id">
+        INSERT INTO history_question(`title`, `genre`, `answer`, `school_id`, `option`, `analysis`, `score`)
+        VALUES
+        <foreach collection="list" item="item" index="index" separator=",">
+            (#{item.title},
+            #{item.genre},
+            #{item.answer},
+            #{item.school_id},
+            #{item.option},
+            #{item.analysis},
+            #{item.score})
+        </foreach>
+    </insert>
+    <select id="getAnswerAndScore" parameterType="int" resultType="HistoryQuestion">
+         select hq.answer,hq.score from history_examination he left join history_examination_question heq on he.id = heq.history_examination_id left join history_question hq on heq.history_question_id = hq.id where he.id = #{id}
+    </select>
+</mapper>

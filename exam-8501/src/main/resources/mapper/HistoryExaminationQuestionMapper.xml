@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.tidc.exam.mapper.HistoryExaminationQuestionMapper">
+
+    <insert id="join" parameterType="HistoryExamination">
+        INSERT INTO history_examination_question(history_question_id,history_examination_id)
+        VALUES
+        <foreach collection="historyQuestionIds" item="item"  separator=",">
+            (#{item},
+            #{id})
+        </foreach>
+    </insert>
+
+    <select id="getHistoryExamination" parameterType="int" resultType="historyExamination">
+        select he.*,hq.* from history_examination he left join history_examination_question heq on he.id = heq.history_examination_id left join history_question hq on heq.history_question_id = hq.id where he.id = #{id};
+    </select>
+</mapper>

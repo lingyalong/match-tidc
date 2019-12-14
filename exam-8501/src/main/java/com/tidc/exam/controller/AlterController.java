@@ -1,12 +1,9 @@
 package com.tidc.exam.controller;
 
-import com.tidc.api.pojo.Examination;
-import com.tidc.api.pojo.Question;
+import com.tidc.api.pojo.exam.Examination;
+import com.tidc.api.pojo.exam.Question;
 import com.tidc.api.pojo.UserOV;
-import com.tidc.exam.mapper.QuestionMapper;
 import com.tidc.exam.service.AlterService;
-import com.tidc.exam.util.CheckPowerUtils;
-import com.tidc.utils.AffectUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PutMapping;
@@ -23,6 +20,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class AlterController {
 	@Autowired
 	private AlterService alterService;
+
 	/**
 	 * 修改题目
 	 * @param question

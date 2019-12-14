@@ -1,6 +1,8 @@
 package com.tidc.consumer8001.service;
 
 import com.tidc.api.pojo.*;
+import com.tidc.api.pojo.exam.HistoryExamination;
+import com.tidc.api.pojo.exam.Record;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
@@ -47,12 +49,33 @@ public interface ContestManagerService {
 	UserOV<Contest> getContestDetails( int id);
 
 	/**
+	 * 获取某个比赛的试卷内容 ,只有开赛之后才能查看   准备测试
+	 * @param id
+	 * @return
+	 */
+	UserOV<HistoryExamination> getContestExamination(int id);
+
+	/**
 	 * 学生报名比赛
 	 * @param work
 	 * @return
 	 */
-	 UserOV apply( Work work, HttpServletRequest req);
+	 UserOV work( Work work, HttpServletRequest req);
 
+	/**
+	 * 报名线上比赛
+	 * @param contestApply
+	 * @return
+	 */
+	UserOV apply(ContestApply contestApply,HttpServletRequest req);
+
+
+	/**
+	 * 交卷 传个match_id 和 答案  学生id
+	 * @param record
+	 * @return
+	 */
+	UserOV record(Record record,HttpServletRequest req);
 	/**
 	 * 根据类型查看比赛列表
 	 * @param type

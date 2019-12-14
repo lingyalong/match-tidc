@@ -2,8 +2,10 @@ package com.tidc.rabbitmq.consumer;
 
 import com.rabbitmq.client.Channel;
 import com.tidc.api.controller.ContestManagerApi;
+import com.tidc.api.controller.ExamManagerApi;
 import com.tidc.api.controller.FileManagerApi;
 import com.tidc.api.controller.MessageManagerApi;
+import com.tidc.api.pojo.exam.HistoryExamination;
 import com.tidc.rabbitmq.config.RabbitConfig;
 import org.springframework.amqp.core.Message;
 import org.springframework.amqp.rabbit.annotation.RabbitHandler;
@@ -29,9 +31,8 @@ public class MessageConsumer {
 	private ContestManagerApi contestManagerApi;
 	@Autowired
 	private FileManagerApi fileManagerApi;
-	public static String SEND_MESSAGE_QUEUES = "sendMessage";
-	public static String SEND_LIST_MESSAGE_QUEUES = "sendListMessage";
-
+	@Autowired
+	private ExamManagerApi examManagerApi;
 	@RabbitListener(queues = "sendMessage")
 	@RabbitHandler //标识接收到消息之后处理方法
 	public void sendMessage(com.tidc.api.pojo.Message msg,Channel channel, Message message) throws IOException {
@@ -83,6 +84,28 @@ public class MessageConsumer {
 		try {
 			channel.basicQos(1);
 			contestManagerApi.deleteWorkAndTeam(contest_id);
+			channel.basicAck(message.getMessageProperties().getDeliveryTag(), false);
+		} catch (IOException e) {
+			channel.basicNack(message.getMessageProperties().getDeliveryTag(), false, true);
+		}
+	}
+	@RabbitListener(queues = "foundHistoryExamination")
+	@RabbitHandler
+	public void foundHistoryExamination(HistoryExamination historyExamination,Channel channel, Message message) throws IOException {
+		try {
+			channel.basicQos(1);
+			examManagerApi.foundHistoryExamination(historyExamination.getContest_id(),historyExamination.getExaminationId());
+			channel.basicAck(message.getMessageProperties().getDeliveryTag(), false);
+		} catch (IOException e) {
+			channel.basicNack(message.getMessageProperties().getDeliveryTag(), false, true);
+		}
+	}
+	@RabbitListener(queues = "historyJoinQuestion")
+	@RabbitHandler
+	public void historyJoinQuestion(HistoryExamination historyExamination, Channel channel, Message message) throws IOException {
+		try {
+			channel.basicQos(1);
+			examManagerApi.historyJoinQuestion(historyExamination);
 			channel.basicAck(message.getMessageProperties().getDeliveryTag(), false);
 		} catch (IOException e) {
 			channel.basicNack(message.getMessageProperties().getDeliveryTag(), false, true);

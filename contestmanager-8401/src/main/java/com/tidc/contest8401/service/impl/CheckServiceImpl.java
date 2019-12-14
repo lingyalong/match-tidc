@@ -1,20 +1,26 @@
 package com.tidc.contest8401.service.impl;
 
 import com.tidc.api.constant.CodeConstant;
+import com.tidc.api.controller.ExamManagerApi;
 import com.tidc.api.pojo.Contest;
 import com.tidc.api.pojo.Power;
 import com.tidc.api.pojo.UserOV;
 import com.tidc.api.pojo.Work;
+import com.tidc.api.pojo.exam.HistoryExamination;
 import com.tidc.contest8401.mapper.ContestMapper;
 import com.tidc.contest8401.mapper.ContestTypeMapper;
 import com.tidc.contest8401.mapper.PowerMapeer;
 import com.tidc.contest8401.mapper.WorkMapper;
 import com.tidc.contest8401.service.CheckService;
+import com.tidc.contest8401.utils.TimeUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -32,6 +38,8 @@ public class CheckServiceImpl implements CheckService {
 	private WorkMapper workMapper;
 	@Autowired
 	private PowerMapeer powerMapeer;
+	@Autowired
+	private ExamManagerApi examManagerApi;
 
 	Logger logger = LoggerFactory.getLogger(CheckServiceImpl.class);
 	@Override
@@ -112,6 +120,20 @@ public class CheckServiceImpl implements CheckService {
 		}else{
 			userOV.setMessage("你没有这个比赛的权限");
 			logger.info("teacher_id:"+"试图越权获取 contest_id:"+id+"的项目列表");
+		}
+		return userOV;
+	}
+
+	@Override
+	public UserOV<HistoryExamination> getContestExamination(int id) throws ParseException {
+		UserOV<HistoryExamination> userOV = new UserOV<>();
+		Contest contest = contestMapper.getContest(id);
+		userOV.setStatus(CodeConstant.FAIL);
+		//判断是否开考
+		if(contest.getIs_exam().equals(1)&& TimeUtil.is_open(contest.getStart_time(),"yyyy-MM-dd HH:mm")){
+			userOV = examManagerApi.getHistoryExamination(contest.getHistory_examination_id());
+		}else{
+			userOV.setMessage("该比赛没有试卷或尚未开始比赛");
 		}
 		return userOV;
 	}

@@ -1,11 +1,11 @@
 package com.tidc.exam.mapper;
 
-import com.tidc.api.pojo.Question;
+import com.tidc.api.pojo.exam.ExaminationQuestion;
+import com.tidc.api.pojo.exam.Question;
 import org.apache.ibatis.annotations.Delete;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Select;
-import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
@@ -14,6 +14,7 @@ import java.util.List;
  * @Description TODO
  * @Author 冯涛滔
  **/
+@Repository
 public interface QuestionMapper {
 	@Insert("insert into question(`title`, `genre`, `answer`, `school_id`, `option`, `analysis`, `score`) values(#{title},#{genre},#{answer},#{school_id},#{option},#{analysis},#{score})")
 	int foundQuestion(Question question);
@@ -27,6 +28,7 @@ public interface QuestionMapper {
 	@Delete("delete from question where id = #{id}")
 	int deleteQuestion(int id);
 
+	List<Question> listQuestion(List<ExaminationQuestion> list);
 
 	int updateQuestion(Question question);
 }

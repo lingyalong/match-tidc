@@ -1,10 +1,7 @@
 package com.tidc.api.fallback;
 
-import com.tidc.api.controller.ContestManagerApi;
 import com.tidc.api.controller.ExamManagerApi;
-import com.tidc.api.pojo.Examination;
-import com.tidc.api.pojo.ExaminationQuestion;
-import com.tidc.api.pojo.Question;
+import com.tidc.api.pojo.exam.*;
 import com.tidc.api.pojo.UserOV;
 import feign.hystrix.FallbackFactory;
 
@@ -30,6 +27,10 @@ public class ExamManagerFallbackFactory implements FallbackFactory<ExamManagerAp
 				return null;
 			}
 
+			public UserOV<HistoryExamination> getHistoryExamination(int id) {
+				return null;
+			}
+
 			public UserOV foundQuestion(Question question) {
 				return null;
 			}
@@ -39,6 +40,18 @@ public class ExamManagerFallbackFactory implements FallbackFactory<ExamManagerAp
 			}
 
 			public UserOV ExaminationAddQuestion(ExaminationQuestion examinationQuestion) {
+				return null;
+			}
+
+			public UserOV<Integer> foundHistoryExamination(int contestId, int examinationId) {
+				return null;
+			}
+
+			public UserOV historyJoinQuestion(HistoryExamination historyExamination) {
+				return null;
+			}
+
+			public UserOV<Record> record(Record record) {
 				return null;
 			}
 
@@ -55,6 +68,10 @@ public class ExamManagerFallbackFactory implements FallbackFactory<ExamManagerAp
 			}
 
 			public UserOV deleteExamination(Examination examination) {
+				return null;
+			}
+
+			public UserOV examinationDeleteQuestion(ExaminationQuestion examinationQuestion) {
 				return null;
 			}
 		};

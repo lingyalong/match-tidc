@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.DeleteMapping;
  * @Description TODO
  * @Author 冯涛滔
  **/
-@Mapper
+@Repository
 public interface TeamMapper {
 	@Insert("insert into team(student_id,work_id,is_leader) values(#{student_id},#{work_id},1)")
 	int insertLeader(Team team);

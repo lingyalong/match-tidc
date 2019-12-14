@@ -41,7 +41,7 @@ public class Contest implements Serializable {
 	private String start;
 	private String finish;
 	//试卷id
-	private Integer test_id;
+	private Integer history_examination_id;
 	private String url;
 	private String logo;
 	//发起学校
@@ -51,6 +51,7 @@ public class Contest implements Serializable {
 	private BigDecimal money;
 	private Integer is_open;
 	private Integer is_show;
+	private String start_time;
 	//额外的封装
 	private String token;
 }

@@ -7,6 +7,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.security.oauth2.common.exceptions.InvalidTokenException;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 /**
  * @ClassNmae GlobalExceptionHandler
@@ -14,8 +15,9 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
  * @Author 冯涛滔
  **/
 @ControllerAdvice
-public class GlobalExceptionHandler {
-	Logger logger = LoggerFactory.getLogger(GlobalExceptionHandler.class);
+public class ConsumerGlobalExceptionHandler {
+	Logger logger = LoggerFactory.getLogger(ConsumerGlobalExceptionHandler.class);
+	@ResponseBody
 	@ExceptionHandler(InvalidTokenException.class)
 	public UserOV invalidTokenException(InvalidTokenException e){
 		logger.error(e.toString());

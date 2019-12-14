@@ -1,9 +1,7 @@
 package com.tidc.api.controller;
 
 import com.tidc.api.fallback.FileManagerFallbackFactory;
-import com.tidc.api.pojo.Examination;
-import com.tidc.api.pojo.ExaminationQuestion;
-import com.tidc.api.pojo.Question;
+import com.tidc.api.pojo.exam.*;
 import com.tidc.api.pojo.UserOV;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.*;
@@ -43,6 +41,14 @@ public interface ExamManagerApi {
 	UserOV<Examination> getExaminationInQuestion(@PathVariable("id") int id);
 
 	/**
+	 * 根据id获取历史试卷
+	 * @param id
+	 * @return
+	 */
+	@RequestMapping(value = "/contest/history/exam/{id}",method = RequestMethod.GET)
+	UserOV<HistoryExamination> getHistoryExamination(@PathVariable("id") int id);
+
+	/**
 	 * 创建一个题目
 	 * @param question
 	 * @return
@@ -65,6 +71,32 @@ public interface ExamManagerApi {
 	 */
 	@RequestMapping(value = "/examination/question",method = RequestMethod.POST)
 	UserOV ExaminationAddQuestion(@RequestBody ExaminationQuestion examinationQuestion);
+
+	/**
+	 * 创建一个历史试卷 返回试卷id
+	 * @param contestId
+	 * @param examinationId
+	 * @return
+	 */
+	@RequestMapping(value = "/history/examination",method = RequestMethod.POST)
+	UserOV<Integer> foundHistoryExamination(@RequestParam("contestId") int contestId,
+												   @RequestParam("examinationId") int examinationId);
+
+	/**
+	 * 给历史试卷连接题目
+	 * @param historyExamination
+	 * @return
+	 */
+	@RequestMapping(value = "/history/examination/question",method = RequestMethod.POST)
+	UserOV historyJoinQuestion(@RequestBody HistoryExamination historyExamination);
+
+	/**
+	 * 交卷 传个match_id 和 答案  学生id
+	 * @param record
+	 * @return
+	 */
+	@RequestMapping(value = "/record",method =RequestMethod.POST)
+	UserOV<Record> record(@RequestBody Record record);
 
 	/**
 	 * 修改题目

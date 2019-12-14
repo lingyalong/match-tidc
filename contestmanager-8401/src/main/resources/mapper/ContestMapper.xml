@@ -37,7 +37,10 @@
                 logo = #{logo},
             </if>
             <if test="is_show">
-                is_show = #{is_show}
+                is_show = #{is_show},
+            </if>
+            <if test="test_time!=null">
+                test_time = #{test_time}
             </if>
         </set>
         where id = #{id}

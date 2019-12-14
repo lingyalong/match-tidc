@@ -1,4 +1,4 @@
-package com.tidc.api.pojo;
+package com.tidc.api.pojo.exam;
 
 import lombok.Data;
 import lombok.experimental.Accessors;
@@ -6,6 +6,7 @@ import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 import java.io.Serializable;
+import java.math.BigDecimal;
 
 /**
  * @ClassNmae Record
@@ -17,4 +18,12 @@ import java.io.Serializable;
 @Scope(value = "prototype")
 @Component()
 public class Record implements Serializable {
+	private Integer id;
+	private Integer student_id;
+	private Integer history_examination_id;
+	private Integer time;
+	private Integer correct;
+	private String answer;
+	private BigDecimal score;
+	private Integer contest_id;
 }

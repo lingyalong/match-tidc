@@ -3,9 +3,12 @@ package com.tidc.api.controller;
 import com.tidc.api.fallback.ContestManagerFallbackFactory;
 import com.tidc.api.fallback.MessageManagerFallbackFactory;
 import com.tidc.api.pojo.*;
+import com.tidc.api.pojo.exam.HistoryExamination;
+import com.tidc.api.pojo.exam.Record;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.*;
 
+import java.text.ParseException;
 import java.util.List;
 
 /**
@@ -31,8 +34,24 @@ public interface ContestManagerApi {
 	@RequestMapping(value = "/contest/details/{id}",method = RequestMethod.GET)
 	UserOV<Contest> getContestDetails(@PathVariable("id") int id);
 
+	/**
+	 * 获取某个比赛的试卷内容 ,只有开赛之后才能查看   准备测试
+	 * @param id
+	 * @return
+	 */
+	@RequestMapping(value = "/contest/history/{id}",method = RequestMethod.GET )
+	UserOV<HistoryExamination> getContestExamination(@PathVariable("id") int id);
+
+	@RequestMapping(value = "/work",method = RequestMethod.POST)
+	UserOV work(@RequestBody Work work,@RequestParam("email") String email);
+
+	/**
+	 * 报名线上比赛
+	 * @param contestApply
+	 * @return
+	 */
 	@RequestMapping(value = "/apply",method = RequestMethod.POST)
-	UserOV apply(@RequestBody Work work,@RequestParam("email") String email);
+	UserOV apply(@RequestBody ContestApply contestApply);
 
 	@RequestMapping(value = "/type/contest",method = RequestMethod.GET)
 	UserOV<List<Contest>> getTypeContest(@RequestParam("type") String type);
@@ -42,6 +61,14 @@ public interface ContestManagerApi {
 
 	@RequestMapping(value = "/member",method = RequestMethod.POST)
 	UserOV addMember(@RequestBody Team team);
+
+	/**
+	 * 交卷 传个match_id 和 答案  学生id
+	 * @param record
+	 * @return
+	 */
+	@RequestMapping(value = "/record",method = RequestMethod.POST)
+	UserOV record(Record record);
 
 	@RequestMapping(value = "/member",method = RequestMethod.DELETE)
 	UserOV deleteMember(@RequestBody Team team);
@@ -110,5 +137,13 @@ public interface ContestManagerApi {
 	 */
 	@GetMapping("/teacher/contest/work/{id}")
 	UserOV<List<Work>> listTeacherContestWork(@PathVariable("id") int id,@RequestParam("teacherId") int teacherId);
+
+	/**
+	 * 修改某个比赛的历史试卷id
+	 * @param historyExamination
+	 * @return
+	 */
+	@RequestMapping(value = "/contest/history/examination",method = RequestMethod.PUT)
+	UserOV updateContestHistoryExamination(@RequestBody HistoryExamination historyExamination);
 
 }
