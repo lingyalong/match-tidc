@@ -2,14 +2,12 @@ package com.tidc.messagemanager.service.impl;
 
 import com.tidc.api.controller.UserManagerApi;
 import com.tidc.api.pojo.Apply;
-import com.tidc.api.pojo.Teacher;
 import com.tidc.api.pojo.UserOV;
 import com.tidc.messagemanager.mapper.ApplyMapper;
 import com.tidc.messagemanager.service.ApprovalService;
 import com.tidc.messagemanager.utiles.ApplicationContextProvider;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.RequestBody;
 
 /**
  * @ClassNmae ApprovalServiceImpl

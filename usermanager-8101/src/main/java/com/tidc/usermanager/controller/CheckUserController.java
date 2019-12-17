@@ -1,6 +1,5 @@
 package com.tidc.usermanager.controller;
 
-import com.tidc.api.pojo.Student;
 import com.tidc.api.pojo.UserOV;
 import com.tidc.usermanager.service.CheckUserService;
 import org.springframework.beans.factory.annotation.Autowired;

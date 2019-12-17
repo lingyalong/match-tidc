@@ -1,7 +1,6 @@
 package com.tidc.usermanager.service.impl;
 
 import com.tidc.api.constant.CodeConstant;
-import com.tidc.api.pojo.Teacher;
 import com.tidc.api.pojo.UserOV;
 import com.tidc.usermanager.mapper.TeacherMapper;
 import com.tidc.usermanager.service.UpdateService;

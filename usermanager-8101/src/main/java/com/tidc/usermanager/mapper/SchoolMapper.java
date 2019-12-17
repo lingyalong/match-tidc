@@ -1,6 +1,5 @@
 package com.tidc.usermanager.mapper;
 
-import com.tidc.api.pojo.School;
 import org.apache.ibatis.annotations.Select;
 
 import java.util.List;

@@ -1,8 +1,6 @@
 package com.tidc.api.controller;
 
 import com.tidc.api.fallback.UserManagerFallbackFactory;
-import com.tidc.api.pojo.Student;
-import com.tidc.api.pojo.Teacher;
 import com.tidc.api.pojo.UserOV;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.*;

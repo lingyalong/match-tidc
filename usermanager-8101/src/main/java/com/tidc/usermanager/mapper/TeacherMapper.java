@@ -1,10 +1,8 @@
 package com.tidc.usermanager.mapper;
 
-import com.tidc.api.pojo.Teacher;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Select;
 import org.apache.ibatis.annotations.Update;
-import sun.awt.SunHints;
 
 import java.util.List;
 

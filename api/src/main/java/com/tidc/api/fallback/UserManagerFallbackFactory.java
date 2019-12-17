@@ -1,8 +1,6 @@
 package com.tidc.api.fallback;
 
 import com.tidc.api.controller.UserManagerApi;
-import com.tidc.api.pojo.Student;
-import com.tidc.api.pojo.Teacher;
 import com.tidc.api.pojo.UserOV;
 import feign.hystrix.FallbackFactory;
 

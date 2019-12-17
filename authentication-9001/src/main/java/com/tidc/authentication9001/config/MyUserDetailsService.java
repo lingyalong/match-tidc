@@ -1,10 +1,6 @@
 package com.tidc.authentication9001.config;
 
-import com.tidc.api.pojo.*;
-import com.tidc.authentication9001.mapper.SchoolMapper;
-import com.tidc.authentication9001.mapper.StatusMapper;
-import com.tidc.authentication9001.mapper.StudentMapper;
-import com.tidc.authentication9001.mapper.TeacherMapper;
+import com.tidc.authentication9001.mapper.UserMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.authority.AuthorityUtils;
@@ -24,16 +20,11 @@ import java.util.List;
  * @Author 冯涛滔
  **/
 public class MyUserDetailsService implements UserDetailsService {
+
 	@Autowired
-	SchoolMapper schoolMapper;
+	private ClientDetailsService clientDetailsService;
 	@Autowired
-	StudentMapper studentMapper;
-	@Autowired
-	TeacherMapper teacherMapper;
-	@Autowired
-	ClientDetailsService clientDetailsService;
-	@Autowired
-	StatusMapper statusMapper;
+	private UserMapper userMapper;
 	@Override
 	public UserDetails loadUserByUsername(String email) throws UsernameNotFoundException {
 		System.out.println(email+"正在登录");
@@ -50,30 +41,11 @@ public class MyUserDetailsService implements UserDetailsService {
 		}
 		String power = "";
 		String password = "222";
-		List<String> power1 = null;
-		Integer status = statusMapper.getStatus(email);
-		//如果是未认证的账号登录可以抛一个自定义异常或则 那四个true随便选一个抛false
-		switch (status){
-			case 1:
-				Student student = studentMapper.chickEmail(email);
-				power1 = studentMapper.listPower(student.getId());
-				password = student.getPassword();
-				break;
-			case 2:
-				Teacher teacher = teacherMapper.chickEmail(email);
-				power1 = teacherMapper.listPower(teacher.getId());
-				password = teacher.getPassword();
-				break;
-			case 3:
-				School school = schoolMapper.chickEmail(email);
-				power1 = schoolMapper.listPower(school.getId());
-				power = org.apache.commons.lang.StringUtils.join(power1.toArray(), ",");
-				returnUser(email,school.getPassword(),power);
-				password = school.getPassword();
-				break;
-		}
-		power = org.apache.commons.lang.StringUtils.join(power1.toArray(), ",");
-		return returnUser(email,password,power);
+		String[] power1 = {"Role_user"};
+		com.tidc.api.pojo.user.User user = userMapper.login(email);
+
+		power = org.apache.commons.lang.StringUtils.join(power1, ",");
+		return returnUser(email,user.getPassword(),power);
 	}
 	public User returnUser(String email,String password,String power){
 		return new User(email,password,

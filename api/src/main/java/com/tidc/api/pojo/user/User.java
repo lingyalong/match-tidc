@@ -1,4 +1,4 @@
-package com.tidc.api.pojo;
+package com.tidc.api.pojo.user;
 
 import lombok.Data;
 import lombok.experimental.Accessors;
@@ -6,21 +6,22 @@ import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 import java.io.Serializable;
-import java.util.List;
 
 /**
- * @ClassNmae menu
+ * @ClassNmae User
  * @Description TODO
  * @Author 冯涛滔
  **/
 @Data
-@Accessors(chain = true) //这个注解可以使这个类的set方法返回当前对象
+@Accessors(chain = true)
 @Scope(value = "prototype")
-@Component()
-public class Menu implements Serializable {
+@Component
+public class User implements Serializable {
 	private Integer id;
-	private String url;
 	private String name;
-	private List<Role> roles;
-
+	private String email;
+	private String password;
+	private Integer status;
+	private Integer user_role_id;
+	private UserDetail userDetail;
 }

@@ -1,7 +1,5 @@
 package com.tidc.consumer8001.controller;
 
-import com.tidc.api.pojo.Student;
-import com.tidc.api.pojo.Teacher;
 import com.tidc.api.pojo.UserOV;
 import com.tidc.consumer8001.service.UserManagerService;
 import org.springframework.beans.factory.annotation.Autowired;

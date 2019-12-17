@@ -1,10 +1,6 @@
 package com.tidc.usermanager.service;
 
-import com.tidc.api.pojo.Student;
-import com.tidc.api.pojo.Teacher;
 import com.tidc.api.pojo.UserOV;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestParam;
 
 /**
  * @ClassNmae RegisterService

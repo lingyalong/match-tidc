@@ -1,9 +1,7 @@
 package com.tidc.usermanager.service;
 
 
-import com.tidc.api.pojo.Student;
 import com.tidc.api.pojo.UserOV;
-import org.springframework.web.bind.annotation.PathVariable;
 
 import java.util.List;
 

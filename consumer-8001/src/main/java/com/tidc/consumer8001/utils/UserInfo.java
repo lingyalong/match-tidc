@@ -1,12 +1,8 @@
 package com.tidc.consumer8001.utils;
 
-import com.alibaba.druid.sql.visitor.functions.Substring;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.tidc.api.controller.AuthenticationApi;
-import com.tidc.api.pojo.School;
-import com.tidc.api.pojo.Student;
-import com.tidc.api.pojo.Teacher;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.oauth2.common.exceptions.InvalidTokenException;
 import org.springframework.security.oauth2.provider.OAuth2Authentication;
@@ -15,7 +11,6 @@ import org.springframework.security.oauth2.provider.token.ResourceServerTokenSer
 import org.springframework.stereotype.Component;
 
 import javax.servlet.http.HttpServletRequest;
-import java.security.InvalidParameterException;
 import java.util.Enumeration;
 import java.util.LinkedHashMap;
 
