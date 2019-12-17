@@ -1,6 +1,7 @@
 package com.tidc.contest8401.controller;
 
 import com.tidc.api.pojo.Contest;
+import com.tidc.api.pojo.ContestApply;
 import com.tidc.api.pojo.UserOV;
 import com.tidc.api.pojo.Work;
 import com.tidc.api.pojo.exam.HistoryExamination;
@@ -108,6 +109,16 @@ public class CheckController {
 	@GetMapping("/teacher/contest/work/{id}")
 	public UserOV<List<Work>> listTeacherContestWork(@PathVariable("id") int id,@RequestParam("teacherId") int teacherId){
 		return checkService.listTeacherContestWork(id,teacherId);
+	}
+
+	/**
+	 * 根据比赛id查看该比赛的线上考试排行
+	 * @param id
+	 * @return
+	 */
+	@GetMapping("/contest/apply/{id}")
+	public UserOV<List<ContestApply>> listContestApply(@PathVariable("id") int id){
+		return checkService.listContestApply(id);
 	}
 
 	/**

@@ -42,6 +42,14 @@ public interface ContestManagerApi {
 	@RequestMapping(value = "/contest/history/{id}",method = RequestMethod.GET )
 	UserOV<HistoryExamination> getContestExamination(@PathVariable("id") int id);
 
+	/**
+	 * 根据比赛id查看该比赛的线上考试排行
+	 * @param id
+	 * @return
+	 */
+	@RequestMapping(value = "/contest/apply/{id}",method = RequestMethod.GET)
+	UserOV<List<ContestApply>> listContestApply(@PathVariable("id") int id);
+
 	@RequestMapping(value = "/work",method = RequestMethod.POST)
 	UserOV work(@RequestBody Work work,@RequestParam("email") String email);
 

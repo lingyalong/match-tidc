@@ -1,6 +1,7 @@
 package com.tidc.contest8401.service;
 
 import com.tidc.api.pojo.Contest;
+import com.tidc.api.pojo.ContestApply;
 import com.tidc.api.pojo.UserOV;
 import com.tidc.api.pojo.Work;
 import com.tidc.api.pojo.exam.HistoryExamination;
@@ -76,6 +77,13 @@ public interface CheckService {
 	 * @return
 	 */
 	UserOV<List<Work>> listTeacherContestWork(int id,int teacherId);
+
+	/**
+	 * 根据比赛id查看该比赛的线上考试排行
+	 * @param id
+	 * @return
+	 */
+	UserOV<List<ContestApply>> listContestApply(int id);
 
 	/**
 	 * 获取某个比赛的试卷内容 ,只有开赛之后才能查看

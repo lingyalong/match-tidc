@@ -39,7 +39,6 @@ public class UserInfo {
 		return (String) oAuth2Authentication.getUserAuthentication().getPrincipal();
 	}
 	public Object userInfo(HttpServletRequest req, int i) throws InvalidTokenException {
-//		String token =getToken(req);
 		String token = req.getHeader("tidc");
 		OAuth2Authentication oAuth2Authentication = tokenServices.loadAuthentication(token);
 		String email = (String) oAuth2Authentication.getUserAuthentication().getPrincipal();

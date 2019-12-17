@@ -69,7 +69,7 @@ public class ContestManagerServiceImpl implements ContestManagerService {
 	@Override
 	public UserOV apply(ContestApply contestApply, HttpServletRequest req) {
 		Student student = (Student) userInfo.userInfo(req, 1);
-		contestApply.setStudent_id(student.getId());
+		contestApply.setStudent_id(student.getId()).setStudent_name(student.getName());
 		return contestManagerApi.apply(contestApply);
 	}
 
@@ -181,6 +181,11 @@ public class ContestManagerServiceImpl implements ContestManagerService {
 	public UserOV<List<Work>> listTeacherContestWork(int id, HttpServletRequest req) {
 		Teacher teacher = (Teacher) userInfo.userInfo(req,2);
 		return contestManagerApi.listTeacherContestWork(id,teacher.getId());
+	}
+
+	@Override
+	public UserOV<List<ContestApply>> listContestApply(int id) {
+		return contestManagerApi.listContestApply(id);
 	}
 
 

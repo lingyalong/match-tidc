@@ -278,5 +278,15 @@ public class ContestManagerController {
 		return contestManagerService.listTeacherContestWork(id,req);
 	}
 
+	/**
+	 * 根据比赛id查看该比赛的线上考试排行
+	 * @param id
+	 * @return
+	 */
+	@GetMapping(value = "/contest/apply/{id}")
+	public UserOV<List<ContestApply>> listContestApply(@PathVariable("id") int id){
+		return contestManagerService.listContestApply(id);
+	}
+
 
 }

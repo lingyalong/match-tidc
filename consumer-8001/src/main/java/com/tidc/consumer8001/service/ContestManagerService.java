@@ -186,5 +186,12 @@ public interface ContestManagerService {
 	 * @param id
 	 * @return
 	 */
-	public UserOV<List<Work>> listTeacherContestWork(int id,HttpServletRequest req);
+	 UserOV<List<Work>> listTeacherContestWork(int id,HttpServletRequest req);
+
+	/**
+	 * 根据比赛id查看该比赛的线上考试排行
+	 * @param id
+	 * @return
+	 */
+	UserOV<List<ContestApply>> listContestApply(int id);
 }

@@ -25,4 +25,6 @@ public class ContestApply implements Serializable {
 	private Integer is_submit;
 	private Integer record_id;
 	private BigDecimal score;
+	private String studentName;
+	private String student_name;
 }

@@ -52,7 +52,7 @@ public interface ContestMapper {
 	@Select("select school_id from contest where id = #{id}")
 	Integer checkLeader(int id);
 
-	@Select("select name,brief,logo,url,school_id,number,start_time from contest where is_show = 1")
+	@Select("select name,is_exam,brief,logo,url,school_id,number,start_time from contest where is_show = 1")
 	List<Contest> checkShowScoreContest();
 
 	@Update("update contest set is_show = #{is_show} where id = #{id}")

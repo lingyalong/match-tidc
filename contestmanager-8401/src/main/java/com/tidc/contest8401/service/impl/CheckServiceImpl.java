@@ -2,15 +2,9 @@ package com.tidc.contest8401.service.impl;
 
 import com.tidc.api.constant.CodeConstant;
 import com.tidc.api.controller.ExamManagerApi;
-import com.tidc.api.pojo.Contest;
-import com.tidc.api.pojo.Power;
-import com.tidc.api.pojo.UserOV;
-import com.tidc.api.pojo.Work;
+import com.tidc.api.pojo.*;
 import com.tidc.api.pojo.exam.HistoryExamination;
-import com.tidc.contest8401.mapper.ContestMapper;
-import com.tidc.contest8401.mapper.ContestTypeMapper;
-import com.tidc.contest8401.mapper.PowerMapeer;
-import com.tidc.contest8401.mapper.WorkMapper;
+import com.tidc.contest8401.mapper.*;
 import com.tidc.contest8401.service.CheckService;
 import com.tidc.contest8401.utils.TimeUtil;
 import org.slf4j.Logger;
@@ -40,7 +34,8 @@ public class CheckServiceImpl implements CheckService {
 	private PowerMapeer powerMapeer;
 	@Autowired
 	private ExamManagerApi examManagerApi;
-
+	@Autowired
+	private ContestApplyMapper contestApplyMapper;
 	Logger logger = LoggerFactory.getLogger(CheckServiceImpl.class);
 	@Override
 	public UserOV<List<Contest>> getContestAll() {
@@ -121,6 +116,14 @@ public class CheckServiceImpl implements CheckService {
 			userOV.setMessage("你没有这个比赛的权限");
 			logger.info("teacher_id:"+"试图越权获取 contest_id:"+id+"的项目列表");
 		}
+		return userOV;
+	}
+
+	@Override
+	public UserOV<List<ContestApply>> listContestApply(int id) {
+		UserOV<List<ContestApply>> userOV = new UserOV<>();
+		List<ContestApply> rank = contestApplyMapper.getRank(id);
+		userOV.setData(rank);
 		return userOV;
 	}
 
