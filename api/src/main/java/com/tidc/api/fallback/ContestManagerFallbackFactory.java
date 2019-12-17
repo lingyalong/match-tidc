@@ -40,6 +40,10 @@ public class ContestManagerFallbackFactory implements FallbackFactory<ContestMan
 				return null;
 			}
 
+			public UserOV<List<ContestApply>> listContestApply(int id) {
+				return null;
+			}
+
 			public UserOV work(Work work, String email) {
 				return null;
 			}

@@ -45,4 +45,8 @@ public class CheckUtils {
 	public boolean checkApply(Record record){
 		return contestApplyMapper.checkApply(record)!=null;
 	}
+	public boolean checkPublic(int id){
+		Contest contest = contestMapper.getContest(id);
+		return contest.getIs_show()==1;
+	}
 }

@@ -82,7 +82,7 @@ public class CheckController {
 	}
 
 	/**
-	 * 根据id查看某个比赛的项目分数列表
+	 * 根据id查看某个比赛的项目分数列表 供分数展览模块使用
 	 * @param id
 	 * @return
 	 */

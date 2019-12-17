@@ -6,6 +6,7 @@ import com.tidc.api.pojo.*;
 import com.tidc.api.pojo.exam.HistoryExamination;
 import com.tidc.contest8401.mapper.*;
 import com.tidc.contest8401.service.CheckService;
+import com.tidc.contest8401.utils.CheckUtils;
 import com.tidc.contest8401.utils.TimeUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -36,6 +37,8 @@ public class CheckServiceImpl implements CheckService {
 	private ExamManagerApi examManagerApi;
 	@Autowired
 	private ContestApplyMapper contestApplyMapper;
+	@Autowired
+	private CheckUtils checkUtils;
 	Logger logger = LoggerFactory.getLogger(CheckServiceImpl.class);
 	@Override
 	public UserOV<List<Contest>> getContestAll() {
@@ -83,7 +86,12 @@ public class CheckServiceImpl implements CheckService {
 	@Override
 	public UserOV<List<Work>> checkContestWorkScore(int id) {
 		UserOV<List<Work>> userOV = new UserOV<>();
-		userOV.setStatus(CodeConstant.SUCCESS).setData(workMapper.checkScore(id));
+		//判断分数是否公开
+		if (checkUtils.checkPublic(id)) {
+			userOV.setStatus(CodeConstant.SUCCESS).setData(workMapper.checkScore(id));
+		}else{
+			userOV.setStatus(CodeConstant.FAIL).setMessage("比赛成绩尚未公开");
+		}
 		return userOV;
 	}
 
@@ -122,8 +130,13 @@ public class CheckServiceImpl implements CheckService {
 	@Override
 	public UserOV<List<ContestApply>> listContestApply(int id) {
 		UserOV<List<ContestApply>> userOV = new UserOV<>();
-		List<ContestApply> rank = contestApplyMapper.getRank(id);
-		userOV.setData(rank);
+		if (checkUtils.checkPublic(id)) {
+			List<ContestApply> rank = contestApplyMapper.getRank(id);
+			userOV.setData(rank);
+		}else{
+			userOV.setStatus(CodeConstant.FAIL).setMessage("比赛成绩尚未公开");
+		}
+
 		return userOV;
 	}
 

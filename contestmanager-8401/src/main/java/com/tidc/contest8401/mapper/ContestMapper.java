@@ -19,10 +19,10 @@ public interface ContestMapper {
 	@Options(useGeneratedKeys = true,keyProperty = "id")
 	int insetContest(Contest contest);
 
-	@Select("select id,name,start,finish,logo,domain,number,start_time from contest where is_open = 1")
+	@Select("select id,name,is_exam,start,finish,logo,domain,number,start_time from contest where is_open = 1")
 	List<Contest> listContestAll();
 
-	@Select("select id,name,start,finish,logo,domain,number,start_time from contest where domain=#{type} and is_open = 1")
+	@Select("select id,name,is_exam,start,finish,logo,domain,number,start_time from contest where domain=#{type} and is_open = 1")
 	List<Contest> listTypeContest(String type);
 
 	@Select("select * contest where id = #{id} and is_open = 1")

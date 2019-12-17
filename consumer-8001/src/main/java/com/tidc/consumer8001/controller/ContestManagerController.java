@@ -283,7 +283,7 @@ public class ContestManagerController {
 	 * @param id
 	 * @return
 	 */
-	@GetMapping(value = "/contest/apply/{id}")
+	@GetMapping("/contest/apply/{id}")
 	public UserOV<List<ContestApply>> listContestApply(@PathVariable("id") int id){
 		return contestManagerService.listContestApply(id);
 	}
