@@ -1,9 +1,14 @@
 package com.tidc.usermanager.service.impl;
 
 import com.tidc.api.constant.CodeConstant;
+import com.tidc.api.exception.UltraViresException;
 import com.tidc.api.pojo.UserOV;
-import com.tidc.usermanager.mapper.TeacherMapper;
+import com.tidc.api.pojo.user.User;
+import com.tidc.api.pojo.user.UserDetail;
+import com.tidc.usermanager.mapper.UserDetailMapper;
+import com.tidc.usermanager.mapper.UserMapper;
 import com.tidc.usermanager.service.UpdateService;
+import org.bouncycastle.jcajce.provider.symmetric.TEA;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,7 +22,9 @@ import org.springframework.stereotype.Service;
 @Service
 public class UpdateServiceImpl implements UpdateService {
 	@Autowired
-	TeacherMapper teacherMapper;
+	private UserMapper userMapper;
+	@Autowired
+	private UserDetailMapper userDetailMapper;
 	private Logger logger = LoggerFactory.getLogger(UpdateServiceImpl.class);
 	/**
 	 * 解封老师账号
@@ -25,9 +32,14 @@ public class UpdateServiceImpl implements UpdateService {
 	 * @return
 	 */
 	@Override
-	public UserOV openTeacher(Teacher teacher) {
+	public UserOV switchTeacher(User teacher) throws UltraViresException {
 		UserOV userOV = new UserOV();
-		int count = teacherMapper.updateTeacherOpen(teacher.getEmail());
+		UserDetail userInfo = userDetailMapper.getUserInfo(teacher.getUserDetail().getId());
+		if (!userInfo.getSchool_id().equals(teacher.getUserDetail().getSchool_id())){
+			throw new UltraViresException(457,teacher+"越权更改老师账号状态");
+		}
+		int count = userDetailMapper.updateIsOpen(teacher.getUserDetail());
+
 		if(count==1){
 			userOV.setStatus(CodeConstant.UPDATE);
 		}else{
@@ -35,25 +47,4 @@ public class UpdateServiceImpl implements UpdateService {
 		}
 		return userOV;
 	}
-
-	/**
-	 * 关闭老师权限
-	 * @param teacher
-	 * @return
-	 */
-	@Override
-	public UserOV closeTeacher(Teacher teacher) {
-		UserOV userOV = new UserOV();
-		userOV.setStatus(CodeConstant.FAIL);
-		Teacher teacher1 = teacherMapper.getTeacher(teacher.getEmail());
-		if(teacher1.getTeacher_school_id().equals(teacher.getTeacher_school_id())){
-			teacherMapper.updateTeacherClose(teacher.getEmail());
-			userOV.setStatus(CodeConstant.SUCCESS);
-		}else{
-			userOV.setMessage("你没有权限管理外校老师");
-			logger.info("schoolId: "+teacher.getTeacher_school_id() + "试图越权");
-		}
-		return userOV;
-	}
-
 }

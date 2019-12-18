@@ -1,6 +1,8 @@
 package com.tidc.usermanager.service;
 
+import com.tidc.api.exception.UltraViresException;
 import com.tidc.api.pojo.UserOV;
+import com.tidc.api.pojo.user.User;
 
 /**
  * @ClassNmae UpdateService
@@ -9,17 +11,9 @@ import com.tidc.api.pojo.UserOV;
  **/
 public interface UpdateService {
 	/**
-	 * 开启老师权限
+	 * 开启或者关闭老师权限
 	 * @param teacher
 	 * @return
 	 */
-	UserOV openTeacher(Teacher teacher);
-
-	/**
-	 * 关闭老师权限
-	 * @param teacher
-	 * @return
-	 */
-	UserOV closeTeacher(Teacher teacher);
-
+	UserOV switchTeacher(User teacher) throws UltraViresException;
 }

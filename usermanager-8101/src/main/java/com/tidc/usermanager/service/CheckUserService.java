@@ -2,6 +2,7 @@ package com.tidc.usermanager.service;
 
 
 import com.tidc.api.pojo.UserOV;
+import com.tidc.api.pojo.user.User;
 
 import java.util.List;
 
@@ -16,14 +17,14 @@ public interface CheckUserService {
 	 * @param email
 	 * @return 根据邮箱号返回用户详细信息
 	 */
-	UserOV userInfo(String email);
+	UserOV<User> userInfo(String email);
 
 	/**
 	 * 根据学校id查询这个学校的所有学生
 	 * @param id
 	 * @return
 	 */
-	UserOV<List<Student>> listSchoolStudent( int id);
+	UserOV<List<User>> listSchoolStudent( int id);
 
 	/**
 	 * 使用学生id查询他们的email

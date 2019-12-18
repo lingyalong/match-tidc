@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 import java.io.Serializable;
 
 /**
- * @ClassNmae User
+ * @ClassNmae UserRole
  * @Description TODO
  * @Author 冯涛滔
  **/
@@ -16,11 +16,13 @@ import java.io.Serializable;
 @Accessors(chain = true)
 @Scope(value = "prototype")
 @Component
-public class User implements Serializable {
+public class UserRole implements Serializable {
 	private Integer id;
-	private String name;
-	private String email;
-	private String password;
-	private Integer status;
-	private UserDetail userDetail;
+	private Integer user_id;
+	private Integer role_id;
+
+	public UserRole(Integer user_id, Integer role_id) {
+		this.user_id = user_id;
+		this.role_id = role_id;
+	}
 }

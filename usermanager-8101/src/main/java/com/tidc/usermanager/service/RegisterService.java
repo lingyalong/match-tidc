@@ -1,5 +1,6 @@
 package com.tidc.usermanager.service;
 
+import com.tidc.api.exception.RegisterException;
 import com.tidc.api.pojo.UserOV;
 import com.tidc.api.pojo.user.User;
 
@@ -14,12 +15,7 @@ public interface RegisterService {
 	 * @param user
 	 * @return Data.email
 	 */
-	UserOV teacherRegister(User user);
+	UserOV register(User user)throws RegisterException;
 
-	/**
-	 * 注册学生账号
-	 * @param student
-	 * @return
-	 */
-	UserOV studentRegister( Student student);
+
 }

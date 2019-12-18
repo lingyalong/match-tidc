@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 
 /**
  * @ClassNmae GlobalExceptionHandler
- * @Description TODO
+ * @Description TODO 429 455 456 457
  * @Author 冯涛滔
  **/
 @ControllerAdvice
@@ -32,4 +32,18 @@ public class GlobalExceptionHandler {
 		return userOV;
 	}
 
+	@ExceptionHandler(RegisterException.class)
+	public UserOV registerException(RegisterException registerExpetion){
+		logger.error(registerExpetion.toString());
+		UserOV userOV = new UserOV();
+		userOV.setStatus(CodeConstant.ERROR).setMessage(registerExpetion.getMessage());
+		return userOV;
+	}
+	@ExceptionHandler(UltraViresException.class)
+	public UserOV UltraViresException(UltraViresException u){
+		logger.error(u.toString());
+		UserOV userOV = new UserOV();
+		userOV.setStatus(CodeConstant.FAIL).setMessage("权限不足");
+		return userOV;
+	}
 }

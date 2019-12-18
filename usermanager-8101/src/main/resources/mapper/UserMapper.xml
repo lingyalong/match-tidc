@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.tidc.usermanager.mapper.UserMapper">
+    <resultMap id="user" type="com.tidc.api.pojo.user.User">
+        <id column="uid" property="uid" />
+        <result column="name" property="name"/>
+        <result column="password" property="password" />
+        <result column="email" property="email" />
+        <result column="status" property="status" />
+        <collection property="userDetail" ofType="com.tidc.api.pojo.user.UserDetail">
+            <id column="id" property="id"/>
+            <result column="id_entity" property="id_entity"/>
+            <result column="telephone" property="telephone"/>
+            <result column="school_name" property="school_name"/>
+            <result column="school_id" property="school_id"/>
+            <result column="department" property="department"/>
+            <result column="major" property="major"/>
+            <result column="student_number" property="student_number"/>
+            <result column="position" property="position"/>
+            <result column="brief" property="brief"/>
+            <result column="code" property="code"/>
+            <result column="is_open" property="is_open"/>
+        </collection>
+    </resultMap>
+    <select id="getUserInfo" parameterType="String" resultMap="user">
+        SELECT user.id AS uid,user.name,user,email,user.status,ud.* FROM user LEFT JOIN user_detail ON user.id = ud.detail_user_id WHERE user.email = #{email}
+    </select>
+</mapper>

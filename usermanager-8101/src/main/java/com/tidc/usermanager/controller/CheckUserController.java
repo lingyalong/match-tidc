@@ -1,6 +1,7 @@
 package com.tidc.usermanager.controller;
 
 import com.tidc.api.pojo.UserOV;
+import com.tidc.api.pojo.user.User;
 import com.tidc.usermanager.service.CheckUserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -22,7 +23,7 @@ public class CheckUserController {
 	 * @return 根据邮箱号返回用户详细信息
 	 */
 	@GetMapping("/user/info")
-	public UserOV userInfo(String email){
+	public UserOV<User> userInfo(String email){
 		return checkUserService.userInfo(email);
 	}
 
@@ -32,7 +33,7 @@ public class CheckUserController {
 	 * @return
 	 */
 	@GetMapping("/school/student/{id}")
-	public UserOV<List<Student>> listSchoolStudent(@PathVariable("id") int id){
+	public UserOV<List<User>> listSchoolStudent(@PathVariable("id") int id){
 		return checkUserService.listSchoolStudent(id);
 	}
 	/**

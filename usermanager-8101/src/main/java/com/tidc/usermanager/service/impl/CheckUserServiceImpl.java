@@ -2,10 +2,9 @@ package com.tidc.usermanager.service.impl;
 
 import com.tidc.api.constant.CodeConstant;
 import com.tidc.api.pojo.UserOV;
-import com.tidc.usermanager.mapper.SchoolMapper;
-import com.tidc.usermanager.mapper.StatusMapper;
-import com.tidc.usermanager.mapper.StudentMapper;
-import com.tidc.usermanager.mapper.TeacherMapper;
+import com.tidc.api.pojo.user.User;
+import com.tidc.usermanager.mapper.UserDetailMapper;
+import com.tidc.usermanager.mapper.UserMapper;
 import com.tidc.usermanager.service.CheckUserService;
 import com.tidc.usermanager.utiles.ApplicationContextProvider;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,37 +20,23 @@ import java.util.List;
 @Service
 public class CheckUserServiceImpl implements CheckUserService {
 	@Autowired
-	private StatusMapper statusMapper;
+	private UserDetailMapper userDetailMapper;
 	@Autowired
-	private SchoolMapper schoolMapper;
-	@Autowired
-	private TeacherMapper teacherMapper;
-	@Autowired
-	private StudentMapper studentMapper;
+	private UserMapper userMapper;
 	@Autowired
 	private ApplicationContextProvider ac;
 	@Override
-	public UserOV userInfo(String email) {
-		Integer status = statusMapper.getStatus(email);
-		UserOV userOV = new UserOV();
-		switch (status){
-			case 1:
-				Student student = studentMapper.getStudent(email);
-				return userOV.setStatus(CodeConstant.SUCCESS).setData(student);
-			case 2:
-				Teacher teacher = teacherMapper.getTeacher(email);
-				return userOV.setStatus(CodeConstant.SUCCESS).setData(teacher);
-			case 3:
-				School school = schoolMapper.getSchool(email);
-				return userOV.setStatus(CodeConstant.SUCCESS).setData(school);
-		}
-		return userOV.setStatus(CodeConstant.FAIL).setMessage("这个用户不存在");
+	public UserOV<User> userInfo(String email) {
+		UserOV<User> userOV = new UserOV<>();
+		User userInfo = userMapper.getUserInfo(email);
+		userOV.setStatus(CodeConstant.SUCCESS).setData(userInfo);
+		return userOV;
 	}
 
 	@Override
-	public UserOV<List<Student>> listSchoolStudent(int id) {
-		UserOV<List<Student>> userOV = new UserOV<>();
-		List<Student> students = studentMapper.listSchoolStudent(id);
+	public UserOV<List<User>> listSchoolStudent(int id) {
+		UserOV<List<User>> userOV = new UserOV<>();
+		List<User> students = userMapper.listSchoolStudent(id);
 		userOV.setStatus(CodeConstant.SUCCESS).setData(students);
 		return userOV;
 	}
