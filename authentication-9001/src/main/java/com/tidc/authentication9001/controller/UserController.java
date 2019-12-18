@@ -1,5 +1,7 @@
 package com.tidc.authentication9001.controller;
 
+import com.tidc.api.pojo.user.User;
+import com.tidc.authentication9001.mapper.UserMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -12,7 +14,8 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 public class UserController {
 
-
+	@Autowired
+	private UserMapper userMapper;
 	/**
 	 *
 	 * @param email
@@ -20,7 +23,8 @@ public class UserController {
 	 */
 	@GetMapping("/user/info")
 	public Object  user(String email) {
-
-		return null;
+		User login = userMapper.login(email);
+		User userInfo = userMapper.getUserInfo(login);
+		return userInfo;
 	}
 }

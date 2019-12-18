@@ -14,6 +14,11 @@ import java.util.List;
  **/
 @FeignClient(value = "USERMANAGER",fallbackFactory = UserManagerFallbackFactory.class)
 public interface UserManagerApi {
+	/**
+	 * 注册老师账号
+	 * @param teacher
+	 * @return
+	 */
 	@RequestMapping(value = "/teacher/register",method = RequestMethod.POST)
 	UserOV teacherRegister(@RequestBody Teacher teacher);
 

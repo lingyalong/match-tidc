@@ -13,4 +13,8 @@ import org.springframework.stereotype.Repository;
 public interface UserMapper {
 	@Select("SELECT password,status FROM user WHERE email = #{email}")
 	User login(String email);
+
+
+
+	User getUserInfo(User user);
 }

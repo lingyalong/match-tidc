@@ -3,17 +3,41 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.tidc.authentication9001.mapper.UserMapper">
-    <resultMap id="BaseResultMap" type="com.tidc.api.pojo.Menu">
-        <id column="id" property="id" jdbcType="INTEGER"/>
-        <result column="url" property="url" jdbcType="VARCHAR"/>
-        <result column="name" property="name" jdbcType="VARCHAR"/>
-        <collection property="roles" ofType="com.tidc.api.pojo.Role">
-            <id column="rid" property="id"/>
-            <result column="rname" property="name"/>
-            <result column="rnamezh" property="nameZh"/>
+    <resultMap id="user" type="com.tidc.api.pojo.user.User">
+        <id column="uid" property="uid" />
+        <result column="name" property="name"/>
+        <result column="password" property="password" />
+        <result column="email" property="email" />
+        <result column="status" property="status" />
+        <collection property="userDetail" ofType="com.tidc.api.pojo.user.UserDetail">
+            <id column="id" property="id"/>
+            <result column="id_entity" property="id_entity"/>
+            <result column="telephone" property="telephone"/>
+            <result column="school_name" property="school_name"/>
+            <result column="school_id" property="school_id"/>
+            <result column="department" property="department"/>
+            <result column="major" property="major"/>
+            <result column="student_number" property="student_number"/>
+            <result column="position" property="position"/>
+            <result column="brief" property="brief"/>
+            <result column="code" property="code"/>
+            <result column="is_open" property="is_open"/>
         </collection>
     </resultMap>
-    <select id="getAllMenu" resultMap="BaseResultMap">
-        select m.*,r.`id` as rid,r.`name` as rname,r.`nameZh` as rnamezh from menu m left join role_menu mr on m.`id`=mr.`mid` left join role r on mr.`rid`=r.`id`order by m.`id` desc
+    <select id="getUserInfo" resultMap="user" parameterType="user">
+        SELECT user.id AS uid,user.name,user,email,user.status,
+        <if test="#{status!=3}">
+            ud.id_entity,ud.telephone,ud.school_name,ud.school_id,
+        </if>
+        <if test="#{status}==1">
+            ud.department,ud.major,ud.student_number
+        </if>
+        <if test="#{status}==2">
+            ud.postion,ud.code,ud.is_open
+        </if>
+        <if test="#{status}==3">
+            ud.brief,ud.code
+        </if>
+        FROM user LEFT JOIN user_detail ud ON user.id = ud.detail_user_id WHERE user.email = #{email}
     </select>
 </mapper>

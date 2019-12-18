@@ -3,10 +3,8 @@ package com.tidc.usermanager.service.impl;
 import com.tidc.api.constant.CodeConstant;
 import com.tidc.api.controller.MessageManagerApi;
 import com.tidc.api.pojo.*;
-import com.tidc.usermanager.mapper.SchoolMapper;
-import com.tidc.usermanager.mapper.StatusMapper;
-import com.tidc.usermanager.mapper.StudentMapper;
-import com.tidc.usermanager.mapper.TeacherMapper;
+import com.tidc.api.pojo.user.User;
+import com.tidc.usermanager.mapper.*;
 import com.tidc.usermanager.service.RegisterService;
 import com.tidc.usermanager.utiles.ApplicationContextProvider;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,6 +18,10 @@ import org.springframework.stereotype.Service;
  **/
 @Service
 public class RegisterServiceImpl implements RegisterService {
+	@Autowired
+	private UserMapper userMapper;
+	@Autowired
+	private UserDetailMapper userDetailMapper;
 	@Autowired
 	private StudentMapper studentMapper;
 	@Autowired
@@ -35,26 +37,31 @@ public class RegisterServiceImpl implements RegisterService {
 	@Autowired
 	private PasswordEncoder passwordEncoder;
 	@Override
-	public UserOV teacherRegister(Teacher teacher) {
-		School school = check(teacher.getEmail(),teacher.getCode());
+	public UserOV teacherRegister(User user) {
+		User school = check(user.getEmail(),user.getUserDetail().getCode());
 		UserOV userOV = new UserOV();
 		if(school==null){
 			//邀请码错误
 			return userOV.setMessage("邮箱或邀请码错误").setStatus(CodeConstant.FAIL);
 		}
-		teacher.setPassword(passwordEncoder.encode(teacher.getPassword()));
-		teacher.setTeacher_school_id(school.getId());
-		teacher.setSchoolName(school.getName());
-		teacher.setIs_open(0);
-		int count = teacherMapper.teacherRegister(teacher);
+		user.setPassword(passwordEncoder.encode(user.getPassword()));
+		user.getUserDetail().setSchool_id(school.getId());
+		user.getUserDetail().setSchool_name(school.getName());
+		user.setStatus(2);
+		user.getUserDetail().setIs_open(0);
+		int count = userMapper.Register(user);
+		user.getUserDetail().setDetail_user_id(user.getId());
+
 		if(count==1){
-			//这里应该有一个权限添加的语句?还没有
+			//插入详细信息
+			userDetailMapper.InsertDetails(user.getUserDetail());
+			//这里应该有一个权限添加的语句
 			Status status = ac.getBean(Status.class);
 			status.setEmail(teacher.getEmail()).setIs_status(2);
 			//插入身份信息
 			int count2 = statusMapper.insertStatus(status);
 			//发送信息 和 申请
-			messageManagerApi.teacherApproveMessage(school.getEmail(),teacher.getEmail());
+			messageManagerApi.teacherApproveMessage(school.getEmail(),user.getEmail());
 			if(count2==1){
 				userOV.setStatus(CodeConstant.SUCCESS).setData(teacher.getEmail());
 			}else{
@@ -95,8 +102,8 @@ public class RegisterServiceImpl implements RegisterService {
 
 		return userOV;
 	}
-	public School check(String email,String code){
-		School school = schoolMapper.getSchoolCode(code);
+	public User check(String email,String code){
+		User school = schoolMapper.getSchoolCode(code);
 		if(school==null){
 			//邀请码错误
 			return null;

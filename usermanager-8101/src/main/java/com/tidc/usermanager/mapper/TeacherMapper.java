@@ -1,5 +1,6 @@
 package com.tidc.usermanager.mapper;
 
+import com.tidc.api.pojo.user.User;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Select;
 import org.apache.ibatis.annotations.Update;
@@ -12,8 +13,8 @@ import java.util.List;
  * @Author 冯涛滔
  **/
 public interface TeacherMapper {
-	@Insert("insert into teacher(name,email,telephone,idEntity,department,position,titles,password,teacher_school_id,schoolName,is_open) values(#{name},#{email},#{telephone},#{idEntity},#{department},#{position},#{titles},#{password},#{teacher_school_id},#{schoolName},#{is_open})")
-	int teacherRegister(Teacher teacher);
+	@Insert("insert into user(name,email,password,status,) values(#{name},#{email},#{password},#{status})")
+	int Register(User teacher);
 	@Select("select email,password from teacher where email=#{email}")
 	Teacher chickEmail(String email);
 	@Select("select e.name from teacher_role r left outer join role e on r.student_role_id=e.id where r.student_id = #{id}")

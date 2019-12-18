@@ -43,7 +43,6 @@ public class MyUserDetailsService implements UserDetailsService {
 		String password = "222";
 		String[] power1 = {"Role_user"};
 		com.tidc.api.pojo.user.User user = userMapper.login(email);
-
 		power = org.apache.commons.lang.StringUtils.join(power1, ",");
 		return returnUser(email,user.getPassword(),power);
 	}
