@@ -42,7 +42,7 @@ public class RegisterServiceImpl implements RegisterService {
 		UserOV userOV = new UserOV();
 		if(school==null){
 			//邀请码错误
-			return userOV.setMessage("邮箱或邀请码错误").setStatus(CodeConstant.FAIL);
+			return userOV.setMessage("邮箱或邀请码错误").tStatus(CodeConstant.FAIL);
 		}
 		user.setPassword(passwordEncoder.encode(user.getPassword()));
 		user.getUserDetail().setSchool_id(school.getId());
